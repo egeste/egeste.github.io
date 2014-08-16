@@ -245,3 +245,21 @@ a {
 .cf {
   zoom:1;
 }
+
+/* GitHub is slow... */
+#github-is-slow {
+  top: 50%;
+  left: 50%;
+  width: 138px;
+  height: 138px;
+  position: fixed;
+  margin-top: -69px;
+  margin-left: -69px;
+}
+
+#github-is-slow img {
+  border: 1px solid #b5e853;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 #b5e853;
+}
