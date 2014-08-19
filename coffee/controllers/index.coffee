@@ -1,23 +1,38 @@
 define [
   'oraculum'
+  'oraculum/libs'
   'cs!views/session'
   'cs!models/session'
+  'oraculum/mixins/evented'
   'oraculum/application/controller'
 ], (Oraculum) ->
   'use strict'
 
+  $ = Oraculum.get 'jQuery'
+
   Oraculum.extend 'Controller', 'Index.Controller', {
 
+    constructed: ->
+      @session = @__factory().get 'Session.Model'
+      @listenTo @session.get('stdout'), 'add', (model) =>
+        return unless input = model.get 'input'
+        @redirectTo 'Index.Controller#index', {input},
+          redirected: true
+
     beforeAction: ->
-      session = @__factory().get 'Session.Model'
-      tree = session.get 'tree'
+      tree = @session.get 'tree'
       return tree.fetch() unless tree.isSynced()
 
-    index: ->
-      session = @__factory().get 'Session.Model'
+    index: ({input}, route, {redirected}) ->
+      $('#github-is-slow').remove()
       @reuse 'session', 'Session.View',
-        model: session
+        model: @session
         container: document.body
-      # stdout = @__factory().get 'stdout'
+      return if redirected
+      return @session.run input if input
+      @session.run 'markdown posts/welcome.md'
 
-  }, inheritMixins: true
+  }, {
+    inheritMixins: true
+    mixins: ['Evented.Mixin']
+  }

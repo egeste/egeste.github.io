@@ -5,4 +5,4 @@ define [
   'use strict'
 
   Oraculum.define 'routes', -> (match) ->
-    match '*url', 'Index.Controller#index'
+    match '*input', 'Index.Controller#index'

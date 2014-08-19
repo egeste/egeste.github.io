@@ -25,5 +25,6 @@ define ['underscore'], (_) ->
     tree = session.get 'tree'
     return (newPwd) ->
       oldPwd = session.get 'pwd'
+      newPwd ?= oldPwd
       pathSpec = resolveRoot newPwd, oldPwd
       return stdout: absPath pathSpec
