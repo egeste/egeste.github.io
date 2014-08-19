@@ -4,11 +4,11 @@ define [
 ], (Oraculum) ->
   'use strict'
 
-  Oraculum.extend 'View', 'Blog.Layout', {
+  Oraculum.extend 'View', 'Console.Layout', {
     el: document.body
 
     mixinOptions:
-      regions:
-        content: '#main_content'
+      layout:
+        scrollTo: [0, '100%']
 
   }, mixins: ['Layout.ViewMixin']
