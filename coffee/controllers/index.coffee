@@ -30,13 +30,9 @@ define [
 
     index: ({input}, route, {redirected}) ->
       $('#github-is-slow').remove()
-      paths = @session.get('tree').pluck('path')
-      background = _.chain(paths).filter((path) ->
-        return /^img\/backgrounds\/.+\.svg$/i.test path
-      ).sample().value()
-      console.log background
-      # @reuse 'background', 'Background.View',
-      #   container: document.body
+      @reuse 'background', 'Background.View',
+        container: document.body
+        collection: @session.get 'tree'
       @reuse 'session', 'Session.View',
         model: @session
         container: document.body

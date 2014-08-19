@@ -11,17 +11,19 @@ require.config({
     'coffee-script': '../bower_components/coffeescript/extras/coffee-script',
 
     // Oraculum deps
-    jquery: '../bower_components/jquery/dist/jquery',
+    jquery: '../bower_components/jquery/dist/jquery.min',
     backbone: '../bower_components/backbone/backbone',
     underscore: '../bower_components/underscore/underscore',
-    Factory: '../bower_components/factoryjs/dist/Factory',
-    BackboneFactory: '../bower_components/factoryjs/dist/BackboneFactory',
+    Factory: '../bower_components/factoryjs/dist/Factory.min',
+    BackboneFactory: '../bower_components/factoryjs/dist/BackboneFactory.min',
 
     // Other stuff
-    config: '../config.json',
-    marked: '../bower_components/marked/lib/marked'
+    d3: '../bower_components/d3/d3.min',
+    marked: '../bower_components/marked/lib/marked',
+    config: '../config.json'
   },
   shim: {
+    d3: {exports: 'd3'},
     jquery: { exports: 'jQuery' },
     underscore: { exports: '_' },
     backbone: {
