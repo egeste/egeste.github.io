@@ -3,9 +3,11 @@ require [
   'image!img/octocat-spinner-128.gif'
 ], ($) ->
 
-  $('#github-is-slow').animate {
-    opacity: 1
-  }, 1000
+  $('''<div id="github-is-slow">
+    <div class="wrapper">
+      <img src="img/octocat-spinner-128.gif">
+    </div>
+  </div>''').appendTo(document.body).animate({opacity: 1}, 1000)
 
   require [
     'oraculum'

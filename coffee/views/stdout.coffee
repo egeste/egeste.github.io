@@ -23,7 +23,6 @@ define [
       return 'STDOUT.Line'
 
   Oraculum.extend 'View', 'STDIN.Line', {
-    tagName: 'article'
 
     mixinOptions:
       staticClasses: ['stdin-view']
@@ -43,7 +42,6 @@ define [
   ]
 
   Oraculum.extend 'View', 'STDOUT.Line', {
-    tagName: 'article'
 
     mixinOptions:
       staticClasses: ['stdout-line']
@@ -65,7 +63,10 @@ define [
         modelView: 'STDOUT.PolymorPhactory'
         viewOptions: ({model}) ->
           viewOptions = model.get 'viewOptions'
-          return _.extend { model }, viewOptions
+          return _.extend {
+            model: model
+            tagName: 'article'
+          }, viewOptions
 
   }, mixins: [
     'Disposable.Mixin'
