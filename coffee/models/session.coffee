@@ -19,10 +19,10 @@ define [
       [command, args...] = input.split /\s+/
       stdout.push {input, command, args}
       unless tree.findWhere(path: "coffee/programs/#{command}.coffee")
-        return stdout.push output: "command not found: #{command}"
+        return stdout.push stdout: "command not found: #{command}"
       require ["cs!programs/#{command}"], (cmd) =>
-        if output = cmd(this) args...
-          stdout.add output
+        if result = cmd(this) args...
+          stdout.add result
 
   }, {
     singleton: true

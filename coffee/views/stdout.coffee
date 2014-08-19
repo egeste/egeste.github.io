@@ -1,5 +1,8 @@
 define [
   'oraculum'
+
+  'cs!views/mdout'
+
   'oraculum/mixins/listener'
   'oraculum/mixins/disposable'
   'oraculum/views/mixins/list'
@@ -10,18 +13,16 @@ define [
   'oraculum/views/mixins/remove-disposed'
   'oraculum/views/mixins/dom-property-binding'
   'oraculum/abstract/polymorphactory'
-  'cs!views/output/files'
 ], (Oraculum) ->
   'use strict'
 
   Oraculum.extend 'PolymorPhactory', 'STDOUT.PolymorPhactory',
     getTypeString: ({model}) ->
-      return 'STDIN.View' if model.has 'input'
-      return switch model.get 'command'
-        when 'ls' then 'Files.View'
-        else 'STDOUT.Line'
+      return 'MDOUT.View' if model.has 'markdown'
+      return 'STDIN.Line' if model.has 'input'
+      return 'STDOUT.Line'
 
-  Oraculum.extend 'View', 'STDIN.View', {
+  Oraculum.extend 'View', 'STDIN.Line', {
     tagName: 'article'
 
     mixinOptions:
@@ -46,7 +47,7 @@ define [
 
     mixinOptions:
       staticClasses: ['stdout-line']
-      template: '<pre><code data-prop="model" data-prop-attr="output"/></pre>'
+      template: '<pre><code data-prop="model" data-prop-attr="stdout"/></pre>'
 
   }, mixins: [
     'Disposable.Mixin'

@@ -1,27 +1,29 @@
-resolveRoot = (newPwd, oldPwd) ->
-  newPwd = newPwd.split /\/+/
-  oldPwd = oldPwd.split /\/+/
-  switch newPwd[0]
-    when '' then newPwd.shift()
-    when '.' then newPwd = oldPwd.concat newPwd
-    when '..'
-      oldPwd.pop()
-      newPwd.shift()
-      newPwd = oldPwd.concat newPwd
-  return newPwd
+define ['underscore'], (_) ->
 
-absPath = (pathSpec) ->
-  return _.reduce(pathSpec, ((memo, pathSpec) ->
-    switch pathSpec
-      when '.' then #nop
-      when '..' then memo.pop()
-      else memo.push pathSpec
-    return memo
-  ), []).join '/'
+  resolveRoot = (newPwd, oldPwd) ->
+    newPwd = newPwd.split /\/+/
+    oldPwd = oldPwd.split /\/+/
+    switch newPwd[0]
+      when '' then newPwd.shift()
+      when '.' then newPwd = oldPwd.concat newPwd
+      when '..'
+        oldPwd.pop()
+        newPwd.shift()
+        newPwd = oldPwd.concat newPwd
+    return newPwd
 
-define ->
+  absPath = (pathSpec) ->
+    return _.reduce(pathSpec, ((memo, pathSpec) ->
+      switch pathSpec
+        when '.' then #nop
+        when '..' then memo.pop()
+        else memo.push pathSpec
+      return memo
+    ), []).join '/'
+
   return (session) ->
+    tree = session.get 'tree'
     return (newPwd) ->
       oldPwd = session.get 'pwd'
       pathSpec = resolveRoot newPwd, oldPwd
-      return output: absPath pathSpec
+      return stdout: absPath pathSpec

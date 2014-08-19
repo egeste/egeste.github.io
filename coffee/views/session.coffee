@@ -16,7 +16,7 @@ define [
     mixinOptions:
       staticClasses: ['session-view']
       subviews:
-        output: ->
+        stdout: ->
           view: 'STDOUT.View'
           viewOptions:
             container: @el

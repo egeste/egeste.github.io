@@ -23,4 +23,4 @@ lookout = '''
 
 define ->
   return (session) ->
-    return -> output: lookout
+    return -> stdout: lookout

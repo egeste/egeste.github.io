@@ -17,11 +17,11 @@ define [
       {paths, list} = parseOptions args
       paths.push '.' unless paths.length
       return _.map paths, (path) ->
-        absPath = realpath(session)(path).output
+        absPath = realpath(session)(path).stdout
         testPath = absPath.replace /^\//, ''
         paths = _.chain(fileTree.pluck 'path').filter((node) ->
           return ///^#{testPath}\/?[^\/]*$///.test node
         ).map((node) ->
           return node.replace ///^#{testPath}\/?///, ''
         ).compact().value()
-        return output: "#{absPath}:\n  #{paths.join '\n  '}"
+        return stdout: "#{absPath}:\n  #{paths.join '\n  '}"
