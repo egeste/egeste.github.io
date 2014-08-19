@@ -14,8 +14,8 @@ The stuff you're probably looking for
 If you just stumbled here, you're probably looking for one of a few things. Here are a few handy links.
 
 ### "Professionalism"
-  * [Resume](/downloads/SteveRegester.pdf)
   * [LinkedIn](https://www.linkedin.com/in/egeste)
+  * [Resume](https://github.com/egeste/egeste.github.io/raw/master/downloads/SteveRegester.pdf)
 
 ### Around the internetz
   * [Twitter](https://twitter.com/egeste)

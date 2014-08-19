@@ -1,8 +1,12 @@
 define [
   'oraculum'
   'oraculum/libs'
-  'cs!views/session'
+
   'cs!models/session'
+
+  'cs!views/session'
+  'cs!views/background'
+
   'oraculum/mixins/evented'
   'oraculum/application/controller'
 ], (Oraculum) ->
@@ -26,6 +30,13 @@ define [
 
     index: ({input}, route, {redirected}) ->
       $('#github-is-slow').remove()
+      paths = @session.get('tree').pluck('path')
+      background = _.chain(paths).filter((path) ->
+        return /^img\/backgrounds\/.+\.svg$/i.test path
+      ).sample().value()
+      console.log background
+      # @reuse 'background', 'Background.View',
+      #   container: document.body
       @reuse 'session', 'Session.View',
         model: @session
         container: document.body

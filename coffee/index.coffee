@@ -19,3 +19,4 @@ require [
       layout: 'Console.Layout'
       routes: Oraculum.get 'routes'
       pushState: false
+      openExternalToBlank: true
