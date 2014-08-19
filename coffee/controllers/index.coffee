@@ -15,6 +15,7 @@ define [
     constructed: ->
       @session = @__factory().get 'Session.Model'
       @listenTo @session.get('stdout'), 'add', (model) =>
+        window.scrollTo 0, document.body.scrollHeight
         return unless input = model.get 'input'
         @redirectTo 'Index.Controller#index', {input},
           redirected: true

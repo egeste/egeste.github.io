@@ -1,7 +1,7 @@
 Welcome to the new Egeste.NET
 =============================
 
-The CEO and CTO of Mashape once joked that my blog for looked like "something out of the 90's". I disagree, but in any case it was time for a new site. I figured I should probably just roll my own for shits and giggles. You're looking at it.
+The [CEO](https://www.linkedin.com/in/sinzone) and [CTO](https://www.linkedin.com/in/marcopalladino) of Mashape once joked that my blog for looked like "something out of the 90's". I disagree, but in any case it was time for a new site. I figured I should probably just roll my own for shits and giggles. You're looking at it.
 
 Technology
 ----------
