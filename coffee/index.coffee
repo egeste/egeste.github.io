@@ -20,5 +20,6 @@ require [
     Oraculum.get 'Application',
       layout: 'Console.Layout'
       routes: Oraculum.get 'routes'
+      scrollTo: false
       pushState: false
       openExternalToBlank: true

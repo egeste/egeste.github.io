@@ -7,4 +7,9 @@ define [
   Oraculum.extend 'View', 'Console.Layout', {
     el: document.body
 
+    mixinOptions:
+      regions:
+        session: '#session'
+        background: '#background'
+
   }, mixins: ['Layout.ViewMixin']

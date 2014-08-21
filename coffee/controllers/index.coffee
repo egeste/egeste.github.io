@@ -1,4 +1,5 @@
 define [
+  'disqus'
   'oraculum'
   'oraculum/libs'
 
@@ -9,7 +10,7 @@ define [
 
   'oraculum/mixins/evented'
   'oraculum/application/controller'
-], (Oraculum) ->
+], (disqus, Oraculum) ->
   'use strict'
 
   $ = Oraculum.get 'jQuery'
@@ -21,24 +22,34 @@ define [
       @listenTo @session.get('stdout'), 'add', (model) =>
         window.scrollTo 0, document.body.scrollHeight
         return unless input = model.get 'input'
-        @redirectTo 'Index.Controller#index', {input},
-          redirected: true
+        @redirectTo 'Index.Controller#execute', {
+          input: encodeURIComponent input
+        }, redirected: true
 
     beforeAction: ->
       tree = @session.get 'tree'
-      return tree.fetch() unless tree.isSynced()
+      unless tree.isSynced()
+        return tree.fetch().then ->
+          $('#github-is-slow').remove()
 
-    index: ({input}, route, {redirected}) ->
-      $('#github-is-slow').remove()
+    hashbang: ({input}) ->
+      @redirectTo 'Index.Controller#execute', {input}
+
+    execute: ({input}, route, {redirected}) ->
       @reuse 'background', 'Background.View',
-        container: document.body
+        region: 'background'
         collection: @session.get 'tree'
       @reuse 'session', 'Session.View',
         model: @session
-        container: document.body
+        region: 'session'
       return if redirected
-      return @session.run input if input
-      @session.run 'markdown posts/welcome.md'
+      return @session.run 'markdown posts/welcome.md' unless input
+      @session.run decodeURIComponent input
+      disqus.reset
+        reload: true
+        config: ->
+          @page.identifier = input
+          @page.url = window.location.href
 
   }, {
     inheritMixins: true

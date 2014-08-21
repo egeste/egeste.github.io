@@ -1,6 +1,9 @@
 require.config({
   baseUrl: 'coffee',
   paths: {
+    // Config
+    config: '../config.json',
+
     // Plugins
     cs: '../bower_components/require-cs/cs',
     text: '../bower_components/requirejs-text/text',
@@ -20,15 +23,19 @@ require.config({
     // Other stuff
     d3: '../bower_components/d3/d3.min',
     marked: '../bower_components/marked/lib/marked',
-    config: '../config.json'
+    disqus: 'https://egeste-net.disqus.com/embed.js'
   },
   shim: {
-    d3: {exports: 'd3'},
+    d3: { exports: 'd3' },
     jquery: { exports: 'jQuery' },
     underscore: { exports: '_' },
     backbone: {
       deps: ['underscore', 'jquery'],
       exports: 'Backbone'
+    },
+    disqus: {
+      deps: ['cs!disqus_vars'],
+      exports: 'DISQUS'
     }
   },
   packages: [{

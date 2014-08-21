@@ -4,8 +4,8 @@ define [
   'oraculum/libs'
   'oraculum/mixins/listener'
   'oraculum/mixins/disposable'
-  'oraculum/views/mixins/attach'
   'oraculum/views/mixins/auto-render'
+  'oraculum/views/mixins/region-attach'
   'oraculum/views/mixins/static-classes'
   'oraculum/views/mixins/remove-disposed'
 ], (d3, Oraculum) ->
@@ -65,7 +65,7 @@ define [
   }, mixins: [
     'Listener.Mixin'
     'Disposable.Mixin'
-    'Attach.ViewMixin'
+    'RegionAttach.ViewMixin'
     'StaticClasses.ViewMixin'
     'RemoveDisposed.ViewMixin'
     'AutoRender.ViewMixin'
