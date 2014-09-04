@@ -15,7 +15,6 @@ define [
   Oraculum.extend 'View', 'Input.View', {
 
     events:
-      'blur input': '_focus'
       'keydown input': '_run'
 
     mixinOptions:
