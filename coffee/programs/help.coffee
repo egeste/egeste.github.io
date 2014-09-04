@@ -9,6 +9,7 @@ define ->
         return /^coffee\/programs\/(.+)\.coffee$/.exec(path)[1]
       ).value()
       stdout.push stdout: 'Egeste.NET v5'
+      stdout.push stdout: 'Available Commands:'
       for program in programs
         stdout.push
           stdout: program

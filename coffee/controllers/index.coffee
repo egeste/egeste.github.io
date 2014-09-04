@@ -11,6 +11,7 @@ define [
   'oraculum/mixins/evented'
   'oraculum/application/controller'
 ], (disqus, Oraculum) ->
+# ], (Oraculum) ->
   'use strict'
 
   $ = Oraculum.get 'jQuery'
@@ -20,7 +21,6 @@ define [
     constructed: ->
       @session = @__factory().get 'Session.Model'
       @listenTo @session.get('stdout'), 'add', (model) =>
-        window.scrollTo 0, document.body.scrollHeight
         return unless input = model.get 'input'
         @redirectTo 'Index.Controller#execute', {
           input: encodeURIComponent input
@@ -41,10 +41,15 @@ define [
         collection: @session.get 'tree'
       @reuse 'session', 'Session.View',
         model: @session
+        collection: @session.get 'stdout'
         region: 'session'
-      return if redirected
-      return @session.run 'markdown posts/welcome.md' unless input
-      @session.run decodeURIComponent input
+        className: 'panel full-height'
+      if input
+        @__disqus input
+        @session.run decodeURIComponent input unless redirected
+      else @session.run 'markdown posts/welcome.md'
+
+    __disqus: (input) -> _.defer ->
       disqus.reset
         reload: true
         config: ->

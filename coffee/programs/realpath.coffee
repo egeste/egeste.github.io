@@ -10,6 +10,7 @@ define ['underscore'], (_) ->
         oldPwd.pop()
         newPwd.shift()
         newPwd = oldPwd.concat newPwd
+      else newPwd = oldPwd.slice(1).concat newPwd
     return newPwd
 
   absPath = (pathSpec) ->

@@ -2,6 +2,7 @@ define [
   'oraculum'
   'cs!views/input'
   'cs!views/stdout'
+  'oraculum/mixins/listener'
   'oraculum/mixins/disposable'
   'oraculum/views/mixins/subview'
   'oraculum/views/mixins/auto-render'
@@ -15,6 +16,8 @@ define [
 
     mixinOptions:
       staticClasses: ['session-view']
+      listen:
+        'add collection': '_scroll'
       subviews:
         stdout: ->
           view: 'STDOUT.View'
@@ -27,7 +30,11 @@ define [
             model: @model
             container: @el
 
+    _scroll: -> _.defer =>
+      @$el.scrollTop @el.scrollHeight
+
   }, mixins: [
+    'Listener.Mixin'
     'Disposable.Mixin'
     'Subview.ViewMixin'
     'RegionAttach.ViewMixin'

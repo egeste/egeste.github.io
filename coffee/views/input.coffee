@@ -26,11 +26,11 @@ define [
         'domcache this': '_update'
         'change:pwd model': '_updatePadding'
       template: '''
-        <aside data-cache="prompt">
+        <input class="pull-left" type="text" data-cache="input"/>
+        <aside class="pull-left" data-cache="prompt">
           <span data-prop="model" data-prop-attr="pwd"/>
           &nbsp;&gt;
         </aside>
-        <input type="text" data-cache="input"/>
       '''
 
     _update: ->

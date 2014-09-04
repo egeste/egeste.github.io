@@ -1,0 +1,35 @@
+#session {
+  .session-view {
+    overflow-x: scroll;
+
+    .stdout-view {
+      pre {
+        color: @text-color;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background: none;
+      }
+      .inline-block {
+        padding-right: 1em;
+      }
+    }
+
+    .input-view {
+      padding-top: 1em;
+
+      aside {
+        margin-top: -1.5em;
+        margin-right: 0.5em;
+      }
+
+      input {
+        width: 100%;
+        color: @text-color;
+        outline: none;
+        background: none;
+      }
+
+    }
+  }
+}
