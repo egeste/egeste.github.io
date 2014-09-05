@@ -1,5 +1,6 @@
 require.config({
   baseUrl: 'coffee',
+
   paths: {
     // Config
     config: '../config.json',
@@ -20,28 +21,47 @@ require.config({
     Factory: '../bower_components/factoryjs/dist/Factory.min',
     BackboneFactory: '../bower_components/factoryjs/dist/BackboneFactory.min',
 
-    // Other stuff
+    // d3/Datamaps
     d3: '../bower_components/d3/d3.min',
+    topojson: '../bower_components/topojson/topojson',
+    datamaps: '../bower_components/datamaps/dist/datamaps.world.min',
+
+    // Other stuff
     marked: '../bower_components/marked/lib/marked',
     disqus: 'https://egeste-net.disqus.com/embed.js'
   },
+
   shim: {
-    d3: { exports: 'd3' },
     jquery: { exports: 'jQuery' },
     underscore: { exports: '_' },
     backbone: {
       deps: ['underscore', 'jquery'],
       exports: 'Backbone'
     },
+
+    d3: { exports: 'd3' },
+    topojson: {
+      deps: ['d3'],
+      exports: 'topojson'
+    },
+
+    // We depend on jquery to ensure that datamaps injects its $.fn
+    datamaps: {
+      deps: ['jquery', 'd3', 'topojson'],
+      exports: 'Datamap'
+    },
+
     disqus: {
       deps: ['cs!disqus_vars'],
       exports: 'DISQUS'
     }
   },
+
   packages: [{
     name: 'oraculum',
     location: '../bower_components/oraculum/dist'
   }],
+
   callback: function () {
     require(['cs!index']);
   }

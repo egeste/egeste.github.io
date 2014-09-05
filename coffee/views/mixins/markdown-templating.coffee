@@ -1,8 +1,11 @@
 define [
-  'oraculum', 'marked'
+  'oraculum'
+  'cs!libs'
   'oraculum/views/mixins/templating-interface'
-], (Oraculum, marked) ->
+], (Oraculum) ->
   'use strict'
+
+  marked = Oraculum.get 'marked'
 
   Oraculum.defineMixin 'MarkdownTemplating.ViewMixin', {
 

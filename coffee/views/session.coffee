@@ -4,9 +4,9 @@ define [
   'cs!views/stdout'
   'oraculum/mixins/listener'
   'oraculum/mixins/disposable'
+  'oraculum/views/mixins/attach'
   'oraculum/views/mixins/subview'
   'oraculum/views/mixins/auto-render'
-  'oraculum/views/mixins/region-attach'
   'oraculum/views/mixins/static-classes'
   'oraculum/views/mixins/remove-disposed'
 ], (Oraculum) ->
@@ -36,8 +36,8 @@ define [
   }, mixins: [
     'Listener.Mixin'
     'Disposable.Mixin'
+    'Attach.ViewMixin'
     'Subview.ViewMixin'
-    'RegionAttach.ViewMixin'
     'StaticClasses.ViewMixin'
     'RemoveDisposed.ViewMixin'
     'AutoRender.ViewMixin'

@@ -254,29 +254,6 @@ define [
         result.push mixin
       return _.uniq result
 
-    # Compose Mixin Options
-    # ---------------------
-    # By introducing mixin inheritence we inadvertently made the possible
-    # option sets way more complicated since a mixin can depend on another
-    # mixin and give some defaults that should override the depended mixins
-    # defaults.
-
-    composeMixinOptions: (instance, mixinName, args) ->
-      mixin = @mixins[mixinName]
-      mixinDefaults = mixin.mixinOptions
-      mixinOptions = instance.mixinOptions
-      extendMixinOptions mixinOptions, mixinDefaults
-
-      # Invoke the mixin's mixconfig method if available, passing through
-      # the mixinOptions object so that it can be modified by reference.
-      mixin.mixconfig? mixinOptions, args...
-
-      # Finally, complete the composition of the mixinOptions object by
-      # extending a bare object with mixinDefaults and whatever custom
-      # options the mixconfig method may have assigned before assigning
-      # it back onto the instance.
-      instance.mixinOptions = _.extend {}, mixinDefaults, mixinOptions
-
     # Apply Mixin
     # -----------
     # Apply a mixin by name to an object. Options that are on the object
@@ -340,17 +317,34 @@ define [
       instance.__mixins = ->
         resolvedMixins.slice()
 
-      @applyMixin instance, mixinName for mixinName in resolvedMixins
+      # Iterate over all of our resolved mixins, applying their implementation
+      # to the current instance.
+      for mixinName in resolvedMixins
+        @applyMixin instance, mixinName
 
-      # because it considers instance.mixinOptions to be canonical
+      # Because it considers instance.mixinOptions to be canonical
       # this needs to execute in reverse order so higher level mixins
       # take configuration precedence.
+      for mixinName in resolvedMixins.slice().reverse()
+        mixin = @mixins[mixinName]
+        mixinDefaults = mixin.mixinOptions
+        mixinOptions = instance.mixinOptions
+        extendMixinOptions mixinOptions, mixinDefaults
 
-      reverseMixins = resolvedMixins.slice().reverse()
-      for mixinName in reverseMixins
-        @composeMixinOptions instance, mixinName, args
+        # Complete the composition of the mixinOptions object by
+        # extending a bare object with mixinDefaults.
+        instance.mixinOptions = _.extend {}, mixinDefaults, mixinOptions
 
-      @mixinitialize instance, mixinName for mixinName in resolvedMixins
+      # Invoke the mixin's mixconfig method if available, passing through
+      # the mixinOptions object so that it can be modified by reference.
+      for mixinName in resolvedMixins
+        mixin = @mixins[mixinName]
+        mixinOptions = instance.mixinOptions
+        mixin.mixconfig? mixinOptions, args...
+
+      #
+      for mixinName in resolvedMixins
+        @mixinitialize instance, mixinName
 
       instance.__mixin = _.chain((obj, mixin, mixinOptions) ->
         obj.____mixed = []
@@ -392,7 +386,6 @@ define [
       @instances[name].push instance
       fullTags = _.toArray(tags).concat(instance.____tags or [])
       delete instance.____tags if instance.____tags
-      instance.__type = -> name
       instance.__tags = -> _.toArray fullTags
 
       factoryMap = [@instances[name]]
@@ -428,6 +421,10 @@ define [
 
       # arbitrary arguments length on the constructor
       instance = new constructor args...
+      # Set the type immediately
+      instance.__type = -> name
+      # Set the constructor of the instance to one that's factory wrapped
+      instance.constructor = @getConstructor name
       # mixin support
       @handleMixins instance, mixins, args
       # injection support

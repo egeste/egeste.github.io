@@ -1,0 +1,36 @@
+{
+  "name": "egeste.github.io",
+  "version": "0.0.0",
+  "homepage": "http://egeste.net/",
+  "description": "The new Egeste.NET",
+
+  "authors": [
+    "Steve (Egesté) Regester <egeste@egeste.net>"
+  ],
+
+  "main": "index.html",
+  "private": true,
+  "license": "MIT",
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+
+  "dependencies": {
+    "d3": "~3.4.11",
+    "less": "~1.7.4",
+    "marked": "~0.3.2",
+    "datamaps": "~0.3.4",
+    "es5-shim": "~4.0.2",
+    "topojson": "~1.6.18",
+    "oraculum": "~0.0.2",
+    "bootstrap": "~3.2.0",
+    "require-cs": "~0.5.0",
+    "requirejs-text": "~2.0.12",
+    "requirejs-plugins": "~1.0.2"
+  }
+}

@@ -1,17 +1,17 @@
 define [
-  'disqus'
   'oraculum'
   'oraculum/libs'
 
+  'cs!views/session'
   'cs!models/session'
 
-  'cs!views/session'
-  'cs!views/background'
+  'cs!controllers/mixins/disqus-composer'
+  'cs!controllers/mixins/hitmap-composer'
+  # 'cs!controllers/mixins/background-composer'
 
   'oraculum/mixins/evented'
   'oraculum/application/controller'
 ], (disqus, Oraculum) ->
-# ], (Oraculum) ->
   'use strict'
 
   $ = Oraculum.get 'jQuery'
@@ -36,27 +36,25 @@ define [
       @redirectTo 'Index.Controller#execute', {input}
 
     execute: ({input}, route, {redirected}) ->
-      @reuse 'background', 'Background.View',
-        region: 'background'
-        collection: @session.get 'tree'
+      console.log arguments
+
       @reuse 'session', 'Session.View',
         model: @session
+        container: '#session'
+        className: 'panel black full-height'
         collection: @session.get 'stdout'
-        region: 'session'
-        className: 'panel full-height'
-      if input
-        @__disqus input
-        @session.run decodeURIComponent input unless redirected
-      else @session.run 'markdown posts/welcome.md'
 
-    __disqus: (input) -> _.defer ->
-      disqus.reset
-        reload: true
-        config: ->
-          @page.identifier = input
-          @page.url = window.location.href
+      if input
+        @session.run decodeURIComponent input unless redirected
+      else
+        @session.run 'markdown /posts/welcome.md' unless redirected
 
   }, {
     inheritMixins: true
-    mixins: ['Evented.Mixin']
+    mixins: [
+      'Evented.Mixin'
+      'DisqusComposer.ControllerMixin'
+      'HitmapComposer.ControllerMixin'
+      # 'BackgroundComposer.ControllerMixin'
+    ]
   }

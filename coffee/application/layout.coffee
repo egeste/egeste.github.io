@@ -8,8 +8,7 @@ define [
     el: document.body
 
     mixinOptions:
-      regions:
-        session: '#session'
-        background: '#background'
+      layout:
+        scrollTo: false
 
   }, mixins: ['Layout.ViewMixin']

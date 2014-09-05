@@ -1,6 +1,6 @@
 {
   "name": "Factory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/Factory.js",
   "dependencies": {
     "jquery": "latest",
@@ -15,11 +15,11 @@
     "jasmine-matchers-util": "JamieMason/Jasmine-Matchers"
   },
   "homepage": "https://github.com/lookout/factoryjs",
-  "_release": "1.0.0",
+  "_release": "1.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.0",
-    "commit": "eac412ee9eedc3c79d946e66a76b76131e4827a2"
+    "tag": "v1.0.1",
+    "commit": "5ea001939d1793e7a6daa31896af6620b6a6a330"
   },
   "_source": "git://github.com/lookout/factoryjs.git",
   "_target": "~1.0.0",
