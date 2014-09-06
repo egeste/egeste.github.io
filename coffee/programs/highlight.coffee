@@ -14,15 +14,12 @@ define [
         path = absPath.replace /^\//, ''
 
         unless node = tree.findWhere {path}
-          return stdout.push stdout: "markdown: no such file or directory: #{absPath}"
+          return stdout.push stdout: "highlight: no such file or directory: #{absPath}"
 
         if 'tree' is node.get 'type'
-          return stdout.push stdout: "markdown: not a file: #{absPath}"
+          return stdout.push stdout: "highlight: not a file: #{absPath}"
 
-        unless /\.md/i.test absPath
-          return stdout.push stdout: "Cannot render: #{absPath}"
-
-        require ["text!../#{absPath}"], (markdown) ->
-          stdout.push {markdown}
+        require ["text!../#{absPath}"], (content) ->
+          stdout.push markdown: "```\n#{content}\n```"
 
       return undefined

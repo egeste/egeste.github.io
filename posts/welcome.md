@@ -27,3 +27,5 @@ If you just stumbled here, you're probably looking for one of these links:
 Play with me!
 -------------
 See that little command prompt looking thing just below? Try asking it for [help](#!help)...
+
+If you're not feeling that adventurous, [click here to see a list of all posts](#!latest).

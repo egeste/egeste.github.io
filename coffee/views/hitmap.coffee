@@ -21,13 +21,17 @@ define [
 
     _renderDatamaps: -> _.defer =>
       @map = new Datamap
+        width: @$el.innerWidth()
+        height: @$el.innerHeight()
         element: @el
         geographyConfig:
           popupOnHover: false
         setProjection: (element) ->
-          projection = d3.geo.equirectangular()
-            .rotate([100, -40])
-            .translate([element.offsetWidth / 2, element.offsetHeight / 2])
+          projection = d3.geo.mercator()
+            .rotate([100, 0])
+            .precision(.5)
+            .translate([element.offsetWidth / 2, element.offsetHeight / 1.45])
+            .scale((element.offsetWidth + 1) / 2 / Math.PI)
           path = d3.geo.path().projection(projection)
           return {path, projection}
 

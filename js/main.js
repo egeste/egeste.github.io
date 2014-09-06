@@ -26,12 +26,17 @@ require.config({
     topojson: '../bower_components/topojson/topojson',
     datamaps: '../bower_components/datamaps/dist/datamaps.world.min',
 
-    // Other stuff
+    // Markdown/hljs
     marked: '../bower_components/marked/lib/marked',
+    highlight: '../bower_components/highlightjs/highlight.pack',
+
+    // DISQUS
     disqus: 'https://egeste-net.disqus.com/embed.js'
   },
 
   shim: {
+    highlight: { exports: 'hljs' },
+
     jquery: { exports: 'jQuery' },
     underscore: { exports: '_' },
     backbone: {
