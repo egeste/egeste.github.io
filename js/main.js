@@ -21,10 +21,10 @@ require.config({
     Factory: '../bower_components/factoryjs/dist/Factory.min',
     BackboneFactory: '../bower_components/factoryjs/dist/BackboneFactory.min',
 
-    // d3/Datamaps
+    // d3/maps
     d3: '../bower_components/d3/d3.min',
     topojson: '../bower_components/topojson/topojson',
-    datamaps: '../bower_components/datamaps/dist/datamaps.world.min',
+    'simple-map-d3': '../bower_components/simple-map-d3/dist/simple-map-d3.src',
 
     // Markdown/hljs
     marked: '../bower_components/marked/lib/marked',
@@ -49,11 +49,9 @@ require.config({
       deps: ['d3'],
       exports: 'topojson'
     },
-
-    // We depend on jquery to ensure that datamaps injects its $.fn
-    datamaps: {
-      deps: ['jquery', 'd3', 'topojson'],
-      exports: 'Datamap'
+    'simple-map-d3': {
+      deps: ['d3', 'topojson'],
+      exports: 'SimpleMapD3'
     },
 
     disqus: {

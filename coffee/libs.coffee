@@ -3,18 +3,18 @@ define [
 
   'd3'
   'topojson'
-  'datamaps'
+  'simple-map-d3'
 
   'marked'
   'highlight'
 
-  # 'disqus'
-], (Oraculum, d3, topojson, Datamap, marked, hljs, disqus) ->
+  'disqus'
+], (Oraculum, d3, topojson, SimpleMapD3, marked, hljs, disqus) ->
   'use strict'
 
   Oraculum.define 'd3', (-> d3), singleton: true
   Oraculum.define 'topojson', (-> topojson), singleton: true
-  Oraculum.define 'Datamap', (-> Datamap), singleton: true
+  Oraculum.define 'SimpleMapD3', (-> SimpleMapD3), singleton: true
 
   marked.setOptions highlight: (code) -> hljs.highlightAuto(code).value
   Oraculum.define 'marked', (-> marked), singleton: true

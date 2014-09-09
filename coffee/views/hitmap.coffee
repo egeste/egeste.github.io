@@ -10,30 +10,30 @@ define [
 ], (Oraculum) ->
   'use strict'
 
-  Datamap = Oraculum.get 'Datamap'
+  SimpleMapD3 = Oraculum.get 'SimpleMapD3'
 
   Oraculum.extend 'View', 'Hitmap.View', {
 
     mixinOptions:
       staticClasses: ['hitmap-view']
       listen:
-        'addedToParent this': '_renderDatamaps'
+        'addedToParent this': '_renderMap'
 
-    _renderDatamaps: -> _.defer =>
-      @map = new Datamap
-        width: @$el.innerWidth()
-        height: @$el.innerHeight()
-        element: @el
-        geographyConfig:
-          popupOnHover: false
-        setProjection: (element) ->
-          projection = d3.geo.mercator()
-            .rotate([100, 0])
-            .precision(.5)
-            .translate([element.offsetWidth / 2, element.offsetHeight / 1.45])
-            .scale((element.offsetWidth + 1) / 2 / Math.PI)
-          path = d3.geo.path().projection(projection)
-          return {path, projection}
+    _renderMap: -> _.defer =>
+      @map = new SimpleMapD3
+        colorOn: true
+        legendOn: false
+        container: @el
+        tooltipOn: false
+        datasource: '/bower_components/simple-map-d3/example-data/europe-population-density-geocommons.geo.json'
+        projection: 'equirectangular'
+        graticuleOn: true
+        colorProperty: 'population'
+      # setTimeout (=>
+      #   @map.projection = @map.projection.rotate [180, 180]
+      #   @map.projPath = d3.geo.path().projection @map.projection
+      #   @map.drawMap()
+      # ), 2000
 
   }, mixins: [
     'Listener.Mixin'

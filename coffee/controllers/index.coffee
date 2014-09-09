@@ -36,8 +36,6 @@ define [
       @redirectTo 'Index.Controller#execute', {input}
 
     execute: ({input}, route, {redirected}) ->
-      console.log arguments
-
       @reuse 'session', 'Session.View',
         model: @session
         container: '#session'
