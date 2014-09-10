@@ -1,7 +1,7 @@
 Evaluating Mapping Solutions - Simple Map D3
 ============================================
 
-Moving on from the [previous post about Datamaps](#!markdown /posts/2014-09-05-Evaluating-Mapping-Solutions-Datamaps.md), my hunt continues for the right  mapping solution that will abstract the simple challenges of mapping and allow me to focus on the more complex behaviors. The target behavior is an interactive "rotating" mercator projection to be used as a "hitmap" for website hits.
+Moving on from the [previous post about Datamaps](#!markdown /posts/2014-09-05-Evaluating-Mapping-Solutions-Datamaps.md), my hunt continues for the right  mapping solution that will abstract the challenges of mapping and allow me to focus on integration. The target behavior is an interactive "rotating" mercator projection to be used as a "hitmap" for website hits.
 
 In this post we're continuing our look at solutions based on d3 choropleths with [MinnPost](http://www.minnpost.com/)'s [simple-map-d3](https://github.com/MinnPost/simple-map-d3). What's interesting about this project is its association with MinnPost, a "nonprofit, nonpartisan" news organization who [clearly cares about data-driven journalism](http://www.minnpost.com/data). Simple-map-d3 is a dependency for another of their mapping projects, Tulip, which aims to bring map data visualization even further into the publics reach with a simple interface for binding data to regions.
 
