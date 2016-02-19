@@ -1,20 +1,20 @@
 # Site settings
-url: 'http://egeste.net/'
-baseurl: ''
+url: 'http://egeste.net'
+baseurl: '/'
 
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: 'Steve Regester'
+description: 'Senior Software Engineer • Lookout'
 
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+google_analytics: 'UA-25824741-1'
+disqus_shortname: 'egeste-net'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Steve Regester'
+  email: 'nospam@egeste.net'
+  github_username: 'egeste'
+  twitter_username: 'egeste'
+  linkedin_username: 'egeste'
+  # facebook_username: egeste
 
 defaults:
   -
@@ -25,11 +25,11 @@ defaults:
         layout: 'post'
 
 # Build settings
-destination: _site
 paginate: 10
-permalink: /:year/:title/
 markdown: kramdown
+permalink: /:year/:title/
 highlighter: rouge
+destination: _site
 
 kramdown:
   # use Github Flavored Markdown
