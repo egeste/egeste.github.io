@@ -184,4 +184,4 @@ I really like that as soon as you add a plugin to your map, you're automically g
 
 After diving into the rendering strategy used by Datamaps, I don't feel like it's the right solution for what I'm trying to achieve. The `drawSubunits` method does not expose much control over how the choropleth is rendered, and the `setProjection` configurable method does not expose an interface that lends itself well to dynamic projection values (eg, changing the rotate values). Datamaps is well suited to get a map off the ground quickly, and is "extensible" in the sense that it provides an interface for creating new layers, but is not a good solution if you want to modify the behavior of the underlying geography rendering mechanisms.
 
-Thus concludes my evaluation of Datamaps. Think I was too harsh? Incorrect? Downright stupid? Tell me in the comments below.
+Thus concludes my evaluation of Datamaps. Think I was too harsh? Incorrect? Tell me in the comments below.
