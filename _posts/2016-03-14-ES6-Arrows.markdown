@@ -37,7 +37,7 @@ var someFunction;
 
 someFunction = (function(_this) {
   return function(arg1, arg2) {
-    return console.log('someFunction was executed');
+    return console.log(this);
   };
 })(this);
 ```
@@ -48,7 +48,7 @@ It's interesting to note that coffeescript does variable lifting for you a la [D
 
 ```javascript
 var someFunction = (arg1, arg2) =>
-  console.log('someFunction was executed');
+  console.log(this);
 ```
 
 ### Let's Get Classy
