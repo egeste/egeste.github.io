@@ -1,0 +1,132 @@
+---
+title:  "Whats new in ES6? ArrowFunctions!"
+date:   2015-03-14 00:00:00
+categories: [programming]
+tags: [javascript, es6, arrows, arrowfunction]
+---
+
+Hey internet!
+
+It's been an awfully long time since I wrote a blog about stuff - but some things have changed! I'm back on the job market, putting out my feelers for my next big thing, and what better way to prepare myself for the future than by learning new things and sharing what I know? Frankly, I'm pretty excited. So to get started, I decided it would be good to write about what's new in Javascript land. For this series, I'll be going down the list of new features added to ES6 as listed in [@LukeHoban](https://github.com/lukehoban)'s [github repo](https://github.com/lukehoban/es6features). Let's start at the top!
+
+### [ES6 ArrowFunctions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+#### Grab some coffee
+
+If you're familiar with [CoffeeScript](http://coffeescript.org/), ArrowFunctions will be nothing new to you. ArrowFunctions, simply, are a shorthand for `function(){}.bind(this);`. Before we start talking about ES6 ArrowFunctions, let's explore how ArrowFunctions are implemented in CoffeeScript.
+
+Consider the following code:
+
+```javascript
+var someFunction = function(arg1, arg2) {
+  console.log(this);
+}.bind(this);
+```
+
+Pretty straightforward stuff. it may be worth mentioning that in this example we're assigning a function to a local lexically scoped variable named `someFunction` instead of using implied/global scope via the usual `function someFunction(){}`. In any case, this is an anonymous function assigned to a local variable and explicitly bound to the local lexical scope `this`. In coffeescript, you would express this function with a [coffeescript fat arrow](http://coffeescript.org/#fat-arrow), as such:
+
+```coffeescript
+someFunction = (arg1, arg2) =>
+  console.log this
+```
+
+Again, pretty simple stuff. The basic syntax breakdown should be easily inferrable from the previous example. `someFunction` is assigned to an anonymous function, expressed by a "fat arrow" (`=>`). If you compile this snippet to javascript, it spits out something like this:
+
+```javascript
+var someFunction;
+
+someFunction = (function(_this) {
+  return function(arg1, arg2) {
+    return console.log('someFunction was executed');
+  };
+})(this);
+```
+
+### Javascript: The Prescriptive Parts
+
+It's interesting to note that coffeescript does variable lifting for you a la [Douglas Crockford's _Javascript: The Good Parts_](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - but that's just syntax sugar. There is no meaningful difference between the coffeescript compiled snippet above and the one we wrote earlier. The only interesting difference is that we didn't have to rely on javascript's [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) method to force our method's implementation to execute within the local lexical scope. That may not seem like it's terribly valuable, but from a day-to-day perspective, it means a drastically lower cost to [your median nerve](http://www.webmd.com/pain-management/carpal-tunnel/carpal-tunnel-syndrome-topic-overview). So how do we do this in ES6? It's pretty darn easy:
+
+```javascript
+var someFunction = (arg1, arg2) =>
+  console.log('someFunction was executed');
+```
+
+### Let's Get Classy
+
+This is convenient for sure, but this example doesn't really expose the power of the feature without a meaningful local lexical scope. Let's write an ES6 class and give it one:
+
+```javascript
+'use strict'
+
+// Create the class definition
+class ES6ArrowExample {
+
+  // Give the class a constructor that exports the first argument as `options`
+  // and a locally bound "instance" method named `boundFunction`.
+  constructor(options) {
+    this.options = options;
+
+    this.boundFunction = _ =>
+      console.log(this.options);
+
+  }
+
+  unboundFunction() {
+    console.log(this.options);
+  }
+
+};
+
+// Instantiate the class
+var arrowInstance = new ES6ArrowExample({arrow:'example'});
+
+// Execute the `boundFunction` method of the instance
+arrowInstance.unboundFunction();
+arrowInstance.boundFunction();
+
+// Execute it again, this time without implied lexical scope.
+var unboundFunction = arrowInstance.unboundFunction;
+var boundFunction = arrowInstance.boundFunction;
+
+// This is always going to fail. Keep reading if you don't know why.
+try {
+  unboundFunction();
+} catch (e) {
+  console.log(e.message);
+}
+
+boundFunction();
+```
+
+_I'll be writing about [ES6 classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) in depth in a future blog post. Check back if you're interested._
+
+If you run this code in an ES6 supported environment, you'll see something like this:
+
+```bash
+> $ node es6-arrows-example.js
+{ arrow: 'example' }
+{ arrow: 'example' }
+Cannot read property 'options' of undefined
+{ arrow: 'example' }
+```
+
+Let's go through the output one line at a time and talk about what happened.
+
+#### Implied scope
+In our first call, we invoke `arrowInstance.unboundFunction()`, which prints `{ arrow: 'example' }` to the console. This invocation of `unboundFunction` is able to access the `options` property of our `arrowInstance` instance due to a javascript language behavior that can be expressed as _implied scope_. That is to say, the lexical scope of the method is _implied_ by the object it's being accessed on. In this case, the object being accessed is the instance of `ES6ArrowExample` we created as the local variable `arrowInstance`. As a result, executing `unboundFunction` with `arrowInstance.unboundFunction();` will always print the expected `options` object because it can properly dereference `this` with its _implied scope_.
+
+#### Nothing to see here
+In our second call, we invoke `arrowInstance.boundFunction()`, which once again prints our expected output. Nothing really interesting to see here.
+
+#### Undefined has no property `options`
+In our third call, things get interesting again. Instead of printing out our expected object, we see an error message - but why? We called the same `unboundFunction` method that we called earlier, but now it's failing, so what's the difference? Let's refer back to `implied scope`. In this invocation of `unboundFunction` we removed the leading `arrowInstance` accessor by assigning the function to a local variable by reference and executing it directly. As a result, the `arrowInstance` lexical scope is no longer implied, meaning that `this.options` is no longer accessible, and attempting to access `options` on `this` (`undefined`) will throw an exception. If you're javascript savvy, you can apply the scope to the unscoped method with `unboundFunction.call(arrowInstance)` or `unboundFunction.apply(arrowInstance, [args...])`, or even `unboundInstance.bind(arrowInstance)()` - but let's just assume that these are all less than ideal for our use case.
+
+#### All is well with ES6 ArrowFunctions
+In our final invocation, all is well again, and we see our expected output. That's because `boundFunction`, despite once again being invoked without an _implied_ scope, has an explicit scope bound to our instance of `arrowInstance` via the ES6 ArrowFunctions used to define the method. Thanks, ES6 ArrowFunctions!
+
+### Wrapping up
+I'm happy to see that [ArrowFunctions made their way into the ES6 standard](http://www.ecma-international.org/ecma-262/6.0/#sec-function-environment-records). Coming from coffeescript land, though, I'm somewhat disappointed that the community didn't see fit to include the small arrow as well. Languages and language theory are not my primary interest as a software engineer, but it does seem strange to include a shorthand syntax that so drastically differs from a standard primitive and not include an additional shorthand that matches that primitive exactly. It's also worth nothing that ES6 arrows support a bunch of other additional flags and features that I didn't cover here - most definitely a topic for a future date.
+
+For myself, [I'm looking forward to using the ES6 ArrowFunction syntax in the browser](http://caniuse.com/#feat=arrow-functions), but I won't be holding my breath. Until then (and then some), coffeescript will continue to be my go-to for authoring javascript.
+
++1 for meta languages.
