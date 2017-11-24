@@ -5,9 +5,7 @@ categories: [programming]
 tags: [javascript, es6, arrows, arrowfunction]
 ---
 
-Hey internet!
-
-It's been an awfully long time since I wrote a blog about stuff - but some things have changed! I'm back on the job market, putting out my feelers for my next big thing, and what better way to prepare myself for the future than by learning new things and sharing what I know? Frankly, I'm pretty excited. So to get started, I decided it would be good to write about what's new in Javascript land. For this series, I'll be going down the list of new features added to ES6 as listed in [@LukeHoban](https://github.com/lukehoban)'s [github repo](https://github.com/lukehoban/es6features). Let's start at the top!
+Hey internet! I decided it would be good to write about what's new in Javascript land. For this series, I'll be going down the list of new features added to ES6 as listed in [@LukeHoban](https://github.com/lukehoban)'s [github repo](https://github.com/lukehoban/es6features). Let's start at the top!
 
 ### [ES6 ArrowFunctions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
