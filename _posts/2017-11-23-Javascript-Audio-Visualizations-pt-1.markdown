@@ -12,7 +12,7 @@ The web browser has evolved, introducing new APIs and capabilities that are star
 
 Basically, the time is right for some seriously cool experimentation.
 
-> All the examples used in this article can be found in my exploring-audio-vis github repository
+> All the examples used in this article can be found in my [exploring-audio-vis github repository](https://github.com/egeste/exploring-audio-vis/)
 
 # Getting Started
 
