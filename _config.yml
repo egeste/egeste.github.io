@@ -21,14 +21,15 @@ markdown: kramdown
 permalink: /blog/:title/
 highlighter: rouge
 kramdown:
+  input: GFM
   auto_ids: true
   toc_levels: 1..6
   footnote_nr: 1
   entity_output: as_char
   enable_coderay: false
 sass:
-  sass_dir: _sass
   style: compressed
+  sass_dir: _sass
 
 # Comments
 disqus_shortname: default
