@@ -61,13 +61,7 @@ const frequencyData = new Uint8Array(this.audioAnalyser.frequencyBinCount)
 this.audioAnalyser.getByteFrequencyData(frequencyData)
 ```
 
-At this point, we can query the `audioAnalyser` at any time to extract the frequency data.
-
-```javascript
-console.log(frequencyData)
-```
-
-Which produces something that looks like this: `[ 137, 172, 187, 176, 143, 120, ... ]`
+At this point, we can query the `audioAnalyser` at any time to extract the frequency data. Running `console.log(frequencyData)` produces something that looks like this: `[ 137, 172, 187, 176, 143, 120, ... ]`
 
 ## Polling the audioAnalyser
 
