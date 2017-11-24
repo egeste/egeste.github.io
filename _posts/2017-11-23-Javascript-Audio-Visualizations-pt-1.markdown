@@ -84,7 +84,7 @@ Invoking this function will cause `onAudioFrame` to continue to be invoked at ev
 
 ## Building a React Component
 
-> Comments for this component are inline. [Check out the latest source](https://github.com/egeste/exploring-audio-vis/blob/master/src/components/AudioAnalyser.js) for bugfixes/errata.
+> This section assumes you are familiar with basic React concepts. Comments for this component are inline. [Check out the latest source](https://github.com/egeste/exploring-audio-vis/blob/master/src/components/AudioAnalyser.js) for bugfixes/errata.
 
 ```javascript
 import React, {
