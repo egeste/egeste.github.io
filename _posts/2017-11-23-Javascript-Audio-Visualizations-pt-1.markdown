@@ -180,4 +180,4 @@ export default class AudioAnalyser extends PureComponent {
 
 # Conclusion
 
-In this article we covered basic implementation and strategy for extracting audio frequency data from a playing audio file, and provided a component performs the task using React conventions. In the next article we'll start to build a simple data visualization. From there we'll format and aggregate the data to match our data visualization's component interface. Hopefully this won't end up like my last blog series, and I actually complete it.
+In this article we covered basic implementation and strategy for extracting audio frequency data from a playing audio file, and provided a component that performs the task using React conventions. In the next article we'll start to build a simple data visualization. From there we'll format and aggregate the data to match our data visualization's component interface. Hopefully this won't end up like my last blog series, and I actually complete it.
