@@ -90,8 +90,7 @@ With this interface, we can simply create an instance of `AudioVisualiser`, pass
 
 Which gives us a sort of spectogram of the audio we're playing, as seen below.
 
-<div class="react-spectrogram"></div>
-<script type="text/javascript" src="/assets/js/audio-vis/spectrogram.js"></script>
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20a%20LineSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
 
 ## Conclusion
 
