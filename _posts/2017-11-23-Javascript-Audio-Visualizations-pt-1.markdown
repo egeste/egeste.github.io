@@ -2,7 +2,7 @@
 title: 'Javascript Audio Visualization pt1, Web Audio API'
 date: 2017-11-23 00:00:00
 categories: [ programming ]
-tags: [ javascript, audio, visualization, react, react-vis, d3-shape ]
+tags: [ javascript, audio, react, Web Audio API ]
 ---
 Ever wanted to use javascript to create rich audio visualizations?
 
@@ -14,11 +14,11 @@ Basically, the time is right for some seriously cool experimentation.
 
 > All the examples used in this article can be found in my [exploring-audio-vis github repository](https://github.com/egeste/exploring-audio-vis/)
 
-# Getting Started
+## Getting Started
 
 For this project, I decided to use [React](https://reactjs.org/) with Uber's [react-vis](https://github.com/uber/react-vis) library. The reason for this choice is simply that these are the tools I've been working with a lot during at [Synack](https://www.synack.com/), so I've grown pretty familiar with them. I'm also using [Storybook](https://storybook.js.org/), simply because it makes testing components in isolation very simple, and provides most of the webpack/build configuration I need out of the box.
 
-## Utilizing the Web Audio API
+### Utilizing the Web Audio API
 
 (Much thanks to [Patrick Wied](https://www.patrick-wied.at/blog/how-to-create-audio-visualizations-with-javascript-html))
 
@@ -63,7 +63,7 @@ this.audioAnalyser.getByteFrequencyData(frequencyData)
 
 At this point, we can query the `audioAnalyser` at any time to extract the frequency data. Running `console.log(frequencyData)` produces something that looks like this: `[ 137, 172, 187, 176, 143, 120, ... ]`
 
-## Polling the audioAnalyser
+### Polling the audioAnalyser
 
 We need to continually poll the `audioAnalyser` for new data as our audio component continues to play. While javascript provides `setTimeout` and `setInterval` for time-based operations, it's better in this case to prefer `requestAnimationFrame` simply because we intend to render the data that the `audioAnalyser` produces.
 
@@ -82,7 +82,7 @@ onAudioFrame = () => {
 Invoking this function will cause `onAudioFrame` to continue to be invoked at every available animation frame as long as `this.state.playing` is `true`, and `this.audioAnalyser` is defined.
 
 
-## Building a React Component
+### Building a React Component
 
 > This section assumes you are familiar with basic React concepts. Comments for this component are inline. [Check out the latest source](https://github.com/egeste/exploring-audio-vis/blob/master/src/components/AudioAnalyser.js) for bugfixes/errata.
 
@@ -178,6 +178,6 @@ export default class AudioAnalyser extends PureComponent {
 }
 ```
 
-# Conclusion
+## Conclusion
 
 In this article we covered basic implementation and strategy for extracting audio frequency data from a playing audio file, and provided a component that performs the task using React conventions. In the next article we'll start to build a simple data visualization. From there we'll format and aggregate the data to match our data visualization's component interface. Hopefully this won't end up like my last blog series, and I actually complete it.
