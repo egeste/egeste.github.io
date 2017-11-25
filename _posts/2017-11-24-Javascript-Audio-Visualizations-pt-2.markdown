@@ -67,30 +67,34 @@ export default class AudioVisualiser extends PureComponent {
 With this interface, we can simply create an instance of `AudioVisualiser`, pass it a `src` audio file to play, and provide a `renderFrequencyData` function that returns an instance of a React component. To that end, let's wire these things together to create our line graph audio visualiser.
 
 ```javascript
-<AudioVisualiser src={ /* some-audio-source */ }
-  renderFrequencyData={ frequencyData => {
-    // The upper third of data is outside of normal hearing/music range. Strip it out.
-    const oneThirdLength = frequencyData.length / 3
-    const lowerTwoThirds = frequencyData.slice(0, -oneThirdLength)
+<AudioVisualiser
+    src={ require('../assets/childish-gambino-redbone.mp3') }
+    renderFrequencyData={ frequencyData => {
+      const data = frequencyData.map((y, x) => ({ x, y }))
 
-    // Iterate over the frequencies, mapping the amplitude to `y` and the index to `x`.
-    const data = lowerTwoThirds.map((y, x) => ({ x, y }))
-
-    // Render a standard line graph with the data
-    return (
-      <XYPlot width={ 600 } height={ 300 }>
-        <LineSeries data={ data } />
-        <XAxis />
-        <YAxis />
-      </XYPlot>
-    )
-  } }
-/>
+      return (
+        <XYPlot width={ 600 } height={ 300 }>
+          <LineSeries data={ data } color="purple" />
+        </XYPlot>
+      )
+    } }
+  />
 ```
 
-Which gives us a sort of spectogram of the audio we're playing, as seen below.
+## Demos
+
+### LineSeries
 
 <iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20a%20LineSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+
+### AreaSeries
+
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20AreaSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+
+### PolygonSeries
+
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20PolygonSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+
 
 ## Conclusion
 
