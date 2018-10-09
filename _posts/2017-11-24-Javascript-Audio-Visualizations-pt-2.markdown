@@ -6,8 +6,6 @@ tags: [ javascript, visualization, react, react-vis ]
 ---
 Ever wanted to use javascript to create rich audio visualizations? This is part 2 of my series on Javascript Audio Visualization. In this article, we'll be building a simple data visualization to use with the frequency data we are extracting in [Javascript Audio Visualization pt1, Web Audio API](http://egeste.net/blog/Javascript-Audio-Visualizations-pt-1/)
 
-## Getting Started
-
 As mentioned in the previous article, I'll be using Uber's [react-vis](https://github.com/uber/react-vis) library for data visualizations. I won't go over all the details on how to use react-vis. For that, check out the documentation on their github.
 
 The goal for this visualization is simple. Create what amounts to a line chart where the Y axis represents `amplitude` and the X axis represents `frequency`. A line chart is actually featured at the beginning of the [react-vis README](https://github.com/uber/react-vis/blob/master/README.md#usage) as follows:
@@ -85,15 +83,15 @@ With this interface, we can simply create an instance of `AudioVisualiser`, pass
 
 ### LineSeries
 
-<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20a%20LineSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20a%20LineSeries" allowfullscreen="" style="width: 640px; height: 400px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
 
 ### AreaSeries
 
-<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20AreaSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20AreaSeries" allowfullscreen="" style="width: 640px; height: 400px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
 
 ### PolygonSeries
 
-<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20PolygonSeries" allowfullscreen="" style="width: 640px; height: 360px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
+<iframe id="storybook-preview-iframe" title="preview" src="http://egeste.net/exploring-audio-vis/iframe.html?selectedKind=AudioVisualiser&selectedStory=With%20PolygonSeries" allowfullscreen="" style="width: 640px; height: 400px; margin: 2rem auto; padding: 0px; display: block; border: 3px outset"></iframe>
 
 
 ## Conclusion
