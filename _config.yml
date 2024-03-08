@@ -2,14 +2,14 @@
 markdown: kramdown
 
 # URL of the Site
-url: ''
+url: https://egeste.net/
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl: https://egeste.net/
 
 # Title of the Site
-title: What A Theme
+title: Steve Regester
 # Description of the Site
-description: A customizable Jekyll portfolio theme
+description: Innovative Full-Stack Engineer specializing in enhancing user experiences and building secure, scalable SaaS platforms.
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -22,7 +22,7 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
+email: portfolio@egeste.net
 facebook_username: thedevslot
 twitter_username: thedevslot
 instagram_username: thedevslot
