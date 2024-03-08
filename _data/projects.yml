@@ -10,6 +10,10 @@
   image: /assets/images/mindmirror.png
   link: https://mindmirror.onrender.com/
   description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
+- name: Lanlord Doorsign
+  image: https://user-images.githubusercontent.com/536059/188494944-9dcdb193-1027-4c12-b033-09cf0f1d389a.jpg
+  link: https://github.com/egeste/hackerbox-073-door-sign
+  description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
 - name: Studylog API
   image: /assets/images/studylog-api.png
   link: https://www.studylog.com/products/studylog-api
