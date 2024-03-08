@@ -1,3 +1,7 @@
+- name: ClearBrief
+  image: /assets/images/clearbrief.png
+  link: /
+  description: Summarize, transcribe, & dictate on any webpage using the ClearBrief chrome extension. ClearBrief allows you to gain all the benefits of AI without any of the privacy implications. Private, local, useful AI tools for everyone.
 - name: TalkDirectly.to
   image: /assets/images/talkdirectly.to.png
   link: https://talkdirectly.to/
