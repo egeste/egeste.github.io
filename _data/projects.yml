@@ -6,3 +6,7 @@
   image: /assets/images/mindmirror.png
   link: https://mindmirror.onrender.com/
   description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
+- name: Studylog API
+  image: /assets/images/studylog-api.png
+  link: https://www.studylog.com/products/studylog-api
+  description: Leverage study data for in-depth queries and analysis, reporting, and integration with other scientific applications and databases. The Studylog API is a secure, cloud-native, on-prem, multi-schema data interface built for developers and data scientists.
