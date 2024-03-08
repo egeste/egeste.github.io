@@ -2,3 +2,7 @@
   image: /assets/images/talkdirectly.to.png
   link: https://talkdirectly.to/
   description: TalkDirectly.to is a communication platform enabling users to send personalized voicemail messages directly to politicians, celebrities, and public figures. It facilitates direct engagement and meaningful communication between individuals and influential figures.
+- name: MindMirror
+  image: /assets/images/mindmirror.png
+  link: https://mindmirror.onrender.com/
+  description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
