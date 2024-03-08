@@ -11,7 +11,7 @@
   link: https://mindmirror.onrender.com/
   description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
 - name: Door Sign
-  image: https://user-images.githubusercontent.com/536059/188494944-9dcdb193-1027-4c12-b033-09cf0f1d389a.jpg
+  image: https://user-images.githubusercontent.com/536059/188531321-1c48f9c5-079a-40a0-b079-7c182514fd90.jpg
   link: https://github.com/egeste/hackerbox-073-door-sign
   description: I repurposed the LanLord device from hackerbox 73 to turn it into a smart controllable door sign. I used 3d design software to design a mounting bracket, and used my IOT hub to control the device from my phone. Used IFTTT to automate the door sign based on my work calendar.
 - name: Studylog API
