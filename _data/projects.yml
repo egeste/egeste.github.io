@@ -14,15 +14,15 @@
   image: /assets/images/studylog-api.png
   link: https://www.studylog.com/products/studylog-api
   description: Leverage study data for in-depth queries and analysis, reporting, and integration with other scientific applications and databases. The Studylog API is a secure, cloud-native, on-prem, multi-schema data interface built for developers and data scientists.
-- name: Synack Attacker Resistance Score
+- name: Synack ARS
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
   description: The Attacker Resistance Score stack ranks your assets and assessments by their resistance to attack. You can use the ARS data to see what third party assets need immediate attention and prioritize remediation. You can also see how their risk scores improve or decline overtime.
-- name: Synack Researcher Platform
+- name: Synack Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
   description: Find your hacker home. We are not a bug bounty program, but instead represent a tight-knit community of skilled ethical hackers who offer support and mentorship to level up your skills. Get paid for doing what you love.
-- name: Lookout Researcher Platform
+- name: Lookout Search
   image: /assets/images/lookout.png
   link: https://www.lookout.com/
   description: Internal research and analysis toolchain for querying application behaviors and other metadata in service of discovering novel malware across a corpus of over 2 billion binaries.
