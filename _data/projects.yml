@@ -22,6 +22,10 @@
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
   description: Find your hacker home. We are not a bug bounty program, but instead represent a tight-knit community of skilled ethical hackers who offer support and mentorship to level up your skills. Get paid for doing what you love.
+- name: Ultimatum
+  image: /assets/images/ultimatum.jpg
+  link: https://www.crunchbase.com/organization/ultimatum
+  description: Ultimatum empowers you to take control and create political and social change. Influence the causes you care about and make a difference. We're not just a donation website. We are not just another petition. We are here to help you create real change. What's your Ultimatum?
 - name: Lookout Search
   image: /assets/images/lookout.png
   link: https://www.lookout.com/
