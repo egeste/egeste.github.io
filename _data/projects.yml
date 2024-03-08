@@ -14,6 +14,10 @@
   image: /assets/images/studylog-api.png
   link: https://www.studylog.com/products/studylog-api
   description: Leverage study data for in-depth queries and analysis, reporting, and integration with other scientific applications and databases. The Studylog API is a secure, cloud-native, on-prem, multi-schema data interface built for developers and data scientists.
+- name: React Audiovis
+  image: /assets/images/react-audio-vis.jpg
+  link: https://egeste.net/exploring-audio-vis
+  description: Exploring the intersection of React, data visualizations, and the javascript audio context api to create real-time, in-browser spectrographs and reactive animations.
 - name: Synack ARS
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
