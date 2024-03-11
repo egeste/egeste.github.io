@@ -1,19 +1,23 @@
 - name: ClearBrief
   image: /assets/images/clearbrief.png
   link: /
-  description: Summarize, transcribe, & dictate on any webpage using the ClearBrief chrome extension. ClearBrief allows you to gain all the benefits of AI without any of the privacy implications. Private, local, useful AI tools for everyone.
+  description: AI-powered summarization, transcription, & dictation on any webpage.
 - name: TalkDirectly.to
   image: /assets/images/talkdirectly.to.png
   link: https://talkdirectly.to/
-  description: TalkDirectly.to is a communication platform enabling users to send personalized voicemail messages directly to politicians, celebrities, and public figures. It facilitates direct engagement and meaningful communication between individuals and influential figures.
+  description: Send personalized voicemail messages directly to politicians, celebrities, and public figures.
 - name: MindMirror
   image: /assets/images/mindmirror.png
   link: https://mindmirror.onrender.com/
-  description: Mind Mirror is an innovative AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities to facilitate self-reflection and memory enhancement. It's designed to empower users to gain insights from their conversations and improve their overall cognitive well-being.
+  description: AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities.
+- name: OpenBathrooms.org
+  image: /assets/images/openbathrooms.org.png
+  link: https://openbathrooms.org
+  description: Find & share bathrooms and bathroom codes.
 - name: Door Sign
   image: https://user-images.githubusercontent.com/536059/188531321-1c48f9c5-079a-40a0-b079-7c182514fd90.jpg
   link: https://github.com/egeste/hackerbox-073-door-sign
-  description: I repurposed the LanLord device from hackerbox 73 to turn it into a smart controllable door sign. I used 3d design software to design a mounting bracket, and used my IOT hub to control the device from my phone. Used IFTTT to automate the door sign based on my work calendar.
+  description: hackerbox 73 LanLord smart controllable door sign.
 - name: Studylog API
   image: /assets/images/studylog-api.png
   link: https://www.studylog.com/products/studylog-api
@@ -21,20 +25,20 @@
 - name: React Audiovis
   image: /assets/images/react-audio-vis.png
   link: https://egeste.net/exploring-audio-vis
-  description: Exploring the intersection of React, data visualizations, and the javascript audio context api to create real-time, in-browser spectrographs and reactive animations.
+  description: Abusing the javascript audio context api to create real-time, in-browser audio visualizations.
 - name: Synack ARS
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
-  description: The Attacker Resistance Score stack ranks your assets and assessments by their resistance to attack. You can use the ARS data to see what third party assets need immediate attention and prioritize remediation. You can also see how their risk scores improve or decline overtime.
+  description: Rank your assets and assessments by their resistance to attack.
 - name: Synack Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
-  description: Find your hacker home. We are not a bug bounty program, but instead represent a tight-knit community of skilled ethical hackers who offer support and mentorship to level up your skills. Get paid for doing what you love.
+  description: Find your hacker home. Get paid for doing what you love.
 - name: Ultimatum
   image: /assets/images/ultimatum.jpg
   link: https://www.crunchbase.com/organization/ultimatum
-  description: Ultimatum empowers you to take control and create political and social change. Influence the causes you care about and make a difference. We're not just a donation website. We are not just another petition. We are here to help you create real change. What's your Ultimatum?
+  description: Create political and social change.
 - name: Lookout Search
   image: /assets/images/lookout.png
   link: https://www.lookout.com/
-  description: Internal research and analysis toolchain for querying application behaviors and other metadata in service of discovering novel malware across a corpus of over 2 billion binaries.
+  description: Research and analysis toolchain for querying application behaviors.
