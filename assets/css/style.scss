@@ -575,6 +575,25 @@ body {
   
   .card-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+  
+  .project-card {
+    .card-image {
+      height: 160px;
+    }
+    
+    .card-content {
+      padding: var(--spacing-4);
+    }
+  }
+  
+  .card-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .card-description {
+    font-size: var(--font-size-sm);
   }
 }
 
