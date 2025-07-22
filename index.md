@@ -15,27 +15,27 @@ layout: default
     <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Key Achievements</h3>
     <div class="achievement-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">60%+ User Engagement</strong><br>
+        <strong style="color: var(--color-primary);">📈 60%+ User Engagement</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Redesigned interfaces achieving massive engagement increases within 12 months</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">SOC 2 Certification</strong><br>
+        <strong style="color: var(--color-primary);">🛡️ SOC 2 Certification</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Led cloud-native platform architecture achieving first SOC 2 compliance</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">2x Security Productivity</strong><br>
+        <strong style="color: var(--color-primary);">🔍 2x Security Productivity</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Developed specialized research tooling doubling verified security findings</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">50% Error Reduction</strong><br>
+        <strong style="color: var(--color-primary);">✨ 50% Error Reduction</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Implemented comprehensive training programs dramatically improving code quality</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">20% Faster Delivery</strong><br>
+        <strong style="color: var(--color-primary);">🚀 20% Faster Delivery</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Achieved significant timeline reductions through agile adoption and leadership</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">Co-Founded Startup</strong><br>
+        <strong style="color: var(--color-primary);">🏗️ Co-Founded Startup</strong><br>
         <span style="color: var(--color-text-light); font-size: 0.9rem;">Built crowd-fundraising platform from ground up serving nonprofits nationwide</span>
       </div>
     </div>
@@ -47,10 +47,17 @@ layout: default
   <div class="card-grid">
     {% assign featured_projects = site.data.projects | slice: 0, 6 %}
     {% for project in featured_projects %}
-    <div class="card">
-      <h3 class="card-title">{{ project.name }}</h3>
-      <p class="card-description">{{ project.description }}</p>
-      <a href="{{ project.link }}" class="card-link" target="_blank">View Project</a>
+    <div class="card project-card">
+      {% if project.image %}
+      <div class="card-image">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.name }}" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <h3 class="card-title">{{ project.name }}</h3>
+        <p class="card-description">{{ project.description }}</p>
+        <a href="{{ project.link }}" class="card-link" target="_blank">View Project</a>
+      </div>
     </div>
     {% endfor %}
   </div>
@@ -63,27 +70,39 @@ layout: default
   <h2 class="section-title">Core Technical Expertise</h2>
   <div class="skills-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: 3rem;">
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Frontend Excellence</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">⚡</span>Frontend Excellence
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">React, TypeScript, Next.js, React Router v7/Remix v8, Redux, Progressive Web Apps</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Backend Architecture</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🏗️</span>Backend Architecture
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Node.js, Express.js, GraphQL, RESTful APIs, Microservices, RabbitMQ, Apache Kafka</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Cloud & DevOps</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">☁️</span>Cloud & DevOps
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">AWS, GCP, Terraform, Kubernetes, Docker, CI/CD, Infrastructure as Code</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Data Systems</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🗄️</span>Data Systems
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">PostgreSQL, MongoDB, Redis, Elasticsearch, ETL Pipelines, Apache NiFi</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Security & Compliance</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🔐</span>Security & Compliance
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">SOC 2 Certification, OWASP Top 10, OAuth2, JWT, Zero Trust Architecture</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Leadership & Quality</h3>
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">👥</span>Leadership & Quality
+      </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Team Building, Technical Mentorship, Agile Methodologies, Engineering Excellence</p>
     </div>
   </div>
