@@ -1,7 +1,7 @@
-# Time Machine Theme Configuration
-remote_theme: pages-themes/time-machine@v0.2.0
+# Custom Theme Configuration
 plugins:
-- jekyll-remote-theme
+- jekyll-feed
+- jekyll-sitemap
 
 # Site Configuration
 title: Steve Regester
