@@ -1,19 +1,19 @@
 - name: ClearBrief
   image: /assets/images/clearbrief.png
   link: /
-  description: AI-powered summarization, transcription, & dictation on any webpage.
+  description: AI-powered browser extension providing intelligent summarization, transcription, and dictation capabilities across any webpage. Built with modern web APIs and machine learning integration.
 - name: TalkDirectly.to
   image: /assets/images/talkdirectly.to.png
   link: https://talkdirectly.to/
-  description: Send personalized voicemail messages directly to politicians, celebrities, and public figures.
+  description: Innovative civic engagement platform enabling citizens to send personalized voicemail messages directly to politicians, celebrities, and public figures. Democratizing access to influential voices.
 - name: MindMirror
   image: /assets/images/mindmirror.png
   link: https://mindmirror.onrender.com/
-  description: AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities.
+  description: Sophisticated AI-powered application leveraging natural language processing to transcribe speech, analyze sentiment, and extract named entities. Real-time audio processing with advanced ML algorithms.
 - name: OpenBathrooms.org
   image: /assets/images/openbathrooms.org.png
   link: https://openbathrooms.org
-  description: Find & share bathrooms and bathroom codes.
+  description: Community-driven platform for locating and sharing public bathroom information and access codes. Crowdsourced accessibility data helping travelers and locals find essential facilities.
 - name: Door Sign
   image: https://user-images.githubusercontent.com/536059/188531321-1c48f9c5-079a-40a0-b079-7c182514fd90.jpg
   link: https://github.com/egeste/hackerbox-073-door-sign
@@ -21,24 +21,24 @@
 - name: Studylog API
   image: /assets/images/studylog-api.png
   link: https://www.studylog.com/products/studylog-api
-  description: Leverage study data for in-depth queries and analysis, reporting, and integration with other scientific applications and databases. The Studylog API is a secure, cloud-native, on-prem, multi-schema data interface built for developers and data scientists.
+  description: Enterprise-grade API platform enabling pharmaceutical researchers to leverage clinical study data through secure, cloud-native interfaces. SOC 2 compliant multi-schema data platform supporting complex scientific queries and seamless third-party integrations.
 - name: React Audiovis
   image: /assets/images/react-audio-vis.png
   link: https://egeste.net/exploring-audio-vis
   description: Abusing the javascript audio context api to create real-time, in-browser audio visualizations.
-- name: Synack ARS
+- name: Synack ARS (Attack Resistance Scoring)
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
-  description: Rank your assets and assessments by their resistance to attack.
-- name: Synack Platform
+  description: Enterprise security platform quantifying attack resistance through advanced threat modeling. Led development of sophisticated UI/UX achieving 60%+ user engagement increase within 12 months.
+- name: Synack Red Team Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
-  description: Find your hacker home. Get paid for doing what you love.
-- name: Ultimatum
+  description: Revolutionary crowdsourced security platform connecting elite ethical hackers with enterprise clients. Architected scalable React/Redux interfaces supporting global security researcher community.
+- name: Ultimatum (Co-Founder/CTO)
   image: /assets/images/ultimatum.jpg
   link: https://www.crunchbase.com/organization/ultimatum
-  description: Create political and social change.
-- name: Lookout Search
+  description: Co-founded crowd-fundraising platform facilitating automated donations to nonprofits based on real-world events. Architected complete tech stack using React, Redux, Material-UI with real-time ETL processing on GCP.
+- name: Lookout Security Research Tools
   image: /assets/images/lookout.png
   link: https://www.lookout.com/
-  description: Research and analysis toolchain for querying application behaviors.
+  description: Led development of specialized Android malware analysis tools for security research team. Custom toolchain built with Backbone.js doubled research productivity, enabling breakthrough mobile threat discoveries.

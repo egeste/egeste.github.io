@@ -9,13 +9,43 @@ layout: default
 
 <section class="section">
   <h2 class="section-title">About Me</h2>
-  <p class="section-subtitle">Steve Regester is a lifetime hacker, innovator, and builder of things. He has over a decade working in cybersecurity, but now focuses on consumer projects, social good startups, and AI.</p>
+  <p class="section-subtitle">Visionary engineering leader with 15+ years architecting transformative SaaS platforms and mentoring high-performing teams. I've co-founded successful crowd-fundraising platforms serving nonprofits, achieved 60%+ user engagement increases, and doubled research productivity through innovative security tooling. Currently serving as Staff Software Engineer at Delphos Labs, I specialize in React, Node.js, cloud-native architectures (AWS/GCP), and building cultures of empathetic excellence.</p>
+  
+  <div style="margin-top: 2rem;">
+    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Key Achievements</h3>
+    <div class="achievement-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">60%+ User Engagement</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Redesigned interfaces achieving massive engagement increases within 12 months</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">SOC 2 Certification</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Led cloud-native platform architecture achieving first SOC 2 compliance</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">2x Security Productivity</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Developed specialized research tooling doubling verified security findings</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">50% Error Reduction</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Implemented comprehensive training programs dramatically improving code quality</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">20% Faster Delivery</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Achieved significant timeline reductions through agile adoption and leadership</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">Co-Founded Startup</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Built crowd-fundraising platform from ground up serving nonprofits nationwide</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section">
   <h2 class="section-title">Latest Projects</h2>
   <div class="card-grid">
-    {% assign featured_projects = site.data.projects | slice: 0, 3 %}
+    {% assign featured_projects = site.data.projects | slice: 0, 6 %}
     {% for project in featured_projects %}
     <div class="card">
       <h3 class="card-title">{{ project.name }}</h3>
@@ -27,6 +57,46 @@ layout: default
   <div class="text-center" style="margin-top: 2rem;">
     <a href="{{ '/projects' | relative_url }}" class="btn">View All Projects</a>
   </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Core Technical Expertise</h2>
+  <div class="skills-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: 3rem;">
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Frontend Excellence</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">React, TypeScript, Next.js, React Router v7/Remix v8, Redux, Progressive Web Apps</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Backend Architecture</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Node.js, Express.js, GraphQL, RESTful APIs, Microservices, RabbitMQ, Apache Kafka</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Cloud & DevOps</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">AWS, GCP, Terraform, Kubernetes, Docker, CI/CD, Infrastructure as Code</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Data Systems</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">PostgreSQL, MongoDB, Redis, Elasticsearch, ETL Pipelines, Apache NiFi</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Security & Compliance</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">SOC 2 Certification, OWASP Top 10, OAuth2, JWT, Zero Trust Architecture</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">Leadership & Quality</h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Team Building, Technical Mentorship, Agile Methodologies, Engineering Excellence</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Let's Connect</h2>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+    <a href="mailto:resume@egeste.net" class="btn" style="text-decoration: none;">📧 Email Me</a>
+    <a href="https://linkedin.com/in/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">💼 LinkedIn</a>
+    <a href="https://github.com/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">🔧 GitHub</a>
+  </div>
+  <p style="text-align: center; color: var(--color-text-light); font-size: 0.95rem;">Available for Staff/Principal/Director level engineering roles focused on architectural excellence, team leadership, and transformative product development.</p>
 </section>
 
 <section class="section">
