@@ -1,82 +1,22 @@
-# WhatATheme
-markdown: kramdown
+# Time Machine Theme Configuration
+remote_theme: pages-themes/time-machine@v0.2.0
+plugins:
+- jekyll-remote-theme
 
-# URL of the Site
-url: https://egeste.net
-# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl:
-
-# Title of the Site
+# Site Configuration
 title: Steve Regester
-# Description of the Site
 description: Innovative Full-Stack Engineer specializing in enhancing user experiences and building secure, scalable SaaS platforms.
-# URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
-# Keywords of the Site
-site-keywords: Site, Template, Theme
-# URL for the Image of custom Favicon
-favicon-url:
+url: https://egeste.net
+baseurl: 
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: /assets/images/cover.webp
-
-# Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
-email: portfolio@egeste.net
-facebook_username:
-twitter_username:
-instagram_username:
-linkedin_username: egeste
-github_username: egeste
-youtube_channel_id:
-reddit_username:
-behance_username:
-dribbble_username:
-spotify_username:
+# Theme Options
+show_downloads: false
 
 # Google Analytics
-google-analytics: UA-25824741-1
-
-# Name of the Author
-author-name: Steve Regester
-# URL for the Image of the Author
-# author-image: /assets/images/profile.jpg
-# 60 Words About the Author
-author-about: Steve Regester is a lifetime hacker, innovator, and builder of things. He has over a decade working in cybersecurity, but now focuses on consumer projects, social good startups, and AI.
-# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/egeste
-
-# SASS
-sass:
-  sass_dir: _sass
-  style: compressed
+google_analytics: UA-25824741-1
 
 # Build settings
-plugins:
-  - jekyll-admin
-  - jekyll-feed
-
-# Permalink
-permalink: "blog/:title"
-
-# Compress
-compress_html:
-  clippings: all
-
-# Defaults
-defaults:
-  - scope:
-      type: "posts"
-    values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags:
-        - ""
-  - scope:
-      type: "pages"
-    values:
-      layout: page
+markdown: kramdown
 
 # Exclude
 exclude:
