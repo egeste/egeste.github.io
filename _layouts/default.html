@@ -6,6 +6,7 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,7 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Built with Jekyll.</p>
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}.</p>
       </div>
     </footer>
   </div>
