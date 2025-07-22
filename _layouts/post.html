@@ -3,14 +3,20 @@ layout: default
 ---
 
 <article>
-  <header>
-    <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-  </header>
+  <div class="hero">
+    <h1 class="hero-title" style="font-size: var(--font-size-4xl);">{{ page.title }}</h1>
+    <p class="hero-subtitle">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </p>
+  </div>
 
-  {{ content }}
-
-  <footer>
-    <p><a href="/blog">← Back to Blog</a></p>
-  </footer>
+  <section class="section">
+    <div style="max-width: 800px; margin: 0 auto; font-size: var(--font-size-lg); line-height: 1.7;">
+      {{ content }}
+    </div>
+    
+    <div style="max-width: 800px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+      <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
+    </div>
+  </section>
 </article>
