@@ -92,7 +92,7 @@ layout: default
 <section class="section">
   <h2 class="section-title">Let's Connect</h2>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
-    <a href="mailto:resume@egeste.net" class="btn" style="text-decoration: none;">📧 Email Me</a>
+    <a href="mailto:resume@egeste.net" class="btn btn-primary-cta" style="text-decoration: none;">📧 Email Me</a>
     <a href="https://linkedin.com/in/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">💼 LinkedIn</a>
     <a href="https://github.com/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">🔧 GitHub</a>
   </div>
