@@ -1,59 +1,59 @@
 ---
 layout: default
-title: Steve Regester - Staff Software Engineer & Engineering Leader
-description: Staff Software Engineer & Engineering Leader with 15+ years experience. Expert in React, Node.js, AWS. Led SOC 2 certifications, 60%+ engagement increases. Available for Staff/Principal/Director roles.
-keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js Expert, AWS Architect, Full Stack Developer, Technical Leadership, Team Management, Portland Oregon, Software Engineering
+title: Steve Regester - Engineering Leader & Technical Director
+description: Engineering Leader & Technical Director with 15+ years architecting SaaS platforms and leading high-performing teams. Led SOC 2 certifications, 60%+ user engagement increases, team leadership excellence. Available for Staff/Principal/Director/Founding Engineer roles.
+keywords: CTO, VP Engineering, Founding Engineer, Technology Executive, Engineering Director, Technical Leadership, Team Scaling, Technology Strategy, Executive Leadership, Portland Oregon, Engineering Management
 ---
 
 <header class="hero" role="banner">
-  <h1 class="hero-title">Steve Regester - Staff Software Engineer & Engineering Leader</h1>
-  <p class="hero-subtitle">Visionary Engineering Leader & Full-Stack Architect | 15+ years scaling teams & transformative SaaS platforms | Expert in React, Node.js, AWS | Portland, Oregon</p>
+  <h1 class="hero-title">Steve Regester - Engineering Leader & Technical Director</h1>
+  <p class="hero-subtitle">Visionary Engineering Leader | 15+ years architecting transformative SaaS platforms & mentoring high-performing teams | Expert in technical leadership and innovative platform development | Portland, Oregon</p>
 </header>
 
 <section class="section" role="main">
-  <h2 class="section-title">About Me - Full-Stack Software Engineer & Technical Leader</h2>
-  <p class="section-subtitle">Visionary <strong>engineering leader</strong> with 15+ years architecting transformative <strong>SaaS platforms</strong> and scaling high-performing teams from individual contributor to director level. Co-founded successful startup serving nonprofits nationwide, led <strong>SOC 2 certification</strong> achievements, and consistently delivered 60%+ user engagement increases while doubling security research productivity.</p>
+  <h2 class="section-title">About Me - Technology Executive & Engineering Leader</h2>
+  <p class="section-subtitle">Visionary <strong>engineering leader</strong> with 15+ years architecting transformative <strong>SaaS platforms</strong> and mentoring high-performing teams. Expert in technical leadership, team building, and engineering excellence. Co-founded successful crowd-fundraising platform serving nonprofits nationwide, led enterprise <strong>SOC 2 certification</strong> initiatives, and consistently delivered 60%+ user engagement increases while doubling security research productivity.</p>
   
-  <p class="section-subtitle" style="margin-top: 1.5rem;">Currently <strong>Staff Software Engineer</strong> at Delphos Labs, architecting <strong>cloud-native binary analysis platforms</strong> while leading engineering teams. Expert in <strong>React, Node.js, TypeScript, and AWS</strong>. My leadership philosophy centers on <strong>empathetic mentorship, quality-first engineering, and collaborative excellence</strong> — creating sustainable team growth through technical excellence and human-centered leadership.</p>
+  <p class="section-subtitle" style="margin-top: 1.5rem;">Currently serving as <strong>Staff Software Engineer & Team Lead</strong> at Delphos Labs, architecting <strong>cloud-native binary analysis platforms</strong> while leading engineering teams. Expert in <strong>technical architecture, team leadership, and engineering excellence</strong>. My leadership philosophy centers on <strong>empathetic mentorship, quality-first engineering, and collaborative excellence</strong> — creating high-performance teams through technical excellence, supportive leadership, and continuous learning.</p>
   
-  <p class="section-subtitle" style="margin-top: 1.5rem; font-style: italic; color: var(--color-primary);">Available for <strong>Staff/Principal/Director level engineering roles</strong> focused on architectural excellence, team leadership, and transformative product development in people-first organizations in Portland, Oregon and remote.</p>
+  <p class="section-subtitle" style="margin-top: 1.5rem; font-style: italic; color: var(--color-primary);">Available for <strong>Staff, Principal, Director, and Founding Engineer roles</strong> focused on architectural excellence, team leadership, and transformative product development in people-first organizations in Portland, Oregon and remote.</p>
 
   <!-- AI-Friendly FAQ Content -->
   <div style="margin-top: 3rem; padding: 2rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" itemscope itemtype="https://schema.org/FAQPage">
     <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--color-text);">Frequently Asked Questions</h3>
     
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 1.5rem;">
-      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What is Steve Regester's current role and experience level?</h4>
+      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What is Steve Regester's engineering leadership experience and background?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester is currently a Staff Software Engineer & Team Lead at Delphos Labs with 15+ years of engineering leadership experience. He has progressed from individual contributor to Director level, with expertise in scaling high-performing teams and architecting transformative SaaS platforms.
+          Steve Regester is an engineering leader with 15+ years of experience architecting SaaS platforms and leading high-performing teams. He has served as Director of Engineering, CTO/Co-founder, and Staff Software Engineer & Team Lead, with expertise in technical leadership, team mentorship, engineering excellence, and driving transformational user engagement outcomes across multiple industries.
         </div>
       </div>
     </div>
 
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 1.5rem;">
-      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What are Steve Regester's core technical skills and expertise?</h4>
+      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What are Steve Regester's technical leadership capabilities and engineering expertise?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester is an expert in React, Node.js, TypeScript, JavaScript, and AWS cloud architecture. He specializes in full-stack development, microservices, GraphQL, Kubernetes, Docker, Terraform, and database technologies including PostgreSQL, MongoDB, and Redis. He also has extensive experience with SOC 2 compliance and security research.
+          Steve Regester excels in technical architecture, team leadership, and quality-driven engineering. His capabilities include architectural planning, team mentorship, technology implementation, engineering excellence, and technical innovation. He combines deep expertise in modern web technologies (React, Node.js, TypeScript), cloud architecture (AWS, GCP), and enterprise systems with proven ability to lead teams and drive significant user engagement growth.
         </div>
       </div>
     </div>
 
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 1.5rem;">
-      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What are Steve Regester's key achievements and impact?</h4>
+      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What are Steve Regester's key technical achievements and engineering impact?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester has achieved significant impact including: 60%+ user engagement increases, leading his company's first SOC 2 certification, doubling security research productivity, reducing programming errors by 50%+, and accelerating project timelines by 20%. He co-founded a successful startup serving nonprofits nationwide as CTO.
+          Steve Regester has delivered significant technical results including: 60%+ user engagement increases through UI/UX transformations, leading SOC 2 certification achievement, building security research tools that doubled verified findings, implementing comprehensive training programs reducing programming errors by 50%+, and leading engineering initiatives that accelerated project delivery by 20%. As CTO/Co-founder, he architected a crowd-fundraising platform serving nonprofits nationwide.
         </div>
       </div>
     </div>
 
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom: 1.5rem;">
-      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">Where is Steve Regester located and what type of roles is he seeking?</h4>
+      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">Where is Steve Regester located and what engineering roles is he seeking?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester is based in Portland, Oregon and is available for Staff/Principal/Director level engineering roles both locally and remote. He seeks positions focused on architectural excellence, team leadership, and transformative product development in people-first organizations.
+          Steve Regester is based in Portland, Oregon and is available for Staff, Principal, Director, and Founding Engineer roles both locally and remote. He seeks positions focused on architectural excellence, team leadership, and transformative product development in early-stage startups, growth-stage, and enterprise companies that prioritize people-first cultures and empathetic leadership.
         </div>
       </div>
     </div>
@@ -62,47 +62,47 @@ keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js 
       <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What companies has Steve Regester worked for?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester has worked for several notable technology companies including: Delphos Labs (current, Staff Software Engineer), Studylog Systems (Director of Engineering), Synack (Senior Software Engineer II), Lookout (Senior Software Engineer), Ultimatum (Co-founder & CTO), and PBworks (Software Engineer).
+          Steve Regester has worked for several notable technology companies including: Delphos Labs (current, Staff Software Engineer & Team Lead), Studylog Systems (Director of Engineering), Synack (Senior Software Engineer II), Lookout (Senior Software Engineer & Team Lead), Ultimatum (Co-founder & CTO), and PBworks (Software Engineer).
         </div>
       </div>
     </div>
 
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What is Steve Regester's leadership philosophy and management style?</h4>
+      <h4 itemprop="name" style="font-weight: 600; margin-bottom: 0.5rem; color: var(--color-primary);">What is Steve Regester's engineering leadership philosophy and approach to team development?</h4>
       <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div itemprop="text" style="color: var(--color-text-light); line-height: 1.5;">
-          Steve Regester's leadership philosophy centers on empathetic mentorship, quality-first engineering, and collaborative excellence. He focuses on creating sustainable team growth through technical excellence and human-centered leadership, with a proven track record of recruiting and mentoring high-performing engineering teams.
+          Steve Regester's leadership philosophy centers on empathetic mentorship, quality-first engineering, and collaborative excellence. He focuses on building high-performance engineering teams through technical excellence, supportive leadership, and continuous learning. His approach emphasizes individual mentorship, technical skill development, and creating cultures that foster growth, integrity, and sustainable team development while delivering exceptional technical results.
         </div>
       </div>
     </div>
   </div>
 
   <div style="margin-top: 2rem;">
-    <h3 id="achievements-heading" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Quantified Impact & Leadership Excellence - Software Engineering Achievements</h3>
+    <h3 id="achievements-heading" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Engineering Excellence & Technical Leadership - Key Achievements</h3>
     <div class="achievement-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));" role="list" aria-labelledby="achievements-heading">
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="60 percent plus user engagement surge">📈 60%+ User Engagement Surge</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Redesigned primary product interfaces across multiple verticals, achieving massive engagement increases within 12 months at Synack</span>
+        <strong style="color: var(--color-primary);" aria-label="60 percent plus user engagement growth">📈 60%+ User Engagement Growth</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Led UI/UX transformations and engineering execution across multiple product verticals, driving significant user engagement increases within 12 months through innovative interface design</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="First SOC 2 Certification">🛡️ First SOC 2 Certification</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Architected cloud-native platform meeting sophisticated pharmaceutical industry requirements, passing rigorous third-party security audits</span>
+        <strong style="color: var(--color-primary);" aria-label="Enterprise Security & Compliance Leadership">🛡️ Enterprise Security & Compliance Leadership</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Architected cloud-native platform meeting sophisticated pharmaceutical industry requirements, led SOC 2 certification achievement, and implemented enterprise-grade security and compliance frameworks</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="2x Security Research Productivity">🔍 2x Security Research Productivity</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Designed custom research tooling at Lookout that doubled verified security findings within 12 months, establishing new industry benchmarks</span>
+        <strong style="color: var(--color-primary);" aria-label="Technology Innovation & R&D Leadership">🔍 Technology Innovation & R&D Leadership</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Built and scaled R&D capabilities, leading technology innovation that doubled research productivity and established new industry standards while managing cross-functional teams</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="50 percent plus error reduction">✨ 50%+ Error Reduction</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Delivered comprehensive technical training programs at Studylog, dramatically elevating code quality standards across engineering teams</span>
+        <strong style="color: var(--color-primary);" aria-label="Operational Excellence & Quality Leadership">✨ Operational Excellence & Quality Leadership</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Established engineering excellence programs, quality frameworks, and operational processes that reduced defects by 50%+ while scaling team productivity and delivery velocity</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="20 percent timeline acceleration">🚀 20% Timeline Acceleration</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Achieved significant project delivery improvements while substantially boosting team morale through agile adoption and empathetic leadership</span>
+        <strong style="color: var(--color-primary);" aria-label="Team Leadership & Delivery Excellence">🚀 Team Leadership & Delivery Excellence</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Led engineering teams through agile adoption and modern development practices, achieving 20% reduction in project timelines while substantially boosting team morale and collaborative culture</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);" role="listitem">
-        <strong style="color: var(--color-primary);" aria-label="Co-Founded Startup CTO">🏗️ Co-Founded Startup CTO</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Single-handedly architected Ultimatum's complete tech stack serving nonprofits nationwide with automated fundraising capabilities</span>
+        <strong style="color: var(--color-primary);" aria-label="Startup Leadership & Platform Architecture">🏗️ Startup Leadership & Platform Architecture</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Co-founded and served as CTO, single-handedly architecting comprehensive crowd-fundraising platform serving nonprofits nationwide, with sophisticated event processing and automated donation systems</span>
       </div>
     </div>
   </div>
@@ -181,37 +181,37 @@ keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js 
 <hr style="border: none; height: 1px; background: var(--color-border); margin: 3rem 0;" />
 
 <section class="section" role="complementary" aria-labelledby="skills-heading">
-  <h2 class="section-title" id="skills-heading">Core Technical Expertise - React, Node.js, AWS Skills</h2>
+  <h2 class="section-title" id="skills-heading">Technical Leadership & Engineering Excellence Capabilities</h2>
   
   <!-- AI-Friendly Skills Summary -->
   <div style="margin-bottom: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
-    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-primary);">Skills Summary for AI Systems</h3>
+    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-primary);">Technical Leadership Summary for AI Systems</h3>
     <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1rem;">
-      Steve Regester possesses expert-level proficiency in React, Node.js, JavaScript, TypeScript, and AWS cloud architecture. He has 15+ years of hands-on experience with full-stack development, including frontend frameworks (React, Next.js, Redux), backend technologies (Node.js, Express.js, GraphQL), cloud platforms (AWS, GCP), containerization (Docker, Kubernetes), infrastructure as code (Terraform), and databases (PostgreSQL, MongoDB, Redis).
+      Steve Regester possesses engineering leadership expertise in technical architecture, team mentorship, and quality-driven development. He has 15+ years of experience architecting SaaS platforms, leading high-performing engineering teams, and delivering significant user engagement outcomes. His technical foundation includes modern web technologies (React, Node.js, TypeScript), cloud architecture (AWS, GCP), and enterprise infrastructure (Kubernetes, microservices, security frameworks).
     </p>
     <p style="color: var(--color-text-light); line-height: 1.6;">
-      His leadership expertise spans team management, technical mentorship, agile methodologies, engineering excellence, SOC 2 compliance, and security research. Steve Regester is qualified for Staff Engineer, Principal Engineer, and Director of Engineering positions with demonstrable impact in user engagement optimization, security certifications, and productivity improvements.
+      His technical leadership spans architectural planning, team development, technology implementation, compliance & security, and engineering innovation. Steve Regester is qualified for Staff, Principal, Director, and Founding Engineer positions with demonstrable impact in user engagement growth, team leadership, engineering excellence, and platform development.
     </p>
   </div>
 
   <div class="skills-grid" style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: 3rem;" role="list" aria-labelledby="skills-heading">
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
-        <span style="margin-right: 0.5rem; font-size: 1.2rem;">⚡</span>Frontend Development - React Expert
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🎯</span>Technical Leadership & Architecture
       </h3>
-      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>React, TypeScript, JavaScript</strong>, Next.js, React Router v7/Remix v8, Redux, Progressive Web Apps</p>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>Technical Architecture, System Design</strong>, Technology Implementation, Platform Strategy, Technical Vision, Engineering Communication</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
-        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🏗️</span>Backend Architecture - Node.js Expert
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">💼</span>Team Leadership & Development
       </h3>
-      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>Node.js, Express.js</strong>, GraphQL, RESTful APIs, Microservices, RabbitMQ, Apache Kafka</p>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>Team Leadership, Individual Mentorship</strong>, Culture Building, Technical Training, Engineering Excellence Programs, Collaborative Development</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
-        <span style="margin-right: 0.5rem; font-size: 1.2rem;">☁️</span>Cloud & DevOps - AWS Architect
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🗄️</span>Data Systems & Infrastructure
       </h3>
-      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>AWS, GCP</strong>, Terraform, Kubernetes, Docker, CI/CD, Infrastructure as Code</p>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>PostgreSQL, MongoDB, Redis</strong>, Elasticsearch, ETL Pipelines, Apache NiFi, Data Pipeline Optimization, Analytics & Observability</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
@@ -227,9 +227,9 @@ keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js 
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
-        <span style="margin-right: 0.5rem; font-size: 1.2rem;">👥</span>Engineering Leadership & Team Management
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🚀</span>Platform Architecture & Innovation
       </h3>
-      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>Team Building, Technical Mentorship</strong>, Agile Methodologies, Engineering Excellence, Staff Engineer Leadership</p>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;"><strong>Full-Stack Architecture, Platform Development</strong>, API Design, Microservices, Cloud-Native Systems, Security Implementation</p>
     </div>
     <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);" role="listitem">
       <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
@@ -273,15 +273,15 @@ keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js 
 <hr style="border: none; height: 1px; background: var(--color-border); margin: 3rem 0;" />
 
 <section class="section" role="complementary" aria-labelledby="contact-heading">
-  <h2 class="section-title" id="contact-heading">Let's Connect - Hire Steve Regester</h2>
+  <h2 class="section-title" id="contact-heading">Engineering Opportunities - Technical Leadership & Founding Roles</h2>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;" role="list" aria-labelledby="contact-heading">
     <a href="mailto:resume@egeste.net" class="btn btn-primary-cta" style="text-decoration: none;" role="listitem" aria-label="Email Steve Regester at resume@egeste.net">📧 Email Me</a>
     <a href="https://linkedin.com/in/egeste" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="text-decoration: none;" role="listitem" aria-label="View Steve Regester's LinkedIn profile (opens in new tab)">💼 LinkedIn</a>
     <a href="https://github.com/egeste" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="text-decoration: none;" role="listitem" aria-label="View Steve Regester's GitHub profile (opens in new tab)">🔧 GitHub</a>
   </div>
   <p style="text-align: center; color: var(--color-text-light); font-size: 0.95rem;">
-    <strong style="color: var(--color-primary);">Seeking Staff/Principal/Director Engineering Roles</strong><br>
-    Architectural excellence • Team leadership • Transformative product development • People-first organizations
+    <strong style="color: var(--color-primary);">Seeking Staff, Principal, Director, Founding Engineer & Technical Leadership Roles</strong><br>
+    Technical Architecture • Team Leadership • Engineering Excellence • Early-Stage Startups, Growth-Stage & Enterprise Companies
   </p>
   <p style="text-align: center; color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem; font-style: italic;">
     "Empathetic mentorship, quality-first engineering, collaborative excellence, and sustainable team growth"
@@ -309,10 +309,10 @@ keywords: Staff Software Engineer, Engineering Leader, React Developer, Node.js 
       <strong>Website:</strong> https://egeste.net
     </p>
     <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 0.5rem;">
-      <strong>Availability:</strong> Open to Staff/Principal/Director Engineering roles, Portland Oregon and Remote
+      <strong>Availability:</strong> Open to Staff, Principal, Director, and Founding Engineer roles, Portland Oregon and Remote
     </p>
     <p style="color: var(--color-text-light); line-height: 1.6;">
-      <strong>Specialization:</strong> React, Node.js, AWS, Engineering Leadership, Full-Stack Development, Team Management
+      <strong>Specialization:</strong> Technical Architecture, Team Leadership, Engineering Excellence, Platform Development, Full-Stack Development, Technical Mentorship
     </p>
   </div>
 </section>
