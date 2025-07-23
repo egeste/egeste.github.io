@@ -2,12 +2,31 @@
 plugins:
 - jekyll-feed
 - jekyll-sitemap
+- jekyll-seo-tag
 
 # Site Configuration
 title: Steve Regester
 description: Visionary Engineering Leader & Full-Stack Architect | 15+ years scaling teams & transformative SaaS platforms | Co-founded startup • Achieved SOC 2 • 60%+ engagement gains • Expert in React, Node.js, AWS
 url: https://egeste.net
 baseurl:
+
+# SEO Configuration
+author:
+  name: Steve Regester
+  email: resume@egeste.net
+  twitter: egeste
+  linkedin: egeste
+
+# Social profiles
+social:
+  name: Steve Regester
+  links:
+    - https://linkedin.com/in/egeste
+    - https://github.com/egeste
+
+# Additional SEO
+lang: en_US
+logo: /assets/images/favicon.svg
 
 # Theme Options
 show_downloads: false

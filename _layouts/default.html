@@ -3,40 +3,232 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="robots" content="index, follow">
+  {% seo %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Accessibility improvements -->
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+    .skip-link:focus {
+      top: 6px;
+    }
+    
+    /* Ensure focus indicators are visible */
+    *:focus {
+      outline: 2px solid #0066cc;
+      outline-offset: 2px;
+    }
+    
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      .achievement-item, .skill-category {
+        border: 2px solid currentColor !important;
+      }
+    }
+    
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+  
+  <!-- AI-Friendly Meta Tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="ai-content-declaration" content="human-authored">
+  <meta name="ai-summary" content="Steve Regester is a Staff Software Engineer and Engineering Leader with 15+ years experience in React, Node.js, AWS, and team leadership. Currently at Delphos Labs. Previously Director of Engineering at Studylog, Senior Engineer at Synack and Lookout. Achieved SOC 2 certifications, 60%+ user engagement increases, and doubled security research productivity. Expert in full-stack development, cloud architecture, and technical mentorship. Available for Staff/Principal/Director level roles in Portland, Oregon and remote.">
+  
+  <!-- Enhanced Structured Data for AI -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "SoftwareEngineer", "TechnicalLeader"],
+    "name": "{{ site.author.name }}",
+    "alternateName": "Steve Regester",
+    "url": "{{ site.url }}",
+    "email": "{{ site.author.email }}",
+    "jobTitle": "Staff Software Engineer & Engineering Leader",
+    "description": "Staff Software Engineer and Engineering Leader with 15+ years experience in React, Node.js, AWS, and team leadership. Expert in full-stack development, cloud architecture, and technical mentorship.",
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Staff Software Engineer",
+        "occupationLocation": {
+          "@type": "Place",
+          "name": "Portland, Oregon"
+        },
+        "skills": ["React", "Node.js", "TypeScript", "JavaScript", "AWS", "Cloud Architecture", "Team Leadership", "Full-Stack Development"]
+      },
+      {
+        "@type": "Occupation", 
+        "name": "Engineering Leader",
+        "skills": ["Technical Leadership", "Team Management", "Agile Methodologies", "Engineering Excellence", "SOC 2 Compliance"]
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Delphos Labs",
+      "url": "https://delphos.com"
+    },
+    "workHistory": [
+      {
+        "@type": "OrganizationRole",
+        "roleName": "Staff Software Engineer & Team Lead",
+        "startDate": "2024-07",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Delphos Labs"
+        }
+      },
+      {
+        "@type": "OrganizationRole",
+        "roleName": "Director of Engineering", 
+        "startDate": "2021-08",
+        "endDate": "2024-07",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Studylog Systems"
+        }
+      },
+      {
+        "@type": "OrganizationRole",
+        "roleName": "Senior Software Engineer II",
+        "startDate": "2016-04", 
+        "endDate": "2021-03",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Synack"
+        }
+      }
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Studylog Systems"
+      },
+      {
+        "@type": "Organization", 
+        "name": "Synack"
+      },
+      {
+        "@type": "Organization",
+        "name": "Lookout"
+      },
+      {
+        "@type": "Organization",
+        "name": "Ultimatum"
+      }
+    ],
+    "knowsAbout": [
+      {
+        "@type": "Technology",
+        "name": "React",
+        "proficiencyLevel": "Expert"
+      },
+      {
+        "@type": "Technology", 
+        "name": "Node.js",
+        "proficiencyLevel": "Expert"
+      },
+      {
+        "@type": "Technology",
+        "name": "TypeScript", 
+        "proficiencyLevel": "Expert"
+      },
+      {
+        "@type": "Technology",
+        "name": "AWS",
+        "proficiencyLevel": "Expert"
+      },
+      "Cloud Architecture", "Team Leadership", "Full-Stack Development", "Software Engineering", 
+      "Technical Leadership", "SOC 2 Compliance", "Security Research", "Microservices", "GraphQL", 
+      "Kubernetes", "Docker", "Terraform", "PostgreSQL", "MongoDB", "Redis"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "SOC 2 Certification Leadership",
+        "description": "Led achievement of company's first SOC 2 certification"
+      }
+    ],
+    "award": [
+      "60%+ User Engagement Increase",
+      "First SOC 2 Certification Achievement", 
+      "2x Security Research Productivity Improvement",
+      "50%+ Error Reduction Through Training Programs",
+      "20% Timeline Acceleration Through Leadership"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressRegion": "Oregon",
+      "addressCountry": "United States"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/egeste",
+      "https://github.com/egeste"
+    ],
+    "seeks": {
+      "@type": "JobPosting",
+      "title": "Staff/Principal/Director Engineering Roles",
+      "description": "Seeking Staff/Principal/Director level engineering roles focused on architectural excellence, team leadership, and transformative product development",
+      "jobLocation": {
+        "@type": "Place",
+        "name": "Portland, Oregon or Remote"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip to main content link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <div class="site-container">
-    <header class="site-header">
-      <nav class="nav-container">
+    <header class="site-header" role="banner">
+      <nav class="nav-container" role="navigation" aria-label="Main navigation">
         <div class="nav-brand">
-          <a href="{{ '/' | relative_url }}" class="brand-link">
+          <a href="{{ '/' | relative_url }}" class="brand-link" aria-label="Steve Regester - Home">
             <span class="brand-name">{{ site.title }}</span>
           </a>
         </div>
         <div class="nav-links">
-          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-          <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}">Projects</a>
-          <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}">Blog</a>
-          <a href="mailto:{{ site.email | default: 'portfolio@egeste.net' }}" class="nav-link nav-cta">Contact</a>
+          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
+          <a href="mailto:{{ site.email | default: 'resume@egeste.net' }}" class="nav-link nav-cta" aria-label="Contact Steve Regester via email">Contact</a>
         </div>
       </nav>
     </header>
 
-    <main class="site-main">
+    <main class="site-main" id="main-content" role="main" tabindex="-1">
       {{ content }}
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="footer-content">
-        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}.</p>
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
       </div>
     </footer>
   </div>
