@@ -9,36 +9,72 @@ layout: default
 
 <section class="section">
   <h2 class="section-title">About Me</h2>
-  <p class="section-subtitle">Visionary engineering leader with 15+ years architecting transformative SaaS platforms and mentoring high-performing teams. I've co-founded successful crowd-fundraising platforms serving nonprofits, achieved 60%+ user engagement increases, and doubled research productivity through innovative security tooling. Currently serving as Staff Software Engineer at Delphos Labs, I specialize in React, Node.js, cloud-native architectures (AWS/GCP), and building cultures of empathetic excellence.</p>
+  <p class="section-subtitle">Visionary engineering leader with 15+ years architecting transformative SaaS platforms and scaling high-performing teams from individual contributor to director level. Co-founded successful startup serving nonprofits nationwide, led SOC 2 certification achievements, and consistently delivered 60%+ user engagement increases while doubling security research productivity.</p>
+  
+  <p class="section-subtitle" style="margin-top: 1.5rem;">Currently Staff Software Engineer at Delphos Labs, architecting cloud-native binary analysis platforms while leading engineering teams. My leadership philosophy centers on <strong>empathetic mentorship, quality-first engineering, and collaborative excellence</strong> — creating sustainable team growth through technical excellence and human-centered leadership.</p>
+  
+  <p class="section-subtitle" style="margin-top: 1.5rem; font-style: italic; color: var(--color-primary);">Available for Staff/Principal/Director level roles focused on architectural excellence, team leadership, and transformative product development in people-first organizations.</p>
 
   <div style="margin-top: 2rem;">
-    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Key Achievements</h3>
+    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Quantified Impact & Leadership Excellence</h3>
     <div class="achievement-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">📈 60%+ User Engagement</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Redesigned interfaces achieving massive engagement increases within 12 months</span>
+        <strong style="color: var(--color-primary);">📈 60%+ User Engagement Surge</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Redesigned primary product interfaces across multiple verticals, achieving massive engagement increases within 12 months at Synack</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">🛡️ SOC 2 Certification</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Led cloud-native platform architecture achieving first SOC 2 compliance</span>
+        <strong style="color: var(--color-primary);">🛡️ First SOC 2 Certification</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Architected cloud-native platform meeting sophisticated pharmaceutical industry requirements, passing rigorous third-party security audits</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">🔍 2x Security Productivity</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Developed specialized research tooling doubling verified security findings</span>
+        <strong style="color: var(--color-primary);">🔍 2x Security Research Productivity</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Designed custom research tooling at Lookout that doubled verified security findings within 12 months, establishing new industry benchmarks</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">✨ 50% Error Reduction</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Implemented comprehensive training programs dramatically improving code quality</span>
+        <strong style="color: var(--color-primary);">✨ 50%+ Error Reduction</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Delivered comprehensive technical training programs at Studylog, dramatically elevating code quality standards across engineering teams</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">🚀 20% Faster Delivery</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Achieved significant timeline reductions through agile adoption and leadership</span>
+        <strong style="color: var(--color-primary);">🚀 20% Timeline Acceleration</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Achieved significant project delivery improvements while substantially boosting team morale through agile adoption and empathetic leadership</span>
       </div>
       <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
-        <strong style="color: var(--color-primary);">🏗️ Co-Founded Startup</strong><br>
-        <span style="color: var(--color-text-light); font-size: 0.9rem;">Built crowd-fundraising platform from ground up serving nonprofits nationwide</span>
+        <strong style="color: var(--color-primary);">🏗️ Co-Founded Startup CTO</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Single-handedly architected Ultimatum's complete tech stack serving nonprofits nationwide with automated fundraising capabilities</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">👥 Team Leadership Excellence</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Scaled from individual contributor to Director level, recruiting and mentoring high-performing engineering teams across multiple organizations</span>
+      </div>
+      <div class="achievement-item" style="padding: 1rem; background: var(--color-surface); border-radius: 0.5rem; border: 1px solid var(--color-border);">
+        <strong style="color: var(--color-primary);">🏆 Enterprise Platform Migration</strong><br>
+        <span style="color: var(--color-text-light); font-size: 0.9rem;">Led complete web-based rewrite of flagship Windows product at Studylog, migrating to modern cloud-native architecture</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">What Others Say</h2>
+  <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-bottom: 3rem;">
+    <blockquote style="padding: 2rem; background: var(--color-surface); border-radius: 0.75rem; border-left: 4px solid var(--color-primary); margin: 0;">
+      <p style="font-style: italic; color: var(--color-text); margin-bottom: 1rem; line-height: 1.6;">"Steve represents the high water mark for me in terms of sheer front-end engineering talent. He is an incredibly gifted engineer, equally passionate about doing things the right way, at a high level of quality."</p>
+      <footer style="color: var(--color-text-light); font-size: 0.9rem;">
+        <strong>Director of Engineering</strong>, Lookout
+      </footer>
+    </blockquote>
+    <blockquote style="padding: 2rem; background: var(--color-surface); border-radius: 0.75rem; border-left: 4px solid var(--color-primary); margin: 0;">
+      <p style="font-style: italic; color: var(--color-text); margin-bottom: 1rem; line-height: 1.6;">"Steve has exceptional ability to lead and inspire his team, setting a high bar for technical excellence... His unwavering commitment to excellence and continuous improvement drives innovation and optimization."</p>
+      <footer style="color: var(--color-text-light); font-size: 0.9rem;">
+        <strong>Full Stack Engineer</strong>, Studylog
+      </footer>
+    </blockquote>
+    <blockquote style="padding: 2rem; background: var(--color-surface); border-radius: 0.75rem; border-left: 4px solid var(--color-primary); margin: 0;">
+      <p style="font-style: italic; color: var(--color-text); margin-bottom: 1rem; line-height: 1.6;">"Steve joined to lead a complete web-based rewrite of our flagship product... architected and developed a cloud-native platform that could meet sophisticated pharmaceutical industry requirements, passing rigorous third-party security audit and achieving SOC 2 certification."</p>
+      <footer style="color: var(--color-text-light); font-size: 0.9rem;">
+        <strong>Head of Product Management</strong>, Studylog
+      </footer>
+    </blockquote>
   </div>
 </section>
 
@@ -135,6 +171,12 @@ layout: default
       </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Progressive Web Apps, WebAssembly, Isomorphic Applications, Responsive Design, WebSockets</p>
     </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">📱</span>Mobile & Cross-Platform
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">React Native, Cross-platform Solutions, Mobile-First Design, App Store Deployment, Native Integrations</p>
+    </div>
   </div>
 </section>
 
@@ -145,7 +187,13 @@ layout: default
     <a href="https://linkedin.com/in/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">💼 LinkedIn</a>
     <a href="https://github.com/egeste" class="btn btn-secondary" target="_blank" style="text-decoration: none;">🔧 GitHub</a>
   </div>
-  <p style="text-align: center; color: var(--color-text-light); font-size: 0.95rem;">Available for Staff/Principal/Director level engineering roles focused on architectural excellence, team leadership, and transformative product development.</p>
+  <p style="text-align: center; color: var(--color-text-light); font-size: 0.95rem;">
+    <strong style="color: var(--color-primary);">Seeking Staff/Principal/Director Engineering Roles</strong><br>
+    Architectural excellence • Team leadership • Transformative product development • People-first organizations
+  </p>
+  <p style="text-align: center; color: var(--color-text-light); font-size: 0.9rem; margin-top: 1rem; font-style: italic;">
+    "Empathetic mentorship, quality-first engineering, collaborative excellence, and sustainable team growth"
+  </p>
 </section>
 
 <section class="section">
