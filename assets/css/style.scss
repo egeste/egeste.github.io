@@ -15,7 +15,7 @@
   --color-border-light: #f3f4f6;
   --color-purple-light: #f3e8ff;
   --color-cyan-light: #ecfeff;
-  
+
   --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -26,7 +26,7 @@
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 2.25rem;
   --font-size-5xl: 3rem;
-  
+
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
   --spacing-3: 0.75rem;
@@ -38,7 +38,7 @@
   --spacing-12: 3rem;
   --spacing-16: 4rem;
   --spacing-20: 5rem;
-  
+
   --border-radius: 0.5rem;
   --border-radius-lg: 1rem;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -138,7 +138,7 @@ body {
   font-size: var(--font-size-sm);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -150,18 +150,18 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(-50%);
   }
-  
+
   &:hover {
     color: var(--color-primary);
-    
+
     &::before {
       width: 100%;
     }
   }
-  
+
   &.active {
     color: var(--color-primary);
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -211,7 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -219,14 +219,14 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: 
+    background:
       radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
     animation: float 20s ease-in-out infinite;
     z-index: 1;
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -234,14 +234,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
       linear-gradient(45deg, transparent 30%, rgba(139, 92, 246, 0.03) 31%, rgba(139, 92, 246, 0.03) 32%, transparent 33%),
       linear-gradient(-45deg, transparent 30%, rgba(6, 182, 212, 0.03) 31%, rgba(6, 182, 212, 0.03) 32%, transparent 33%);
     background-size: 60px 60px;
     border-radius: var(--border-radius-lg);
     z-index: 2;
   }
-  
+
   > * {
     position: relative;
     z-index: 3;
@@ -284,7 +284,7 @@ body {
   color: var(--color-text);
   position: relative;
   padding-left: var(--spacing-4);
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -318,7 +318,7 @@ body {
   padding: var(--spacing-6);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -331,7 +331,7 @@ body {
     background: linear-gradient(135deg, rgba(139, 92, 246, 0.02), rgba(6, 182, 212, 0.02));
     transition: opacity 0.3s ease;
   }
-  
+
   &:hover::before {
     opacity: 1;
   }
@@ -340,20 +340,20 @@ body {
 .project-card {
   padding: 0;
   overflow: hidden;
-  
+
   .card-image {
     width: 100%;
     height: 200px;
     overflow: hidden;
     position: relative;
-    
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -366,17 +366,17 @@ body {
       transition: opacity 0.3s ease;
     }
   }
-  
+
   &:hover .card-image {
     img {
       transform: scale(1.05);
     }
-    
+
     &::after {
       opacity: 1;
     }
   }
-  
+
   .card-content {
     padding: var(--spacing-6);
     position: relative;
@@ -486,7 +486,7 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -497,7 +497,7 @@ body {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
   }
-  
+
   &:hover::before {
     left: 100%;
   }
@@ -547,51 +547,51 @@ body {
   .nav-container {
     padding: 0 var(--spacing-4);
   }
-  
+
   .nav-links {
     gap: var(--spacing-4);
   }
-  
+
   .nav-link {
     font-size: var(--font-size-xs);
   }
-  
+
   .hero {
     min-height: 300px;
     padding: var(--spacing-12) var(--spacing-6);
   }
-  
+
   .hero-title {
     font-size: var(--font-size-3xl);
   }
-  
+
   .hero-subtitle {
     font-size: var(--font-size-lg);
   }
-  
+
   .site-main {
     padding: var(--spacing-8) var(--spacing-4);
   }
-  
+
   .card-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-4);
   }
-  
+
   .project-card {
     .card-image {
       height: 160px;
     }
-    
+
     .card-content {
       padding: var(--spacing-4);
     }
   }
-  
+
   .card-title {
     font-size: var(--font-size-lg);
   }
-  
+
   .card-description {
     font-size: var(--font-size-sm);
   }
@@ -714,7 +714,7 @@ article code {
     transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -726,12 +726,12 @@ article code {
       opacity: 0;
       transition: opacity 0.2s ease;
     }
-    
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-lg);
       border-color: var(--color-primary);
-      
+
       &::before {
         opacity: 1;
       }
@@ -750,7 +750,7 @@ article code {
 .achievement-item {
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: both;
-  
+
   &:nth-child(1) { animation-delay: 0.1s; }
   &:nth-child(2) { animation-delay: 0.2s; }
   &:nth-child(3) { animation-delay: 0.3s; }
@@ -762,7 +762,7 @@ article code {
 .skill-category {
   animation: fadeIn 0.6s ease-out;
   animation-fill-mode: both;
-  
+
   &:nth-child(1) { animation-delay: 0.2s; }
   &:nth-child(2) { animation-delay: 0.3s; }
   &:nth-child(3) { animation-delay: 0.4s; }
