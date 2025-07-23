@@ -6,7 +6,7 @@ plugins:
 
 # Site Configuration
 title: Steve Regester
-description: Visionary Engineering Leader & Full-Stack Architect | 15+ years scaling teams & transformative SaaS platforms | Co-founded startup • Achieved SOC 2 • 60%+ engagement gains • Expert in React, Node.js, AWS
+description: Visionary Engineering Leader & Full-Stack Architect | 15+ years architecting transformative SaaS platforms & mentoring high-performing teams | Co-founded startup • Achieved SOC 2 • 60%+ engagement gains • Expert in React, Node.js, AWS
 url: https://egeste.net
 baseurl:
 
@@ -47,3 +47,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - context/
