@@ -10,7 +10,7 @@ layout: default
 <section class="section">
   <h2 class="section-title">About Me</h2>
   <p class="section-subtitle">Visionary engineering leader with 15+ years architecting transformative SaaS platforms and mentoring high-performing teams. I've co-founded successful crowd-fundraising platforms serving nonprofits, achieved 60%+ user engagement increases, and doubled research productivity through innovative security tooling. Currently serving as Staff Software Engineer at Delphos Labs, I specialize in React, Node.js, cloud-native architectures (AWS/GCP), and building cultures of empathetic excellence.</p>
-  
+
   <div style="margin-top: 2rem;">
     <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: var(--color-text);">Key Achievements</h3>
     <div class="achievement-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
@@ -104,6 +104,36 @@ layout: default
         <span style="margin-right: 0.5rem; font-size: 1.2rem;">👥</span>Leadership & Quality
       </h3>
       <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Team Building, Technical Mentorship, Agile Methodologies, Engineering Excellence</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🧪</span>Testing & Quality Assurance
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Jest, Enzyme, ESLint, Comprehensive Testing Frameworks, TDD/BDD, Quality Standards</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">📊</span>Analytics & Monitoring
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Hotjar, Sentry, Datadog, ELK Stack, Prometheus, Grafana, Performance Monitoring</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🚀</span>Message Systems & ETL
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">RabbitMQ, Apache Kafka, SQS, Redis Pub/Sub, Apache NiFi, ETL Pipelines</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🤖</span>AI & Machine Learning
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">TensorFlow, API Integration, Data Pipeline Optimization, Binary Analysis, Security Research</p>
+    </div>
+    <div class="skill-category" style="padding: 1.5rem; background: var(--color-surface); border-radius: 0.75rem; border: 1px solid var(--color-border);">
+      <h3 style="color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem;">
+        <span style="margin-right: 0.5rem; font-size: 1.2rem;">🛠️</span>Modern Web Technologies
+      </h3>
+      <p style="color: var(--color-text-light); font-size: 0.9rem; line-height: 1.5;">Progressive Web Apps, WebAssembly, Isomorphic Applications, Responsive Design, WebSockets</p>
     </div>
   </div>
 </section>

@@ -7,7 +7,7 @@ plugins:
 title: Steve Regester
 description: Staff Software Engineer & Engineering Leader | 15+ years architecting transformative SaaS platforms | Expert in React, Node.js, AWS | Empathetic team leadership & quality-first engineering
 url: https://egeste.net
-baseurl: 
+baseurl:
 
 # Theme Options
 show_downloads: false
