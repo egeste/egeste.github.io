@@ -4,8 +4,8 @@ title: Projects
 ---
 
 <div class="hero">
-  <h1 class="hero-title">Projects</h1>
-  <p class="hero-subtitle">A showcase of my work spanning various technologies and domains.</p>
+  <h1 class="hero-title">Engineering Portfolio</h1>
+  <p class="hero-subtitle">A comprehensive showcase of transformative platforms, startup ventures, and enterprise solutions spanning 15+ years of engineering leadership.</p>
 </div>
 
 <section class="section">
