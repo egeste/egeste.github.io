@@ -12,8 +12,6 @@ baseurl:
 # Theme Options
 show_downloads: false
 
-# Google Analytics
-google_analytics: UA-25824741-1
 
 # Build settings
 markdown: kramdown
