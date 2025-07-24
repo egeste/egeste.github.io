@@ -16,7 +16,7 @@
   <style>
     .skip-link {
       position: absolute;
-      top: -40px;
+      top: -100px;
       left: 6px;
       background: #000;
       color: #fff;
@@ -205,6 +205,11 @@
   <!-- Skip to main content link for keyboard users -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
   
+  <!-- Animated mesh background -->
+  <div class="mesh-background" aria-hidden="true">
+    <canvas id="mesh-canvas"></canvas>
+  </div>
+
   <div class="site-container">
     <header class="site-header" role="banner">
       <nav class="nav-container" role="navigation" aria-label="Main navigation">
@@ -216,6 +221,7 @@
         <div class="nav-links">
           <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
           <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>FAQ</a>
           <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
           <a href="mailto:{{ site.email | default: 'resume@egeste.net' }}" class="nav-link nav-cta" aria-label="Contact Steve Regester via email">Contact</a>
         </div>
@@ -232,5 +238,124 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    // Animated mesh network background
+    class MeshNetwork {
+      constructor() {
+        this.canvas = document.getElementById('mesh-canvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.nodes = [];
+        this.maxNodes = 80;
+        this.maxDistance = 200;
+        this.animationId = null;
+        
+        this.init();
+        this.createNodes();
+        this.animate();
+        this.handleResize();
+      }
+      
+      init() {
+        this.resize();
+      }
+      
+      resize() {
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+      }
+      
+      createNodes() {
+        this.nodes = [];
+        for (let i = 0; i < this.maxNodes; i++) {
+          this.nodes.push({
+            x: Math.random() * this.canvas.width,
+            y: Math.random() * this.canvas.height,
+            vx: (Math.random() - 0.5) * 0.8,
+            vy: (Math.random() - 0.5) * 0.8,
+            radius: Math.random() * 3 + 1.5
+          });
+        }
+      }
+      
+      updateNodes() {
+        this.nodes.forEach(node => {
+          node.x += node.vx;
+          node.y += node.vy;
+          
+          if (node.x < 0 || node.x > this.canvas.width) node.vx *= -1;
+          if (node.y < 0 || node.y > this.canvas.height) node.vy *= -1;
+        });
+      }
+      
+      drawNodes() {
+        this.nodes.forEach(node => {
+          // Outer glow
+          this.ctx.beginPath();
+          this.ctx.arc(node.x, node.y, node.radius + 2, 0, Math.PI * 2);
+          this.ctx.fillStyle = 'rgba(139, 92, 246, 0.2)';
+          this.ctx.fill();
+          
+          // Main node
+          this.ctx.beginPath();
+          this.ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+          this.ctx.fillStyle = 'rgba(139, 92, 246, 0.8)';
+          this.ctx.fill();
+        });
+      }
+      
+      drawConnections() {
+        for (let i = 0; i < this.nodes.length; i++) {
+          for (let j = i + 1; j < this.nodes.length; j++) {
+            const dx = this.nodes[i].x - this.nodes[j].x;
+            const dy = this.nodes[i].y - this.nodes[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < this.maxDistance) {
+              const opacity = (1 - distance / this.maxDistance) * 0.6;
+              this.ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`;
+              this.ctx.lineWidth = 1;
+              this.ctx.beginPath();
+              this.ctx.moveTo(this.nodes[i].x, this.nodes[i].y);
+              this.ctx.lineTo(this.nodes[j].x, this.nodes[j].y);
+              this.ctx.stroke();
+            }
+          }
+        }
+      }
+      
+      animate() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.updateNodes();
+        this.drawConnections();
+        this.drawNodes();
+        this.animationId = requestAnimationFrame(() => this.animate());
+      }
+      
+      handleResize() {
+        window.addEventListener('resize', () => {
+          this.resize();
+          this.createNodes();
+        });
+      }
+      
+      destroy() {
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+        }
+      }
+    }
+    
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const mesh = new MeshNetwork();
+      
+      // Handle reduced motion preference
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        mesh.destroy();
+        document.querySelector('.mesh-background').style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
