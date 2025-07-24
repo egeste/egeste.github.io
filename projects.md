@@ -8,7 +8,7 @@ description: Engineering portfolio showcasing transformative platforms, startup 
 <section class="fullwidth-section hero-section">
   <div class="section-container">
     <header class="hero" role="banner">
-      <h1 class="hero-title">Engineering Portfolio</h1>
+      <h1 class="hero-name">Engineering Portfolio</h1>
       <p class="hero-subtitle">A comprehensive showcase of transformative platforms, startup ventures, and enterprise solutions spanning 15+ years of engineering leadership.</p>
     </header>
   </div>

@@ -58,13 +58,13 @@
 
   <div class="site-container">
     <!-- Page-wide mesh background -->
-    <div class="page-mesh-background" aria-hidden="true">
+    <div class="page-mesh-background" aria-hidden="true" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;">
       <canvas id="mesh-canvas"></canvas>
     </div>
     <header class="site-header" role="banner">
       <nav class="nav-container" role="navigation" aria-label="Main navigation">
         <div class="nav-brand">
-          <a href="{{ '/' | relative_url }}" class="brand-link" aria-label="Steve Regester - Home">
+          <a href="{{ '/' | relative_url }}" class="brand-link" aria-label="{{ site.author.name }} - Home">
             <span class="brand-name">{{ site.title }}</span>
           </a>
         </div>
@@ -73,15 +73,30 @@
           <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
           <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
           <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>FAQ</a>
-          <a href="mailto:{{ site.email | default: 'resume@egeste.net' }}" class="nav-link nav-cta" aria-label="Contact Steve Regester via email">Contact</a>
+          <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">Contact</a>
         </div>
       </nav>
     </header>
 
     <main class="site-main" id="main-content" role="main" tabindex="-1">
-      <div class="faq-page">
-        {{ content }}
-      </div>
+      <!-- Hero Section -->
+      <section class="fullwidth-section hero-section">
+        <div class="section-container">
+          <header class="hero" role="banner">
+            <h1 class="hero-name">{{ page.title | replace: " - Steve Regester", "" }}</h1>
+            <p class="hero-subtitle">{{ page.description }}</p>
+          </header>
+        </div>
+      </section>
+      
+      <!-- FAQ Content Section -->
+      <section class="fullwidth-section faq-section">
+        <div class="section-container">
+          <div class="faq-content">
+            {{ content }}
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer" role="contentinfo">

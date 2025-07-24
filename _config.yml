@@ -1,32 +1,198 @@
-# Custom Theme Configuration
+# ===== JEKYLL PLUGINS =====
 plugins:
-- jekyll-feed
-- jekyll-sitemap
-- jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Site Configuration
+# ===== SITE CONFIGURATION =====
 title: Steve Regester
-description: Visionary Engineering Leader & Full-Stack Architect | 15+ years architecting transformative SaaS platforms & mentoring high-performing teams | Co-founded startup • Achieved SOC 2 • 60%+ engagement gains • Expert in React, Node.js, AWS
-url: https://egeste.net
-baseurl:
+tagline: Engineering Leader & Technical Director
+description: >-
+  Engineering Leader & Technical Director with 15+ years architecting transformative SaaS platforms
+  and leading high-performing teams. Expert in technical leadership, team mentorship, and engineering 
+  excellence. Led SOC 2 certifications, achieved 60%+ user engagement increases, and doubled security 
+  research productivity. Available for Staff/Principal/Director/Founding Engineer roles.
 
-# SEO Configuration
+url: https://egeste.net
+baseurl: ""
+lang: en_US
+timezone: America/Los_Angeles
+
+# ===== AUTHOR & PERSONAL INFO =====
 author:
   name: Steve Regester
+  first_name: Steve
+  last_name: Regester
+  username: egeste
   email: resume@egeste.net
+  bio: >-
+    Engineering Leader & Technical Director with 15+ years architecting SaaS platforms and leading 
+    high-performing teams. Expert in technical leadership, team mentorship, and engineering excellence.
+  location: Portland, Oregon, United States
+  avatar: /assets/images/avatar.jpg
+  website: https://egeste.net
+  
+  # Social profiles
   twitter: egeste
   linkedin: egeste
+  github: egeste
+  
+  # Professional details
+  job_title: Engineering Leader & Technical Director
+  company: Delphos Labs
+  skills:
+    - Technical Leadership
+    - Team Mentorship  
+    - SaaS Architecture
+    - Full-Stack Development
+    - Engineering Excellence
+    - SOC 2 Compliance
+    - React & Node.js
+    - AWS & Cloud Architecture
 
-# Social profiles
+# ===== SOCIAL PROFILES FOR STRUCTURED DATA =====
 social:
   name: Steve Regester
+  email: "resume@egeste.net"
+  linkedin: "https://linkedin.com/in/egeste"
+  github: "https://github.com/egeste"
+  website: "https://egeste.net"
+  
+  # Keep the links array for structured data compatibility
   links:
     - https://linkedin.com/in/egeste
     - https://github.com/egeste
+    - https://egeste.net
+    - mailto:resume@egeste.net
 
-# Additional SEO
-lang: en_US
+# ===== SEO & METADATA =====
 logo: /assets/images/favicon.svg
+image: /assets/images/og-image.jpg
+
+# OpenGraph defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      author: Steve Regester
+      image: /assets/images/og-image.jpg
+      type: website
+      
+  - scope:
+      path: "index.md"
+    values:
+      priority: 1.0
+      changefreq: weekly
+      type: profile
+      
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      type: article
+      priority: 0.8
+      changefreq: monthly
+      
+# SEO tag settings
+twitter:
+  username: egeste
+  card: summary_large_image
+
+facebook:
+  app_id: 
+  publisher: 
+  admins: 
+
+# ===== GOOGLE & ANALYTICS =====
+google_analytics: 
+google_site_verification: 
+bing_site_verification:
+
+  
+# ===== PROFESSIONAL DATA =====
+professional:
+  # Current Position
+  current_company: "Delphos Labs"
+  current_role: "Staff Software Engineer & Team Lead"
+  
+  # Career Context
+  status: "available-for-hire"
+  experience_years: "15+"
+  location: "Portland, Oregon"
+  
+  # Job Preferences
+  seeking_roles: ["Staff Engineer", "Principal Engineer", "Director of Engineering", "Founding Engineer"]
+  work_locations: ["Portland, Oregon", "Remote"]
+  company_types: ["Early-stage startups", "Growth-stage companies", "Enterprise companies"]
+  
+  # Core Skills
+  expert_technologies: ["React", "Node.js", "TypeScript", "AWS"]
+  key_skills: ["Technical Leadership", "Team Mentorship", "SaaS Architecture", "Full-Stack Development", "Engineering Excellence", "SOC 2 Compliance"]
+  
+  # Key Achievements
+  achievements:
+    - "60%+ User Engagement Growth through UI/UX transformations"
+    - "SOC 2 Certification Achievement leading enterprise security"
+    - "Doubled Security Research Productivity through tool development"
+    - "50%+ Programming Error Reduction through training programs"
+    - "20% Project Timeline Reduction through team leadership"
+    
+  # Work History
+  work_history:
+    - company: "Delphos Labs"
+      role: "Staff Software Engineer & Team Lead"
+      period: "current"
+    - company: "Studylog Systems"
+      role: "Director of Engineering"
+      period: "2021-2024"
+    - company: "Synack"
+      role: "Senior Software Engineer II"
+      period: "2016-2021"
+    - company: "Lookout"
+      role: "Senior Software Engineer & Team Lead"
+      period: "2014-2016"
+    - company: "Ultimatum"
+      role: "Co-founder & CTO"
+      period: "2012-2014"
+
+# ===== SITE CONFIGURATION =====
+site_config:
+  primary_color: "#8b5cf6"
+  contact_email: "resume@egeste.net"
+  geographic_region: "US-OR"
+  city: "Portland"
+  state: "Oregon"
+  coordinates: "45.5152, -122.6784"
+  
+# ===== CONTENT & SEO =====
+content_settings:
+  categories: ["Engineering Leadership", "Technical Architecture", "Team Management", "Software Development"]
+  target_audience: "technical-recruiters,engineering-leaders,startup-founders"
+  content_type: "professional-portfolio"
+  last_update: "2024-07"
+
+# ===== TECHNICAL CONFIGURATION =====
+# Feed settings
+feed:
+  posts_limit: 20
+  excerpt_only: false
+
+# Sitemap settings
+sitemap:
+  priority: 1.0
+  changefreq: monthly
+  lastmod: true
+
+# Performance
+sass:
+  style: compressed
+  
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
 
 # Theme Options
 show_downloads: false
