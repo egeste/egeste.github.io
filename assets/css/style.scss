@@ -328,25 +328,40 @@ body {
 }
 
 /* ===== CONTENT ===== */
-.section-title {
+/* Section headings with full-height vertical bar */
+.section-title,
+h2 {
   font-size: var(--text-3xl);
   font-weight: 600;
   margin-bottom: var(--space-8);
   color: var(--text);
   position: relative;
   padding-left: var(--space-4);
-
+  line-height: 1.2;
+  
   &::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
     width: 4px;
-    height: 60%;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     border-radius: 2px;
   }
+}
+
+/* Adjust font sizes for different heading levels */
+h2 {
+  font-size: var(--text-2xl);
+}
+
+/* H3 styling without vertical bar */
+h3 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+  color: var(--text);
 }
 
 .section-subtitle {
@@ -675,25 +690,10 @@ body {
   margin: 0 auto;
   
   h2 {
-    font-size: var(--text-2xl);
-    font-weight: 600;
     color: var(--primary);
     margin: var(--space-12) 0 var(--space-6) 0;
-    padding-bottom: var(--space-3);
-    border-bottom: 2px solid var(--border);
-    position: relative;
     
     &:first-child { margin-top: 0; }
-    
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 60px;
-      height: 2px;
-      background: var(--primary);
-    }
   }
   
   p {
