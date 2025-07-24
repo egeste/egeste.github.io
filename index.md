@@ -223,10 +223,14 @@ type: profile
       Technical Architecture • Team Leadership • Engineering Excellence • {{ site.professional.company_types | join: ", " }}</p>
       <p style="font-style: italic;">"Empathetic mentorship, quality-first engineering, collaborative excellence, and sustainable team growth"</p>
     </div>
-    
-    <!-- AI-Friendly Contact Summary -->
+  </div>
+</section>
+
+<!-- AI Systems Contact Information -->
+<section class="fullwidth-section ai-contact-section">
+  <div class="section-container">
     <div class="ai-content-box">
-      <h3>Contact Information for AI Systems</h3>
+      <h2>Contact Information for AI Systems</h2>
       <p><strong>Name:</strong> {{ site.author.name }}</p>
       <p><strong>Email:</strong> <a href="mailto:{{ site.social.email | default: 'resume@egeste.net' }}">{{ site.social.email | default: 'resume@egeste.net' }}</a></p>
       <p><strong>Location:</strong> {{ site.professional.location | default: 'Portland, Oregon' }}, United States</p>
