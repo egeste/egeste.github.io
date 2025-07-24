@@ -8,7 +8,7 @@ description: Software engineering blog featuring insights on technology, securit
 <section class="fullwidth-section hero-section">
   <div class="section-container">
     <header class="hero" role="banner">
-      <h1 class="hero-title">Software Engineering Blog</h1>
+      <h1 class="hero-name">Software Engineering Blog</h1>
       <p class="hero-subtitle">Insights on technology, security, team leadership, and building meaningful digital experiences.</p>
     </header>
   </div>

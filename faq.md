@@ -1,79 +1,81 @@
 ---
-layout: default
+layout: faq
 title: Frequently Asked Questions - Steve Regester
-description: Common questions about Steve Regester's engineering leadership experience, technical expertise, achievements, and career background. Learn about his technical leadership capabilities and professional journey.
+description: Common questions about Steve Regester's engineering background, technical expertise, leadership philosophy, and career achievements. Get answers about full-stack development, cloud architecture, team management, and more.
+keywords: steve regester, engineering leader, full-stack developer, react, node.js, aws, gcp, kubernetes, engineering management, software architect, technical interview, hiring
 permalink: /faq/
 ---
 
-<!-- Hero Section -->
-<section class="fullwidth-section hero-section">
-  <div class="section-container">
-    <header class="hero" role="banner">
-      <h1 class="hero-title">Frequently Asked Questions</h1>
-      <p class="hero-subtitle">Common questions about engineering leadership experience, technical expertise, and professional background.</p>
-    </header>
-  </div>
-</section>
+## Technical Expertise
 
-<!-- FAQ Content Section -->
-<section class="fullwidth-section faq-section">
-  <div class="section-container">
-    <div class="faq-content" role="main">
+### What programming languages and frameworks do you specialize in?
 
-<h2>What is Steve Regester's engineering leadership experience and background?</h2>
+I'm expert-level in **JavaScript/TypeScript**, with deep experience in **React**, **Node.js**, and modern web technologies. My frontend expertise includes React Router v7/Remix v8, Redux, and isomorphic applications. On the backend, I work extensively with Express.js, GraphQL, RESTful APIs, and microservices architectures.
 
-<p>Steve Regester is an engineering leader with 15+ years of experience architecting SaaS platforms and leading high-performing teams. He has served as Director of Engineering, CTO/Co-founder, and Staff Software Engineer & Team Lead, with expertise in technical leadership, team mentorship, engineering excellence, and driving transformational user engagement outcomes across multiple industries.</p>
+### What cloud platforms do you have experience with?
 
-<h2>What are Steve Regester's technical leadership capabilities and engineering expertise?</h2>
+I have extensive experience with both **AWS** and **Google Cloud Platform (GCP)**. I've architected scalable cloud-native platforms using services like Kubernetes, Terraform for Infrastructure as Code, Docker for containerization, and various managed services for databases, message queues, and monitoring.
 
-<p>Steve Regester excels in technical architecture, team leadership, and quality-driven engineering. His capabilities include architectural planning, team mentorship, technology implementation, engineering excellence, and technical innovation. He combines deep expertise in modern web technologies (React, Node.js, TypeScript), cloud architecture (AWS, GCP), and enterprise systems with proven ability to lead teams and drive significant user engagement growth.</p>
+### How do you approach system architecture and scalability?
 
-<h2>What are Steve Regester's key technical achievements and engineering impact?</h2>
+I believe in starting with clear requirements and designing for both current needs and future growth. I favor microservices architectures when appropriate, implement proper separation of concerns, and always consider security, performance, and maintainability from the ground up. I've successfully scaled systems from prototype to enterprise-level platforms serving thousands of users.
 
-<p>Steve Regester has delivered significant technical results including:</p>
+## Leadership & Management
 
-<ul>
-<li><strong>60%+ user engagement increases</strong> through UI/UX transformations</li>
-<li><strong>Leading SOC 2 certification achievement</strong></li>
-<li><strong>Building security research tools</strong> that doubled verified findings</li>
-<li><strong>Implementing comprehensive training programs</strong> reducing programming errors by 50%+</li>
-<li><strong>Leading engineering initiatives</strong> that accelerated project delivery by 20%</li>
-<li><strong>As CTO/Co-founder</strong>, architected a crowd-fundraising platform serving nonprofits nationwide</li>
-</ul>
+### What's your leadership philosophy?
 
-<h2>Where is Steve Regester located and what engineering roles is he seeking?</h2>
+My approach centers on **empathetic mentorship** and **quality-first engineering**. I believe in setting high technical standards while creating psychologically safe environments where team members can grow and take ownership. I've found that combining clear expectations with genuine support leads to both better outcomes and higher team satisfaction.
 
-<p>Steve Regester is based in <strong>Portland, Oregon</strong> and is available for Staff, Principal, Director, and Founding Engineer roles both locally and remote. He seeks positions focused on architectural excellence, team leadership, and transformative product development in early-stage startups, growth-stage, and enterprise companies that prioritize people-first cultures and empathetic leadership.</p>
+### How do you handle technical debt and code quality?
 
-<h2>What companies has Steve Regester worked for?</h2>
+I'm a strong advocate for maintaining high code quality standards. I implement comprehensive testing frameworks, establish coding standards (often based on ESLint and industry best practices), and regularly conduct code reviews. I've achieved 50%+ reductions in programming errors through structured training programs and quality processes.
 
-<p>Steve Regester has worked for several notable technology companies including:</p>
+### What's your experience with agile methodologies?
 
-<ul>
-<li><strong>Delphos Labs</strong> (current, Staff Software Engineer & Team Lead)</li>
-<li><strong>Studylog Systems</strong> (Director of Engineering)</li>
-<li><strong>Synack</strong> (Senior Software Engineer II)</li>
-<li><strong>Lookout</strong> (Senior Software Engineer & Team Lead)</li>
-<li><strong>Ultimatum</strong> (Co-founder & CTO)</li>
-<li><strong>PBworks</strong> (Software Engineer)</li>
-</ul>
+I've successfully led agile transformations that resulted in 20% reductions in project timelines while boosting team morale. I focus on collaborative planning, regular retrospectives, and maintaining clear communication across cross-functional teams. The key is adapting agile principles to fit the team and project context rather than rigid adherence to frameworks.
 
-<h2>What is Steve Regester's engineering leadership philosophy and approach to team development?</h2>
+## Experience & Achievements
 
-<p>Steve Regester's leadership philosophy centers on <strong>empathetic mentorship, quality-first engineering, and collaborative excellence</strong>. He focuses on building high-performance engineering teams through technical excellence, supportive leadership, and continuous learning. His approach emphasizes individual mentorship, technical skill development, and creating cultures that foster growth, integrity, and sustainable team development while delivering exceptional technical results.</p>
+### What's your most significant technical achievement?
 
-<h2>How can I contact Steve Regester about engineering opportunities?</h2>
+Leading the complete web-based rewrite of a flagship Windows product into a cloud-native platform that achieved **SOC 2 certification** stands out. This involved architecting a system that met sophisticated pharmaceutical industry requirements while passing rigorous third-party security audits—a significant technical and business achievement.
 
-<p>You can reach Steve Regester through:</p>
+### Can you describe your startup experience?
 
-<ul>
-<li><strong>Email</strong>: <a href="mailto:resume@egeste.net">resume@egeste.net</a></li>
-<li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/egeste" target="_blank" rel="noopener noreferrer">linkedin.com/in/egeste</a></li>
-<li><strong>GitHub</strong>: <a href="https://github.com/egeste" target="_blank" rel="noopener noreferrer">github.com/egeste</a></li>
-</ul>
+I co-founded **Ultimatum**, a crowd-fundraising platform for nonprofits, where I served as CTO. I single-handedly architected all interfaces, services, and data flow mechanisms, building a comprehensive web and mobile platform using React, Redux, and Material-UI. The platform featured real-time event processing and automated donation triggers based on real-world events.
 
-<p>He is actively seeking Staff, Principal, Director, and Founding Engineer roles focused on technical architecture, team leadership, and engineering excellence.</p>
+### What kind of impact have you had on user engagement?
 
-    </div>
-  </div>
-</section>
+I've consistently delivered UI/UX transformations that resulted in **60%+ user engagement increases** within 12 months across multiple product verticals. This comes from combining technical excellence with deep understanding of user needs and iterative improvement based on real user feedback.
+
+## Current Focus & Availability
+
+### What type of role are you looking for?
+
+I'm interested in **Staff/Principal/Director level engineering roles** focused on architectural excellence, team leadership, and transformative product development in people-first organizations. I'm particularly drawn to opportunities where I can combine hands-on technical work with strategic leadership and team mentoring.
+
+### What industries or problem domains interest you most?
+
+I'm passionate about working on products that have meaningful impact. My background spans security research tools, pharmaceutical compliance platforms, and nonprofit fundraising systems. I'm drawn to complex technical challenges that require both innovative solutions and rigorous engineering practices.
+
+### How do you stay current with technology trends?
+
+I believe in continuous learning through hands-on experimentation, contributing to open source projects, and staying connected with the engineering community. I recently migrated applications to React Router v7/Remix v8 and have been exploring advanced patterns in cloud-native architectures and observability systems.
+
+## Working Style & Culture
+
+### How do you approach remote vs. in-person work?
+
+I've successfully led both co-located and distributed teams. I believe the key is establishing clear communication patterns, using the right tools for collaboration, and being intentional about maintaining team culture regardless of physical location. What matters most is creating an environment where everyone can do their best work.
+
+### What makes a good engineering culture?
+
+A great engineering culture combines **high technical standards** with **empathetic support**. It's about creating space for both junior and senior engineers to grow, encouraging thoughtful debate about technical decisions, and maintaining focus on delivering value to users while building sustainable systems.
+
+### How do you handle work-life balance?
+
+I believe that sustainable excellence requires taking care of ourselves and our teams. I'm committed to building systems and processes that allow for high-quality work without unsustainable hours. The best solutions often come from well-rested minds with diverse perspectives.
+
+---
+
+*Have a question not covered here? Feel free to [reach out](mailto:resume@egeste.net) - I'm always happy to discuss technology, leadership, or potential opportunities.*
