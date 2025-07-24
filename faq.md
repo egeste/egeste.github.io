@@ -78,4 +78,4 @@ I believe that sustainable excellence requires taking care of ourselves and our 
 
 ---
 
-*Have a question not covered here? Feel free to [reach out](mailto:resume@egeste.net) - I'm always happy to discuss technology, leadership, or potential opportunities.*
+*Have a question not covered here? Feel free to [reach out](mailto:{{ site.social.email }}) - I'm always happy to discuss technology, leadership, or potential opportunities.*

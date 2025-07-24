@@ -10,8 +10,8 @@
       this.canvas = document.getElementById('mesh-canvas');
       this.ctx = this.canvas.getContext('2d');
       this.nodes = [];
-      this.maxNodes = 80;
-      this.maxDistance = 300;
+      this.maxNodes = {{ site.mesh_animation.max_nodes }};
+      this.maxDistance = {{ site.mesh_animation.max_distance }};
       this.animationId = null;
       
       this.init();
@@ -102,7 +102,7 @@
         if (node.opacity <= 0) return;
         
         // Choose color based on whether node was user-created
-        const color = node.isUserCreated ? '6, 182, 212' : '139, 92, 246'; // cyan vs purple
+        const color = node.isUserCreated ? '{{ site.mesh_animation.colors.user_created }}' : '{{ site.mesh_animation.colors.default }}'; // cyan vs purple
         
         // Outer glow
         this.ctx.beginPath();

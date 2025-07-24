@@ -19,12 +19,12 @@
   <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
   
   <!-- ===== PRECONNECTS FOR PERFORMANCE ===== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% for url in site.fonts.preconnect %}<link rel="preconnect" href="{{ url }}"{% if url contains 'gstatic' %} crossorigin{% endif %}>
+  {% endfor %}
   
   <!-- ===== STYLESHEETS ===== -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="{{ site.fonts.stylesheet }}" rel="stylesheet">
   
   <!-- ===== SITE METADATA ===== -->
   <meta name="theme-color" content="{{ site.site_config.primary_color }}">
@@ -123,7 +123,7 @@
 </head>
 <body>
   <!-- Skip to main content link for keyboard users -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">{{ site.text.skip_to_content }}</a>
   
   {% include mesh-background.html %}
 
