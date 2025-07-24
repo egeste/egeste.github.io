@@ -2,24 +2,14 @@
 layout: default
 ---
 
-<article>
-  <div class="hero">
-    <h1 class="hero-title" style="font-size: var(--font-size-4xl);">{{ page.title }}</h1>
-    {% if page.subtitle %}
-    <p class="hero-subtitle" style="margin-bottom: 1rem;">{{ page.subtitle }}</p>
-    {% endif %}
-    <p class="hero-subtitle" style="font-size: var(--font-size-sm); opacity: 0.8;">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    </p>
-  </div>
+{% include hero-section.html title=page.title subtitle=page.subtitle date=page.date %}
 
-  <section class="section">
-    <div style="max-width: 800px; margin: 0 auto; font-size: var(--font-size-lg); line-height: 1.7;">
-      {{ content }}
-    </div>
+{% capture blog_content %}
+{{ content }}
 
-    <div style="max-width: 800px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--color-border);">
-      <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
-    </div>
-  </section>
-</article>
+<div class="blog-navigation">
+  <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
+</div>
+{% endcapture %}
+
+{% include content-section.html section_class="blog-section" content_class="blog-content" content=blog_content %}

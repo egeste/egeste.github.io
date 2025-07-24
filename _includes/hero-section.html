@@ -1,0 +1,16 @@
+<!-- Hero Section -->
+<section class="fullwidth-section hero-section">
+  <div class="section-container">
+    <header class="hero" role="banner">
+      <h1 class="hero-name">{{ include.title }}</h1>
+      {% if include.subtitle %}
+      <p class="hero-subtitle">{{ include.subtitle }}</p>
+      {% endif %}
+      {% if include.date %}
+      <p class="hero-subtitle" style="font-size: var(--text-sm); opacity: 0.8;">
+        <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%B %d, %Y" }}</time>
+      </p>
+      {% endif %}
+    </header>
+  </div>
+</section>
