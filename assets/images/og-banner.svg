@@ -1,0 +1,186 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(139, 92, 246, 0.1)" stroke-width="1"/>
+    </pattern>
+
+        <!-- Neon shadow -->
+    <filter id="neonShadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#8b5cf6" flood-opacity="0.6"/>
+    </filter>
+    
+    <!-- Shield shadow -->
+    <filter id="shieldShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="12" dy="20" stdDeviation="15" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    
+    <!-- Crystal facet gradients -->
+    <linearGradient id="facet1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <linearGradient id="facet2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="facet3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Grid overlay -->
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Animated mesh network nodes -->
+  <circle cx="100" cy="100" r="3" fill="rgba(139, 92, 246, 0.6)">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="150" r="2" fill="rgba(6, 182, 212, 0.5)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="80" r="2.5" fill="rgba(139, 92, 246, 0.4)">
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="120" r="3" fill="rgba(6, 182, 212, 0.6)">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="180" r="2" fill="rgba(139, 92, 246, 0.5)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Connection lines -->
+  <line x1="100" y1="100" x2="300" y2="150" stroke="rgba(139, 92, 246, 0.2)" stroke-width="1">
+    <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="300" y1="150" x2="500" y2="80" stroke="rgba(6, 182, 212, 0.2)" stroke-width="1">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="500" y1="80" x2="800" y2="120" stroke="rgba(139, 92, 246, 0.15)" stroke-width="1">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Shield logo behind content card -->
+  <g transform="translate(600, 290) scale(1.8)" opacity="1">
+    <!-- Central point -->
+    <circle cx="0" cy="0" r="3" fill="url(#primaryGrad)" opacity="1" filter="url(#cyberGlow)"/>
+    
+    <!-- Crystal shield with facets -->
+    <g transform="translate(0, 10)">
+    <!-- Main shield outline -->
+    <path d="M 0 -130 L -75 -110 L -85 -80 L -90 -20 L -75 30 L -50 80 L -20 110 L 0 125 L 20 110 L 50 80 L 75 30 L 90 -20 L 85 -80 L 75 -110 Z" 
+          fill="url(#primaryGrad)" stroke="none" opacity="0.9" filter="url(#shieldShadow)"/>
+    
+    <!-- Crystal facets -->
+    <!-- Top facet -->
+    <path d="M 0 -130 L -75 -110 L -30 -70 L 30 -70 L 75 -110 Z" 
+          fill="url(#facet1)" opacity="0.6"/>
+    
+    <!-- Left facet -->
+    <path d="M -75 -110 L -85 -80 L -90 -20 L -50 -10 L -30 -70 Z" 
+          fill="url(#facet2)" opacity="0.7"/>
+    
+    <!-- Right facet -->
+    <path d="M 75 -110 L 85 -80 L 90 -20 L 50 -10 L 30 -70 Z" 
+          fill="url(#facet1)" opacity="0.5"/>
+    
+    <!-- Center facet -->
+    <path d="M -30 -70 L -50 -10 L -25 40 L 0 50 L 25 40 L 50 -10 L 30 -70 Z" 
+          fill="url(#facet3)" opacity="0.8"/>
+    
+    <!-- Bottom left facet -->
+    <path d="M -50 -10 L -90 -20 L -75 30 L -50 80 L -25 40 Z" 
+          fill="url(#facet2)" opacity="0.6"/>
+    
+    <!-- Bottom right facet -->
+    <path d="M 50 -10 L 90 -20 L 75 30 L 50 80 L 25 40 Z" 
+          fill="url(#facet1)" opacity="0.7"/>
+    
+    <!-- Bottom point facets -->
+    <path d="M -25 40 L -50 80 L -20 110 L 0 125 L 0 50 Z" 
+          fill="url(#facet3)" opacity="0.5"/>
+    
+    <path d="M 25 40 L 50 80 L 20 110 L 0 125 L 0 50 Z" 
+          fill="url(#facet2)" opacity="0.6"/>
+    
+    <!-- Crystal highlights -->
+    <path d="M 0 -130 L -30 -100 L 0 -90 L 30 -100 Z" 
+          fill="#ffffff" opacity="0.4"/>
+    
+    <path d="M -40 -60 L -20 -50 L -30 -30 L -50 -40 Z" 
+          fill="#ffffff" opacity="0.3"/>
+    
+    <path d="M 40 -60 L 20 -50 L 30 -30 L 50 -40 Z" 
+          fill="#ffffff" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- Main content area -->
+  <rect x="50" y="250" width="1100" height="280" fill="rgba(0, 0, 0, 0.2)" rx="20" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  
+  <!-- Main heading -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="64" font-weight="800" text-anchor="middle" fill="url(#textGradient)">
+    Steve Regester
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="28" font-weight="400" text-anchor="middle" fill="rgba(255, 255, 255, 0.8)" letter-spacing="2px">
+    Engineering Leader &amp; Technical Director
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="18" font-weight="300" text-anchor="middle" fill="rgba(255, 255, 255, 0.6)">
+    15+ years architecting SaaS platforms • Leading high-performing teams • Engineering excellence
+  </text>
+  
+  <!-- Location/availability -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="rgba(6, 182, 212, 0.8)">
+    Portland, Oregon • Available for Staff/Principal/Director roles
+  </text>
+  
+  <!-- Decorative elements -->
+  <rect x="200" y="320" width="60" height="2" fill="rgba(139, 92, 246, 0.6)" rx="1">
+    <animate attributeName="width" values="30;60;30" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="940" y="320" width="60" height="2" fill="rgba(6, 182, 212, 0.6)" rx="1">
+    <animate attributeName="width" values="60;30;60" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Bottom tech elements -->
+  <rect x="100" y="550" width="40" height="4" fill="rgba(139, 92, 246, 0.4)" rx="2"/>
+  <rect x="160" y="550" width="25" height="4" fill="rgba(6, 182, 212, 0.4)" rx="2"/>
+  <rect x="200" y="550" width="60" height="4" fill="rgba(139, 92, 246, 0.3)" rx="2"/>
+  
+  <rect x="1000" y="550" width="40" height="4" fill="rgba(6, 182, 212, 0.4)" rx="2"/>
+  <rect x="1060" y="550" width="25" height="4" fill="rgba(139, 92, 246, 0.4)" rx="2"/>
+  <rect x="1100" y="550" width="50" height="4" fill="rgba(6, 182, 212, 0.3)" rx="2"/>
+</svg>
