@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  {% seo %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Accessibility improvements -->
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 1000;
+    }
+    .skip-link:focus {
+      top: 6px;
+    }
+
+    /* Ensure focus indicators are visible */
+    *:focus {
+      outline: 2px solid #0066cc;
+      outline-offset: 2px;
+    }
+
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      .achievement-item, .skill-category {
+        border: 2px solid currentColor !important;
+      }
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="site-container">
+    <!-- Page-wide mesh background -->
+    <div class="page-mesh-background" aria-hidden="true">
+      <canvas id="mesh-canvas"></canvas>
+    </div>
+    <header class="site-header" role="banner">
+      <nav class="nav-container" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="{{ '/' | relative_url }}" class="brand-link" aria-label="Steve Regester - Home">
+            <span class="brand-name">{{ site.title }}</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
+          <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>FAQ</a>
+          <a href="mailto:{{ site.email | default: 'resume@egeste.net' }}" class="nav-link nav-cta" aria-label="Contact Steve Regester via email">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main" id="main-content" role="main" tabindex="-1">
+      <div class="faq-page">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Animated Mesh Background
+    class MeshNetwork {
+      constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        if (!this.canvas) return;
+        
+        this.ctx = this.canvas.getContext('2d');
+        this.nodes = [];
+        this.connections = [];
+        this.nodeCount = 50;
+        this.maxDistance = 150;
+        this.animationId = null;
+        
+        this.init();
+        this.setupEventListeners();
+      }
+      
+      init() {
+        this.resize();
+        this.createNodes();
+        this.animate();
+      }
+      
+      resize() {
+        const rect = this.canvas.getBoundingClientRect();
+        const documentHeight = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.clientHeight,
+          document.documentElement.scrollHeight,
+          document.documentElement.offsetHeight
+        );
+        this.canvas.width = rect.width * window.devicePixelRatio;
+        this.canvas.height = documentHeight * window.devicePixelRatio;
+        this.ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+        this.width = rect.width;
+        this.height = documentHeight;
+        
+        // Update canvas style height to match document height
+        this.canvas.style.height = documentHeight + 'px';
+      }
+      
+      createNodes() {
+        this.nodes = [];
+        for (let i = 0; i < this.nodeCount; i++) {
+          this.nodes.push({
+            x: Math.random() * this.width,
+            y: Math.random() * this.height,
+            vx: (Math.random() - 0.5) * 1,
+            vy: (Math.random() - 0.5) * 1,
+            radius: Math.random() * 3 + 1
+          });
+        }
+      }
+      
+      updateNodes() {
+        this.nodes.forEach(node => {
+          node.x += node.vx;
+          node.y += node.vy;
+          
+          if (node.x < 0 || node.x > this.width) node.vx *= -1;
+          if (node.y < 0 || node.y > this.height) node.vy *= -1;
+          
+          node.x = Math.max(0, Math.min(this.width, node.x));
+          node.y = Math.max(0, Math.min(this.height, node.y));
+        });
+      }
+      
+      drawNodes() {
+        this.ctx.fillStyle = 'rgba(139, 92, 246, 0.8)';
+        this.nodes.forEach(node => {
+          this.ctx.beginPath();
+          this.ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+          this.ctx.fill();
+        });
+      }
+      
+      drawConnections() {
+        this.ctx.strokeStyle = 'rgba(139, 92, 246, 0.2)';
+        this.ctx.lineWidth = 1;
+        
+        for (let i = 0; i < this.nodes.length; i++) {
+          for (let j = i + 1; j < this.nodes.length; j++) {
+            const dx = this.nodes[i].x - this.nodes[j].x;
+            const dy = this.nodes[i].y - this.nodes[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < this.maxDistance) {
+              const opacity = (1 - distance / this.maxDistance) * 0.3;
+              this.ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`;
+              this.ctx.beginPath();
+              this.ctx.moveTo(this.nodes[i].x, this.nodes[i].y);
+              this.ctx.lineTo(this.nodes[j].x, this.nodes[j].y);
+              this.ctx.stroke();
+            }
+          }
+        }
+      }
+      
+      animate() {
+        this.ctx.clearRect(0, 0, this.width, this.height);
+        this.updateNodes();
+        this.drawConnections();
+        this.drawNodes();
+        this.animationId = requestAnimationFrame(() => this.animate());
+      }
+      
+      setupEventListeners() {
+        window.addEventListener('resize', () => {
+          this.resize();
+          this.createNodes();
+        });
+        
+        // Pause animation when not visible for performance
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            if (this.animationId) {
+              cancelAnimationFrame(this.animationId);
+              this.animationId = null;
+            }
+          } else {
+            if (!this.animationId) {
+              this.animate();
+            }
+          }
+        });
+      }
+      
+      destroy() {
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+        }
+      }
+    }
+    
+    // Initialize mesh background when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const meshNetwork = new MeshNetwork('mesh-canvas');
+    });
+    
+    // Respect user's motion preferences
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.getElementById('mesh-canvas')?.remove();
+    }
+  </script>
+</body>
+</html>
