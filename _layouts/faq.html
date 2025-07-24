@@ -8,15 +8,15 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  {% for url in site.fonts.preconnect %}<link rel="preconnect" href="{{ url }}"{% if url contains 'gstatic' %} crossorigin{% endif %}>
+  {% endfor %}
+  <link href="{{ site.fonts.stylesheet }}" rel="stylesheet">
 
   {% include accessibility-styles.html %}
 </head>
 <body>
   <!-- Skip to main content link for keyboard users -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">{{ site.text.skip_to_content }}</a>
 
   {% include mesh-background.html %}
 
