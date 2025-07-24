@@ -202,6 +202,42 @@ mesh_animation:
     user_created: "6, 182, 212"
     default: "139, 92, 246"
 
+# ===== PWA MANIFEST =====
+manifest:
+  start_url: "/"
+  display: "standalone"
+  background_color: "#1a1a2e"
+  orientation: "portrait-primary"
+  scope: "/"
+  dir: "ltr"
+  categories: ["business", "productivity", "professional"]
+  icons:
+    - src: "/assets/images/favicon.svg"
+      sizes: "any"
+      type: "image/svg+xml"
+      purpose: "any maskable"
+    - src: "/assets/images/apple-touch-icon.png"
+      sizes: "180x180"
+      type: "image/png"
+      purpose: "any"
+    - src: "/assets/images/favicon-32x32.png"
+      sizes: "32x32"
+      type: "image/png"
+      purpose: "any"
+    - src: "/assets/images/favicon-16x16.png"
+      sizes: "16x16"
+      type: "image/png"
+      purpose: "any"
+  screenshots:
+    - sizes: "1200x630"
+      type: "image/png"
+  related_applications: []
+  prefer_related_applications: false
+  edge_side_panel:
+    preferred_width: 480
+  launch_handler:
+    client_mode: "navigate-existing"
+
 # ===== SEO SETTINGS =====
 seo:
   robots_content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
