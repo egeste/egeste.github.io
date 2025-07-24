@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 440 440" width="400" height="400">
+  <defs>
+    <!-- Cyberpunk gradient matching hero text -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="35%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="65%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Vibrant cyberpunk background -->
+    <radialGradient id="darkGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:0.9" />
+      <stop offset="60%" style="stop-color:#0f0f23;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Enhanced glow for cyberpunk effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Stronger cyberpunk glow -->
+    <filter id="cyberGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feColorMatrix in="coloredBlur" values="1 0 1 0 0  0 0 1 0 0  1 0 1 0 0  0 0 0 1 0"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Neon shadow -->
+    <filter id="neonShadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#8b5cf6" flood-opacity="0.6"/>
+    </filter>
+    
+    <!-- Shield shadow -->
+    <filter id="shieldShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="12" dy="20" stdDeviation="15" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    
+    <!-- Crystal facet gradients -->
+    <linearGradient id="facet1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <linearGradient id="facet2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="facet3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cyberpunk dark background -->
+  <circle cx="200" cy="200" r="195" fill="url(#darkGrad)" stroke="url(#primaryGrad)" stroke-width="2" opacity="1"/>
+  
+  
+  
+  
+
+  <!-- 8 Fibonacci spirals radiating from center -->
+  <g transform="translate(200, 200)" opacity="0.9">
+    <!-- Spiral 1 - 0 degrees -->
+    <g>
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.9" filter="url(#cyberGlow)"/>
+    </g>
+    
+    <!-- Spiral 2 - 45 degrees -->
+    <g transform="rotate(45)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 3 - 90 degrees -->
+    <g transform="rotate(90)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 4 - 135 degrees -->
+    <g transform="rotate(135)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 5 - 180 degrees -->
+    <g transform="rotate(180)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 6 - 225 degrees -->
+    <g transform="rotate(225)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 7 - 270 degrees -->
+    <g transform="rotate(270)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Spiral 8 - 315 degrees -->
+    <g transform="rotate(315)">
+      <path d="M 0 0 A 3 3 0 0 1 3 3 A 5 5 0 0 1 -2 8 A 8 8 0 0 1 -10 0 A 13 13 0 0 1 3 -13 A 21 21 0 0 1 24 8 A 34 34 0 0 1 -10 42 A 55 55 0 0 1 -65 -13 A 89 89 0 0 1 24 -102 A 144 144 0 0 1 168 -26" 
+            fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" opacity="0.8" filter="url(#glow)"/>
+    </g>
+    
+    
+    <!-- Central point -->
+    <circle cx="0" cy="0" r="3" fill="url(#primaryGrad)" opacity="1" filter="url(#cyberGlow)"/>
+    
+    <!-- Crystal shield with facets -->
+    <g transform="translate(0, 10)">
+    <!-- Main shield outline -->
+    <path d="M 0 -130 L -75 -110 L -85 -80 L -90 -20 L -75 30 L -50 80 L -20 110 L 0 125 L 20 110 L 50 80 L 75 30 L 90 -20 L 85 -80 L 75 -110 Z" 
+          fill="url(#primaryGrad)" stroke="none" opacity="0.9" filter="url(#shieldShadow)"/>
+    
+    <!-- Crystal facets -->
+    <!-- Top facet -->
+    <path d="M 0 -130 L -75 -110 L -30 -70 L 30 -70 L 75 -110 Z" 
+          fill="url(#facet1)" opacity="0.6"/>
+    
+    <!-- Left facet -->
+    <path d="M -75 -110 L -85 -80 L -90 -20 L -50 -10 L -30 -70 Z" 
+          fill="url(#facet2)" opacity="0.7"/>
+    
+    <!-- Right facet -->
+    <path d="M 75 -110 L 85 -80 L 90 -20 L 50 -10 L 30 -70 Z" 
+          fill="url(#facet1)" opacity="0.5"/>
+    
+    <!-- Center facet -->
+    <path d="M -30 -70 L -50 -10 L -25 40 L 0 50 L 25 40 L 50 -10 L 30 -70 Z" 
+          fill="url(#facet3)" opacity="0.8"/>
+    
+    <!-- Bottom left facet -->
+    <path d="M -50 -10 L -90 -20 L -75 30 L -50 80 L -25 40 Z" 
+          fill="url(#facet2)" opacity="0.6"/>
+    
+    <!-- Bottom right facet -->
+    <path d="M 50 -10 L 90 -20 L 75 30 L 50 80 L 25 40 Z" 
+          fill="url(#facet1)" opacity="0.7"/>
+    
+    <!-- Bottom point facets -->
+    <path d="M -25 40 L -50 80 L -20 110 L 0 125 L 0 50 Z" 
+          fill="url(#facet3)" opacity="0.5"/>
+    
+    <path d="M 25 40 L 50 80 L 20 110 L 0 125 L 0 50 Z" 
+          fill="url(#facet2)" opacity="0.6"/>
+    
+    <!-- Crystal highlights -->
+    <path d="M 0 -130 L -30 -100 L 0 -90 L 30 -100 Z" 
+          fill="#ffffff" opacity="0.4"/>
+    
+    <path d="M -40 -60 L -20 -50 L -30 -30 L -50 -40 Z" 
+          fill="#ffffff" opacity="0.3"/>
+    
+    <path d="M 40 -60 L 20 -50 L 30 -30 L 50 -40 Z" 
+          fill="#ffffff" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- Cyberpunk outer rings - scaled up -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#primaryGrad)" stroke-width="3" opacity="0.4" stroke-dasharray="12,8" filter="url(#glow)"/>
+  <circle cx="200" cy="200" r="155" fill="none" stroke="url(#primaryGrad)" stroke-width="2" opacity="0.3" stroke-dasharray="6,12"/>
+  
+</svg>
