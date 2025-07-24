@@ -4,7 +4,7 @@
 </div>
 
 <script>
-  // Animated mesh network background
+  // Animated mesh network background with bifurcation dynamics
   class MeshNetwork {
     constructor() {
       this.canvas = document.getElementById('mesh-canvas');
@@ -13,6 +13,12 @@
       this.maxNodes = {{ site.mesh_animation.max_nodes }};
       this.maxDistance = {{ site.mesh_animation.max_distance }};
       this.animationId = null;
+      
+      // Bifurcation parameters
+      this.bifurcationRate = 0.02; // Parameter 'r' in bifurcation equation
+      this.time = 0;
+      this.populationHistory = [];
+      this.targetPopulation = this.maxNodes;
       
       this.init();
       this.createNodes();
@@ -37,7 +43,7 @@
       }
     }
     
-    createNode(x = null, y = null, isUserCreated = false) {
+    createNode(x = null, y = null, isUserCreated = false, parentNode = null) {
       const now = Date.now();
       return {
         x: x !== null ? x : Math.random() * this.canvas.width,
@@ -45,54 +51,178 @@
         vx: (Math.random() - 0.5) * 0.8,
         vy: (Math.random() - 0.5) * 0.8,
         radius: Math.random() * 3 + 1.5,
+        
+        // Life cycle properties
         birthTime: now,
-        lifetime: Math.random() * 25000 + 5000, // 5-30 seconds
+        age: 0,
+        maturityAge: 3000 + Math.random() * 2000, // 3-5 seconds to mature
+        maxLifetime: Math.random() * 25000 + 10000, // 10-35 seconds max life
+        reproductionCooldown: 0,
+        reproductionRate: 0.3 + Math.random() * 0.4, // 0.3-0.7 reproduction drive
+        
+        // Visual properties
         opacity: 0,
-        fadeInDuration: 1000, // 1 second fade in
-        fadeOutDuration: 2000, // 2 second fade out
-        isUserCreated: isUserCreated
+        fadeInDuration: 1000,
+        fadeOutDuration: 2000,
+        
+        // Genetics (inherit from parent if available)
+        genetics: {
+          speed: parentNode ? parentNode.genetics.speed * (0.9 + Math.random() * 0.2) : Math.random(),
+          sociability: parentNode ? parentNode.genetics.sociability * (0.9 + Math.random() * 0.2) : Math.random(),
+          longevity: parentNode ? parentNode.genetics.longevity * (0.9 + Math.random() * 0.2) : Math.random()
+        },
+        
+        // Life state
+        isUserCreated: isUserCreated,
+        isAlive: true,
+        isMature: false,
+        generation: parentNode ? parentNode.generation + 1 : 0
       };
     }
     
+    // Bifurcation algorithm to calculate dynamic population target
+    calculateBifurcationPopulation() {
+      this.time += 0.01; // Slow time progression
+      
+      // Logistic map: x(n+1) = r * x(n) * (1 - x(n))
+      // We'll use the current population ratio as our x value
+      const currentRatio = this.nodes.length / this.maxNodes;
+      const nextRatio = this.bifurcationRate * currentRatio * (1 - currentRatio);
+      
+      // Oscillating bifurcation rate for complex dynamics
+      const oscillatingRate = 3.2 + 0.5 * Math.sin(this.time * 0.1);
+      const complexRatio = oscillatingRate * currentRatio * (1 - currentRatio);
+      
+      // Calculate target population with some chaos
+      this.targetPopulation = Math.max(5, Math.min(this.maxNodes, 
+        this.maxNodes * (0.5 + 0.3 * Math.sin(this.time * 0.05) + 0.2 * complexRatio)
+      ));
+      
+      // Store history for emergent patterns
+      this.populationHistory.push(this.nodes.length);
+      if (this.populationHistory.length > 100) {
+        this.populationHistory.shift();
+      }
+    }
+
+    // Find nearby nodes for life interactions
+    findNearbyNodes(node, distance = this.maxDistance * 0.3) {
+      return this.nodes.filter(other => {
+        if (other === node || !other.isAlive) return false;
+        const dx = node.x - other.x;
+        const dy = node.y - other.y;
+        return Math.sqrt(dx * dx + dy * dy) < distance;
+      });
+    }
+    
+    // Handle reproduction between nodes
+    attemptReproduction(node) {
+      if (!node.isMature || node.reproductionCooldown > 0) return;
+      
+      const nearbyNodes = this.findNearbyNodes(node, 50);
+      const potentialMates = nearbyNodes.filter(other => 
+        other.isMature && other.reproductionCooldown === 0 && other !== node
+      );
+      
+      if (potentialMates.length > 0 && Math.random() < node.reproductionRate * 0.01) {
+        const mate = potentialMates[Math.floor(Math.random() * potentialMates.length)];
+        
+        // Create offspring between the two nodes
+        const childX = (node.x + mate.x) / 2 + (Math.random() - 0.5) * 20;
+        const childY = (node.y + mate.y) / 2 + (Math.random() - 0.5) * 20;
+        
+        const child = this.createNode(childX, childY, false, node);
+        this.nodes.push(child);
+        
+        // Set reproduction cooldown for both parents
+        node.reproductionCooldown = 5000 + Math.random() * 3000; // 5-8 seconds
+        mate.reproductionCooldown = 5000 + Math.random() * 3000;
+      }
+    }
+
     updateNodes() {
       const now = Date.now();
+      
+      // Calculate dynamic population target using bifurcation
+      this.calculateBifurcationPopulation();
       
       // Update existing nodes
       for (let i = this.nodes.length - 1; i >= 0; i--) {
         const node = this.nodes[i];
         
-        // Update position
-        node.x += node.vx;
-        node.y += node.vy;
+        // Update life cycle
+        node.age = now - node.birthTime;
+        node.isMature = node.age > node.maturityAge;
+        
+        // Decrease reproduction cooldown
+        if (node.reproductionCooldown > 0) {
+          node.reproductionCooldown = Math.max(0, node.reproductionCooldown - 16);
+        }
+        
+        // Movement influenced by genetics and neighbors
+        const nearbyNodes = this.findNearbyNodes(node, 80);
+        let socialForceX = 0, socialForceY = 0;
+        
+        // Social behavior based on genetics
+        nearbyNodes.forEach(other => {
+          const dx = other.x - node.x;
+          const dy = other.y - node.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const influence = node.genetics.sociability * 0.001;
+          
+          socialForceX += (dx / distance) * influence;
+          socialForceY += (dy / distance) * influence;
+        });
+        
+        // Apply movement with genetic speed modifier
+        const speedMultiplier = 0.5 + node.genetics.speed * 0.5;
+        node.x += (node.vx + socialForceX) * speedMultiplier;
+        node.y += (node.vy + socialForceY) * speedMultiplier;
         
         // Bounce off edges
         if (node.x < 0 || node.x > this.canvas.width) node.vx *= -1;
         if (node.y < 0 || node.y > this.canvas.height) node.vy *= -1;
         
-        // Update opacity based on lifetime
-        const age = now - node.birthTime;
-        const timeUntilDeath = node.lifetime - age;
+        // Handle reproduction
+        if (this.nodes.length < this.maxNodes) {
+          this.attemptReproduction(node);
+        }
         
-        if (age < node.fadeInDuration) {
-          // Fading in
-          node.opacity = age / node.fadeInDuration;
-        } else if (timeUntilDeath < node.fadeOutDuration) {
-          // Fading out
-          node.opacity = Math.max(0, timeUntilDeath / node.fadeOutDuration);
-        } else {
-          // Fully visible
+        // Update visual opacity
+        if (node.age < node.fadeInDuration) {
+          node.opacity = node.age / node.fadeInDuration;
+        } else if (!node.dying) {
           node.opacity = 1;
         }
         
-        // Remove dead nodes
-        if (age >= node.lifetime) {
-          this.nodes.splice(i, 1);
+        // Life-based death conditions
+        const longevityFactor = node.genetics.longevity;
+        const adjustedMaxLifetime = node.maxLifetime * (0.5 + longevityFactor);
+        const overpopulationStress = this.nodes.length > this.targetPopulation ? 2 : 1;
+        const deathAge = adjustedMaxLifetime / overpopulationStress;
+        
+        if (node.age >= deathAge && !node.dying) {
+          node.dying = true;
+          node.deathStartTime = now;
+        }
+        
+        // Handle dying nodes with fade out
+        if (node.dying) {
+          const deathAge = now - node.deathStartTime;
+          const fadeOutProgress = deathAge / node.fadeOutDuration;
+          
+          if (fadeOutProgress >= 1) {
+            node.isAlive = false;
+            this.nodes.splice(i, 1);
+          } else {
+            node.opacity = Math.max(0, 1 - fadeOutProgress);
+          }
         }
       }
       
-      // Only add new nodes if we're below the target count
-      // This allows natural equilibrium through organic death cycles
-      if (this.nodes.length < this.maxNodes) {
+      // Bifurcation-controlled spontaneous generation (immigration)
+      const immigrationProbability = this.nodes.length < this.targetPopulation * 0.7 ? 0.02 : 0.005;
+      if (Math.random() < immigrationProbability && this.nodes.length < this.maxNodes) {
         this.nodes.push(this.createNode());
       }
     }
