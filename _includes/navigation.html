@@ -1,17 +1,9 @@
 <header class="site-header" role="banner">
-  <nav class="nav-container" role="navigation" aria-label="Main navigation">
-    <div class="nav-brand">
-      <a href="{{ '/' | relative_url }}" class="brand-link" aria-label="{{ site.author.name }} - Home">
-        <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }} Logo" class="brand-logo" width="32" height="32" style="vertical-align: middle;">
-        <span class="brand-name">{{ site.title }}</span>
-      </a>
-    </div>
-    <div class="nav-links">
-      <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
-      <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
-      <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>FAQ</a>
-      <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">Contact</a>
-    </div>
+  <nav class="nav-container" role="navigation" aria-label="Main navigation" style="display: flex; justify-content: space-between; width: 100%;">
+    <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>Projects</a>
+    <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>Blog</a>
+    <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>FAQ</a>
+    <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">Contact</a>
   </nav>
 </header>
