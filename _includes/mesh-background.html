@@ -37,7 +37,7 @@
       }
     }
     
-    createNode(x = null, y = null) {
+    createNode(x = null, y = null, isUserCreated = false) {
       const now = Date.now();
       return {
         x: x !== null ? x : Math.random() * this.canvas.width,
@@ -49,7 +49,8 @@
         lifetime: Math.random() * 25000 + 5000, // 5-30 seconds
         opacity: 0,
         fadeInDuration: 1000, // 1 second fade in
-        fadeOutDuration: 2000 // 2 second fade out
+        fadeOutDuration: 2000, // 2 second fade out
+        isUserCreated: isUserCreated
       };
     }
     
@@ -100,16 +101,19 @@
       this.nodes.forEach(node => {
         if (node.opacity <= 0) return;
         
+        // Choose color based on whether node was user-created
+        const color = node.isUserCreated ? '6, 182, 212' : '139, 92, 246'; // cyan vs purple
+        
         // Outer glow
         this.ctx.beginPath();
         this.ctx.arc(node.x, node.y, node.radius + 2, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgba(139, 92, 246, ${0.2 * node.opacity})`;
+        this.ctx.fillStyle = `rgba(${color}, ${0.2 * node.opacity})`;
         this.ctx.fill();
         
         // Main node
         this.ctx.beginPath();
         this.ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-        this.ctx.fillStyle = `rgba(139, 92, 246, ${0.8 * node.opacity})`;
+        this.ctx.fillStyle = `rgba(${color}, ${0.8 * node.opacity})`;
         this.ctx.fill();
       });
     }
@@ -168,7 +172,7 @@
     }
     
     addNode(x, y) {
-      this.nodes.push(this.createNode(x, y));
+      this.nodes.push(this.createNode(x, y, true));
     }
     
     destroy() {
