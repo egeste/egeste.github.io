@@ -38,16 +38,28 @@
     
     createNodes() {
       this.nodes = [];
-      for (let i = 0; i < this.maxNodes; i++) {
+      // Start with just a few nodes, let the rest spawn gradually
+      const initialNodes = 3;
+      for (let i = 0; i < initialNodes; i++) {
         this.nodes.push(this.createNode());
       }
     }
     
     createNode(x = null, y = null, isUserCreated = false, parentNode = null) {
       const now = Date.now();
+      
+      // If not user-created and no specific position, spawn from center
+      if (!isUserCreated && x === null && y === null) {
+        x = this.canvas.width / 2 + (Math.random() - 0.5) * 50; // Small variation around center
+        y = this.canvas.height / 2 + (Math.random() - 0.5) * 50;
+      } else if (x === null || y === null) {
+        x = x !== null ? x : Math.random() * this.canvas.width;
+        y = y !== null ? y : Math.random() * this.canvas.height;
+      }
+      
       return {
-        x: x !== null ? x : Math.random() * this.canvas.width,
-        y: y !== null ? y : Math.random() * this.canvas.height,
+        x: x,
+        y: y,
         vx: (Math.random() - 0.5) * 0.8,
         vy: (Math.random() - 0.5) * 0.8,
         radius: Math.random() * 3 + 1.5,
@@ -127,11 +139,8 @@
       if (potentialMates.length > 0 && Math.random() < node.reproductionRate * 0.01) {
         const mate = potentialMates[Math.floor(Math.random() * potentialMates.length)];
         
-        // Create offspring between the two nodes
-        const childX = (node.x + mate.x) / 2 + (Math.random() - 0.5) * 20;
-        const childY = (node.y + mate.y) / 2 + (Math.random() - 0.5) * 20;
-        
-        const child = this.createNode(childX, childY, false, node);
+        // Create offspring at center (not between parents)
+        const child = this.createNode(null, null, false, node);
         this.nodes.push(child);
         
         // Set reproduction cooldown for both parents
@@ -179,9 +188,14 @@
         node.x += (node.vx + socialForceX) * speedMultiplier;
         node.y += (node.vy + socialForceY) * speedMultiplier;
         
-        // Bounce off edges
-        if (node.x < 0 || node.x > this.canvas.width) node.vx *= -1;
-        if (node.y < 0 || node.y > this.canvas.height) node.vy *= -1;
+        // Allow nodes to wander off screen - remove them when far enough away
+        const margin = 200; // How far off-screen before removal
+        if (node.x < -margin || node.x > this.canvas.width + margin || 
+            node.y < -margin || node.y > this.canvas.height + margin) {
+          // Mark for removal by aging them out
+          node.dying = true;
+          node.deathStartTime = now;
+        }
         
         // Handle reproduction
         if (this.nodes.length < this.maxNodes) {
@@ -221,7 +235,16 @@
       }
       
       // Bifurcation-controlled spontaneous generation (immigration)
-      const immigrationProbability = this.nodes.length < this.targetPopulation * 0.7 ? 0.02 : 0.005;
+      // Higher probability when below target, very low when at/above target
+      let immigrationProbability;
+      if (this.nodes.length < this.targetPopulation * 0.5) {
+        immigrationProbability = 0.015; // More frequent when very low
+      } else if (this.nodes.length < this.targetPopulation * 0.8) {
+        immigrationProbability = 0.008; // Moderate when approaching target
+      } else {
+        immigrationProbability = 0.002; // Very rare when at/above target
+      }
+      
       if (Math.random() < immigrationProbability && this.nodes.length < this.maxNodes) {
         this.nodes.push(this.createNode());
       }
