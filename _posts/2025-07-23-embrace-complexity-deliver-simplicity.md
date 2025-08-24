@@ -3,6 +3,8 @@ layout: post
 title: "Embrace Complexity, Deliver Simplicity"
 subtitle: "There's something beautiful about software that feels effortless. Behind that effortlessness is a choice most people never see."
 date: 2025-07-23 00:00:00 -0000
+tags: [engineering, software]
+author: Steve
 ---
 
 ## The Thing About Great Software
