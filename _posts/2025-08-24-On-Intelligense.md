@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "The Hubris of Intelligence"
-subtitle: ""Intelligence" is one of those words we toss around as if we all agree on what it means. But press a little harder, and it slips through the cracks like water."
+subtitle: "On the Nature of Intelligence (or, What We Think We Understand About Intelligence)"
 date: 2025-08-24 00:00:00
 ---
-
-# On the Nature of Intelligence (or, What We Think We Understand About Intelligence)
 
 "Intelligence" is one of those words we toss around as if we all agree on what it means. But press a little harder, and it slips through the cracks like water. Is intelligence the ability to solve problems? To adapt to new environments? To use language? To build tools? To self-reflect? The history of philosophy, psychology, and biology is full of attempts at definitions - and none of them have stuck.
 
