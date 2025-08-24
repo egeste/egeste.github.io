@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Hubris of Intelligence"
-subtitle: "On the Nature of Intelligence (or, What We Think We Understand About Intelligence)"
+subtitle: ""Intelligence" is one of those words we toss around as if we all agree on what it means. But press a little harder, and it slips through the cracks like water."
 date: 2025-08-24 00:00:00
 ---
 
