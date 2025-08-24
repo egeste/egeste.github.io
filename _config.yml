@@ -118,7 +118,7 @@ professional:
   current_role: "Staff Software Engineer & Team Lead"
   
   # Career Context
-  status: "available-for-hire"
+  status: "Reversing binaries with AI @ https://delphoslabs.com"
   experience_years: "15+ years"
   location: "Portland, Oregon"
   
@@ -128,7 +128,7 @@ professional:
   company_types: ["Early-stage startups", "Growth-stage companies", "Enterprise companies"]
   
   # Core Skills
-  expert_technologies: ["React", "Node.js", "TypeScript", "AWS"]
+  expert_technologies: ["React", "Node.js", "TypeScript", "Python", "AWS", "Docker"]
   key_skills: ["Technical Leadership", "Team Mentorship", "SaaS Architecture", "Full-Stack Development", "Engineering Excellence", "SOC 2 Compliance"]
   
   # Key Achievements
