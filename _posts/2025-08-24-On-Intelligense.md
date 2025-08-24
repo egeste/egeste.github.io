@@ -1,8 +1,8 @@
 ---
-title: 'The Hubris of "Intelligence"'
+layout: post
+title: "The Hubris of Intelligence"
+subtitle: "On the Nature of Intelligence (or, What We Think We Understand About Intelligence)"
 date: 2025-08-24 00:00:00
-categories: [ ai ]
-tags: [ ai, intelligence, hubris, history ]
 ---
 
 # On the Nature of Intelligence (or, What We Think We Understand About Intelligence)
