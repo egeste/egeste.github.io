@@ -5,7 +5,10 @@ layout: default
 {% include hero-section.html title=page.title subtitle=page.subtitle date=page.date %}
 
 {% capture blog_content %}
+
 {{ content }}
+
+<span>&mdash; {{ include.author }}</span>
 
 <div class="blog-navigation">
   <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
