@@ -810,7 +810,7 @@ a:not(.btn):not(.card-link):not(.nav-link):not(.brand-link) {
 article {
   h2, h3, h4 {
     color: var(--text);
-    margin-top: var(--space-8);
+    margin-top: var(--space-8) !important;
     margin-bottom: var(--space-4);
     font-weight: 600;
   }
@@ -998,7 +998,6 @@ strong {
 
 /* Ensure proper heading hierarchy */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1em;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5em;
