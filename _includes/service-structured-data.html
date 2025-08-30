@@ -1,0 +1,88 @@
+<!-- Service-specific structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ page.title | split: ' - ' | first }}",
+  "description": "{{ page.description }}",
+  "provider": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "{{ site.author.job_title }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.site_config.contact_email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ site.site_config.city }}",
+      "addressRegion": "{{ site.site_config.state }}"
+    },
+    "sameAs": {{ site.social.links | jsonify }}
+  },
+  "serviceType": "Technology Consulting",
+  "areaServed": "Nationwide",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "{{ page.url | absolute_url }}",
+    "serviceSmsNumber": "{{ site.site_config.contact_email }}"
+  }
+  {% if page.type == 'service' %},
+  "category": "Professional Services",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog", 
+    "name": "{{ page.title | split: ' - ' | first }}",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{{ page.title | split: ' - ' | first }}",
+          "description": "{{ page.description }}"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "price": "Contact for quote"
+        }
+      }
+    ]
+  }
+  {% endif %}
+}
+</script>
+
+<!-- Breadcrumb structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    }
+    {% if page.type == 'service' %},
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Services",
+      "item": "{{ site.url }}/#services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title | split: ' - ' | first }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+    {% elsif page.url != '/' %},
+    {
+      "@type": "ListItem",
+      "position": 2, 
+      "name": "{{ page.title | split: ' - ' | first }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+    {% endif %}
+  ]
+}
+</script>

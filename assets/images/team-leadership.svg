@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <defs>
+    <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f9fafb"/>
+  
+  <!-- Team structure visualization -->
+  <g opacity="0.8">
+    <!-- Leader (larger circle) -->
+    <circle cx="150" cy="80" r="20" fill="url(#teamGrad)" stroke="#374151" stroke-width="2"/>
+    <circle cx="150" cy="80" r="12" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Team members -->
+    <circle cx="100" cy="130" r="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="150" cy="130" r="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="200" cy="130" r="12" fill="#e5e7eb" stroke="#6b7280" stroke-width="1"/>
+    
+    <!-- Additional team members -->
+    <circle cx="75" cy="160" r="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    <circle cx="125" cy="160" r="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    <circle cx="175" cy="160" r="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    <circle cx="225" cy="160" r="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    
+    <!-- Connection lines from leader to senior members -->
+    <line x1="150" y1="100" x2="100" y2="118" stroke="#9ca3af" stroke-width="2"/>
+    <line x1="150" y1="100" x2="150" y2="118" stroke="#9ca3af" stroke-width="2"/>
+    <line x1="150" y1="100" x2="200" y2="118" stroke="#9ca3af" stroke-width="2"/>
+    
+    <!-- Connection lines from senior members to juniors -->
+    <line x1="100" y1="142" x2="75" y2="152" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="100" y1="142" x2="125" y2="152" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="200" y1="142" x2="175" y2="152" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="200" y1="142" x2="225" y2="152" stroke="#d1d5db" stroke-width="1"/>
+    
+    <!-- Leadership indicators -->
+    <path d="M 140 70 L 150 60 L 160 70" stroke="#ffffff" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="150" y="40" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">LEADERSHIP</text>
+  <text x="50" y="190" font-family="Arial" font-size="8" fill="#6b7280">Mentorship • Guidance • Growth</text>
+</svg>

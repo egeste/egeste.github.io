@@ -92,34 +92,65 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Person", "SoftwareEngineer"],
+    "@type": ["Person", "ProfessionalService"],
     "name": "{{ site.author.name }}",
     "url": "{{ site.url }}",
     "email": "{{ site.site_config.contact_email }}",
-    "jobTitle": "{{ site.professional.current_role }}",
+    "jobTitle": "{{ site.author.job_title }}",
     "description": "{{ site.author.bio | strip_html | strip_newlines }}",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "{{ site.professional.current_company }}"
+    "serviceType": "Technology Consulting",
+    "areaServed": "Nationwide",
+    "knowsAbout": {{ site.author.skills | jsonify }},
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Technology Consulting Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Startup Consulting",
+            "description": "Founding engineer services, CTO consulting, MVP development"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full-Stack Engineering",
+            "description": "End-to-end application development, React, Node.js, cloud deployment"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Business Automation",
+            "description": "Workflow automation, system integration, process optimization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Security Testing & Code Review", 
+            "description": "Security assessment, code review, vulnerability testing"
+          }
+        }
+      ]
     },
-    "knowsAbout": {{ site.professional.key_skills | jsonify }},
-    "award": {{ site.professional.achievements | jsonify }},
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "{{ site.site_config.city }}",
       "addressRegion": "{{ site.site_config.state }}"
     },
-    "sameAs": {{ site.social.links | jsonify }},
-    "seeks": {
-      "@type": "JobPosting",
-      "title": "{{ site.professional.seeking_roles | join: ', ' }} Roles",
-      "jobLocation": {
-        "@type": "Place",
-        "name": "{{ site.professional.work_locations | join: ' or ' }}"
-      }
-    }
+    "sameAs": {{ site.social.links | jsonify }}
   }
   </script>
+  
+  {% if page.type == 'service' %}
+    {% include service-structured-data.html %}
+  {% endif %}
 </head>
 <body>
   <!-- Skip to main content link for keyboard users -->

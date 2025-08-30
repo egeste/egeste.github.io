@@ -10,8 +10,8 @@
       this.canvas = document.getElementById('mesh-canvas');
       this.ctx = this.canvas.getContext('2d');
       this.nodes = [];
-      this.maxNodes = {{ site.mesh_animation.max_nodes }};
-      this.maxDistance = {{ site.mesh_animation.max_distance }};
+      this.maxNodes = 64;
+      this.maxDistance = 256;
       this.animationId = null;
       
       // Bifurcation parameters
@@ -38,8 +38,8 @@
     
     createNodes() {
       this.nodes = [];
-      // Start with just a few nodes, let the rest spawn gradually
-      const initialNodes = 3;
+      // Start with more nodes for a richer initial appearance
+      const initialNodes = 12;
       for (let i = 0; i < initialNodes; i++) {
         this.nodes.push(this.createNode());
       }
@@ -48,13 +48,16 @@
     createNode(x = null, y = null, isUserCreated = false, parentNode = null) {
       const now = Date.now();
       
-      // If not user-created and no specific position, spawn from center
-      if (!isUserCreated && x === null && y === null) {
-        x = this.canvas.width / 2 + (Math.random() - 0.5) * 50; // Small variation around center
-        y = this.canvas.height / 2 + (Math.random() - 0.5) * 50;
-      } else if (x === null || y === null) {
-        x = x !== null ? x : Math.random() * this.canvas.width;
-        y = y !== null ? y : Math.random() * this.canvas.height;
+      // User-created nodes: spawn exactly where user clicked
+      if (isUserCreated) {
+        // x and y should already be set from click event, but ensure they're valid
+        x = x !== null ? x : this.canvas.width / 2;
+        y = y !== null ? y : this.canvas.height / 2;
+      } 
+      // System-generated nodes: spawn at random locations
+      else {
+        x = Math.random() * this.canvas.width;
+        y = Math.random() * this.canvas.height;
       }
       
       return {
@@ -139,7 +142,7 @@
       if (potentialMates.length > 0 && Math.random() < node.reproductionRate * 0.01) {
         const mate = potentialMates[Math.floor(Math.random() * potentialMates.length)];
         
-        // Create offspring at center (not between parents)
+        // Create offspring at random location
         const child = this.createNode(null, null, false, node);
         this.nodes.push(child);
         
@@ -254,8 +257,9 @@
       this.nodes.forEach(node => {
         if (node.opacity <= 0) return;
         
-        // Choose color based on whether node was user-created
-        const color = node.isUserCreated ? '{{ site.mesh_animation.colors.user_created }}' : '{{ site.mesh_animation.colors.default }}'; // cyan vs purple
+        // Choose color - white for homepage, original colors for other pages
+        const isHomepage = document.querySelector('.professional-homepage');
+        const color = isHomepage ? '255, 255, 255' : (node.isUserCreated ? '6, 182, 212' : '139, 92, 246');
         
         // Outer glow
         this.ctx.beginPath();
@@ -289,7 +293,10 @@
             const nodeOpacity = Math.min(nodeA.opacity, nodeB.opacity);
             const finalOpacity = distanceOpacity * nodeOpacity;
             
-            this.ctx.strokeStyle = `rgba(139, 92, 246, ${finalOpacity})`;
+            // White edges for homepage, purple for other pages
+            const isHomepage = document.querySelector('.professional-homepage');
+            const edgeColor = isHomepage ? '255, 255, 255' : '139, 92, 246';
+            this.ctx.strokeStyle = `rgba(${edgeColor}, ${finalOpacity})`;
             this.ctx.lineWidth = 1;
             this.ctx.beginPath();
             this.ctx.moveTo(nodeA.x, nodeA.y);
@@ -335,14 +342,35 @@
     }
   }
   
-  // Initialize when DOM is loaded
-  document.addEventListener('DOMContentLoaded', () => {
-    const mesh = new MeshNetwork();
+  // Initialize when DOM is loaded - with multiple fallbacks
+  function initMesh() {
+    const canvas = document.getElementById('mesh-canvas');
+    if (!canvas) return;
     
-    // Handle reduced motion preference
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      mesh.destroy();
-      document.querySelector('.mesh-background').style.display = 'none';
+    try {
+      const mesh = new MeshNetwork();
+      
+      // Handle reduced motion preference
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        mesh.destroy();
+        document.querySelector('.mesh-background').style.display = 'none';
+      }
+    } catch (error) {
+      console.error('Error initializing mesh:', error);
+    }
+  }
+  
+  // Try multiple initialization methods
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMesh);
+  } else {
+    initMesh();
+  }
+  
+  // Fallback for window load
+  window.addEventListener('load', () => {
+    if (!document.getElementById('mesh-canvas') || !document.getElementById('mesh-canvas').getContext) {
+      setTimeout(initMesh, 100);
     }
   });
 </script>

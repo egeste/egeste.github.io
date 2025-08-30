@@ -5,13 +5,12 @@ plugins:
   - jekyll-seo-tag
 
 # ===== SITE CONFIGURATION =====
-title: Steve Regester
-tagline: Engineering Leader & Technical Director
+title: Steve Regester - Technology Consulting & Engineering Leadership
+tagline: Startup Consulting, Full-Stack Engineering, Automation & Security
 description: >-
-  Engineering Leader & Technical Director with 15+ years architecting transformative SaaS platforms
-  and leading high-performing teams. Expert in technical leadership, team mentorship, and engineering 
-  excellence. Led SOC 2 certifications, achieved 60%+ user engagement increases, and doubled security 
-  research productivity. Available for Staff/Principal/Director/Founding Engineer roles.
+  Expert technology consulting services for growing businesses. 15+ years of experience in startup 
+  development, full-stack engineering, business automation, and security testing. Serving businesses 
+  nationwide with founding engineer services, CTO consulting, custom development, and technical leadership.
 
 url: https://egeste.net
 baseurl: ""
@@ -24,10 +23,11 @@ author:
   first_name: Steve
   last_name: Regester
   username: egeste
-  email: resume@egeste.net
+  email: info@egeste.net
   bio: >-
-    Engineering Leader & Technical Director with 15+ years architecting SaaS platforms and leading 
-    high-performing teams. Expert in technical leadership, team mentorship, and engineering excellence.
+    Technology consultant and engineering leader with 15+ years of experience helping businesses grow 
+    through expert technical guidance. Specializing in startup consulting, full-stack engineering, 
+    business automation, and security testing.
   location: Portland, Oregon, United States
   avatar: /assets/images/avatar.jpg
   website: https://egeste.net
@@ -38,22 +38,22 @@ author:
   github: egeste
   
   # Professional details
-  job_title: Engineering Leader & Technical Director
-  company: Delphos Labs
+  job_title: Technology Consultant & Engineering Leader
+  company: Independent Consultant
   skills:
+    - Startup Consulting
+    - Full-Stack Engineering
+    - Business Automation
+    - Security Testing
+    - CTO Consulting
     - Technical Leadership
-    - Team Mentorship  
-    - SaaS Architecture
-    - Full-Stack Development
-    - Engineering Excellence
-    - SOC 2 Compliance
     - React & Node.js
     - AWS & Cloud Architecture
 
 # ===== SOCIAL PROFILES FOR STRUCTURED DATA =====
 social:
   name: Steve Regester
-  email: "resume@egeste.net"
+  email: "info@egeste.net"
   linkedin: "https://linkedin.com/in/egeste"
   github: "https://github.com/egeste"
   website: "https://egeste.net"
@@ -63,7 +63,7 @@ social:
     - https://linkedin.com/in/egeste
     - https://github.com/egeste
     - https://egeste.net
-    - mailto:resume@egeste.net
+    - mailto:info@egeste.net
 
 # ===== SEO & METADATA =====
 logo: /assets/images/favicon.svg
@@ -160,7 +160,7 @@ professional:
 # ===== SITE CONFIGURATION =====
 site_config:
   primary_color: "#8b5cf6"
-  contact_email: "resume@egeste.net"
+  contact_email: "info@egeste.net"
   geographic_region: "US-OR"
   city: "Portland"
   state: "Oregon"
@@ -174,6 +174,7 @@ text:
 
 navigation:
   home: "Home"
+  about: "About"
   projects: "Projects"
   blog: "Blog"
   faq: "FAQ"
