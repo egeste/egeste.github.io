@@ -1,9 +1,80 @@
 <header class="site-header" role="banner">
-  <nav class="nav-container" role="navigation" aria-label="Main navigation" style="display: flex; justify-content: space-between; width: 100%;">
-    <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>{{ site.navigation.home }}</a>
-    <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>{{ site.navigation.projects }}</a>
-    <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>{{ site.navigation.blog }}</a>
-    <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>{{ site.navigation.faq }}</a>
-    <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">{{ site.navigation.contact }}</a>
+  <nav class="nav-container" role="navigation" aria-label="Main navigation">
+    <!-- Mobile hamburger button -->
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    
+    <!-- Navigation links -->
+    <div class="nav-menu" id="nav-menu">
+      <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>{{ site.navigation.home }}</a>
+      <a href="{{ '/startup-consulting' | relative_url }}" class="nav-link {% if page.url contains 'startup-consulting' %}active{% endif %}" {% if page.url contains 'startup-consulting' %}aria-current="page"{% endif %}>Startup Consulting</a>
+      <a href="{{ '/fullstack-engineering' | relative_url }}" class="nav-link {% if page.url contains 'fullstack-engineering' %}active{% endif %}" {% if page.url contains 'fullstack-engineering' %}aria-current="page"{% endif %}>Full-Stack Engineering</a>
+      <a href="{{ '/n8n-consulting' | relative_url }}" class="nav-link {% if page.url contains 'n8n-consulting' %}active{% endif %}" {% if page.url contains 'n8n-consulting' %}aria-current="page"{% endif %}>Business Automation</a>
+      <a href="{{ '/penetration-testing' | relative_url }}" class="nav-link {% if page.url contains 'penetration-testing' %}active{% endif %}" {% if page.url contains 'penetration-testing' %}aria-current="page"{% endif %}>Security & Code Review</a>
+      
+      <div class="nav-dropdown">
+        <a href="{{ '/about' | relative_url }}" class="nav-link dropdown-toggle {% if page.url contains 'about' or page.url contains 'projects' or page.url contains 'blog' or page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'about' %}aria-current="page"{% endif %}>
+          About
+        </a>
+        <div class="dropdown-menu">
+          <a href="{{ '/about' | relative_url }}" class="dropdown-item {% if page.url contains 'about' %}active{% endif %}">{{ site.navigation.about }}</a>
+          <a href="{{ '/projects' | relative_url }}" class="dropdown-item {% if page.url contains 'projects' %}active{% endif %}">{{ site.navigation.projects }}</a>
+          <a href="{{ '/blog' | relative_url }}" class="dropdown-item {% if page.url contains 'blog' %}active{% endif %}">{{ site.navigation.blog }}</a>
+          <a href="{{ '/faq' | relative_url }}" class="dropdown-item {% if page.url contains 'faq' %}active{% endif %}">{{ site.navigation.faq }}</a>
+        </div>
+      </div>
+      
+      <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">{{ site.navigation.contact }}</a>
+    </div>
   </nav>
+
+  <!-- Mobile navigation overlay -->
+  <div class="nav-overlay"></div>
 </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const navOverlay = document.querySelector('.nav-overlay');
+  const body = document.body;
+
+  function toggleNav() {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    
+    navToggle.setAttribute('aria-expanded', !isOpen);
+    navMenu.classList.toggle('nav-menu-open', !isOpen);
+    navOverlay.classList.toggle('nav-overlay-active', !isOpen);
+    body.classList.toggle('nav-open', !isOpen);
+  }
+
+  function closeNav() {
+    navToggle.setAttribute('aria-expanded', 'false');
+    navMenu.classList.remove('nav-menu-open');
+    navOverlay.classList.remove('nav-overlay-active');
+    body.classList.remove('nav-open');
+  }
+
+  navToggle.addEventListener('click', toggleNav);
+  navOverlay.addEventListener('click', closeNav);
+
+  // Close nav when pressing Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+      closeNav();
+    }
+  });
+
+  // Close nav when clicking on nav links (mobile)
+  navMenu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        closeNav();
+      }
+    });
+  });
+});
+</script>

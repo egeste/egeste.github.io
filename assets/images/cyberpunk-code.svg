@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <defs>
+    <linearGradient id="codeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.8"/>
+    </linearGradient>
+    
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Terminal-style background -->
+  <rect width="300" height="200" fill="#000011" opacity="0.05"/>
+  
+  <!-- Code lines with cyberpunk glow -->
+  <g font-family="monospace" font-size="8" opacity="0.4">
+    <!-- Line 1 -->
+    <text x="10" y="20" fill="#00ff00" filter="url(#textGlow)">const neural = new AI({</text>
+    <text x="20" y="35" fill="#00ffff" filter="url(#textGlow)">  matrix: 'digital',</text>
+    <text x="20" y="50" fill="#ff00ff" filter="url(#textGlow)">  protocol: 'https',</text>
+    <text x="10" y="65" fill="#00ff00" filter="url(#textGlow)">});</text>
+    
+    <!-- Line 2 -->
+    <text x="10" y="90" fill="#00ffff" filter="url(#textGlow)">function automate() {</text>
+    <text x="20" y="105" fill="#00ff00" filter="url(#textGlow)">  return process.exec()</text>
+    <text x="20" y="120" fill="#ff00ff" filter="url(#textGlow)">    .enhance()</text>
+    <text x="20" y="135" fill="#00ffff" filter="url(#textGlow)">    .optimize();</text>
+    <text x="10" y="150" fill="#00ff00" filter="url(#textGlow)">}</text>
+    
+    <!-- Syntax highlighting accents -->
+    <rect x="8" y="15" width="2" height="5" fill="#00ff00" opacity="0.6"/>
+    <rect x="8" y="85" width="2" height="5" fill="#00ffff" opacity="0.6"/>
+    
+    <!-- Cursor blink -->
+    <rect x="60" y="145" width="6" height="10" fill="#00ff00" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Data streams -->
+  <g opacity="0.2">
+    <line x1="0" y1="30" x2="300" y2="30" stroke="url(#codeGlow)" stroke-width="1"/>
+    <line x1="0" y1="100" x2="300" y2="100" stroke="url(#codeGlow)" stroke-width="1"/>
+    <line x1="0" y1="170" x2="300" y2="170" stroke="url(#codeGlow)" stroke-width="1"/>
+    
+    <!-- Moving data particles -->
+    <circle cx="0" cy="30" r="2" fill="#00ff00" opacity="0.6">
+      <animate attributeName="cx" values="0;300" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="100" r="2" fill="#00ffff" opacity="0.6">
+      <animate attributeName="cx" values="300;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="170" r="2" fill="#ff00ff" opacity="0.6">
+      <animate attributeName="cx" values="0;300" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
