@@ -41,23 +41,31 @@ custom_css: professional-homepage
     <div class="achievement-grid" role="list" style="margin-top: 2rem;">
       <div class="achievement-item" role="listitem">
         <strong><span>🚀</span> Startup Consulting</strong>
-        <span><strong>Founding engineer services, CTO consulting</strong>, MVP development, 0-1 product strategy, technical co-founder expertise for early-stage startups</span>
-        <a href="{{ '/startup-consulting' | relative_url }}" class="btn btn-secondary" style="margin-top: 1rem;">Learn More →</a>
+        <span>Founding engineer services, CTO consulting, MVP development, 0-1 product strategy, technical co-founder expertise for early-stage startups</span>
+        <div class="card-footer">
+          <a href="{{ '/startup-consulting' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+        </div>
       </div>
       <div class="achievement-item" role="listitem">
         <strong><span>💻</span> Full-Stack Engineering</strong>
-        <span><strong>End-to-end application development</strong>, React/Node.js expertise, database design, cloud deployment, and scalable architecture solutions</span>
-        <a href="{{ '/fullstack-engineering' | relative_url }}" class="btn btn-secondary" style="margin-top: 1rem;">Learn More →</a>
+        <span>End-to-end application development, React/Node.js expertise, database design, cloud deployment, and scalable architecture solutions</span>
+        <div class="card-footer">
+          <a href="{{ '/fullstack-engineering' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+        </div>
       </div>
       <div class="achievement-item" role="listitem">
         <strong><span>⚡</span> Business Automation</strong>
-        <span><strong>Workflow automation, system integration</strong>, process optimization, custom automation solutions to streamline operations and boost efficiency</span>
-        <a href="{{ '/n8n-consulting' | relative_url }}" class="btn btn-secondary" style="margin-top: 1rem;">Learn More →</a>
+        <span>Workflow automation, system integration, process optimization, custom automation solutions to streamline operations and boost efficiency</span>
+        <div class="card-footer">
+          <a href="{{ '/n8n-consulting' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+        </div>
       </div>
       <div class="achievement-item" role="listitem">
         <strong><span>🔒</span> Security & Code Review</strong>
-        <span><strong>Comprehensive code review, security testing</strong>, vulnerability assessment, threat modeling, and secure development consulting for teams</span>
-        <a href="{{ '/penetration-testing' | relative_url }}" class="btn btn-secondary" style="margin-top: 1rem;">Learn More →</a>
+        <span>Comprehensive code review, security testing, vulnerability assessment, threat modeling, and secure development consulting for teams</span>
+        <div class="card-footer">
+          <a href="{{ '/penetration-testing' | relative_url }}" class="btn btn-secondary">Learn More →</a>
+        </div>
       </div>
     </div>
   </div>
