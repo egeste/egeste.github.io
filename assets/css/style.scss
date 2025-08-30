@@ -725,6 +725,12 @@ h3 {
   margin-bottom: var(--space-4);
 }
 
+.card-footer {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-light);
+}
+
 .card-link {
   color: var(--primary);
   text-decoration: none;
@@ -748,6 +754,9 @@ h3 {
 
 /* Achievement items */
 .achievement-item {
+  display: flex;
+  flex-direction: column;
+
   strong {
     color: var(--primary);
     display: block;
@@ -758,6 +767,8 @@ h3 {
     color: var(--text-light);
     font-size: var(--text-sm);
     line-height: 1.5;
+    flex-grow: 1;
+    white-space: normal;
   }
 }
 

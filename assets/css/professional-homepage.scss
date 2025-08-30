@@ -208,6 +208,8 @@
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
 }
 
 .professional-homepage .achievement-item::before,
@@ -260,6 +262,14 @@
   font-size: 1rem;
   line-height: 1.7;
   font-weight: 400;
+  flex-grow: 1;
+  white-space: normal;
+}
+
+.professional-homepage .card-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--slate-200);
 }
 
 .professional-homepage .achievement-item strong,
