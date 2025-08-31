@@ -23,10 +23,9 @@
           <a href="{{ '/projects' | relative_url }}" class="dropdown-item {% if page.url contains 'projects' %}active{% endif %}">{{ site.navigation.projects }}</a>
           <a href="{{ '/blog' | relative_url }}" class="dropdown-item {% if page.url contains 'blog' %}active{% endif %}">{{ site.navigation.blog }}</a>
           <a href="{{ '/faq' | relative_url }}" class="dropdown-item {% if page.url contains 'faq' %}active{% endif %}">{{ site.navigation.faq }}</a>
+          <a href="mailto:{{ site.social.email }}" class="dropdown-item" aria-label="Contact {{ site.author.name }} via email">{{ site.navigation.contact }}</a>
         </div>
       </div>
-      
-      <a href="mailto:{{ site.social.email }}" class="nav-link nav-cta btn btn-primary-cta" aria-label="Contact {{ site.author.name }} via email">{{ site.navigation.contact }}</a>
     </div>
   </nav>
 
