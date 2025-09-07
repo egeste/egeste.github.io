@@ -2,17 +2,25 @@
 layout: default
 ---
 
-{% include hero-section.html title=page.title subtitle=page.subtitle date=page.date %}
+<link rel="stylesheet" href="{{ '/assets/css/professional-homepage.css' | relative_url }}">
 
-{% capture blog_content %}
+<div class="professional-homepage">
+  <!-- Hero Section -->
+  {% include page-hero.html 
+    title=page.title
+    subtitle=page.subtitle
+    date=page.date %}
 
-{{ content }}
-
-<span>&mdash; {{ page.author }}</span>
-
-<div class="blog-navigation">
-  <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
+  <!-- Article Content -->
+  <section class="fullwidth-section about-section">
+    <div class="section-container">
+      <article class="blog-content" style="max-width: 800px; margin: 0 auto; line-height: 1.7; color: #333;">
+        {{ content }}
+      </article>
+      
+      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;">
+        <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
+      </div>
+    </div>
+  </section>
 </div>
-{% endcapture %}
-
-{% include content-section.html section_class="blog-section" content_class="blog-content" content=blog_content %}

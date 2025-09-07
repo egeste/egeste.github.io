@@ -98,17 +98,12 @@ defaults:
 # SEO tag settings
 twitter:
   username: egeste
-  card: summary_large_image
+  card: summary_large_image 
 
-facebook:
-  app_id: 
-  publisher: 
-  admins: 
-
-# ===== GOOGLE & ANALYTICS =====
-google_analytics: 
-google_site_verification: 
-bing_site_verification:
+# ===== ANALYTICS & VERIFICATION =====
+# google_analytics: GA_MEASUREMENT_ID
+# google_site_verification: VERIFICATION_CODE
+# bing_site_verification: VERIFICATION_CODE
 
   
 # ===== PROFESSIONAL DATA =====

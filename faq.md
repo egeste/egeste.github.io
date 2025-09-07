@@ -1,9 +1,19 @@
 ---
-layout: faq
+layout: service
 title: Frequently Asked Questions - Steve Regester
 description: Common questions about Steve Regester's engineering background, technical expertise, leadership philosophy, and career achievements. Get answers about full-stack development, cloud architecture, team management, and more.
 keywords: steve regester, engineering leader, full-stack developer, react, node.js, aws, gcp, kubernetes, engineering management, software architect, technical interview, hiring
 permalink: /faq/
+
+hero:
+  title: "Frequently Asked Questions"
+  subtitle: "Technical Expertise & Professional Background"
+  description: "Common questions about engineering experience, technical leadership, and consulting services<br>In-depth answers covering full-stack development, security, team management, and career achievements"
+  location: "Insights from 15+ years of enterprise-scale development"
+
+value_prop:
+  title: "Professional Q&A"
+  subtitle: "Get detailed answers to the most commonly asked questions about my technical expertise, leadership philosophy, project experience, and consulting approach. These responses provide insight into my problem-solving methodology and professional background."
 ---
 
 ## Technical Expertise
