@@ -10,22 +10,25 @@
     <!-- Navigation links -->
     <div class="nav-menu" id="nav-menu">
       <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>{{ site.navigation.home }}</a>
-      <a href="{{ '/startup-consulting' | relative_url }}" class="nav-link {% if page.url contains 'startup-consulting' %}active{% endif %}" {% if page.url contains 'startup-consulting' %}aria-current="page"{% endif %}>Startup Consulting</a>
-      <a href="{{ '/fullstack-engineering' | relative_url }}" class="nav-link {% if page.url contains 'fullstack-engineering' %}active{% endif %}" {% if page.url contains 'fullstack-engineering' %}aria-current="page"{% endif %}>Full-Stack Engineering</a>
-      <a href="{{ '/n8n-consulting' | relative_url }}" class="nav-link {% if page.url contains 'n8n-consulting' %}active{% endif %}" {% if page.url contains 'n8n-consulting' %}aria-current="page"{% endif %}>Business Automation</a>
-      <a href="{{ '/penetration-testing' | relative_url }}" class="nav-link {% if page.url contains 'penetration-testing' %}active{% endif %}" {% if page.url contains 'penetration-testing' %}aria-current="page"{% endif %}>Security & Code Review</a>
+      <a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains 'about' %}active{% endif %}" {% if page.url contains 'about' %}aria-current="page"{% endif %}>About</a>
       
       <div class="nav-dropdown">
-        <a href="{{ '/about' | relative_url }}" class="nav-link dropdown-toggle {% if page.url contains 'about' or page.url contains 'projects' or page.url contains 'blog' or page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'about' %}aria-current="page"{% endif %}>
-          About
+        <a href="#" class="nav-link dropdown-toggle {% if page.url contains 'startup-consulting' or page.url contains 'fullstack-engineering' or page.url contains 'n8n-consulting' or page.url contains 'penetration-testing' or page.url contains 'osint-solutions' %}active{% endif %}">
+          Services
         </a>
         <div class="dropdown-menu">
-          <a href="{{ '/projects' | relative_url }}" class="dropdown-item {% if page.url contains 'projects' %}active{% endif %}">{{ site.navigation.projects }}</a>
-          <a href="{{ '/blog' | relative_url }}" class="dropdown-item {% if page.url contains 'blog' %}active{% endif %}">{{ site.navigation.blog }}</a>
-          <a href="{{ '/faq' | relative_url }}" class="dropdown-item {% if page.url contains 'faq' %}active{% endif %}">{{ site.navigation.faq }}</a>
-          <a href="mailto:{{ site.social.email }}" class="dropdown-item" aria-label="Contact {{ site.author.name }} via email">{{ site.navigation.contact }}</a>
+          <a href="{{ '/startup-consulting' | relative_url }}" class="dropdown-item {% if page.url contains 'startup-consulting' %}active{% endif %}">Startup Consulting</a>
+          <a href="{{ '/fullstack-engineering' | relative_url }}" class="dropdown-item {% if page.url contains 'fullstack-engineering' %}active{% endif %}">Full-Stack Engineering</a>
+          <a href="{{ '/n8n-consulting' | relative_url }}" class="dropdown-item {% if page.url contains 'n8n-consulting' %}active{% endif %}">Business Automation</a>
+          <a href="{{ '/penetration-testing' | relative_url }}" class="dropdown-item {% if page.url contains 'penetration-testing' %}active{% endif %}">Security & Code Review</a>
+          <a href="{{ '/osint-solutions' | relative_url }}" class="dropdown-item {% if page.url contains 'osint-solutions' %}active{% endif %}">OSINT Solutions</a>
         </div>
       </div>
+      
+      <a href="{{ '/projects' | relative_url }}" class="nav-link {% if page.url contains 'projects' %}active{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>{{ site.navigation.projects }}</a>
+      <a href="{{ '/blog' | relative_url }}" class="nav-link {% if page.url contains 'blog' %}active{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>{{ site.navigation.blog }}</a>
+      <a href="{{ '/faq' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>{{ site.navigation.faq }}</a>
+      <a href="mailto:{{ site.social.email }}" class="nav-link nav-contact" aria-label="Contact {{ site.author.name }} via email">Contact</a>
     </div>
   </nav>
 

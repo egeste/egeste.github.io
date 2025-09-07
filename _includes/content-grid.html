@@ -1,0 +1,32 @@
+<!-- Reusable Content Grid Component -->
+<section class="fullwidth-section {{ include.section_class | default: 'about-section' }}">
+  <div class="section-container">
+    {% if include.title %}
+      <h2 class="section-title">{{ include.title }}</h2>
+    {% endif %}
+    
+    {% if include.subtitle %}
+      <p class="section-subtitle">{{ include.subtitle }}</p>
+    {% endif %}
+    
+    {% if include.items %}
+      <div class="{{ include.grid_class | default: 'achievement-grid' }}" role="list">
+        {% for item in include.items %}
+          <div class="{{ include.item_class | default: 'achievement-item' }}" role="listitem">
+            <strong>{{ item.title }}</strong>
+            <span>{{ item.description }}</span>
+            {% if item.link %}
+              <div class="card-footer">
+                <a href="{{ item.link }}" class="btn btn-secondary">{{ item.link_text | default: 'Learn More →' }}</a>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    {% if include.content %}
+      {{ include.content }}
+    {% endif %}
+  </div>
+</section>

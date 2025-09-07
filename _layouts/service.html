@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<!-- Service Page Layout - Simplified and Reusable -->
+<link rel="stylesheet" href="{{ '/assets/css/professional-homepage.css' | relative_url }}">
+
+<div class="professional-homepage">
+  <!-- Hero Section -->
+  {% include page-hero.html %}
+  
+  <!-- Value Proposition -->
+  {% if page.value_prop %}
+    {% include content-grid.html 
+      title=page.value_prop.title
+      subtitle=page.value_prop.subtitle
+      section_class="about-section" %}
+  {% endif %}
+  
+  <!-- Services Grid -->
+  {% if page.services %}
+    {% include content-grid.html 
+      title=page.services.title
+      items=page.services.items
+      section_class="achievements-section"
+      grid_class="achievement-grid"
+      item_class="achievement-item" %}
+  {% endif %}
+  
+  <!-- Custom content sections -->
+  {{ content }}
+  
+  <!-- CTA Section -->
+  {% if page.cta %}
+    <section class="fullwidth-section contact-section">
+      <div class="section-container">
+        <h2 class="section-title contact-title">{{ page.cta.title | default: "Ready to Get Started?" }}</h2>
+        <div class="contact-subtitle-wrapper">
+          <p class="section-subtitle">{{ page.cta.description }}</p>
+        </div>
+        <div class="contact-buttons">
+          <a href="mailto:{{ site.social.email }}?subject={{ page.cta.subject | url_encode }}" 
+             class="btn btn-primary-cta">{{ page.cta.primary_button | default: "Get Started" }}</a>
+          <a href="{{ '/projects' | relative_url }}" 
+             class="btn btn-secondary">{{ page.cta.secondary_button | default: "View Portfolio" }}</a>
+        </div>
+        {% if page.cta.info %}
+          <div class="contact-info">
+            <p><strong>{{ page.cta.info.highlight }}</strong></p>
+            <p class="contact-tagline">{{ page.cta.info.tagline }}</p>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+</div>
