@@ -10,8 +10,8 @@
       this.canvas = document.getElementById('mesh-canvas');
       this.ctx = this.canvas.getContext('2d');
       this.nodes = [];
-      this.maxNodes = 64;
-      this.maxDistance = 256;
+      this.maxNodes = 32;
+      this.maxDistance = 8*48;
       this.animationId = null;
       
       // Bifurcation parameters
@@ -39,7 +39,7 @@
     createNodes() {
       this.nodes = [];
       // Start with more nodes for a richer initial appearance
-      const initialNodes = 12;
+      const initialNodes = 16;
       for (let i = 0; i < initialNodes; i++) {
         this.nodes.push(this.createNode());
       }

@@ -40,22 +40,20 @@ layout: default
   {% if page.cta %}
     <section class="fullwidth-section contact-section">
       <div class="section-container">
-        <h2 class="section-title contact-title">{{ page.cta.title | default: "Ready to Get Started?" }}</h2>
-        <div class="contact-subtitle-wrapper">
+        <h2 class="section-title">{{ page.cta.title | default: "Ready to Get Started?" }}</h2>
+        <div style="text-align: center; margin-bottom: var(--space-10);">
           <p class="section-subtitle">{{ page.cta.description }}</p>
         </div>
-        <div class="contact-buttons">
-          <a href="mailto:{{ site.social.email }}?subject={{ page.cta.subject | url_encode }}" 
-             class="btn btn-primary-cta">{{ page.cta.primary_button | default: "Get Started" }}</a>
-          <a href="{{ '/projects' | relative_url }}" 
-             class="btn btn-secondary">{{ page.cta.secondary_button | default: "View Portfolio" }}</a>
-        </div>
-        {% if page.cta.info %}
-          <div class="contact-info">
-            <p><strong>{{ page.cta.info.highlight }}</strong></p>
-            <p class="contact-tagline">{{ page.cta.info.tagline }}</p>
-          </div>
-        {% endif %}
+        {% capture primary_link %}mailto:{{ site.social.email }}?subject={{ page.cta.subject | url_encode }}{% endcapture %}
+        {% capture secondary_link %}{{ '/projects' | relative_url }}{% endcapture %}
+        
+        {% include contact-buttons.html 
+           primary_text=page.cta.primary_button
+           primary_link=primary_link
+           primary_subject=page.cta.subject
+           secondary_text=page.cta.secondary_button
+           secondary_link=secondary_link
+           info=page.cta.info %}
       </div>
     </section>
   {% endif %}
