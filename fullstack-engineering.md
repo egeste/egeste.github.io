@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Full-Stack Engineering Services - React, Node.js & Python | Steve Regester
-description: Professional full-stack engineering services for web applications and enterprise systems. Expert React, Node.js, Python development with AWS cloud deployment, database design, and scalable architecture in Portland, Oregon.
-keywords: full-stack engineering, web development, React consulting, Node.js development, Python development, enterprise software, full-stack consultant, AWS deployment, database design, Portland Oregon developer
+title: Rapid React & Node.js Application Development | Steve Regester
+description: Rapid React and Node.js application development for growing businesses. Expert JavaScript ecosystem development with TypeScript, modern tooling, AWS deployment, and scalable architecture for fast-moving teams.
+keywords: React development, Node.js developer, JavaScript application development, TypeScript consulting, rapid prototyping, modern web applications, React consultant
 sitemap:
   priority: 0.9
   changefreq: monthly
@@ -10,14 +10,14 @@ sitemap:
 type: service
 
 hero:
-  title: "Full-Stack Engineering Services"
-  subtitle: "End-to-End Development Solutions for Modern Applications"
-  description: "Expert full-stack development services from frontend to backend, database to deployment<br>Professional engineering consulting with modern technologies and best practices"
-  location: "Serving development teams nationwide from Portland, Oregon"
+  title: "Rapid React & Node.js Development"
+  subtitle: "Ship Modern Applications Fast"
+  description: "Accelerate your development with expert React and Node.js engineering<br>From MVP to production-ready applications with modern JavaScript architecture"
+  location: "Available for project-based development and team augmentation"
 
 value_prop:
-  title: "Expert Full-Stack Development Consulting"
-  subtitle: "With **15+ years of engineering experience**, I provide comprehensive full-stack development services to help businesses build robust, scalable web applications and enterprise systems. I specialize in **modern technology stacks and architectural patterns** that deliver performance, maintainability, and user experience.<br><br>My full-stack approach covers **frontend development, backend systems, database design, and deployment infrastructure**—ensuring seamless integration across all layers of your application. I focus on clean code, scalable architecture, and maintainable solutions that grow with your business needs."
+  title: "JavaScript Ecosystem Specialist"
+  subtitle: "I build applications that move fast and scale efficiently using the modern JavaScript ecosystem. From React frontends with TypeScript to Node.js APIs with real-time features, I deliver <strong>production-ready applications in weeks, not months</strong>.<br><br>My approach emphasizes <strong>rapid iteration, automated testing, and deployment automation</strong> so your team can ship features confidently. Whether you need an MVP built from scratch or want to modernize an existing application, I provide the expertise to accelerate your development velocity."
 
 services:
   title: "Full-Stack Engineering Services"

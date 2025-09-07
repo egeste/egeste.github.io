@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Business Automation Consulting - Workflow & System Integration | Steve Regester  
-description: Expert business automation consulting services to transform operations with custom workflow solutions, system integrations, and process optimization. Reduce manual work and boost efficiency with professional automation consulting in Portland, Oregon.
-keywords: business automation, workflow automation, system integration, process optimization, automation consulting, business efficiency, workflow design, API integration, automation expert, Portland Oregon consultant
+title: N8N Workflow Automation Specialist | Steve Regester  
+description: N8N workflow automation specialist helping businesses eliminate manual processes. Expert no-code automation solutions, API integrations, and intelligent workflows that connect your tools and streamline operations.
+keywords: N8N automation, workflow automation, N8N consultant, no-code automation, business process automation, N8N specialist, API workflow integration
 sitemap:
   priority: 0.9
   changefreq: monthly
@@ -10,14 +10,14 @@ sitemap:
 type: service
 
 hero:
-  title: "Business Automation Services"
-  subtitle: "Workflow Optimization & System Integration"
-  description: "Transform your business operations with intelligent automation solutions<br>Custom workflows that save time, reduce errors, and boost efficiency"
-  location: "Serving businesses nationwide from Portland, Oregon"
+  title: "N8N Workflow Automation"
+  subtitle: "Connect Everything, Automate Everything"
+  description: "Turn manual processes into automated workflows with N8N<br>Connect your apps, eliminate repetitive tasks, and scale your operations without hiring"
+  location: "N8N certified specialist with 50+ workflow implementations"
 
 value_prop:
-  title: "Expert Business Automation Consulting"
-  subtitle: "As an engineering leader with **15+ years building scalable systems**, I help businesses implement intelligent automation solutions to **streamline operations, eliminate manual tasks, and scale efficiently**. I connect your existing tools—from CRM to accounting, marketing to inventory—creating seamless workflows that operate 24/7.<br><br>My automation consulting approach combines **deep technical expertise with business strategy**, ensuring your automation investments deliver measurable ROI and sustainable growth. I focus on practical, maintainable solutions that integrate with your existing technology stack."
+  title: "The N8N Workflow Automation Expert"
+  subtitle: "I've automated over 50 business processes using N8N, from simple lead routing to complex multi-step workflows spanning dozens of applications. My specialty is <strong>identifying automation opportunities that deliver immediate ROI</strong> and building workflows that actually work in the real world.<br><br>Unlike generic automation consultants, I focus exclusively on <strong>N8N-powered solutions</strong> that are maintainable, scalable, and don't require developer intervention. Whether you need to connect your CRM to Slack or build sophisticated data pipelines, I create automation that just works."
 
 services:
   title: "Business Automation Services"

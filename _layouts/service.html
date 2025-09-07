@@ -28,7 +28,13 @@ layout: default
   {% endif %}
   
   <!-- Custom content sections -->
-  {{ content }}
+  {% if content and content != empty %}
+    <section class="fullwidth-section about-section">
+      <div class="section-container">
+        {{ content }}
+      </div>
+    </section>
+  {% endif %}
   
   <!-- CTA Section -->
   {% if page.cta %}

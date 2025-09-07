@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Security Testing & Code Review Services - Cybersecurity Consulting | Steve Regester
-description: Professional security testing and code review services for development teams. Expert vulnerability assessment, OWASP testing, threat modeling, and secure development consulting with 15+ years of enterprise security experience in Portland, Oregon.
-keywords: security testing, code review, security assessment, vulnerability assessment, penetration testing, security audit, cybersecurity consulting, OWASP testing, threat modeling, secure development, Portland Oregon security consultant
+title: Application Security Assessment & Penetration Testing | Steve Regester
+description: Comprehensive application security assessments for development teams. Expert penetration testing, code review, vulnerability assessment, and security architecture guidance for web applications and APIs.
+keywords: application security assessment, penetration testing, web application security, API security testing, OWASP testing, security code review, vulnerability assessment
 sitemap:
   priority: 0.9
   changefreq: monthly
@@ -10,14 +10,14 @@ sitemap:
 type: service
 
 hero:
-  title: "Security Testing & Code Review Services"
-  subtitle: "Comprehensive Security Assessment for Development Teams"
-  description: "Expert security testing, code review, and vulnerability assessment to secure your applications<br>Professional cybersecurity consulting with detailed remediation guidance and best practices"
-  location: "Serving development teams nationwide from Portland, Oregon"
+  title: "Application Security Assessment"
+  subtitle: "Find Vulnerabilities Before Attackers Do"
+  description: "Comprehensive security testing for web applications, APIs, and mobile apps<br>Expert penetration testing with actionable remediation guidance"
+  location: "OWASP-certified testing methodology with detailed security reports"
 
 value_prop:
-  title: "Expert Security Testing & Code Review"
-  subtitle: "As a security professional with **15+ years of enterprise experience**, I provide comprehensive security testing and code review services to help development teams build secure, resilient applications. My approach combines **thorough code analysis with practical security testing** to identify vulnerabilities throughout the development lifecycle.<br><br>Beyond automated tools, my security services provide **expert human analysis and real-world threat modeling** that reveals the security issues automated scanners miss. All assessments include detailed remediation guidance, secure coding best practices, and ongoing security consultation for your development team."
+  title: "Real-World Security Testing"
+  subtitle: "I don't just run automated scans and call it done. My security assessments combine <strong>manual penetration testing with comprehensive code analysis</strong> to uncover the vulnerabilities that actually matter. From SQL injection to business logic flaws, I test your application the way real attackers would.<br><br>Every assessment includes <strong>detailed remediation guidance, proof-of-concept exploits, and developer-friendly explanations</strong> so your team can fix issues quickly and understand how to prevent them in the future. No generic reports — just actionable security intelligence."
 
 services:
   title: "Security Testing & Code Review Services"

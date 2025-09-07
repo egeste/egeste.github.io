@@ -1,7 +1,7 @@
 ---
 layout: service
-title: About Steve Regester - Technology Consultant & Engineering Expert
-description: Meet Steve Regester, an accomplished technology consultant with 15+ years of experience helping startups and enterprises build scalable systems, implement security best practices, and achieve technical excellence through strategic guidance and hands-on leadership.
+title: About Steve Regester - Co-Founder, Technical Leader & OSINT Specialist
+description: Meet Steve Regester, co-founder and technical leader who has built companies from the ground up and specializes in unique technical challenges like OSINT solutions, application security, and rapid development for complex problems.
 keywords: technology consultant, engineering consultant, startup CTO, technical advisor, full-stack consultant, security consultant, OSINT specialist, Portland Oregon technology consultant
 sitemap:
   priority: 0.9
@@ -11,13 +11,13 @@ type: profile
 
 hero:
   title: "Steve Regester"
-  subtitle: "Technology Consultant & Engineering Expert"
-  description: "15+ years architecting enterprise-scale systems and leading technical transformations<br>Helping startups and businesses achieve technical excellence through strategic consulting"
-  location: "Serving clients nationwide from Portland, Oregon"
+  subtitle: "Co-Founder & Technical Leader"
+  description: "From co-founding tech companies to building specialized OSINT platforms<br>I solve technical problems that others can't or won't tackle"
+  location: "Portland, Oregon • Available globally for the right challenges"
 
 value_prop:
-  title: "Transforming Businesses Through Technical Excellence"
-  subtitle: "As a seasoned technology consultant and engineering leader, I help startups and growing businesses navigate complex technical challenges and accelerate their growth. With over 15 years of hands-on experience building enterprise-scale systems, leading technical teams, and driving digital transformations, I provide the strategic guidance and tactical execution needed to turn technical challenges into competitive advantages.<br><br>My consulting approach combines deep technical expertise across full-stack development, cybersecurity, OSINT solutions, and business automation with proven leadership experience from companies like {{ site.professional.current_company }}. Whether you need a fractional CTO, technical advisor, or specialized expertise in emerging technologies, I deliver results that matter — from rapid MVP development to enterprise security implementations.<br><br><em style=\"color: var(--color-primary);\"><strong>Ready to accelerate your technical growth?</strong> Let's discuss how strategic technology consulting can transform your business challenges into sustainable competitive advantages.</em>"
+  title: "Built Different"
+  subtitle: "I'm not your typical consultant. I've <strong>co-founded technology companies</strong>, built platforms that process millions of data points, and developed specialized solutions for problems that don't have off-the-shelf answers.<br><br>While most developers build the same apps over and over, I focus on <strong>unique technical challenges</strong>: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation for processes others say can't be automated.<br><br>Currently at <strong>Delphos Labs</strong> leading binary analysis with AI, I bring a combination of startup grit, technical depth, and the ability to see solutions where others see impossible problems."
 
 services:
   title: "Proven Results for Clients & Organizations"
