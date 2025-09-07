@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Steve Regester - Technology Consultant | Startup, Full-Stack, Automation, Security & OSINT
-description: Expert technology consulting services for growing businesses. Startup consulting, full-stack engineering, business automation, security testing, and OSINT solutions with 15+ years of enterprise experience. Serving businesses nationwide from Portland, Oregon.
-keywords: technology consulting, startup consultant, full-stack engineering, business automation, security testing, OSINT solutions, digital intelligence, CTO consulting, founding engineer, React Node.js, Portland Oregon technology consultant
+title: Steve Regester - Technical Co-Founder & Engineering Leader | OSINT, Security, React Development
+description: Technical co-founder and engineering leader specializing in OSINT solutions, application security, and rapid React development. Proven track record building and scaling technology companies from idea to revenue.
+keywords: technical co-founder, OSINT solutions, application security assessment, React Node.js development, N8N automation, digital intelligence, founding engineer services
 sitemap:
   priority: 1.0
   changefreq: weekly
@@ -19,12 +19,12 @@ custom_css: professional-homepage
 <section class="fullwidth-section hero-section">
   <div class="section-container">
     <header class="hero" role="banner">
-      <h1 class="hero-name">Technology Consulting & Engineering Leadership</h1>
-      <h2 class="hero-title">Comprehensive Technical Services for Growing Businesses</h2>
+      <h1 class="hero-name">Technical Co-Founder & Engineering Leader</h1>
+      <h2 class="hero-title">OSINT Solutions • Application Security • Rapid Development</h2>
       <p class="hero-subtitle">
-        Expert consulting across startup development, full-stack engineering, automation, security, and OSINT<br>
-        15+ years of enterprise experience delivering scalable technology solutions<br>
-        <span class="subtitle-location">Serving businesses nationwide from Portland, Oregon</span>
+        I build technology companies and specialized technical solutions for complex challenges<br>
+        From OSINT intelligence platforms to secure React applications and automated workflows<br>
+        <span class="subtitle-location">Available for co-founder partnerships, fractional CTO roles, and project-based development</span>
       </p>
     </header>
   </div>

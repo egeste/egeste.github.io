@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Startup Consulting & Founding Engineer Services | Steve Regester
-description: Expert startup consulting and founding engineer services for technology startups. 0-1 product development, CTO consulting, MVP architecture, and technical leadership with 15+ years of enterprise experience.
-keywords: startup consulting, founding engineer, CTO services, technology startup, MVP development, technical co-founder, Portland Oregon startup consultant
+title: Technical Co-Founder & 0-1 Product Development | Steve Regester
+description: Technical co-founder services for early-stage startups. Expert 0-1 product development, MVP architecture, founding engineer leadership, and CTO-level strategic guidance for pre-seed and seed-stage companies.
+keywords: technical co-founder, founding engineer, startup CTO, 0-1 product development, startup technical leadership, MVP development, pre-seed startup advisor
 sitemap:
   priority: 1.0
   changefreq: weekly
@@ -10,14 +10,14 @@ sitemap:
 type: service
 
 hero:
-  title: "Startup Consulting & Founding Engineer Services"
-  subtitle: "From 0 to 1: Building Technology Startups That Scale"
-  description: "Transform your startup vision into a scalable technology company<br>Expert founding engineer and technical leadership for early-stage startups"
-  location: "Serving technology founders nationwide from Portland, Oregon"
+  title: "Technical Co-Founder Services"
+  subtitle: "From Idea to Product-Market Fit"
+  description: "Hands-on technical co-founder experience for early-stage startups<br>Build your MVP, establish technical foundations, and scale to your first customers"
+  location: "Available for co-founder partnerships and fractional CTO roles"
 
 value_prop:
-  title: "The Critical 0 to 1 Journey"
-  subtitle: "As a seasoned engineering leader with 15+ years building enterprise-scale systems, I help technology founders navigate the most critical phase of startup development. The journey from concept to product-market fit requires strategic technical leadership, scalable architecture decisions, and startup-focused execution."
+  title: "Your Technical Co-Founder"
+  subtitle: "I've co-founded and scaled technology companies from concept to millions in revenue. As your technical co-founder or fractional CTO, I bring both hands-on development expertise and strategic business acumen to guide your startup through the critical 0-1 phase where most ideas fail."
 
 services:
   title: "Founding Engineer & Startup Services"
@@ -36,14 +36,14 @@ services:
       description: "Technical due diligence preparation, architecture reviews, and technical deck development for investor presentations and fundraising"
 
 cta:
-  title: "Ready to Build Your Startup?"
-  description: "Let's transform your startup vision into a scalable technology company with expert technical leadership and proven 0-1 development strategies."
-  subject: "Startup Consulting Services"
-  primary_button: "Start Building"
-  secondary_button: "View Case Studies"
+  title: "Ready for a Technical Co-Founder?"
+  description: "Let's validate your idea, build your MVP, and establish the technical foundation for long-term success."
+  subject: "Technical Co-Founder Partnership"
+  primary_button: "Start Partnership Discussion"
+  secondary_button: "View Startup Successes"
   info:
-    highlight: "Free Initial Consultation • MVP Development • CTO Services • Team Building"
-    tagline: "From concept to scale with proven startup expertise"
+    highlight: "Equity Partnerships Available • 0-1 Product Expertise • Proven Track Record"
+    tagline: "From idea to product-market fit with hands-on technical leadership"
 ---
 
 <!-- Additional Custom Sections -->
