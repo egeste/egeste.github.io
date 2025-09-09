@@ -3,17 +3,20 @@
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  /* Colors */
+  /* Force dark color scheme */
+  color-scheme: dark only;
+  
+  /* Colors - Dark theme only */
   --primary: #8b5cf6;
   --primary-dark: #7c3aed;
   --secondary: #64748b;
   --accent: #06b6d4;
-  --text: #1f2937;
-  --text-light: #6b7280;
-  --bg: #ffffff;
-  --surface: #faf5ff;
-  --border: #e5e7eb;
-  --border-light: #f3f4f6;
+  --text: #f9fafb;
+  --text-light: #d1d5db;
+  --bg: #111827;
+  --surface: #1f2937;
+  --border: #374151;
+  --border-light: #2d3748;
 
   /* Typography */
   --font: 'Exo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -45,20 +48,7 @@
   --radius-lg: 1rem;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-  --blur-bg: rgba(250, 245, 255, 0.6);
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #f9fafb;
-    --text-light: #d1d5db;
-    --bg: #111827;
-    --surface: #1f2937;
-    --border: #374151;
-    --border-light: #2d3748;
-    --blur-bg: rgba(31, 41, 55, 0.6);
-  }
+  --blur-bg: rgba(31, 41, 55, 0.6);
 }
 
 /* ===== BASE STYLES ===== */
@@ -113,15 +103,8 @@ body {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(229, 231, 235, 0.2);
-}
-
-@media (prefers-color-scheme: dark) {
-  .site-header {
-    background: rgba(17, 24, 39, 0.3);
-    border-bottom: 1px solid rgba(55, 65, 81, 0.2);
-  }
+  background: rgba(17, 24, 39, 0.3);
+  border-bottom: 1px solid rgba(55, 65, 81, 0.2);
 }
 
 .nav-container {
@@ -227,10 +210,10 @@ body {
   top: calc(100% + 11px);
   left: 0;
   min-width: 160px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(17, 24, 39, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(229, 231, 235, 0.3);
+  border: 1px solid rgba(55, 65, 81, 0.3);
   border-top: none;
   border-radius: 0 0 var(--radius) var(--radius);
   box-shadow: var(--shadow-lg);
@@ -248,7 +231,7 @@ body {
 }
 
 .nav-dropdown:hover .dropdown-toggle {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(17, 24, 39, 0.3);
   backdrop-filter: blur(8px);
   z-index: 1001;
 }
@@ -267,13 +250,13 @@ body {
   }
   
   &:hover {
-    background: var(--surface);
+    background: rgba(139, 92, 246, 0.1);
     color: var(--primary);
   }
   
   &.active {
     color: var(--primary);
-    background: var(--surface);
+    background: rgba(139, 92, 246, 0.1);
   }
 }
 
@@ -285,25 +268,6 @@ body {
   border: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  .dropdown-menu {
-    background: rgba(17, 24, 39, 0.8);
-    border-color: rgba(55, 65, 81, 0.3);
-  }
-  
-  .nav-dropdown:hover .dropdown-toggle {
-    background: rgba(17, 24, 39, 0.3);
-    backdrop-filter: blur(8px);
-  }
-  
-  .dropdown-item {
-    border-color: rgb(55, 65, 81);
-    
-    &:hover, &.active {
-      background: rgba(139, 92, 246, 0.1);
-    }
-  }
-}
 
 .nav-cta {
   background: var(--primary) !important;
@@ -1218,13 +1182,7 @@ a:focus,
 
 /* Color contrast improvements */
 :root {
-  --focus-color: #0066cc;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --focus-color: #66b3ff;
-  }
+  --focus-color: #66b3ff;
 }
 
 /* Ensure sufficient color contrast */
