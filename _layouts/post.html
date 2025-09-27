@@ -17,7 +17,32 @@ layout: default
       <article class="blog-content" style="max-width: 800px; margin: 0 auto; line-height: 1.7; color: #333;">
         {{ content }}
       </article>
-      
+
+      <!-- Author Signature -->
+      <div class="author-signature" style="max-width: 800px; margin: 3rem auto 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #8b5cf6;">
+        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+          <div style="flex: 1;">
+            <h4 style="margin: 0 0 0.5rem; color: #333; font-size: 1.1rem;">{{ site.author.name }}</h4>
+            <p style="margin: 0 0 1rem; color: #666; font-size: 0.9rem; line-height: 1.5;">{{ site.author.bio }}</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              {% if site.author.website %}
+                <a href="{{ site.author.website }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">Website</a>
+              {% endif %}
+              {% if site.author.linkedin %}
+                <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">LinkedIn</a>
+              {% endif %}
+              {% if site.author.github %}
+                <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">GitHub</a>
+              {% endif %}
+              {% if site.author.twitter %}
+                <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">Twitter</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;">
         <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
       </div>
