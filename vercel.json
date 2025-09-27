@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "name": "Steve Regester - Technology Consulting",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "_site"
+      }
+    }
+  ],
+  "buildCommand": "chmod +x ./build.sh && ./build.sh --production",
+  "outputDirectory": "_site",
+  "installCommand": "bundle install && apt-get update && apt-get install -y libimage-exiftool-perl",
+  "framework": "jekyll",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1.html"
+    }
+  ],
+  "trailingSlash": false
+}

@@ -247,6 +247,27 @@ content_settings:
   content_type: "professional-portfolio"
   last_update: "2024-07"
 
+# ===== EXIF PROCESSING CONFIGURATION =====
+# Automated image metadata processing during build
+exif_processing:
+  enabled: true
+  image_extensions: [jpg, jpeg, png, webp]
+  exclude_paths: ['_site/', 'vendor/', 'node_modules/', '.git/']
+  metadata:
+    # Professional branding metadata added to all images
+    creator: "Steve Regester"
+    artist: "Steve Regester"
+    copyright: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
+    copyright_notice: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
+    rights: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
+    source: "https://egeste.net"
+    credit: "egeste.net - Steve Regester Technology Consulting"
+    contact: "info@egeste.net"
+    keywords: "technology consulting, engineering leadership, Steve Regester, Portland Oregon, startup consulting, full-stack development"
+    subject: "Professional technology consulting and engineering leadership services"
+    title: "Steve Regester - Technology Consulting Asset"
+    description: "Professional asset from Steve Regester's technology consulting and engineering leadership portfolio"
+
 # ===== TECHNICAL CONFIGURATION =====
 # Feed settings
 feed:
