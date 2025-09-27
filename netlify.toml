@@ -1,0 +1,66 @@
+# Netlify Configuration with EXIF Processing
+# Professional Jekyll deployment with automated image metadata processing
+
+[build]
+  publish = "_site"
+  command = "./build.sh --production"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.2.0"
+
+# Install ExifTool and build dependencies
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# Install system dependencies including ExifTool
+[[build.processing.images]]
+  quality = 85
+  auto_webp = true
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Build hooks
+[context.production]
+  command = "./build.sh --production"
+
+[context.deploy-preview]
+  command = "./build.sh --production"
+
+[context.branch-deploy]
+  command = "./build.sh"
+
+# Plugin configuration
+[[plugins]]
+  package = "netlify-plugin-ruby"
+
+# Custom build script that will install ExifTool
+[build]
+  command = """
+    # Install ExifTool
+    apt-get update
+    apt-get install -y libimage-exiftool-perl
+
+    # Verify installation
+    exiftool -ver
+
+    # Run our custom build script
+    chmod +x ./build.sh
+    ./build.sh --production
+  """
