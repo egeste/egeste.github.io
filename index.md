@@ -19,13 +19,20 @@ custom_css: professional-homepage
 <section class="fullwidth-section hero-section">
   <div class="section-container">
     <header class="hero" role="banner">
-      <h1 class="hero-name">Technical Co-Founder & Engineering Leader</h1>
-      <h2 class="hero-title">OSINT Solutions • Application Security • Rapid Development</h2>
-      <p class="hero-subtitle">
-        I build technology companies and specialized technical solutions for complex challenges<br>
-        From OSINT intelligence platforms to secure React applications and automated workflows<br>
-        <span class="subtitle-location">Available for co-founder partnerships, fractional CTO roles, and project-based development</span>
-      </p>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-name">Technical Co-Founder & Engineering Leader</h1>
+          <h2 class="hero-title">OSINT Solutions • Application Security • Rapid Development</h2>
+          <p class="hero-subtitle">
+            I build technology companies and specialized technical solutions for complex challenges<br>
+            From OSINT intelligence platforms to secure React applications and automated workflows<br>
+            <span class="subtitle-location">Available for co-founder partnerships, fractional CTO roles, and project-based development</span>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester - Technical Co-Founder & Engineering Leader" class="hero-headshot">
+        </div>
+      </div>
     </header>
   </div>
 </section>
