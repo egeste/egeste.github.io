@@ -46,6 +46,22 @@ cta:
     tagline: ""
 ---
 
+<!-- Professional Profile Section -->
+<section class="fullwidth-section profile-section">
+  <div class="section-container">
+    <div class="profile-content">
+      <div class="profile-image">
+        <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester - Technical Co-Founder & Engineering Leader" class="headshot">
+      </div>
+      <div class="profile-text">
+        <h2>About Steve Regester</h2>
+        <p>Co-founder and technical leader with extensive experience building technology companies from the ground up. Currently leading binary analysis initiatives at Delphos Labs while providing specialized consulting services for complex technical challenges.</p>
+        <p>I focus on unique technical problems that require innovative solutions: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Testimonials Section -->
 <section class="fullwidth-section skills-section">
   <div class="section-container">
