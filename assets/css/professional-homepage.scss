@@ -479,6 +479,13 @@
     color: var(--color-slate-700) !important;
   }
 
+  /* Override list text colors for light background */
+  ul, ol {
+    li {
+      color: var(--color-slate-600) !important;
+    }
+  }
+
   .component-button--secondary {
     background: var(--color-slate-800);
     color: white;
@@ -556,6 +563,13 @@
   /* Override blockquote text colors for light background */
   blockquote {
     color: var(--color-slate-700) !important;
+  }
+
+  /* Override list text colors for light background */
+  ul, ol {
+    li {
+      color: var(--color-slate-600) !important;
+    }
   }
 }
 
