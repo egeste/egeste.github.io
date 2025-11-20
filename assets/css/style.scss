@@ -1013,7 +1013,7 @@ h3 {
       margin-bottom: var(--space-3);
       font-size: var(--text-lg);
       line-height: 1.6;
-      color: var(--text);
+      color: var(--text-light);
       
       &::before {
         content: '▶';
@@ -1069,7 +1069,7 @@ article {
 
   li {
     margin-bottom: var(--space-2);
-    color: var(--text);
+    color: var(--text-light);
   }
 
   blockquote {
