@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Weight on my Chest"
-subtitle: "My silence will never again be your platform."
+subtitle: "I am no longer willing to let my silence be the foundation on which others construct their narrative"
 date: 2025-11-20 00:00:00 -0000
 tags: [personal, family]
 author: Steve
