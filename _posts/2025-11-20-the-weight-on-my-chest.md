@@ -98,7 +98,7 @@ They are simply the ones that stand out among a much deeper reservoir of pain an
 
 ---
 
-Which brings me to the final point:
+### Which brings me to the final point:
 
 **The reason I am posting this - and why I have no intention of deleting it - is because I am no longer willing to let my silence be the foundation on which others construct their narrative. My silence has protected them at the expense of my truth for far too long.**
 
