@@ -629,25 +629,34 @@
   .achievements-section { @extend .theme-subtle; }
   .contact-section { @extend .theme-dark; }
 
+  /* Full-width buttons in cards */
+  .card-footer {
+    margin-top: var(--space-6);
+
+    .btn {
+      width: 100%;
+    }
+  }
+
   /* Responsive Behavior */
   @media (max-width: 768px) {
     .hero-section {
       min-height: 80vh;
       padding: var(--space-12) 0;
     }
-    
+
     .section-container {
       padding: 0 var(--space-4);
     }
-    
+
     .contact-buttons {
       flex-direction: column;
       align-items: center;
-    }
-    
-    .btn {
-      width: 100%;
-      max-width: 300px;
+
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   }
 }
