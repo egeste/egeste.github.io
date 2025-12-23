@@ -3,6 +3,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # ===== SITE CONFIGURATION =====
 title: Steve Regester - Technology Consulting & Engineering Leadership

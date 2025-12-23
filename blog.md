@@ -26,7 +26,7 @@ value_prop:
           <em>{{ post.date | date: "%B %d, %Y" }}</em><br>
           {{ post.description | default: post.excerpt | strip_html | truncatewords: 20 }}
         </span>
-        <div style="margin-top: 1rem;">
+        <div class="card-footer">
           <a href="{{ post.url | relative_url }}" class="btn btn-secondary">Read →</a>
         </div>
       </article>
