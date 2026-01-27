@@ -23,6 +23,8 @@ This doesn't mean coding disappears. It means coding stops being a gatekeeper sk
 
 The work is shifting from syntax mastery to specification mastery. From "do I know this library?" to "do I know what I want, and can I explain it well enough to get it built?"
 
-That's liberating, but it's also exposing. Because now the question isn't `can you code?` - it's `can you think clearly? can you communicate? can you imagine?` Code used to be a barrier that made technologists feel powerful. AI is dissolving that barrier, and in the process, it's forcing us to rediscover the real skills that were always underneath.
+That's liberating, but it's also exposing. Because now the question isn't "can you code?" - it's "can you think clearly? can you communicate? can you imagine?"
+
+Code used to be a barrier that made technologists feel powerful. AI is dissolving that barrier, and in the process, it's forcing us to rediscover the real skills that were always underneath.
 
 We don't get to hide behind syntax anymore. We have to show our ideas.
