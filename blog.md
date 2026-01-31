@@ -33,8 +33,8 @@ value_prop:
       {% endfor %}
     </div>
     {% else %}
-    <div style="text-align: center; padding: 2rem;">
-      <p style="color: #666; font-size: 1.1em;">No posts yet.</p>
+    <div class="text-center p-8">
+      <p class="text-slate-500 text-lg">No posts yet.</p>
     </div>
     {% endif %}
   </div>
