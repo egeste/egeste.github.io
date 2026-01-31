@@ -47,35 +47,35 @@ type: service
         <strong class="text-slate-900 font-bold mb-4 block"><span>🚀</span> Startup Consulting</strong>
         <span class="text-slate-600 leading-relaxed block mb-6 flex-1">Founding engineer services, CTO consulting, MVP development, 0-1 product strategy, technical co-founder expertise for early-stage startups</span>
         <div class="mt-auto">
-          <a href="{{ '/startup-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Learn More →</a>
+          <a href="{{ '/startup-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Learn More →</a>
         </div>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-4 block"><span>💻</span> Full-Stack Engineering</strong>
         <span class="text-slate-600 leading-relaxed block mb-6 flex-1">End-to-end application development, React/Node.js expertise, database design, cloud deployment, and scalable architecture solutions</span>
         <div class="mt-auto">
-          <a href="{{ '/fullstack-engineering' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Learn More →</a>
+          <a href="{{ '/fullstack-engineering' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Learn More →</a>
         </div>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-4 block"><span>⚡</span> Business Automation</strong>
         <span class="text-slate-600 leading-relaxed block mb-6 flex-1">Workflow automation, system integration, process optimization, custom automation solutions to streamline operations and boost efficiency</span>
         <div class="mt-auto">
-          <a href="{{ '/n8n-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Learn More →</a>
+          <a href="{{ '/n8n-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Learn More →</a>
         </div>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-4 block"><span>🔒</span> Security & Code Review</strong>
         <span class="text-slate-600 leading-relaxed block mb-6 flex-1">Comprehensive code review, security testing, vulnerability assessment, threat modeling, and secure development consulting for teams</span>
         <div class="mt-auto">
-          <a href="{{ '/penetration-testing' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Learn More →</a>
+          <a href="{{ '/penetration-testing' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Learn More →</a>
         </div>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-4 block"><span>🔍</span> OSINT & Digital Intelligence</strong>
         <span class="text-slate-600 leading-relaxed block mb-6 flex-1">Open source intelligence platforms, digital surveillance solutions, real-time monitoring, and professional intelligence gathering systems</span>
         <div class="mt-auto">
-          <a href="{{ '/osint-solutions' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Learn More →</a>
+          <a href="{{ '/osint-solutions' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Learn More →</a>
         </div>
       </div>
     </div>
