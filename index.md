@@ -85,7 +85,7 @@ type: service
 <!-- Results Section -->
 <section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30 border-b border-white/20">
   <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8 pl-4 relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-violet-500 before:rounded">Proven Results Across All Services</h2>
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Proven Results Across All Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-12" role="list">
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
         <strong class="text-slate-900 font-bold mb-4 block">Accelerated Development</strong>
@@ -118,7 +118,7 @@ type: service
 <!-- Expertise Section -->
 <section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20 border-b border-white/10">
   <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8 pl-4 relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-violet-500 before:rounded">Comprehensive Technology Expertise</h2>
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Comprehensive Technology Expertise</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-12" role="list">
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
         <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🎯</span>Startup Development</h3>
@@ -153,9 +153,9 @@ type: service
 </section>
 
 <!-- Professional CTA -->
-<section class="w-full py-16 md:py-20 bg-slate-900/90 backdrop-blur-xl border-t border-white/10">
+<section class="w-full py-16 md:py-20">
   <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-50 mb-8 pl-4 relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-violet-500 before:rounded">Ready to Transform Your Business?</h2>
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-50 mb-8 text-center">Ready to Transform Your Business?</h2>
     <div class="text-center mb-10">
       <p class="text-lg text-slate-200">
         Let's discuss your technology challenges and explore how expert consulting across startups, automation, security, and intelligence solutions can accelerate your business growth.
