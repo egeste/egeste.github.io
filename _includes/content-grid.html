@@ -1,30 +1,53 @@
 <!-- Reusable Content Grid Component -->
-<section class="fullwidth-section {{ include.section_class | default: 'about-section' }}">
-  <div class="section-container">
+{% assign section_bg = include.section_class | default: 'about-section' %}
+{% if section_bg == 'about-section' or section_bg == 'skills-section' %}
+  {% assign bg_classes = 'bg-white/95 backdrop-blur-lg border-t border-white/20 border-b border-white/10' %}
+  {% assign title_color = 'text-slate-900' %}
+  {% assign text_color = 'text-slate-600' %}
+  {% assign card_title_color = 'text-slate-900' %}
+{% elsif section_bg == 'achievements-section' %}
+  {% assign bg_classes = 'bg-slate-50/90 backdrop-blur-md border-t border-white/30 border-b border-white/20' %}
+  {% assign title_color = 'text-slate-900' %}
+  {% assign text_color = 'text-slate-600' %}
+  {% assign card_title_color = 'text-slate-900' %}
+{% elsif section_bg == 'contact-section' %}
+  {% assign bg_classes = 'bg-slate-900/90 backdrop-blur-xl border-t border-white/10' %}
+  {% assign title_color = 'text-slate-50' %}
+  {% assign text_color = 'text-slate-300' %}
+  {% assign card_title_color = 'text-slate-100' %}
+{% else %}
+  {% assign bg_classes = 'bg-transparent' %}
+  {% assign title_color = 'text-slate-100' %}
+  {% assign text_color = 'text-slate-300' %}
+  {% assign card_title_color = 'text-slate-100' %}
+{% endif %}
+
+<section class="w-full py-16 md:py-20 {{ bg_classes }}">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
     {% if include.title %}
-      <h2 class="section-title">{{ include.title }}</h2>
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold {{ title_color }} mb-8 pl-4 relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-violet-500 before:rounded">{{ include.title }}</h2>
     {% endif %}
-    
+
     {% if include.subtitle %}
-      <p class="section-subtitle">{{ include.subtitle }}</p>
+      <p class="text-lg {{ text_color }} mb-10 leading-relaxed">{{ include.subtitle }}</p>
     {% endif %}
-    
+
     {% if include.items %}
-      <div class="{{ include.grid_class | default: 'achievement-grid' }}" role="list">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-12" role="list">
         {% for item in include.items %}
-          <div class="{{ include.item_class | default: 'achievement-item' }}" role="listitem">
-            <strong>{{ item.title }}</strong>
-            <span>{{ item.description }}</span>
+          <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+            <strong class="{{ card_title_color }} font-bold mb-4 block">{{ item.title }}</strong>
+            <span class="{{ text_color }} leading-relaxed block">{{ item.description }}</span>
             {% if item.link %}
-              <div class="card-footer">
-                <a href="{{ item.link }}" class="btn btn-secondary">{{ item.link_text | default: 'Learn More →' }}</a>
+              <div class="mt-6">
+                <a href="{{ item.link }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">{{ item.link_text | default: 'Learn More →' }}</a>
               </div>
             {% endif %}
           </div>
         {% endfor %}
       </div>
     {% endif %}
-    
+
     {% if include.content %}
       {{ include.content }}
     {% endif %}
