@@ -47,25 +47,25 @@ cta:
 ---
 
 <!-- Additional Custom Sections -->
-<section class="fullwidth-section skills-section">
-  <div class="section-container">
-    <h2 class="section-title">Why Startups Choose Our Technical Leadership</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>⚡</span>Rapid MVP Development</h3>
-        <p>Ship functional MVPs in weeks, not months, using battle-tested frameworks and startup-optimized development practices</p>
+<section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Why Startups Choose Our Technical Leadership</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">⚡</span>Rapid MVP Development</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Ship functional MVPs in weeks, not months, using battle-tested frameworks and startup-optimized development practices</p>
       </div>
-      <div class="skill-category">
-        <h3><span>📈</span>Scalable Architecture</h3>
-        <p>Build technology foundations that handle 10x growth without complete rebuilds, saving months of technical debt</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📈</span>Scalable Architecture</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Build technology foundations that handle 10x growth without complete rebuilds, saving months of technical debt</p>
       </div>
-      <div class="skill-category">
-        <h3><span>💼</span>Startup Experience</h3>
-        <p>Deep understanding of startup constraints, fundraising requirements, and the unique technical challenges of 0-1 development</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">💼</span>Startup Experience</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Deep understanding of startup constraints, fundraising requirements, and the unique technical challenges of 0-1 development</p>
       </div>
-      <div class="skill-category">
-        <h3><span>🎯</span>Product-Market Fit Focus</h3>
-        <p>Technology decisions optimized for rapid iteration, user feedback integration, and pivot capability when needed</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🎯</span>Product-Market Fit Focus</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Technology decisions optimized for rapid iteration, user feedback integration, and pivot capability when needed</p>
       </div>
     </div>
   </div>

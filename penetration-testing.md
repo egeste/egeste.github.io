@@ -48,58 +48,58 @@ cta:
 ---
 
 <!-- Testing Areas Section -->
-<section class="fullwidth-section skills-section">
-  <div class="section-container">
-    <h2 class="section-title">Security Testing Areas</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>🏢</span>Physical Security</h3>
-        <p><strong>Access control bypass, badge cloning</strong>, tailgating scenarios, facility reconnaissance, physical device access, lock picking, surveillance evasion</p>
+<section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Security Testing Areas</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🏢</span>Physical Security</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Access control bypass, badge cloning</strong>, tailgating scenarios, facility reconnaissance, physical device access, lock picking, surveillance evasion</p>
       </div>
-      <div class="skill-category">
-        <h3><span>🌐</span>Network Security</h3>
-        <p><strong>Internal/external network penetration</strong>, firewall bypass, network segmentation testing, VLAN hopping, wireless security assessment, rogue access point detection</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🌐</span>Network Security</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Internal/external network penetration</strong>, firewall bypass, network segmentation testing, VLAN hopping, wireless security assessment, rogue access point detection</p>
       </div>
-      <div class="skill-category">
-        <h3><span>💻</span>Web Applications</h3>
-        <p><strong>OWASP Top 10 vulnerability testing</strong>, SQL injection, XSS, authentication bypass, session management flaws, API security assessment</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">💻</span>Web Applications</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>OWASP Top 10 vulnerability testing</strong>, SQL injection, XSS, authentication bypass, session management flaws, API security assessment</p>
       </div>
-      <div class="skill-category">
-        <h3><span>📱</span>Mobile & Wireless</h3>
-        <p><strong>Mobile application security testing</strong>, wireless network penetration, Bluetooth security assessment, RFID/NFC testing, IoT device security</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📱</span>Mobile & Wireless</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Mobile application security testing</strong>, wireless network penetration, Bluetooth security assessment, RFID/NFC testing, IoT device security</p>
       </div>
-      <div class="skill-category">
-        <h3><span>👤</span>Social Engineering</h3>
-        <p><strong>Phishing campaign simulation</strong>, pretexting scenarios, physical social engineering, vishing attacks, employee security awareness testing</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">👤</span>Social Engineering</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Phishing campaign simulation</strong>, pretexting scenarios, physical social engineering, vishing attacks, employee security awareness testing</p>
       </div>
-      <div class="skill-category">
-        <h3><span>☁️</span>Cloud Security</h3>
-        <p><strong>AWS/Azure/GCP security assessment</strong>, cloud configuration review, container security testing, serverless security, cloud access management</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">☁️</span>Cloud Security</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>AWS/Azure/GCP security assessment</strong>, cloud configuration review, container security testing, serverless security, cloud access management</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Process Section -->
-<section class="fullwidth-section about-section">
-  <div class="section-container">
-    <h2 class="section-title">Professional Penetration Testing Process</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>1️⃣</span>Scope & Authorization</h3>
-        <p>Define testing scope, obtain proper legal authorization, and establish rules of engagement. Ensure all testing activities are pre-approved and documented.</p>
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Professional Penetration Testing Process</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">1️⃣</span>Scope & Authorization</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Define testing scope, obtain proper legal authorization, and establish rules of engagement. Ensure all testing activities are pre-approved and documented.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>2️⃣</span>Reconnaissance & Planning</h3>
-        <p>Gather intelligence on target systems and facilities using open-source intelligence (OSINT) and passive reconnaissance techniques.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">2️⃣</span>Reconnaissance & Planning</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Gather intelligence on target systems and facilities using open-source intelligence (OSINT) and passive reconnaissance techniques.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>3️⃣</span>Active Testing & Exploitation</h3>
-        <p>Conduct authorized penetration testing across physical and cyber attack vectors. Document all findings and successful exploitation chains.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">3️⃣</span>Active Testing & Exploitation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Conduct authorized penetration testing across physical and cyber attack vectors. Document all findings and successful exploitation chains.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>4️⃣</span>Reporting & Remediation</h3>
-        <p>Deliver comprehensive security assessment report with executive summary, technical findings, risk ratings, and detailed remediation guidance.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">4️⃣</span>Reporting & Remediation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Deliver comprehensive security assessment report with executive summary, technical findings, risk ratings, and detailed remediation guidance.</p>
       </div>
     </div>
   </div>

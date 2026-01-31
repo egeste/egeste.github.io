@@ -45,73 +45,73 @@ cta:
 ---
 
 <!-- Use Cases Section -->
-<section class="fullwidth-section skills-section">
-  <div class="section-container">
-    <h2 class="section-title">Professional OSINT Use Cases</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>🕵️</span>Corporate Security</h3>
-        <p>Employee monitoring, insider threat detection, workplace investigation support, and internal communications analysis for corporate security teams</p>
+<section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Professional OSINT Use Cases</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🕵️</span>Corporate Security</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Employee monitoring, insider threat detection, workplace investigation support, and internal communications analysis for corporate security teams</p>
       </div>
-      <div class="skill-category">
-        <h3><span>⚖️</span>Legal Investigation</h3>
-        <p>Evidence gathering for legal proceedings, witness statement verification, fraud investigation support, and digital forensics assistance</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">⚖️</span>Legal Investigation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Evidence gathering for legal proceedings, witness statement verification, fraud investigation support, and digital forensics assistance</p>
       </div>
-      <div class="skill-category">
-        <h3><span>🔍</span>Private Investigation</h3>
-        <p>Background verification, due diligence research, surveillance operations, and comprehensive digital intelligence gathering for private investigators</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🔍</span>Private Investigation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Background verification, due diligence research, surveillance operations, and comprehensive digital intelligence gathering for private investigators</p>
       </div>
-      <div class="skill-category">
-        <h3><span>🛡️</span>Cybersecurity Operations</h3>
-        <p>Threat intelligence gathering, social engineering detection, incident response support, and security awareness monitoring</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🛡️</span>Cybersecurity Operations</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Threat intelligence gathering, social engineering detection, incident response support, and security awareness monitoring</p>
       </div>
-      <div class="skill-category">
-        <h3><span>📈</span>Competitive Intelligence</h3>
-        <p>Market research, competitor analysis, industry intelligence, and strategic business intelligence for competitive advantage</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📈</span>Competitive Intelligence</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Market research, competitor analysis, industry intelligence, and strategic business intelligence for competitive advantage</p>
       </div>
-      <div class="skill-category">
-        <h3><span>🎯</span>Custom OSINT Solutions</h3>
-        <p>Tailored intelligence platforms, specialized monitoring requirements, custom integration development, and bespoke OSINT tool creation</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">🎯</span>Custom OSINT Solutions</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Tailored intelligence platforms, specialized monitoring requirements, custom integration development, and bespoke OSINT tool creation</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Technical Specifications Section -->
-<section class="fullwidth-section about-section">
-  <div class="section-container">
-    <h2 class="section-title">Platform Technical Specifications</h2>
-    <div class="achievement-grid">
-      <div class="achievement-item">
-        <strong>Audio Processing Engine</strong>
-        <span>
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Platform Technical Specifications</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <strong class="text-slate-900 font-bold mb-4 block">Audio Processing Engine</strong>
+        <span class="text-slate-600 leading-relaxed block">
           • Individual user audio stream isolation<br>
           • 48kHz to 16kHz conversion for optimal transcription<br>
           • Real-time Opus decoding and PCM processing<br>
           • Voice Activity Detection (VAD) with configurable thresholds
         </span>
       </div>
-      <div class="achievement-item">
-        <strong>Intelligence Platform</strong>
-        <span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <strong class="text-slate-900 font-bold mb-4 block">Intelligence Platform</strong>
+        <span class="text-slate-600 leading-relaxed block">
           • Real-time web dashboard with Socket.IO integration<br>
           • PostgreSQL database with vector extensions<br>
           • Redis for real-time event processing<br>
           • S3-compatible secure storage for evidence
         </span>
       </div>
-      <div class="achievement-item">
-        <strong>Security & Compliance</strong>
-        <span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <strong class="text-slate-900 font-bold mb-4 block">Security & Compliance</strong>
+        <span class="text-slate-600 leading-relaxed block">
           • HTTP Basic Authentication with configurable credentials<br>
           • Owner-only access controls for sensitive operations<br>
           • Encrypted audio storage and transmission<br>
           • Audit logging for all monitoring activities
         </span>
       </div>
-      <div class="achievement-item">
-        <strong>Deployment Options</strong>
-        <span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <strong class="text-slate-900 font-bold mb-4 block">Deployment Options</strong>
+        <span class="text-slate-600 leading-relaxed block">
           • Docker containerized deployment<br>
           • Local or cloud infrastructure compatibility<br>
           • Scalable architecture for enterprise environments<br>
@@ -123,14 +123,14 @@ cta:
 </section>
 
 <!-- Legal Notice Section -->
-<section class="fullwidth-section about-section">
-  <div class="section-container">
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
     <div class="bg-slate-100 p-6 rounded-lg text-sm border-l-4 border-blue-500">
       <h4 class="mt-0 text-blue-600 font-semibold">Legal & Compliance Notice</h4>
-      <p class="mb-2">
+      <p class="mb-2 text-slate-700">
         <strong>Professional Use Only:</strong> These OSINT solutions are designed exclusively for legitimate security, investigative, and intelligence purposes by authorized professionals and organizations.
       </p>
-      <p class="mb-0">
+      <p class="mb-0 text-slate-700">
         <strong>Compliance Requirements:</strong> Users must ensure compliance with all applicable laws, regulations, and organizational policies regarding surveillance, monitoring, and data collection in their jurisdiction. Proper authorization and legal review required before deployment.
       </p>
     </div>

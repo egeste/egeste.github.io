@@ -47,40 +47,40 @@ cta:
 ---
 
 <!-- Professional Profile Section -->
-<section class="fullwidth-section profile-section">
-  <div class="section-container">
-    <div class="profile-content">
-      <div class="profile-image">
-        <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester - Technical Co-Founder & Engineering Leader" class="headshot">
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <div class="flex-shrink-0">
+        <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester - Technical Co-Founder & Engineering Leader" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl border-[3px] border-slate-200 shadow-lg">
       </div>
-      <div class="profile-text">
-        <h2>About Steve Regester</h2>
-        <p>Co-founder and technical leader with extensive experience building technology companies from the ground up. Currently leading binary analysis initiatives at Delphos Labs while providing specialized consulting services for complex technical challenges.</p>
-        <p>I focus on unique technical problems that require innovative solutions: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">About Steve Regester</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">Co-founder and technical leader with extensive experience building technology companies from the ground up. Currently leading binary analysis initiatives at Delphos Labs while providing specialized consulting services for complex technical challenges.</p>
+        <p class="text-slate-600 leading-relaxed">I focus on unique technical problems that require innovative solutions: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Testimonials Section -->
-<section class="fullwidth-section skills-section">
-  <div class="section-container">
-    <h2 class="section-title">What Clients & Colleagues Say</h2>
-    <div class="skills-grid" role="list">
-      <div class="skill-category" role="listitem">
-        <blockquote class="italic m-0 py-4">
+<section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">What Clients & Colleagues Say</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
+        <blockquote class="italic text-slate-700 m-0 py-4">
           "Steve's technical leadership and strategic vision were instrumental in our platform transformation. His ability to balance innovation with practical execution is exceptional."
         </blockquote>
         <p class="font-bold text-violet-600 mt-4">— Technology Executive, Enterprise Client</p>
       </div>
-      <div class="skill-category" role="listitem">
-        <blockquote class="italic m-0 py-4">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
+        <blockquote class="italic text-slate-700 m-0 py-4">
           "Working with Steve elevated our entire engineering culture. His mentorship approach and technical expertise helped our team achieve breakthrough results."
         </blockquote>
         <p class="font-bold text-violet-600 mt-4">— Senior Engineering Manager</p>
       </div>
-      <div class="skill-category" role="listitem">
-        <blockquote class="italic m-0 py-4">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
+        <blockquote class="italic text-slate-700 m-0 py-4">
           "Steve's security expertise and systematic approach to SOC 2 compliance saved us months of work and gave us confidence in our security posture."
         </blockquote>
         <p class="font-bold text-violet-600 mt-4">— Startup Founder & CEO</p>
@@ -90,33 +90,33 @@ cta:
 </section>
 
 <!-- Core Expertise Section -->
-<section class="fullwidth-section about-section">
-  <div class="section-container">
-    <h2 class="section-title">Core Consulting Expertise</h2>
-    <div class="achievement-grid" role="list">
-      <div class="achievement-item" role="listitem">
-        <strong>🎯 Startup & Fractional CTO Services</strong>
-        <span>0-1 product development, technical strategy, founding engineer expertise, MVP architecture, and strategic technology decision-making for early-stage companies</span>
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Core Consulting Expertise</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">🎯 Startup & Fractional CTO Services</strong>
+        <span class="text-slate-600 leading-relaxed block">0-1 product development, technical strategy, founding engineer expertise, MVP architecture, and strategic technology decision-making for early-stage companies</span>
       </div>
-      <div class="achievement-item" role="listitem">
-        <strong>💻 Full-Stack Engineering Excellence</strong>
-        <span>React, Node.js, Python, cloud architecture, database design, API development, and end-to-end application development with enterprise-grade quality</span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">💻 Full-Stack Engineering Excellence</strong>
+        <span class="text-slate-600 leading-relaxed block">React, Node.js, Python, cloud architecture, database design, API development, and end-to-end application development with enterprise-grade quality</span>
       </div>
-      <div class="achievement-item" role="listitem">
-        <strong>⚡ Business Process Automation</strong>
-        <span>Workflow optimization, system integration, N8N automation platforms, operational efficiency improvements, and custom automation solutions</span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">⚡ Business Process Automation</strong>
+        <span class="text-slate-600 leading-relaxed block">Workflow optimization, system integration, N8N automation platforms, operational efficiency improvements, and custom automation solutions</span>
       </div>
-      <div class="achievement-item" role="listitem">
-        <strong>🔒 Cybersecurity & Compliance</strong>
-        <span>Penetration testing, security assessments, SOC 2 compliance, secure development practices, and comprehensive security program implementation</span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">🔒 Cybersecurity & Compliance</strong>
+        <span class="text-slate-600 leading-relaxed block">Penetration testing, security assessments, SOC 2 compliance, secure development practices, and comprehensive security program implementation</span>
       </div>
-      <div class="achievement-item" role="listitem">
-        <strong>🔍 OSINT & Intelligence Solutions</strong>
-        <span>Open source intelligence platforms, digital surveillance systems, real-time monitoring solutions, and custom intelligence gathering tools</span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">🔍 OSINT & Intelligence Solutions</strong>
+        <span class="text-slate-600 leading-relaxed block">Open source intelligence platforms, digital surveillance systems, real-time monitoring solutions, and custom intelligence gathering tools</span>
       </div>
-      <div class="achievement-item" role="listitem">
-        <strong>👥 Technical Leadership & Mentorship</strong>
-        <span>Team building, engineering culture development, technical mentorship, process optimization, and leadership coaching for growing technical teams</span>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
+        <strong class="text-slate-900 font-bold mb-4 block">👥 Technical Leadership & Mentorship</strong>
+        <span class="text-slate-600 leading-relaxed block">Team building, engineering culture development, technical mentorship, process optimization, and leadership coaching for growing technical teams</span>
       </div>
     </div>
   </div>
