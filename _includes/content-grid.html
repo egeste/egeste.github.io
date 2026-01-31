@@ -40,7 +40,7 @@
             <span class="{{ text_color }} leading-relaxed block">{{ item.description }}</span>
             {% if item.link %}
               <div class="mt-6">
-                <a href="{{ item.link }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">{{ item.link_text | default: 'Learn More →' }}</a>
+                <a href="{{ item.link }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">{{ item.link_text | default: 'Learn More →' }}</a>
               </div>
             {% endif %}
           </div>

@@ -58,7 +58,7 @@ cta:
           <strong>Result:</strong> Professional-grade intelligence platform with multi-user monitoring and forensic-quality recording
         </span>
         <div class="mt-6">
-          <a href="{{ '/osint-solutions' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">View OSINT Solutions →</a>
+          <a href="{{ '/osint-solutions' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">View OSINT Solutions →</a>
         </div>
       </article>
 
@@ -72,7 +72,7 @@ cta:
           <strong>Result:</strong> Successful SOC 2 certification achieved 3 months ahead of schedule, enabling enterprise sales
         </span>
         <div class="mt-6">
-          <a href="{{ '/penetration-testing' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Security Services →</a>
+          <a href="{{ '/penetration-testing' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Security Services →</a>
         </div>
       </article>
 
@@ -86,7 +86,7 @@ cta:
           <strong>Result:</strong> Successfully launched platform serving nonprofits nationwide with 60%+ user engagement growth
         </span>
         <div class="mt-6">
-          <a href="{{ '/startup-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Startup Services →</a>
+          <a href="{{ '/startup-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Startup Services →</a>
         </div>
       </article>
 
@@ -100,7 +100,7 @@ cta:
           <strong>Result:</strong> Doubled research team productivity while reducing infrastructure costs by 40%
         </span>
         <div class="mt-6">
-          <a href="{{ '/fullstack-engineering' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Development Services →</a>
+          <a href="{{ '/fullstack-engineering' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Development Services →</a>
         </div>
       </article>
 
@@ -114,7 +114,7 @@ cta:
           <strong>Result:</strong> Reduced manual work by 75%, eliminated processing errors, and improved response times by 10x
         </span>
         <div class="mt-6">
-          <a href="{{ '/n8n-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Automation Services →</a>
+          <a href="{{ '/n8n-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Automation Services →</a>
         </div>
       </article>
 
@@ -125,7 +125,7 @@ cta:
           Technical advisory roles, architecture reviews, code audits, security assessments, team mentoring, and strategic technology planning for startups and enterprises across various industries including healthcare, fintech, e-commerce, and cybersecurity.
         </span>
         <div class="mt-6">
-          <a href="mailto:{{ site.social.email }}?subject=Project%20Portfolio%20Discussion" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-blue-500 hover:shadow-lg w-full">Discuss Your Project →</a>
+          <a href="mailto:{{ site.social.email }}?subject=Project%20Portfolio%20Discussion" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Discuss Your Project →</a>
         </div>
       </article>
 
