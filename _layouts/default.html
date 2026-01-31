@@ -23,8 +23,40 @@
   {% endfor %}
   
   <!-- ===== STYLESHEETS ===== -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
   <link href="{{ site.fonts.stylesheet }}" rel="stylesheet">
+  <style>
+    /* Mesh background - only custom CSS allowed */
+    .mesh-background {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+    #mesh-canvas { width: 100%; height: 100%; display: block; }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .mesh-background { display: none; }
+    }
+  </style>
   
   <!-- ===== SITE METADATA ===== -->
   <meta name="theme-color" content="{{ site.site_config.primary_color }}">
@@ -74,9 +106,7 @@
   {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
   {% endif %}
-  
-  {% include accessibility-styles.html %}
-  
+
   <!-- ===== SEO & AI OPTIMIZATION ===== -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="ai-content-declaration" content="human-authored">
