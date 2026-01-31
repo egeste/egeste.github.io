@@ -68,22 +68,22 @@ cta:
     <h2 class="section-title">What Clients & Colleagues Say</h2>
     <div class="skills-grid" role="list">
       <div class="skill-category" role="listitem">
-        <blockquote style="font-style: italic; margin: 0; padding: 1rem 0;">
+        <blockquote class="italic m-0 py-4">
           "Steve's technical leadership and strategic vision were instrumental in our platform transformation. His ability to balance innovation with practical execution is exceptional."
         </blockquote>
-        <p style="font-weight: bold; color: var(--color-primary); margin-top: 1rem;">— Technology Executive, Enterprise Client</p>
+        <p class="font-bold text-violet-600 mt-4">— Technology Executive, Enterprise Client</p>
       </div>
       <div class="skill-category" role="listitem">
-        <blockquote style="font-style: italic; margin: 0; padding: 1rem 0;">
+        <blockquote class="italic m-0 py-4">
           "Working with Steve elevated our entire engineering culture. His mentorship approach and technical expertise helped our team achieve breakthrough results."
         </blockquote>
-        <p style="font-weight: bold; color: var(--color-primary); margin-top: 1rem;">— Senior Engineering Manager</p>
+        <p class="font-bold text-violet-600 mt-4">— Senior Engineering Manager</p>
       </div>
       <div class="skill-category" role="listitem">
-        <blockquote style="font-style: italic; margin: 0; padding: 1rem 0;">
+        <blockquote class="italic m-0 py-4">
           "Steve's security expertise and systematic approach to SOC 2 compliance saved us months of work and gave us confidence in our security posture."
         </blockquote>
-        <p style="font-weight: bold; color: var(--color-primary); margin-top: 1rem;">— Startup Founder & CEO</p>
+        <p class="font-bold text-violet-600 mt-4">— Startup Founder & CEO</p>
       </div>
     </div>
   </div>
