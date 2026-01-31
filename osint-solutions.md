@@ -125,12 +125,12 @@ cta:
 <!-- Legal Notice Section -->
 <section class="fullwidth-section about-section">
   <div class="section-container">
-    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; font-size: 0.9em; border-left: 4px solid #007bff;">
-      <h4 style="margin-top: 0; color: #007bff;">Legal & Compliance Notice</h4>
-      <p style="margin-bottom: 0.5rem;">
+    <div class="bg-slate-100 p-6 rounded-lg text-sm border-l-4 border-blue-500">
+      <h4 class="mt-0 text-blue-600 font-semibold">Legal & Compliance Notice</h4>
+      <p class="mb-2">
         <strong>Professional Use Only:</strong> These OSINT solutions are designed exclusively for legitimate security, investigative, and intelligence purposes by authorized professionals and organizations.
       </p>
-      <p style="margin-bottom: 0;">
+      <p class="mb-0">
         <strong>Compliance Requirements:</strong> Users must ensure compliance with all applicable laws, regulations, and organizational policies regarding surveillance, monitoring, and data collection in their jurisdiction. Proper authorization and legal review required before deployment.
       </p>
     </div>
