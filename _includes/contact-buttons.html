@@ -1,16 +1,16 @@
-<!-- Contact Button Component - Single Responsibility -->
-<div class="contact-buttons" style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; margin: var(--space-12) 0;">
+<!-- Contact Button Component -->
+<div class="flex justify-center gap-4 flex-wrap my-12 flex-col sm:flex-row items-center">
   {% if include.primary_text and include.primary_link %}
-    <a href="{{ include.primary_link }}" 
-       class="btn btn-primary-cta"
+    <a href="{{ include.primary_link }}"
+       class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 bg-gradient-to-r from-blue-600 via-indigo-500 to-violet-500 text-white rounded-xl font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 shadow-md hover:from-blue-700 hover:via-indigo-600 hover:to-violet-600 hover:shadow-xl hover:-translate-y-0.5 min-h-[44px] w-full sm:w-auto max-w-[300px] sm:max-w-none"
        {% if include.primary_subject %}aria-label="{{ include.primary_text }} - {{ include.primary_subject }}"{% endif %}>
       {{ include.primary_text | default: "Get Started" }}
     </a>
   {% endif %}
-  
+
   {% if include.secondary_text and include.secondary_link %}
-    <a href="{{ include.secondary_link }}" 
-       class="btn btn-secondary"
+    <a href="{{ include.secondary_link }}"
+       class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 bg-white/90 backdrop-blur text-slate-900 border border-slate-300 rounded-xl font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 shadow-sm hover:bg-slate-900 hover:text-white hover:border-slate-900 hover:shadow-md hover:-translate-y-0.5 min-h-[44px] w-full sm:w-auto max-w-[300px] sm:max-w-none"
        aria-label="{{ include.secondary_text }}">
       {{ include.secondary_text | default: "Learn More" }}
     </a>
@@ -19,14 +19,14 @@
 
 <!-- Contact Info Display -->
 {% if include.info %}
-  <div class="contact-info" style="text-align: center; margin-top: var(--space-8); padding: var(--space-6); background: rgba(255, 255, 255, 0.1); border-radius: 1rem; backdrop-filter: blur(8px);">
+  <div class="text-center mt-8 p-6 bg-white/10 rounded-2xl backdrop-blur-md">
     {% if include.info.highlight %}
-      <p style="color: var(--color-slate-100); margin-bottom: var(--space-3);">
+      <p class="text-slate-100 mb-3">
         <strong>{{ include.info.highlight }}</strong>
       </p>
     {% endif %}
     {% if include.info.tagline %}
-      <p class="contact-tagline" style="font-style: italic; color: var(--color-slate-300);">
+      <p class="italic text-slate-300">
         {{ include.info.tagline }}
       </p>
     {% endif %}
