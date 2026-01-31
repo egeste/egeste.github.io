@@ -48,58 +48,58 @@ cta:
 ---
 
 <!-- Common Use Cases Section -->
-<section class="fullwidth-section skills-section">
-  <div class="section-container">
-    <h2 class="section-title">Common Business Automation Solutions</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>📧</span>Customer Communication</h3>
-        <p><strong>Email marketing automation, lead nurturing sequences</strong>, customer onboarding workflows, support ticket routing, follow-up campaigns</p>
+<section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Common Business Automation Solutions</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📧</span>Customer Communication</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Email marketing automation, lead nurturing sequences</strong>, customer onboarding workflows, support ticket routing, follow-up campaigns</p>
       </div>
-      <div class="skill-category">
-        <h3><span>💰</span>Sales & CRM Automation</h3>
-        <p><strong>Lead scoring, pipeline management</strong>, proposal generation, contract workflows, sales reporting, opportunity tracking</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">💰</span>Sales & CRM Automation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Lead scoring, pipeline management</strong>, proposal generation, contract workflows, sales reporting, opportunity tracking</p>
       </div>
-      <div class="skill-category">
-        <h3><span>📊</span>Data & Reporting</h3>
-        <p><strong>Automated reporting dashboards, data synchronization</strong>, KPI tracking, performance analytics, financial reporting automation</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📊</span>Data & Reporting</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Automated reporting dashboards, data synchronization</strong>, KPI tracking, performance analytics, financial reporting automation</p>
       </div>
-      <div class="skill-category">
-        <h3><span>📦</span>Inventory & Operations</h3>
-        <p><strong>Inventory tracking, order processing</strong>, supplier communication, shipping notifications, stock level alerts, procurement workflows</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">📦</span>Inventory & Operations</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Inventory tracking, order processing</strong>, supplier communication, shipping notifications, stock level alerts, procurement workflows</p>
       </div>
-      <div class="skill-category">
-        <h3><span>💳</span>Financial Operations</h3>
-        <p><strong>Invoice processing, payment reminders</strong>, expense tracking, financial reporting, tax preparation automation, cash flow monitoring</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">💳</span>Financial Operations</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Invoice processing, payment reminders</strong>, expense tracking, financial reporting, tax preparation automation, cash flow monitoring</p>
       </div>
-      <div class="skill-category">
-        <h3><span>👥</span>HR & Team Management</h3>
-        <p><strong>Employee onboarding, time tracking</strong>, performance reviews, benefit administration, payroll processing, team communication</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">👥</span>HR & Team Management</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0"><strong>Employee onboarding, time tracking</strong>, performance reviews, benefit administration, payroll processing, team communication</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Process Section -->
-<section class="fullwidth-section about-section">
-  <div class="section-container">
-    <h2 class="section-title">Business Automation Consulting Process</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3><span>1️⃣</span>Discovery & Assessment</h3>
-        <p>Comprehensive analysis of your current processes, tools, and automation opportunities. Identify high-impact workflows that deliver immediate ROI.</p>
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Business Automation Consulting Process</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">1️⃣</span>Discovery & Assessment</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Comprehensive analysis of your current processes, tools, and automation opportunities. Identify high-impact workflows that deliver immediate ROI.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>2️⃣</span>Strategy & Planning</h3>
-        <p>Develop a prioritized automation roadmap aligned with your business goals. Create detailed specifications for automation workflow implementations.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">2️⃣</span>Strategy & Planning</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Develop a prioritized automation roadmap aligned with your business goals. Create detailed specifications for automation workflow implementations.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>3️⃣</span>Development & Testing</h3>
-        <p>Build robust automation workflows with comprehensive error handling, monitoring, and documentation. Thorough testing ensures reliability before deployment.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">3️⃣</span>Development & Testing</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Build robust automation workflows with comprehensive error handling, monitoring, and documentation. Thorough testing ensures reliability before deployment.</p>
       </div>
-      <div class="skill-category">
-        <h3><span>4️⃣</span>Training & Handoff</h3>
-        <p>Complete knowledge transfer including workflow documentation, training sessions, and ongoing support to ensure your team's success.</p>
+      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
+        <h3 class="text-violet-600 text-lg font-semibold mb-3"><span class="mr-2">4️⃣</span>Training & Handoff</h3>
+        <p class="text-slate-600 text-sm leading-relaxed m-0">Complete knowledge transfer including workflow documentation, training sessions, and ongoing support to ensure your team's success.</p>
       </div>
     </div>
   </div>
