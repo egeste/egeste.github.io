@@ -2,49 +2,47 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/professional-homepage.css' | relative_url }}">
-
-<div class="professional-homepage">
+<div class="text-slate-100">
   <!-- Hero Section -->
-  {% include page-hero.html 
+  {% include page-hero.html
     title=page.title
     subtitle=page.subtitle
     date=page.date %}
 
   <!-- Article Content -->
-  <section class="fullwidth-section about-section">
-    <div class="section-container">
-      <article class="blog-content" style="max-width: 800px; margin: 0 auto; line-height: 1.7; color: #333;">
+  <section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+    <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+      <article class="max-w-3xl mx-auto prose prose-lg prose-slate prose-headings:text-slate-900 prose-p:text-slate-600 prose-strong:text-slate-900 prose-a:text-violet-600 hover:prose-a:text-violet-700 prose-blockquote:text-slate-700 prose-blockquote:border-violet-500">
         {{ content }}
       </article>
 
       <!-- Author Signature -->
-      <div class="author-signature" style="max-width: 800px; margin: 3rem auto 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #8b5cf6;">
-        <div style="display: flex; align-items: flex-start; gap: 1rem;">
-          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-          <div style="flex: 1;">
-            <h4 style="margin: 0 0 0.5rem; color: #333; font-size: 1.1rem;">{{ site.author.name }}</h4>
-            <p style="margin: 0 0 1rem; color: #666; font-size: 0.9rem; line-height: 1.5;">{{ site.author.bio }}</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <div class="max-w-3xl mx-auto mt-12 p-8 bg-slate-50 rounded-lg border-l-4 border-violet-500">
+        <div class="flex items-start gap-4">
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="w-14 h-14 rounded-full object-cover">
+          <div class="flex-1">
+            <h4 class="m-0 mb-2 text-slate-900 text-lg font-semibold">{{ site.author.name }}</h4>
+            <p class="m-0 mb-4 text-slate-600 text-sm leading-relaxed">{{ site.author.bio }}</p>
+            <div class="flex gap-4 flex-wrap">
               {% if site.author.website %}
-                <a href="{{ site.author.website }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">Website</a>
+                <a href="{{ site.author.website }}" target="_blank" rel="noopener" class="text-violet-600 no-underline text-sm hover:text-violet-700">Website</a>
               {% endif %}
               {% if site.author.linkedin %}
-                <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">LinkedIn</a>
+                <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" class="text-violet-600 no-underline text-sm hover:text-violet-700">LinkedIn</a>
               {% endif %}
               {% if site.author.github %}
-                <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">GitHub</a>
+                <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" class="text-violet-600 no-underline text-sm hover:text-violet-700">GitHub</a>
               {% endif %}
               {% if site.author.twitter %}
-                <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="color: #8b5cf6; text-decoration: none; font-size: 0.9rem;">Twitter</a>
+                <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" class="text-violet-600 no-underline text-sm hover:text-violet-700">Twitter</a>
               {% endif %}
             </div>
           </div>
         </div>
       </div>
 
-      <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee;">
-        <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">← Back to Blog</a>
+      <div class="text-center mt-12 pt-8 border-t border-slate-200">
+        <a href="{{ '/blog' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-slate-900 hover:shadow-md">← Back to Blog</a>
       </div>
     </div>
   </section>
