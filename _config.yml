@@ -34,7 +34,7 @@ author:
   website: https://egeste.net
   
   # Social profiles
-  twitter: egeste
+  twitter: egeste_
   linkedin: egeste
   github: egeste
   
@@ -98,7 +98,7 @@ defaults:
       
 # SEO tag settings
 twitter:
-  username: egeste
+  username: egeste_
   card: summary_large_image 
 
 # ===== ANALYTICS & VERIFICATION =====
