@@ -2,7 +2,7 @@
 layout: service
 title: About Steve Regester - Co-Founder, Technical Leader & OSINT Specialist
 description: Meet Steve Regester, co-founder and technical leader who has built companies from the ground up and specializes in unique technical challenges like OSINT solutions, application security, and rapid development for complex problems.
-keywords: technology consultant, engineering consultant, startup CTO, technical advisor, full-stack consultant, security consultant, OSINT specialist, Portland Oregon technology consultant
+keywords: technology consultant, engineering consultant, startup CTO, technical advisor, full-stack consultant, security consultant, OSINT specialist, Southwest Washington technology consultant
 sitemap:
   priority: 0.9
   changefreq: weekly
@@ -13,11 +13,11 @@ hero:
   title: "Steve Regester"
   subtitle: "Co-Founder & Technical Leader"
   description: "From co-founding tech companies to building specialized OSINT platforms<br>I solve technical problems that others can't or won't tackle"
-  location: "Portland, Oregon • Available globally for the right challenges"
+  location: "Southwest Washington • Portland Metro Area • Available Remotely"
 
 value_prop:
   title: "Built Different"
-  subtitle: "I'm not your typical consultant. I've <strong>co-founded technology companies</strong>, built platforms that process millions of data points, and developed specialized solutions for problems that don't have off-the-shelf answers.<br><br>While most developers build the same apps over and over, I focus on <strong>unique technical challenges</strong>: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation for processes others say can't be automated.<br><br>Currently at <strong>Delphos Labs</strong> leading binary analysis with AI, I bring a combination of startup grit, technical depth, and the ability to see solutions where others see impossible problems."
+  subtitle: "I'm not your typical consultant. I've <strong>co-founded technology companies</strong>, built platforms that process millions of data points, and developed specialized solutions for problems that don't have off-the-shelf answers.<br><br>While most developers build the same apps over and over, I focus on <strong>unique technical challenges</strong>: building 0→1 products from scratch, designing AI/LLM systems with multi-model orchestration, architecting scalable cloud platforms, and automating processes others say can't be automated.<br><br>I bring a combination of <strong>startup grit, technical depth, and fractional CTO leadership</strong> — walking into ambiguity and shipping durable systems on compressed timelines."
 
 services:
   title: "Proven Results for Clients & Organizations"
@@ -55,8 +55,8 @@ cta:
       </div>
       <div class="flex-1 text-center md:text-left">
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">About Steve Regester</h2>
-        <p class="text-slate-600 leading-relaxed mb-4">Co-founder and technical leader with extensive experience building technology companies from the ground up. Currently leading binary analysis initiatives at Delphos Labs while providing specialized consulting services for complex technical challenges.</p>
-        <p class="text-slate-600 leading-relaxed">I focus on unique technical problems that require innovative solutions: OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
+        <p class="text-slate-600 leading-relaxed mb-4">Systems architect and technical leader with 15+ years building production platforms from zero. From co-founding technology companies to designing autonomous AI publishing engines, I specialize in 0→1 product builds, AI/LLM systems, and fractional CTO engagements.</p>
+        <p class="text-slate-600 leading-relaxed">I focus on unique technical problems that require innovative solutions: multi-model AI orchestration, OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
       </div>
     </div>
   </div>

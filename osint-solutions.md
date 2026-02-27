@@ -2,7 +2,7 @@
 layout: service
 title: OSINT Solutions - Digital Intelligence & Surveillance | Steve Regester
 description: Professional open source intelligence (OSINT) solutions for digital surveillance, audio monitoring, and real-time intelligence gathering. Advanced Discord-based monitoring platforms for security professionals, investigators, and intelligence analysts.
-keywords: OSINT, open source intelligence, digital surveillance, audio monitoring, discord monitoring, intelligence gathering, security solutions, digital investigation, surveillance technology, Portland Oregon OSINT consultant
+keywords: OSINT, open source intelligence, digital surveillance, audio monitoring, discord monitoring, intelligence gathering, security solutions, digital investigation, surveillance technology, Southwest Washington OSINT consultant
 sitemap:
   priority: 0.8
   changefreq: monthly

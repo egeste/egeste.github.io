@@ -2,7 +2,7 @@
 layout: service
 title: Case Studies & Projects - Steve Regester Technology Consultant
 description: Comprehensive portfolio of technology consulting successes, startup ventures, and enterprise solutions. See real-world results from 15+ years of strategic technology leadership and innovation.
-keywords: technology consulting case studies, startup projects, enterprise solutions, full-stack development portfolio, security consulting projects, automation solutions, OSINT projects, Portland Oregon consultant
+keywords: technology consulting case studies, startup projects, enterprise solutions, full-stack development portfolio, security consulting projects, automation solutions, OSINT projects, Southwest Washington consultant
 sitemap:
   priority: 0.8
   changefreq: monthly

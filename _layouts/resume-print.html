@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: "Resume - Steve Regester" }}</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Tailwind CDN with typography plugin -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+  <!-- Google Fonts (same as main site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{{ site.fonts.stylesheet }}" rel="stylesheet">
+
+  <style>
+    /* Screen: paper-like preview */
+    @media screen {
+      body {
+        background: #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+      .resume-paper {
+        background: white;
+        max-width: 8.5in;
+        width: 100%;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+        padding: 0.65in 0.75in;
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* Print: clean output */
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.5in 0.6in;
+      }
+      body {
+        background: white;
+        margin: 0;
+        padding: 0;
+      }
+      .resume-paper {
+        padding: 0;
+        box-shadow: none;
+        max-width: none;
+      }
+      .screen-only {
+        display: none !important;
+      }
+      * {
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      a {
+        text-decoration: none !important;
+      }
+      .experience-block {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+    }
+
+    /* Shared typography */
+    body {
+      font-family: 'Exo', system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #111827;
+    }
+    h1, h2, h3 {
+      font-family: 'Rajdhani', 'Exo', system-ui, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    ul { margin-top: 2px; margin-bottom: 2px; }
+    li { margin-top: 1px; margin-bottom: 1px; }
+  </style>
+</head>
+<body>
+  <!-- Print button (screen only) -->
+  <div class="screen-only w-full max-w-[8.5in] flex justify-end mb-4">
+    <button onclick="window.print()"
+      class="px-5 py-2.5 bg-violet-600 text-white font-semibold rounded-lg shadow hover:bg-violet-700 transition-colors cursor-pointer text-sm">
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-paper">
+    {{ content }}
+  </div>
+</body>
+</html>

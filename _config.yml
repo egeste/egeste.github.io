@@ -26,10 +26,10 @@ author:
   username: egeste
   email: info@egeste.net
   bio: >-
-    Technology consultant and engineering leader with 15+ years of experience helping businesses grow 
-    through expert technical guidance. Specializing in startup consulting, full-stack engineering, 
-    business automation, and security testing.
-  location: Portland, Oregon, United States
+    Fractional CTO and systems architect with 15+ years building production platforms from zero.
+    Specializing in 0→1 product builds, AI/LLM systems, full-stack architecture, cloud infrastructure,
+    and technical leadership for startups and growing companies.
+  location: Southwest Washington, United States
   avatar: /assets/images/steve-regester-headshot.png
   website: https://egeste.net
   
@@ -39,7 +39,7 @@ author:
   github: egeste
   
   # Professional details
-  job_title: Technology Consultant & Engineering Leader
+  job_title: Fractional CTO & Systems Architect
   company: Independent Consultant
   skills:
     - Startup Consulting
@@ -111,16 +111,16 @@ twitter:
 professional:
   # Current Position
   current_company: "Delphos Labs"
-  current_role: "Staff Software Engineer & Team Lead"
-  
+  current_role: "Founding Engineer / Engineering Lead"
+
   # Career Context
-  status: "Reversing binaries with AI @ https://delphoslabs.com"
+  status: "Systems Architect | 0→1 Product Builder | AI/LLM Systems"
   experience_years: "15+ years"
-  location: "Portland, Oregon"
-  
+  location: "Southwest Washington • Portland Metro Area"
+
   # Job Preferences
-  seeking_roles: ["Staff Engineer", "Principal Engineer", "Director of Engineering", "Founding Engineer"]
-  work_locations: ["Portland, Oregon", "Remote"]
+  seeking_roles: ["Fractional CTO", "Systems Architect", "0→1 Product Builder", "AI/LLM Specialist"]
+  work_locations: ["Southwest Washington", "Portland Metro Area", "Remote"]
   company_types: ["Early-stage startups", "Growth-stage companies", "Enterprise companies"]
   
   # Core Skills
@@ -138,7 +138,7 @@ professional:
   # Work History
   work_history:
     - company: "Delphos Labs"
-      role: "Staff Software Engineer & Team Lead"
+      role: "Founding Engineer / Engineering Lead"
       period: "current"
     - company: "Studylog Systems"
       role: "Director of Engineering"
@@ -151,16 +151,16 @@ professional:
       period: "2014-2016"
     - company: "Ultimatum"
       role: "Co-founder & CTO"
-      period: "2012-2014"
+      period: "2015-2019"
 
 # ===== SITE CONFIGURATION =====
 site_config:
   primary_color: "#8b5cf6"
   contact_email: "info@egeste.net"
-  geographic_region: "US-OR"
-  city: "Portland"
-  state: "Oregon"
-  coordinates: "45.5152, -122.6784"
+  geographic_region: "US-WA"
+  city: "Southwest Washington"
+  state: "Washington"
+  coordinates: "46.1382, -122.9382"
 
 # ===== UI TEXT & LABELS =====
 text:
@@ -174,6 +174,7 @@ navigation:
   projects: "Projects"
   blog: "Blog"
   faq: "FAQ"
+  resume: "Resume"
   contact: "Contact"
 
 # ===== ACCESSIBILITY =====
@@ -264,7 +265,7 @@ exif_processing:
     source: "https://egeste.net"
     credit: "egeste.net - Steve Regester Technology Consulting"
     contact: "info@egeste.net"
-    keywords: "technology consulting, engineering leadership, Steve Regester, Portland Oregon, startup consulting, full-stack development"
+    keywords: "technology consulting, engineering leadership, Steve Regester, Southwest Washington, startup consulting, full-stack development"
     subject: "Professional technology consulting and engineering leadership services"
     title: "Steve Regester - Technology Consulting Asset"
     description: "Professional asset from Steve Regester's technology consulting and engineering leadership portfolio"

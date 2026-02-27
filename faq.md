@@ -62,11 +62,11 @@ I've consistently delivered UI/UX transformations that resulted in **60%+ user e
 
 ### What type of role are you looking for?
 
-I'm interested in **Staff/Principal/Director level engineering roles** focused on architectural excellence, team leadership, and transformative product development in people-first organizations. I'm particularly drawn to opportunities where I can combine hands-on technical work with strategic leadership and team mentoring.
+I focus on **fractional CTO engagements, architecture consulting, AI/LLM system design, and 0→1 product builds**. I work best when parachuting into ambiguity — whether that's standing up a startup's entire technical foundation, designing multi-model AI orchestration systems, or providing senior technical leadership on a fractional basis. I'm drawn to engagements where I can have outsized impact with minimal overhead.
 
 ### What industries or problem domains interest you most?
 
-I'm passionate about working on products that have meaningful impact. My background spans security research tools, pharmaceutical compliance platforms, and nonprofit fundraising systems. I'm drawn to complex technical challenges that require both innovative solutions and rigorous engineering practices.
+I'm passionate about working on products that have meaningful impact. My background spans **AI/LLM systems** (including an autonomous publishing engine with multi-model orchestration), security research tools, pharmaceutical compliance platforms, and nonprofit fundraising systems. I'm drawn to complex technical challenges that require both innovative solutions and rigorous engineering practices — especially where AI can be applied to automate workflows at scale.
 
 ### How do you stay current with technology trends?
 

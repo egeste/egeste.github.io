@@ -20,7 +20,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
       'source' => site.config['url'] || 'https://egeste.net',
       'credit' => "#{site.config['url'] || 'egeste.net'} - #{site.config.dig('author', 'name') || 'Steve Regester'} Technology Consulting",
       'contact' => site.config.dig('author', 'email') || site.config.dig('social', 'email') || 'info@egeste.net',
-      'keywords' => 'technology consulting, engineering leadership, Steve Regester, Portland Oregon, startup consulting, full-stack development',
+      'keywords' => 'technology consulting, engineering leadership, Steve Regester, Southwest Washington, startup consulting, full-stack development',
       'subject' => 'Professional technology consulting and engineering leadership services',
       'title' => "#{site.config.dig('author', 'name') || 'Steve Regester'} - Technology Consulting Asset",
       'description' => "Professional asset from #{site.config.dig('author', 'name') || 'Steve Regester'}'s technology consulting and engineering leadership portfolio"
