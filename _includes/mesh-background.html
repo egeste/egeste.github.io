@@ -60,11 +60,23 @@
         y = y !== null ? y : Math.random() * this.canvas.height;
       }
       
-      // Derive velocity from parent genetics or random
+      // Derive velocity from parent vectors or random
       let vx, vy;
       if (parentNode && parentNode._mate) {
         vx = parentNode.vx - parentNode._mate.vx;
         vy = parentNode.vy - parentNode._mate.vy;
+        // Normalize to a healthy speed, preserving direction
+        const mag = Math.sqrt(vx * vx + vy * vy);
+        const targetSpeed = 0.2 + Math.random() * 0.4; // 0.2-0.6
+        if (mag > 0.01) {
+          vx = (vx / mag) * targetSpeed;
+          vy = (vy / mag) * targetSpeed;
+        } else {
+          // Parents nearly identical — pick a random direction
+          const angle = Math.random() * Math.PI * 2;
+          vx = Math.cos(angle) * targetSpeed;
+          vy = Math.sin(angle) * targetSpeed;
+        }
       } else {
         vx = (Math.random() - 0.5) * 0.8;
         vy = (Math.random() - 0.5) * 0.8;
