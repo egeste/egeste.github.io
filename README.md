@@ -39,4 +39,4 @@ assets/              # CSS, images, fonts
 
 ## License
 
-MIT License - see LICENSE file for details.
+All rights reserved. This is a personal portfolio site and is not licensed for reuse.
