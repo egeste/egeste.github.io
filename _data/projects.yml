@@ -1,0 +1,44 @@
+- name: ClearBrief
+  image: /assets/images/clearbrief.png
+  link: /
+  description: AI-powered summarization, transcription, & dictation on any webpage.
+- name: TalkDirectly.to
+  image: /assets/images/talkdirectly.to.png
+  link: https://talkdirectly.to/
+  description: Send personalized voicemail messages directly to politicians, celebrities, and public figures.
+- name: MindMirror
+  image: /assets/images/mindmirror.png
+  link: https://mindmirror.onrender.com/
+  description: AI-powered app that transcribes spoken words, analyzes sentiment, and identifies named entities.
+- name: OpenBathrooms.org
+  image: /assets/images/openbathrooms.org.png
+  link: https://openbathrooms.org
+  description: Find & share bathrooms and bathroom codes.
+- name: Door Sign
+  image: https://user-images.githubusercontent.com/536059/188531321-1c48f9c5-079a-40a0-b079-7c182514fd90.jpg
+  link: https://github.com/egeste/hackerbox-073-door-sign
+  description: hackerbox 73 LanLord smart controllable door sign.
+- name: Studylog API
+  image: /assets/images/studylog-api.png
+  link: https://www.studylog.com/products/studylog-api
+  description: Leverage study data for in-depth queries and analysis, reporting, and integration with other scientific applications and databases. The Studylog API is a secure, cloud-native, on-prem, multi-schema data interface built for developers and data scientists.
+- name: React Audiovis
+  image: /assets/images/react-audio-vis.png
+  link: https://egeste.net/exploring-audio-vis
+  description: Abusing the javascript audio context api to create real-time, in-browser audio visualizations.
+- name: Synack ARS
+  image: /assets/images/synack-ars.webp
+  link: https://www.synack.com/solutions/third-party-risk/
+  description: Rank your assets and assessments by their resistance to attack.
+- name: Synack Platform
+  image: /assets/images/synack-srt.png
+  link: https://www.synack.com/red-team/
+  description: Find your hacker home. Get paid for doing what you love.
+- name: Ultimatum
+  image: /assets/images/ultimatum.jpg
+  link: https://www.crunchbase.com/organization/ultimatum
+  description: Create political and social change.
+- name: Lookout Search
+  image: /assets/images/lookout.png
+  link: https://www.lookout.com/
+  description: Research and analysis toolchain for querying application behaviors.
