@@ -10,7 +10,7 @@ sitemap: false
   <h1 class="text-3xl font-bold tracking-tight mb-0.5">Steve Regester</h1>
   <p class="text-base font-semibold text-gray-700 mb-0.5">Fractional CTO for Seed-Stage AI Companies — 0-to-1 Architecture and Technical Leadership</p>
   <p class="text-sm text-gray-600">
-    Southwest Washington, WA | info@egeste.net | egeste.net | linkedin.com/in/egeste | github.com/egeste
+    Southwest Washington | info@egeste.net | egeste.net | linkedin.com/in/egeste | github.com/egeste
   </p>
 </section>
 
