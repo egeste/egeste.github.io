@@ -35,14 +35,14 @@ sitemap: false
   <h2 class="text-lg font-bold uppercase tracking-wide border-b border-gray-400">Experience</h2>
 
   <div class="experience-block mb-2.5">
-    <p class="text-sm font-bold mb-0">Founding Engineer / Engineering Lead</p>
+    <p class="text-sm font-bold mb-0">Founding/Staff Software Engineer</p>
     <p class="text-sm text-gray-600 mb-0.5">Delphos Labs (VC and In-Q-Tel backed) | 06/2024 - Present</p>
     <ul class="text-sm list-disc list-outside ml-4">
       <li>Employee #1. Owned product engineering, cloud infrastructure, and technical delivery end-to-end for an AI-driven cybersecurity platform</li>
       <li>Defined platform architecture — SaaS application, data pipelines, PostgreSQL data layer, IaC, API surface — making build vs. buy and speed vs. maintainability tradeoff decisions</li>
-      <li>Set cloud infrastructure strategy on AWS with Terraform; designed auto-scaling worker configurations that controlled compute burn while supporting thousands of concurrent distributed AI workloads</li>
+      <li>Set cloud infrastructure strategy on AWS with Terraform; managed IaC for distributed AI workloads</li>
       <li>Delivered the customer-facing product (React, TypeScript, SSR) and established CI/CD, monitoring (Sentry), and security-first practices — production-ready before first external demo</li>
-      <li>Led early-stage hiring and defined engineering culture, code review standards, and development process as the organization scaled from solo founder to functioning team</li>
+      <li>Led early-stage hiring and defined engineering culture, code review standards, and development process as the organization scaled from two cofounders to functioning team</li>
     </ul>
   </div>
 

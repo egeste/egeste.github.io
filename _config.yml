@@ -111,7 +111,7 @@ twitter:
 professional:
   # Current Position
   current_company: "Delphos Labs"
-  current_role: "Founding Engineer / Engineering Lead"
+  current_role: "Founding/Staff Software Engineer"
 
   # Career Context
   status: "Systems Architect | 0→1 Product Builder | AI/LLM Systems"
@@ -138,7 +138,7 @@ professional:
   # Work History
   work_history:
     - company: "Delphos Labs"
-      role: "Founding Engineer / Engineering Lead"
+      role: "Founding/Staff Software Engineer"
       period: "current"
     - company: "Studylog Systems"
       role: "Director of Engineering"

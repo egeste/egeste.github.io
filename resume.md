@@ -70,12 +70,12 @@ cta:
     <div class="space-y-8">
 
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md">
-        <h3 class="text-xl font-bold text-slate-900 mb-1">Founding Engineer / Engineering Lead</h3>
+        <h3 class="text-xl font-bold text-slate-900 mb-1">Founding/Staff Software Engineer</h3>
         <p class="text-violet-600 font-semibold mb-3">Delphos Labs <span class="text-slate-500 font-normal">(VC & In-Q-Tel backed)</span> | June 2024–Present</p>
         <p class="text-slate-600 mb-4">Employee #1 at a cybersecurity startup using AI to automate binary reverse engineering. Built the company from 0 to 1.</p>
         <ul class="text-slate-600 space-y-2 list-disc list-inside m-0">
           <li>Designed high-level platform architecture — SaaS product, automation pipelines, database, API layer</li>
-          <li>Built cloud infrastructure from scratch using Terraform on AWS with auto-scaling worker configurations</li>
+          <li>Built cloud infrastructure from scratch using Terraform on AWS</li>
           <li>Engineered distributed task processing with Celery and RabbitMQ for reliable workload distribution</li>
           <li>Developed the user-facing product — React Router v7/Remix v8, isomorphic rendering, real-time dashboards</li>
           <li>Provided engineering and managerial leadership — hiring, mentoring, code review, process design</li>
