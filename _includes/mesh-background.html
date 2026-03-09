@@ -109,8 +109,8 @@
       const complexRatio = oscillatingRate * currentRatio * (1 - currentRatio);
       
       // Calculate target population with some chaos
-      this.targetPopulation = Math.max(5, Math.min(this.maxNodes, 
-        this.maxNodes * (0.5 + 0.3 * Math.sin(this.time * 0.05) + 0.2 * complexRatio)
+      this.targetPopulation = Math.max(this.maxNodes * 0.5, Math.min(this.maxNodes,
+        this.maxNodes * (0.65 + 0.2 * Math.sin(this.time * 0.05) + 0.15 * complexRatio)
       ));
       
       // Store history for emergent patterns
@@ -134,12 +134,12 @@
     attemptReproduction(node) {
       if (!node.isMature || node.reproductionCooldown > 0) return;
       
-      const nearbyNodes = this.findNearbyNodes(node, 50);
-      const potentialMates = nearbyNodes.filter(other => 
+      const nearbyNodes = this.findNearbyNodes(node, this.maxDistance * 0.4);
+      const potentialMates = nearbyNodes.filter(other =>
         other.isMature && other.reproductionCooldown === 0 && other !== node
       );
-      
-      if (potentialMates.length > 0 && Math.random() < node.reproductionRate * 0.01) {
+
+      if (potentialMates.length > 0 && Math.random() < node.reproductionRate * 0.03) {
         const mate = potentialMates[Math.floor(Math.random() * potentialMates.length)];
         
         // Create offspring at midpoint between parents
@@ -147,8 +147,8 @@
         this.nodes.push(child);
         
         // Set reproduction cooldown for both parents
-        node.reproductionCooldown = 5000 + Math.random() * 3000; // 5-8 seconds
-        mate.reproductionCooldown = 5000 + Math.random() * 3000;
+        node.reproductionCooldown = 3000 + Math.random() * 2000; // 3-5 seconds
+        mate.reproductionCooldown = 3000 + Math.random() * 2000;
       }
     }
 
@@ -215,7 +215,7 @@
         // Life-based death conditions
         const longevityFactor = node.genetics.longevity;
         const adjustedMaxLifetime = node.maxLifetime * (0.5 + longevityFactor);
-        const overpopulationStress = this.nodes.length > this.targetPopulation ? 2 : 1;
+        const overpopulationStress = this.nodes.length > this.targetPopulation ? 1.3 : 1;
         const deathAge = adjustedMaxLifetime / overpopulationStress;
         
         if (node.age >= deathAge && !node.dying) {
@@ -241,11 +241,11 @@
       // Higher probability when below target, very low when at/above target
       let immigrationProbability;
       if (this.nodes.length < this.targetPopulation * 0.5) {
-        immigrationProbability = 0.015; // More frequent when very low
+        immigrationProbability = 0.05; // Aggressive when very low
       } else if (this.nodes.length < this.targetPopulation * 0.8) {
-        immigrationProbability = 0.008; // Moderate when approaching target
+        immigrationProbability = 0.02; // Moderate when approaching target
       } else {
-        immigrationProbability = 0.002; // Very rare when at/above target
+        immigrationProbability = 0.005; // Low when at/above target
       }
       
       if (Math.random() < immigrationProbability && this.nodes.length < this.maxNodes) {
