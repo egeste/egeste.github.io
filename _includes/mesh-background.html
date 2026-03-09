@@ -156,7 +156,8 @@
     attemptReproduction(node) {
       if (!node.isMature || node.reproductionCooldown > 0) return;
       
-      const nearbyNodes = this.findNearbyNodes(node, this.maxDistance * 0.4);
+      const matingDistance = Math.min(this.canvas.width, this.canvas.height) * 0.25;
+      const nearbyNodes = this.findNearbyNodes(node, matingDistance);
       const potentialMates = nearbyNodes.filter(other =>
         other.isMature && other.reproductionCooldown === 0 && other !== node
       );
