@@ -1,15 +1,6 @@
-# Steve Regester's Portfolio
+# egeste.net
 
-A Jekyll-based portfolio website showcasing projects, experience, and blog posts.
-
-## Overview
-
-This site uses the [Time Machine theme](https://github.com/pages-themes/time-machine) for GitHub Pages compatibility and includes:
-
-- Portfolio showcasing various projects
-- Blog with Jekyll post support
-- Custom styling to hide default GitHub theme elements
-- Responsive design optimized for all devices
+Personal portfolio and technology consulting site for Steve Regester. Built with Jekyll and deployed to GitHub Pages via GitHub Actions.
 
 ## Local Development
 
@@ -18,18 +9,33 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Visit `http://localhost:4000` to view the site locally.
+Visit `http://localhost:4000` to preview locally.
 
 ## Deployment
 
-This site is automatically deployed via GitHub Pages when changes are pushed to the `master` branch.
+Pushes to `master` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the Jekyll site, processes EXIF metadata on images, and deploys to GitHub Pages.
 
 ## Structure
 
-- `_posts/` - Blog posts in Markdown format
-- `_data/projects.yml` - Project data for portfolio display
-- `assets/css/style.scss` - Custom CSS overrides
-- `assets/images/` - Project images and assets
+```
+_config.yml          # Site configuration, professional data, SEO, PWA manifest
+_layouts/            # Page layouts (default, post, service, resume-print)
+_includes/           # Shared components (navigation, footer, mesh background, etc.)
+_plugins/            # Jekyll plugins (EXIF image metadata processor)
+_data/projects.yml   # Project portfolio data
+_posts/              # Blog posts
+assets/              # CSS, images, fonts
+```
+
+### Pages
+
+- `index.md` — Landing page with service offerings
+- `resume.md` / `resume/print.md` — Web and print-optimized resumes
+- `about.md` — About page
+- `blog.md` — Blog index
+- `projects.md` — Project portfolio
+- `faq.md` — FAQ
+- Service pages: `startup-consulting.md`, `fullstack-engineering.md`, `n8n-consulting.md`, `penetration-testing.md`, `osint-solutions.md`
 
 ## License
 
