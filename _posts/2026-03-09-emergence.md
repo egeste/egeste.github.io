@@ -16,7 +16,7 @@ It doesn't.
 
 ## What It Actually Knows
 
-The entire behavior set of the mesh is shockingly small. Each node knows how to do exactly five things: move in a direction, draw a line to anything nearby, get older, die, and occasionally - if another mature node is close enough - procreate.
+The entire behavior set of the mesh is shockingly small. Each node knows how to do exactly five things: move in a direction, draw a line to anything nearby, get older, die, and occasionally - if another mature node is close enough - reproduce.
 
 That's it. There's no flocking algorithm. No pathfinding. No central coordination. No node has any concept of the patterns you're watching.
 
