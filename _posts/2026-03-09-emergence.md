@@ -30,7 +30,7 @@ genetics: {
 }
 ```
 
-The population is governed by a logistic map - one of the most studied equations in mathematics, and one of the strangest:
+The population is governed by a [logistic map](https://www.youtube.com/watch?v=ovJcsL7vyrk) - one of the most studied equations in mathematics, and one of the strangest:
 
 ```javascript
 const nextRatio = r * currentRatio * (1 - currentRatio);
