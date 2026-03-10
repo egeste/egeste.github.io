@@ -154,17 +154,17 @@
   
   <!-- Subtitle -->
   <text x="600" y="400" font-family="Arial, sans-serif" font-size="28" font-weight="400" text-anchor="middle" fill="rgba(255, 255, 255, 0.8)" letter-spacing="2px">
-    Engineering Leader &amp; Technical Director
+    Fractional CTO &amp; Systems Architect
   </text>
-  
+
   <!-- Description -->
   <text x="600" y="440" font-family="Arial, sans-serif" font-size="18" font-weight="300" text-anchor="middle" fill="rgba(255, 255, 255, 0.6)">
-    15+ years architecting SaaS platforms • Leading high-performing teams • Engineering excellence
+    0→1 Product Builds • AI/LLM Systems • Full-Stack Architecture
   </text>
-  
+
   <!-- Location/availability -->
   <text x="600" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="rgba(6, 182, 212, 0.8)">
-    Southwest Washington • Fractional CTO & Systems Architect
+    Southwest Washington • 15+ Years Building Production Platforms
   </text>
   
   <!-- Decorative elements -->
