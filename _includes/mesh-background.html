@@ -303,8 +303,9 @@
           const nodeA = this.nodes[i];
           const nodeB = this.nodes[j];
           
-          // Skip if either node is invisible
+          // Skip if either node is invisible or immature
           if (nodeA.opacity <= 0 || nodeB.opacity <= 0) continue;
+          if (!nodeA.isMature || !nodeB.isMature) continue;
           
           const dx = nodeA.x - nodeB.x;
           const dy = nodeA.y - nodeB.y;
