@@ -87,7 +87,8 @@
         y: y,
         vx: vx,
         vy: vy,
-        radius: Math.random() * 3 + 1.5,
+        radius: 0, // Starts at 0, grows with age
+        maxRadius: Math.random() * 3 + 1.5,
         
         // Life cycle properties
         birthTime: now,
@@ -227,6 +228,10 @@
           this.attemptReproduction(node);
         }
         
+        // Update radius based on age — grows from 0 to maxRadius over maturity period
+        const growthProgress = Math.min(1, node.age / node.maturityAge);
+        node.radius = node.maxRadius * growthProgress;
+
         // Update visual opacity
         if (node.age < node.fadeInDuration) {
           node.opacity = node.age / node.fadeInDuration;
