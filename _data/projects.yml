@@ -29,7 +29,7 @@
 - name: Synack ARS (Attack Resistance Scoring)
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
-  description: Enterprise security platform quantifying attack resistance through advanced threat modeling. Led development of the UI/UX for quantifying attack resistance through advanced threat modeling.
+  description: Enterprise security platform quantifying attack resistance through advanced threat modeling. Led development of its UI/UX.
 - name: Synack Red Team Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
