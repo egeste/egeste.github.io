@@ -1,8 +1,8 @@
 ---
 layout: service
-title: About Steve Regester - Co-Founder, Technical Leader & OSINT Specialist
-description: Meet Steve Regester, co-founder and technical leader who has built companies from the ground up and specializes in unique technical challenges like OSINT solutions, application security, and rapid development for complex problems.
-keywords: technology consultant, engineering consultant, startup CTO, technical advisor, full-stack consultant, security consultant, OSINT specialist, Southwest Washington technology consultant
+title: About Steve Regester — Founding Engineer & Technical Leader
+description: Steve Regester is a founding/staff software engineer and technical leader. Fifteen years building high-quality software from 0 to 1 across security, intelligence, pharma, and fintech.
+keywords: Steve Regester, founding engineer, technical leader, software architect, Portland Oregon, React, Node.js, Python
 sitemap:
   priority: 0.9
   changefreq: weekly
@@ -11,113 +11,74 @@ type: profile
 
 hero:
   title: "Steve Regester"
-  subtitle: "Co-Founder & Technical Leader"
-  description: "From co-founding tech companies to building specialized OSINT platforms<br>I solve technical problems that others can't or won't tackle"
-  location: "Southwest Washington • Portland Metro Area • Available Remotely"
+  subtitle: "Founding engineer & technical leader"
+  description: "Fifteen years building high-quality software from zero to one<br>Security, intelligence, pharma, fintech — usually from nothing"
+  location: "Portland, Oregon • Open to founding- and early-engineer roles, remote or local"
 
 value_prop:
-  title: "Built Different"
-  subtitle: "I'm not your typical consultant. I've <strong>co-founded technology companies</strong>, built platforms that process millions of data points, and developed specialized solutions for problems that don't have off-the-shelf answers.<br><br>While most developers build the same apps over and over, I focus on <strong>unique technical challenges</strong>: building 0→1 products from scratch, designing AI/LLM systems with multi-model orchestration, architecting scalable cloud platforms, and automating processes others say can't be automated.<br><br>I bring a combination of <strong>startup grit, technical depth, and fractional CTO leadership</strong> — walking into ambiguity and shipping durable systems on compressed timelines."
+  title: "The short version"
+  subtitle: "I'm a builder first. I take products from zero to one and care about the parts most people skip — the feel of the thing, the right-sized solution, the failure modes nobody wants to think about.<br><br>Most of my career has been at security and intelligence companies — <strong>Lookout, Synack, Delphos</strong> — so I build with a threat model in mind by default. Most recently I was <strong>employee #1 at Delphos Labs</strong>, taking an AI binary-analysis product and company from nothing to a working SaaS.<br><br>I've also led: Director of Engineering, CTO, team lead. I like building the team as much as the product."
 
 services:
-  title: "Proven Results for Clients & Organizations"
+  title: "What I'm good at"
   items:
-    - title: "📈 60%+ Growth Acceleration"
-      description: "Led technical transformations resulting in dramatic user engagement increases, improved product performance, and accelerated time-to-market for multiple clients"
-    - title: "🛡️ Enterprise Security Leadership"
-      description: "Successfully guided SOC 2 certification processes, implemented comprehensive security frameworks, and established security-first development cultures"
-    - title: "🚀 Startup Success Stories"
-      description: "Co-founded successful crowd-fundraising platform serving nonprofits nationwide, providing hands-on experience in 0-1 product development and scaling"
-    - title: "⚡ Operational Excellence"
-      description: "Doubled team productivity through automation implementations, optimized development workflows, and strategic technology choices"
-    - title: "🏗️ Technical Architecture"
-      description: "Designed and implemented scalable cloud-native systems, microservices architectures, and robust data pipelines for enterprise clients"
-    - title: "👥 Team Development"
-      description: "Mentored engineering teams, established best practices, and created high-performance technical cultures focused on quality and innovation"
+    - title: "🚀 0→1 product engineering"
+      description: "Taking things from nothing to working product. Architecture, infra, and the first version of everything — under real uncertainty, with judgment about what to build and what to skip."
+    - title: "🛠️ Full-stack craft"
+      description: "React (incl. Remix / React Router v7), Node.js, Python, PostgreSQL. End-to-end ownership with taste — right-sized solutions and software that feels good to use."
+    - title: "☁️ Cloud & infrastructure"
+      description: "AWS and GCP from scratch with Terraform, Kubernetes, Helm, Docker. Distributed processing (Celery, RabbitMQ), CI/CD, feature flags, observability."
+    - title: "🔒 Security-first engineering"
+      description: "A career at security/intelligence companies means secure-by-default is a habit, not an afterthought. Led the work behind a company's first SOC 2."
+    - title: "👥 Engineering leadership"
+      description: "Director of Engineering and CTO experience. Hiring, mentoring, code review, and the kind of culture where people feel safe enough to do their best work."
+    - title: "🤖 AI-augmented development"
+      description: "Building with and around modern AI — most recently automating binary reverse engineering. I think in specifications, not just syntax."
 
 cta:
-  title: "Let's Build Something Exceptional Together"
-  description: "Ready to accelerate your technical growth and overcome complex challenges? Let's discuss how strategic technology consulting can transform your business."
-  subject: "Technology Consulting Inquiry"
-  primary_button: "Schedule Consultation"
-  secondary_button: "View Case Studies"
+  title: "Let's build something"
+  description: "I'm looking for founding- and early-engineer roles where I can own real surface area and take something from zero to one. If that's you, let's talk."
+  subject: "Let's talk"
+  primary_button: "Email me"
+  secondary_button: "Read my résumé"
   info:
-    highlight: "Free Initial Consultation • Flexible Engagement Models • Proven Results"
+    highlight: "Open to founding/early-engineer roles • Remote or Portland, OR"
     tagline: ""
 ---
 
-<!-- Professional Profile Section -->
+<!-- Profile -->
 <section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
-  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+  <div class="w-full px-4 md:max-w-4xl md:mx-auto md:px-6">
     <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
       <div class="flex-shrink-0">
-        <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester - Technical Co-Founder & Engineering Leader" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl border-[3px] border-slate-200 shadow-lg">
+        <img src="{{ '/assets/images/steve-regester-headshot.png' | relative_url }}" alt="Steve Regester" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl border-[3px] border-slate-200 shadow-lg">
       </div>
-      <div class="flex-1 text-center md:text-left">
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">About Steve Regester</h2>
-        <p class="text-slate-600 leading-relaxed mb-4">Systems architect and technical leader with 15+ years building production platforms from zero. From co-founding technology companies to designing autonomous AI publishing engines, I specialize in 0→1 product builds, AI/LLM systems, and fractional CTO engagements.</p>
-        <p class="text-slate-600 leading-relaxed">I focus on unique technical problems that require innovative solutions: multi-model AI orchestration, OSINT intelligence platforms, advanced security testing, rapid prototyping for complex domains, and automation systems for processes others consider impossible to automate.</p>
+      <div class="flex-1 text-center md:text-left space-y-4">
+        <p class="text-slate-600 leading-relaxed">I started writing code because it was the closest thing I'd found to magic — the ability to make an idea real. Fifteen years later, that's still the part I care about. I've spent that time building in domains where the details matter: mobile security at Lookout, crowdsourced pentesting at Synack, pharma research at Studylog, AI binary analysis at Delphos.</p>
+        <p class="text-slate-600 leading-relaxed">The thing I keep coming back to is the <em>feel</em> of software — the difference between systems that flow and systems that grind. Good software respects momentum and the person on the other side of the screen. That belief shows up in everything I build, and it's the standard I hold teams to.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Testimonials (real, named) -->
 <section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
   <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">What Clients & Colleagues Say</h2>
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">What colleagues say</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
-        <blockquote class="italic text-slate-700 m-0 py-4">
-          "Steve's technical leadership and strategic vision were instrumental in our platform transformation. His ability to balance innovation with practical execution is exceptional."
-        </blockquote>
-        <p class="font-bold text-violet-600 mt-4">— Technology Executive, Enterprise Client</p>
+        <blockquote class="italic text-slate-700 m-0 py-2">"He goes above and beyond to break down complex concepts… while allowing you the autonomy to learn from your failures, creating a culture of intellectual vulnerability. Steve doesn't settle for mediocre code; he consistently delivers beautiful, clear, best-practice code."</blockquote>
+        <p class="font-bold text-violet-600 mt-4">— Christina Wright, who reported to Steve at Studylog</p>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
-        <blockquote class="italic text-slate-700 m-0 py-4">
-          "Working with Steve elevated our entire engineering culture. His mentorship approach and technical expertise helped our team achieve breakthrough results."
-        </blockquote>
-        <p class="font-bold text-violet-600 mt-4">— Senior Engineering Manager</p>
+        <blockquote class="italic text-slate-700 m-0 py-2">"I haven't before or since met anyone more passionate about engineering front-end applications in a structured way. His skills were in very high demand and allowed us to build web-based tools for very complex analysis workflows."</blockquote>
+        <p class="font-bold text-violet-600 mt-4">— Mikko Tervahauta, Staff Engineer at Oura (led Steve at Lookout)</p>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
-        <blockquote class="italic text-slate-700 m-0 py-4">
-          "Steve's security expertise and systematic approach to SOC 2 compliance saved us months of work and gave us confidence in our security posture."
-        </blockquote>
-        <p class="font-bold text-violet-600 mt-4">— Startup Founder & CEO</p>
+        <blockquote class="italic text-slate-700 m-0 py-2">"His ability to get a good overview of large and complex systems and design and implement elegant solutions for them is very impressive. He always pushed for the right solution first."</blockquote>
+        <p class="font-bold text-violet-600 mt-4">— Christophe Verbinnen, Principal Architect at KnowBe4</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Core Expertise Section -->
-<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
-  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Core Consulting Expertise</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🎯 Startup & Fractional CTO Services</strong>
-        <span class="text-slate-600 leading-relaxed block">0-1 product development, technical strategy, founding engineer expertise, MVP architecture, and strategic technology decision-making for early-stage companies</span>
-      </div>
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">💻 Full-Stack Engineering Excellence</strong>
-        <span class="text-slate-600 leading-relaxed block">React, Node.js, Python, cloud architecture, database design, API development, and end-to-end application development with enterprise-grade quality</span>
-      </div>
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">⚡ Business Process Automation</strong>
-        <span class="text-slate-600 leading-relaxed block">Workflow optimization, system integration, N8N automation platforms, operational efficiency improvements, and custom automation solutions</span>
-      </div>
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🔒 Cybersecurity & Compliance</strong>
-        <span class="text-slate-600 leading-relaxed block">Penetration testing, security assessments, SOC 2 compliance, secure development practices, and comprehensive security program implementation</span>
-      </div>
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🔍 OSINT & Intelligence Solutions</strong>
-        <span class="text-slate-600 leading-relaxed block">Open source intelligence platforms, digital surveillance systems, real-time monitoring solutions, and custom intelligence gathering tools</span>
-      </div>
-      <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">👥 Technical Leadership & Mentorship</strong>
-        <span class="text-slate-600 leading-relaxed block">Team building, engineering culture development, technical mentorship, process optimization, and leadership coaching for growing technical teams</span>
-      </div>
-    </div>
+    <p class="text-slate-500 text-sm mt-6 italic">More references available on <a href="https://linkedin.com/in/egeste" class="text-violet-600 hover:text-violet-700">LinkedIn</a>.</p>
   </div>
 </section>
