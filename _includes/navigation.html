@@ -12,22 +12,8 @@
       <a href="{{ '/' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url == '/' %}font-bold{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>{{ site.navigation.home }}</a>
       <a href="{{ '/about' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url contains 'about' %}font-bold{% endif %}" {% if page.url contains 'about' %}aria-current="page"{% endif %}>About</a>
 
-      <div class="nav-dropdown w-full md:relative md:flex md:flex-1 md:w-auto">
-        <a href="#" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:text-center md:w-full {% if page.url contains 'startup-consulting' or page.url contains 'fullstack-engineering' or page.url contains 'n8n-consulting' or page.url contains 'penetration-testing' or page.url contains 'osint-solutions' %}font-bold{% endif %}">
-          Services
-        </a>
-        <div class="dropdown-menu static opacity-100 visible transform-none bg-transparent border-none shadow-none p-0 ml-4 md:absolute md:top-[calc(100%+11px)] md:left-0 md:min-w-[160px] md:bg-slate-900/80 md:backdrop-blur-xl md:border md:border-slate-700/30 md:border-t-0 md:rounded-b-lg md:shadow-lg md:opacity-0 md:invisible md:-translate-y-1 md:transition-all md:duration-200 md:z-[1000] md:p-0 md:ml-0 group-hover:md:opacity-100 group-hover:md:visible group-hover:md:translate-y-0">
-          <a href="{{ '/startup-consulting' | relative_url }}" class="block py-2 text-slate-300 no-underline font-medium transition-colors duration-200 border-b border-slate-700/50 text-sm hover:bg-violet-500/10 hover:text-violet-400 md:py-3 md:px-4 {% if page.url contains 'startup-consulting' %}text-violet-400 bg-violet-500/10{% endif %}">Startup Consulting</a>
-          <a href="{{ '/fullstack-engineering' | relative_url }}" class="block py-2 text-slate-300 no-underline font-medium transition-colors duration-200 border-b border-slate-700/50 text-sm hover:bg-violet-500/10 hover:text-violet-400 md:py-3 md:px-4 {% if page.url contains 'fullstack-engineering' %}text-violet-400 bg-violet-500/10{% endif %}">Full-Stack Engineering</a>
-          <a href="{{ '/n8n-consulting' | relative_url }}" class="block py-2 text-slate-300 no-underline font-medium transition-colors duration-200 border-b border-slate-700/50 text-sm hover:bg-violet-500/10 hover:text-violet-400 md:py-3 md:px-4 {% if page.url contains 'n8n-consulting' %}text-violet-400 bg-violet-500/10{% endif %}">Business Automation</a>
-          <a href="{{ '/penetration-testing' | relative_url }}" class="block py-2 text-slate-300 no-underline font-medium transition-colors duration-200 border-b border-slate-700/50 text-sm hover:bg-violet-500/10 hover:text-violet-400 md:py-3 md:px-4 {% if page.url contains 'penetration-testing' %}text-violet-400 bg-violet-500/10{% endif %}">Security & Code Review</a>
-          <a href="{{ '/osint-solutions' | relative_url }}" class="block py-2 text-slate-300 no-underline font-medium transition-colors duration-200 text-sm hover:bg-violet-500/10 hover:text-violet-400 md:py-3 md:px-4 {% if page.url contains 'osint-solutions' %}text-violet-400 bg-violet-500/10{% endif %}">OSINT Solutions</a>
-        </div>
-      </div>
-
       <a href="{{ '/projects' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url contains 'projects' %}font-bold{% endif %}" {% if page.url contains 'projects' %}aria-current="page"{% endif %}>{{ site.navigation.projects }}</a>
       <a href="{{ '/blog' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url contains 'blog' %}font-bold{% endif %}" {% if page.url contains 'blog' %}aria-current="page"{% endif %}>{{ site.navigation.blog }}</a>
-      <a href="{{ '/faq' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url contains 'faq' %}font-bold{% endif %}" {% if page.url contains 'faq' %}aria-current="page"{% endif %}>{{ site.navigation.faq }}</a>
       <a href="{{ '/resume' | relative_url }}" class="text-white font-medium text-base transition-colors duration-300 py-3 border-b border-slate-700/50 hover:text-violet-400 md:border-b-0 md:py-0 md:text-xs md:flex-1 md:text-center {% if page.url contains 'resume' %}font-bold{% endif %}" {% if page.url contains 'resume' %}aria-current="page"{% endif %}>{{ site.navigation.resume }}</a>
       <a href="mailto:{{ site.social.email }}" class="text-white font-medium text-base transition-colors duration-300 py-3 hover:text-violet-400 md:py-0 md:text-xs md:flex-1 md:text-center" aria-label="Contact {{ site.author.name }} via email">Contact</a>
     </div>
@@ -91,22 +77,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-
-  // Desktop dropdown hover
-  const dropdown = document.querySelector('.nav-dropdown');
-  if (dropdown) {
-    dropdown.addEventListener('mouseenter', function() {
-      if (window.innerWidth >= 768) {
-        this.querySelector('.dropdown-menu').classList.add('md:opacity-100', 'md:visible', 'md:translate-y-0');
-        this.querySelector('.dropdown-menu').classList.remove('md:opacity-0', 'md:invisible', 'md:-translate-y-1');
-      }
-    });
-    dropdown.addEventListener('mouseleave', function() {
-      if (window.innerWidth >= 768) {
-        this.querySelector('.dropdown-menu').classList.remove('md:opacity-100', 'md:visible', 'md:translate-y-0');
-        this.querySelector('.dropdown-menu').classList.add('md:opacity-0', 'md:invisible', 'md:-translate-y-1');
-      }
-    });
-  }
 });
 </script>
