@@ -29,7 +29,7 @@
 - name: Synack ARS (Attack Resistance Scoring)
   image: /assets/images/synack-ars.webp
   link: https://www.synack.com/solutions/third-party-risk/
-  description: Enterprise security platform quantifying attack resistance through advanced threat modeling. Led development of sophisticated UI/UX achieving 60%+ user engagement increase within 12 months.
+  description: Enterprise security platform quantifying attack resistance through advanced threat modeling. Led development of the UI/UX for quantifying attack resistance through advanced threat modeling.
 - name: Synack Red Team Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
@@ -41,4 +41,4 @@
 - name: Lookout Security Research Tools
   image: /assets/images/lookout.png
   link: https://www.lookout.com/
-  description: Led development of specialized Android malware analysis tools for security research team. Custom toolchain built with Backbone.js doubled research productivity, enabling breakthrough mobile threat discoveries.
+  description: Led development of specialized Android malware analysis tools for security research team. Custom Backbone.js toolchain that sped up malware triage and enabled new mobile-threat discoveries.

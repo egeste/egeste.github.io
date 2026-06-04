@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Case Studies & Projects - Steve Regester Technology Consultant
-description: Comprehensive portfolio of technology consulting successes, startup ventures, and enterprise solutions. See real-world results from 15+ years of strategic technology leadership and innovation.
-keywords: technology consulting case studies, startup projects, enterprise solutions, full-stack development portfolio, security consulting projects, automation solutions, OSINT projects, Southwest Washington consultant
+title: Work — Steve Regester
+description: Selected work from 15 years of building software — AI binary analysis, security platforms, malware-research tooling, a cloud-native pharma platform, and side projects.
+keywords: Steve Regester portfolio, software projects, React, Node.js, open source, OraculumJS, FactoryJS
 sitemap:
   priority: 0.8
   changefreq: monthly
@@ -10,126 +10,71 @@ sitemap:
 type: portfolio
 
 hero:
-  title: "Case Studies & Project Portfolio"
-  subtitle: "Real-World Technology Consulting Success Stories"
-  description: "Explore comprehensive case studies showcasing transformative platforms, startup ventures, and enterprise solutions<br>Demonstrating 15+ years of strategic technology leadership and measurable business impact"
-  location: "From MVP development to enterprise-scale implementations"
+  title: "Work"
+  subtitle: "Things I've built"
+  description: "Fifteen years of building — at security and intelligence companies, as a founder, and for the fun of it<br>A selection of the work I'm proud of"
+  location: ""
 
 value_prop:
-  title: "Technology Consulting Portfolio"
-  subtitle: "Each project represents a strategic technology engagement that delivered measurable business value. From startup MVPs to enterprise transformations, these case studies demonstrate the breadth of consulting expertise across industries and technology stacks."
-
-services:
-  title: "Portfolio Overview"
-  items:
-    - title: "🚀 Startup Success Stories"
-      description: "Founded and scaled technology platforms from concept to market success, including nationwide nonprofit fundraising platforms and enterprise SaaS solutions"
-    - title: "🏢 Enterprise Transformations"
-      description: "Led digital transformation initiatives for enterprise clients, implementing security frameworks, automation systems, and scalable architectures"
-    - title: "🔒 Security & Compliance Projects"
-      description: "Delivered comprehensive security assessments, SOC 2 certifications, and OSINT solutions for organizations requiring advanced security capabilities"
-    - title: "⚡ Automation & Efficiency Solutions"
-      description: "Implemented business process automation, workflow optimization, and custom development solutions that doubled productivity and reduced operational overhead"
-
-cta:
-  title: "Ready to Create Your Success Story?"
-  description: "Let's discuss your technology challenges and explore how strategic consulting can deliver the measurable results your business needs to thrive."
-  subject: "Technology Consulting Project Inquiry"
-  primary_button: "Start Your Project"
-  secondary_button: "Learn More About My Approach"
-  info:
-    highlight: "Free Project Assessment • Flexible Engagement Models • Proven Methodology"
-    tagline: ""
+  title: "Selected work"
+  subtitle: "From AI binary analysis to security platforms to side projects — here's a cross-section of what I've built and how I think about building."
 ---
 
-<!-- Featured Projects -->
+<!-- Career highlights -->
 <section class="w-full py-16 md:py-20 bg-slate-50/90 backdrop-blur-md border-t border-white/30">
   <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Featured Technology Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list" aria-label="Featured consulting projects and case studies">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">Career highlights</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
 
-      <!-- Goosechase OSINT Platform -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🔍 Advanced OSINT Intelligence Platform</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          <strong>Challenge:</strong> Develop comprehensive open source intelligence gathering platform<br>
-          <strong>Solution:</strong> Built real-time audio monitoring system with Discord integration, OpenAI Whisper transcription, and secure evidence collection<br>
-          <strong>Technologies:</strong> Node.js, Discord.js, PostgreSQL, Redis, Docker, OpenAI API<br>
-          <strong>Result:</strong> Professional-grade intelligence platform with multi-user monitoring and forensic-quality recording
-        </span>
-        <div class="mt-6">
-          <a href="{{ '/osint-solutions' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">View OSINT Solutions →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Delphos Labs — AI binary analysis</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">Employee #1 at a VC-backed startup automating binary reverse engineering with AI. Designed the platform; built AWS infra from scratch with Terraform; distributed pipeline with Celery + RabbitMQ; React/Remix product with real-time dashboards. (2024–2026)</span>
       </article>
 
-      <!-- Enterprise Security Project -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🛡️ Enterprise SOC 2 Certification Project</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          <strong>Challenge:</strong> Fast-track SOC 2 Type II compliance for growing SaaS company<br>
-          <strong>Solution:</strong> Implemented comprehensive security framework, automated compliance monitoring, and security-first development culture<br>
-          <strong>Technologies:</strong> AWS Security Hub, Terraform, Python, Security Automation<br>
-          <strong>Result:</strong> Successful SOC 2 certification achieved 3 months ahead of schedule, enabling enterprise sales
-        </span>
-        <div class="mt-6">
-          <a href="{{ '/penetration-testing' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Security Services →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Studylog — cloud-native rewrite</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">As Director of Engineering, led the rewrite of a flagship Windows product into a cloud-native web platform for pharmaceutical research, and built/mentored the team that shipped it. Node.js, React, Terraform, Kubernetes on AWS. (2021–2024)</span>
       </article>
 
-      <!-- Startup MVP Project -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🚀 Nonprofit Fundraising Platform (Co-Founder)</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          <strong>Challenge:</strong> Create crowdfunding platform specifically for nonprofit organizations<br>
-          <strong>Solution:</strong> Architected and developed full-stack platform with payment processing, campaign management, and donor engagement tools<br>
-          <strong>Technologies:</strong> React, Node.js, PostgreSQL, Stripe API, AWS<br>
-          <strong>Result:</strong> Successfully launched platform serving nonprofits nationwide with 60%+ user engagement growth
-        </span>
-        <div class="mt-6">
-          <a href="{{ '/startup-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Startup Services →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Synack — security platform</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">Lead engineer rebuilding core verticals of a crowdsourced pentesting platform with a focus on quality and reduced technical debt. UI/UX rebuilds increased user engagement &gt;60% in under a year. (2016–2021)</span>
       </article>
 
-      <!-- Full-Stack Development Project -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">💻 Cloud-Native Binary Analysis Platform</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          <strong>Challenge:</strong> Modernize legacy security research tools for enterprise scalability<br>
-          <strong>Solution:</strong> Architected cloud-native microservices platform with automated analysis pipelines and real-time dashboards<br>
-          <strong>Technologies:</strong> React, Python, Kubernetes, PostgreSQL, Redis, Docker<br>
-          <strong>Result:</strong> Doubled research team productivity while reducing infrastructure costs by 40%
-        </span>
-        <div class="mt-6">
-          <a href="{{ '/fullstack-engineering' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Development Services →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Lookout — malware-research tooling &amp; OSS</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">Lead frontend engineer for the team discovering and analyzing Android malware. Custom tooling doubled research productivity. Authored the open-source OraculumJS (enterprise JS MVC) and FactoryJS (DI container) frameworks. (2013–2016)</span>
       </article>
 
-      <!-- Automation Project -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">⚡ Enterprise Workflow Automation Suite</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          <strong>Challenge:</strong> Eliminate manual processes across multiple business departments<br>
-          <strong>Solution:</strong> Implemented N8N-based automation platform with custom integrations across CRM, finance, and operations systems<br>
-          <strong>Technologies:</strong> N8N, Python, REST APIs, Webhook Integration, Database Automation<br>
-          <strong>Result:</strong> Reduced manual work by 75%, eliminated processing errors, and improved response times by 10x
-        </span>
-        <div class="mt-6">
-          <a href="{{ '/n8n-consulting' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Automation Services →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Ultimatum — founder &amp; CTO</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">Founded and single-handedly built a crowd-fundraising platform: real-time ETL ingesting world events to trigger automated donations to 501(c)(3) nonprofits. React, Docker, Kubernetes on GCP. (2015–2019)</span>
       </article>
 
-      <!-- Additional Projects Placeholder -->
-      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-2xl hover:border-indigo-500/30 hover:bg-white/40 flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-4 block">🏗️ Additional Consulting Engagements</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">
-          Technical advisory roles, architecture reviews, code audits, security assessments, team mentoring, and strategic technology planning for startups and enterprises across various industries including healthcare, fintech, e-commerce, and cybersecurity.
-        </span>
-        <div class="mt-6">
-          <a href="mailto:{{ site.social.email }}?subject=Project%20Portfolio%20Discussion" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-violet-700 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-violet-100 hover:shadow-md w-full">Discuss Your Project →</a>
-        </div>
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
+        <strong class="text-slate-900 font-bold mb-3 block">Side projects</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">ClearBrief (AI browser extension), MindMirror (speech/sentiment/NER), OpenBathrooms.org, React Audiovis, and assorted hardware hacks. The grid below has the rest.</span>
       </article>
 
     </div>
   </div>
 </section>
 
+<!-- Project grid from _data/projects.yml -->
+<section class="w-full py-16 md:py-20 bg-white/95 backdrop-blur-lg border-t border-white/20">
+  <div class="w-full px-4 md:max-w-6xl md:mx-auto md:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8">More projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
+      {% for project in site.data.projects %}
+      <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl flex flex-col" role="listitem">
+        {% if project.image %}<img src="{{ project.image }}" alt="{{ project.name }}" class="w-full h-40 object-cover" loading="lazy">{% endif %}
+        <div class="p-6 flex flex-col flex-1">
+          <strong class="text-slate-900 font-bold mb-2 block">{{ project.name }}</strong>
+          <span class="text-slate-600 text-sm leading-relaxed block flex-1">{{ project.description }}</span>
+          {% if project.link %}<a href="{{ project.link }}" class="mt-4 inline-flex items-center gap-1 text-violet-600 hover:text-violet-700 font-semibold text-sm">View →</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
