@@ -10,13 +10,41 @@ sitemap:
 ---
 
 <style>
+/* Print / PDF: render as a plain, single-column, ATS-parseable document.
+   Screen view (the styled card) is unaffected — everything here is @media print. */
 @media print {
-  header[role="banner"], footer, .no-print, #mesh-background, .nav-overlay { display: none !important; }
-  body { background: #fff !important; }
+  @page { margin: 0.5in; size: letter; }
+
+  header[role="banner"], footer, .no-print, #mesh-background, .nav-overlay, .mesh-background { display: none !important; }
+  html, body { background: #fff !important; }
+  body { font-family: Arial, Helvetica, sans-serif !important; }
+
   .resume-wrap { max-width: none !important; margin: 0 !important; padding: 0 !important; }
-  .resume-card { box-shadow: none !important; border: none !important; background: #fff !important; backdrop-filter: none !important; break-inside: avoid; }
-  a { color: #000 !important; text-decoration: none !important; }
-  h1, h2, h3, p, li, span, strong { color: #000 !important; }
+  .resume-card {
+    box-shadow: none !important; border: none !important; background: #fff !important;
+    backdrop-filter: none !important; border-radius: 0 !important; padding: 0 !important;
+    color: #000 !important; font-size: 10pt !important; line-height: 1.3 !important;
+  }
+
+  /* Linearize every multi-column block so the PDF text stream reads top-to-bottom
+     in a single column — this is what makes it ATS-safe. */
+  .resume-card .flex, .resume-card .grid { display: block !important; }
+  .resume-card *, .resume-card a { color: #000 !important; text-align: left !important; text-decoration: none !important; }
+
+  /* Compact, standard typographic scale to fit two pages. */
+  .resume-card h1 { font-size: 17pt !important; margin: 0 0 1pt !important; }
+  .resume-card h2 { font-size: 11.5pt !important; margin: 9pt 0 3pt !important; padding-bottom: 2pt !important; border-bottom: 1px solid #000 !important; }
+  .resume-card h3 { font-size: 10.5pt !important; margin: 6pt 0 0 !important; }
+  .resume-card p  { font-size: 9.5pt !important; margin: 1pt 0 !important; }
+  .resume-card li { font-size: 9.5pt !important; margin: 0 0 1pt !important; }
+  .resume-card ul { margin: 2pt 0 4pt 16pt !important; }
+
+  /* Collapse the large Tailwind vertical gaps. */
+  .resume-card .mb-8, .resume-card .mb-6, .resume-card .mb-5, .resume-card .pb-6, .resume-card .mb-4 { margin-bottom: 6pt !important; padding-bottom: 0 !important; }
+  .resume-card .border-b { border-bottom: 1px solid #000 !important; }
+
+  /* Keep each role intact across page breaks. */
+  .resume-card h2, .resume-card > div { break-inside: avoid; }
 }
 </style>
 
