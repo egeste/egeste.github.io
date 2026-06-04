@@ -5,11 +5,11 @@
 - name: TalkDirectly.to
   image: /assets/images/talkdirectly.to.png
   link: https://talkdirectly.to/
-  description: Innovative civic engagement platform enabling citizens to send personalized voicemail messages directly to politicians, celebrities, and public figures. Democratizing access to influential voices.
+  description: Civic engagement platform that lets citizens send personalized voicemail messages directly to politicians, celebrities, and public figures.
 - name: MindMirror
   image: /assets/images/mindmirror.png
   link: https://mindmirror.onrender.com/
-  description: Sophisticated AI-powered application leveraging natural language processing to transcribe speech, analyze sentiment, and extract named entities. Real-time audio processing with advanced ML algorithms.
+  description: AI application that transcribes speech, analyzes sentiment, and extracts named entities, with real-time audio processing.
 - name: OpenBathrooms.org
   image: /assets/images/openbathrooms.org.png
   link: https://openbathrooms.org
@@ -33,11 +33,11 @@
 - name: Synack Red Team Platform
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
-  description: Revolutionary crowdsourced security platform connecting elite ethical hackers with enterprise clients. Architected scalable React/Redux interfaces supporting global security researcher community.
-- name: Ultimatum (Co-Founder/CTO)
+  description: Crowdsourced security platform connecting vetted ethical hackers with enterprise clients. Architected scalable React/Redux interfaces supporting a global security-researcher community.
+- name: Ultimatum (Founder & CTO)
   image: /assets/images/ultimatum.jpg
   link: https://www.crunchbase.com/organization/ultimatum
-  description: Co-founded crowd-fundraising platform facilitating automated donations to nonprofits based on real-world events. Architected complete tech stack using React, Redux, Material-UI with real-time ETL processing on GCP.
+  description: Founded and single-handedly built a crowd-fundraising platform facilitating automated donations to nonprofits based on real-world events. Architected the complete tech stack using React, Redux, Material-UI with real-time ETL processing on GCP.
 - name: Lookout Security Research Tools
   image: /assets/images/lookout.png
   link: https://www.lookout.com/

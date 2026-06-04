@@ -41,6 +41,7 @@ cta:
   subject: "Let's talk"
   primary_button: "Email me"
   secondary_button: "Read my résumé"
+  secondary_link: "/resume"
   info:
     highlight: "Open to founding/early-engineer roles • Remote or Portland, OR"
     tagline: ""

@@ -41,7 +41,7 @@ layout: default
           <p class="text-lg text-slate-200">{{ page.cta.description }}</p>
         </div>
         {% capture primary_link %}mailto:{{ site.social.email }}?subject={{ page.cta.subject | url_encode }}{% endcapture %}
-        {% capture secondary_link %}{{ '/projects' | relative_url }}{% endcapture %}
+        {% capture secondary_link %}{{ page.cta.secondary_link | default: '/projects' | relative_url }}{% endcapture %}
 
         {% include contact-buttons.html
            primary_text=page.cta.primary_button
