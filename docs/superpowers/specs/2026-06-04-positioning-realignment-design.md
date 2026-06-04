@@ -73,30 +73,37 @@ Across 18 named references spanning 2012–2026, colleagues independently descri
 - Theme: craft, right-sized solutions, elevating teams, security/intelligence domain context.
 - **Remove** the three anonymous testimonials and the unverifiable stats ("60%+ Growth," "Doubled… productivity"). Replace testimonials with real named ones (can share a curated set with the homepage).
 - Convert "Core Consulting Expertise" to "How I work / What I'm good at" framed as capability, not services for sale.
+- **Fix tense:** the current `value_prop` says "Currently at Delphos Labs leading binary analysis with AI." Delphos ended Mar 2026 → rewrite to past tense ("most recently, employee #1 at Delphos…") and frame Steve as seeking the next 0→1. Apply the same fix anywhere the homepage implies a current Delphos role.
 
 ### E. Work (`projects.md`) — reframe
 - Reframe hero/value_prop/cta from "consulting case studies" to "things I've built."
 - Replace the fabricated `<article>` case studies (with invented metrics) with honest descriptions.
-- Keep the `projects.yml` grid; **strip invented metrics** from `_data/projects.yml` entries (Synack ARS "60%+ engagement," Lookout "doubled research productivity," etc.) unless Steve can defend them.
+- Keep the `projects.yml` grid. **Keep** the LinkedIn-backed metrics (Synack ARS ">60% engagement," Lookout "doubled / 100% productivity") — these are Steve's own claims. **Strip** only the site-invented ones with no provenance (see Honesty pass).
 - Remove service-page CTA links ("View OSINT Solutions →", "Security Services →", etc.).
 
 ### F. Résumé (`resume.md` + PDF) — new
 - New `/resume` page, print-optimized (clean print stylesheet; screen view matches site).
-- Content drafted from real history (titles/dates to be confirmed by Steve):
-  - **Delphos Labs** — Founding / Staff Full-Stack Engineer (current): user-facing product, supporting API, initial IaC, core binary-ingestion system for AI-driven binary analysis.
-  - **Studylog Systems** — Technical Lead / Architect (Aug 2021 – Oct 2023): led Windows→cloud-native web rewrite; API-first platform for pharma; **company's first SOC 2**; recruited & mentored the team.
-  - **Ultimatum, Inc.** — Co-Founder / CTO (2015 – 2020): event-driven crowd-fundraising platform; architected and built the full stack (React/Redux/Material-UI, real-time ETL on GCP).
-  - **Synack** — Senior Frontend / Full-Stack Engineer (2016 – 2018): Researcher Platform v3 rewrite; Attacker Resistance Score.
-  - **Lookout** — Frontend / Full-Stack Engineer (2013 – 2016): Mobile Intelligence Console, malware-triage Research Console, Threatmap; authored **OraculumJS** & **FactoryJS** (open source).
-  - **Earlier** — PBworks: Backbone.js, legacy modernization.
-  - **Skills** — JS/TS, React/Redux, Node, Python, PostgreSQL, AWS/GCP, Kubernetes/Docker, Terraform/IaC, security/secure-by-default, AI-augmented development.
+- Content from confirmed real history (LinkedIn-accurate titles, dates, metrics):
+  - **Delphos Labs** — Founding / Staff Software Engineer (Jul 2024 – Mar 2026). Employee #1 at a VC-backed cybersecurity startup using AI to automate binary reverse engineering; built the core company & product 0→1. Designed platform architecture (SaaS, automation pipelines, DB, API); built AWS infra from scratch with Terraform; distributed task processing with Celery + RabbitMQ; user-facing product in React Router v7 / Remix v8 with isomorphic rendering and real-time dashboards; engineering + managerial leadership (hiring, mentoring, code review, process); CI/CD, feature flags, analytics (Hotjar, Sentry), security-first practices.
+  - **Studylog Systems** — Director of Engineering (Aug 2021 – Jul 2024). Director of all web/cloud activity — recruiting, mentoring, and leading a full-stack team plus daily IC work, code review, deployment. Node.js + React; performant, accessible, pixel-perfect experiences; technical training that drove a **>50% decrease in coding errors** in one year; QA + code-review processes; agile adoption; cloud infra with **Terraform, Helm, Kubernetes on AWS**. (Maps to the "first SOC 2" / cloud-native rewrite of the flagship Windows product.)
+  - **Synack** — Senior Software Engineer II (Apr 2016 – Mar 2021). Lead engineer rebuilding key product verticals for quality, maintainability, and reduced tech debt. Revamped top-vertical UIs, **increasing user engagement >60% in under a year**; new user-focused workflows; internal coding standards/style guides that lifted team productivity and code quality.
+  - **Ultimatum, Inc.** — Founder / CTO (Sep 2015 – Jul 2019). Founder and chief engineer; single-handedly built all interfaces, services, and dataflow. Crowd-fundraising web/mobile platform for automated donations to 501(c)(3)s based on real-world events; real-time ETL ingesting arbitrary third-party events; full SDLC with CI, **Docker + Kubernetes on GCP**.
+  - **Lookout** — Senior Software Engineer, Team Lead (Apr 2013 – Apr 2016). Lead frontend engineer building workflows/tools for the security-research team discovering and analyzing Android malware; custom tooling that drove a **100% productivity increase** in under a year. (OraculumJS & FactoryJS open-source frameworks authored in this period.)
+  - **PBworks** — Software Engineer (Oct 2011 – Mar 2013). Generalist building features/interfaces for cloud document & file management; performance work, cross-browser/device test routines.
+  - **Earlier (condensed line):** Plug.dj — Backbone.js Consultant (2012–2013); Arrowhead Electronic Healthcare — Software Engineer (2010–2011); Infrahealth — Sr. Software Developer (2009–2010); ATX Hackerspace — Founding Member / "Hackervangelist" (2009–2011).
+  - **Skills** — JS/TS, React (incl. Remix / React Router v7), Redux, Node.js, Python; Celery/RabbitMQ; PostgreSQL; AWS + GCP; Docker, Kubernetes, Helm, Terraform (IaC); CI/CD, feature flags, observability (Sentry, Hotjar); security-first / secure-by-default; AI-augmented engineering.
+- **Note on tense:** Delphos ended Mar 2026 — present everything in the past tense and frame Steve as actively seeking the next 0→1. Do **not** say "currently at Delphos" anywhere on the site.
+- **Confidentiality:** all Delphos details above are already public on Steve's LinkedIn, so they are cleared for use.
 - **PDF generation:** render the built `/resume` page to PDF via headless Chrome (chrome-devtools MCP), commit to `/assets/`. Single source of truth → web and PDF never drift. Add a "Download PDF" link on the page.
 
 ### G. Honesty pass (cross-cutting)
-Remove or gate on Steve's confirmation every fabricated/unverifiable claim:
-- "60%+ growth / engagement," "doubled productivity," "40% cost reduction," "75% manual-work reduction," "10x response times," "3 months ahead of schedule," "serving nonprofits nationwide."
-- Anonymous testimonials ("Technology Executive, Enterprise Client," etc.).
-Replace with defensible facts (first SOC 2, complete rewrites, named OSS) and real named references.
+**Keep** (Steve's own LinkedIn-stated metrics, defensible in interview):
+- Synack ">60% engagement," Lookout "100% / doubled productivity," Studylog ">50% fewer coding errors."
+
+**Strip** (invented only in site copy, no provenance anywhere Steve vouches for):
+- "40% cost reduction," "75% manual-work reduction," "10x response times," "3 months ahead of schedule," "serving nonprofits nationwide."
+
+**Also remove:** anonymous testimonials ("Technology Executive, Enterprise Client," etc.) → replace with real named references. Soften Ultimatum to "built solo" without market-outcome claims (Steve abandoned it).
 
 ## Out of scope
 - Visual redesign / theme overhaul (keep the existing Tailwind look; content + structure only).
@@ -112,7 +119,7 @@ Replace with defensible facts (first SOC 2, complete rewrites, named OSS) and re
 - Site builds cleanly (`build.sh` / Jekyll) with no broken internal links to deleted pages.
 
 ## Open items for Steve to confirm
-1. Exact job **titles and dates** for the résumé (esp. Delphos title, Studylog title, Ultimatum dates).
-2. Which **testimonials** to feature (the spec proposes a set; final pick is yours).
-3. Any metric you *can* defend and want to keep (so we don't strip something real).
-4. Delphos confidentiality — anything about the binary-analysis work that should **not** be public.
+1. ~~Titles and dates~~ — **resolved** (full LinkedIn history provided).
+2. ~~Metrics to keep~~ — **resolved** (keep LinkedIn-backed, strip site-invented).
+3. ~~Delphos confidentiality~~ — **resolved** (details already public on LinkedIn).
+4. Which **testimonials** to feature — spec proposes a set; final pick is yours (low-stakes, can finalize during implementation).
