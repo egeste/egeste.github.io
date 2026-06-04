@@ -313,3 +313,8 @@ exclude:
   - vendor/ruby/
   - context/
   - docs/
+  - build.sh
+  - DEPLOYMENT.md
+  - EXIF_PROCESSING.md
+  - README.md
+  - color-audit.md

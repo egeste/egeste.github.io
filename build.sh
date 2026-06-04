@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Professional Jekyll Build Script with EXIF Processing
-# Steve Regester - Technology Consulting & Engineering Leadership
+# Steve Regester - Founding Engineer & Technical Leader
 # https://egeste.net
 
 set -e  # Exit on any error
@@ -40,7 +40,7 @@ print_info() {
 echo -e "${PURPLE}"
 echo "╔══════════════════════════════════════════════════════════════════╗"
 echo "║                    Professional Jekyll Build                     ║"
-echo "║              Steve Regester Technology Consulting                ║"
+echo "║              Steve Regester · Founding Engineer                  ║"
 echo "║                        https://egeste.net                        ║"
 echo "╚══════════════════════════════════════════════════════════════════╝"
 echo -e "${NC}"
