@@ -6,12 +6,13 @@ plugins:
   - jekyll-redirect-from
 
 # ===== SITE CONFIGURATION =====
-title: Steve Regester - Technology Consulting & Engineering Leadership
-tagline: Startup Consulting, Full-Stack Engineering, Automation & Security
+title: Steve Regester — Founding Engineer & Technical Leader
+tagline: 0→1 builder · technical craftsman · fifteen years of high-quality software in hard domains
 description: >-
-  Expert technology consulting services for growing businesses. 15+ years of experience in startup 
-  development, full-stack engineering, business automation, and security testing. Serving businesses 
-  nationwide with founding engineer services, CTO consulting, custom development, and technical leadership.
+  Steve Regester is a founding/staff software engineer and technical leader with 15 years building
+  high-quality software from the ground up — most recently as employee #1 at Delphos Labs (AI binary
+  analysis). Deep full-stack craft, 0→1 product work, and a security-first mindset from a career at
+  security and intelligence companies. Currently looking for the next thing to build.
 
 url: https://egeste.net
 baseurl: ""
@@ -26,10 +27,10 @@ author:
   username: egeste
   email: info@egeste.net
   bio: >-
-    Fractional CTO and systems architect with 15+ years building production platforms from zero.
-    Specializing in 0→1 product builds, AI/LLM systems, full-stack architecture, cloud infrastructure,
-    and technical leadership for startups and growing companies.
-  location: Southwest Washington, United States
+    Founding/staff software engineer and technical leader. Fifteen years building high-quality
+    software from zero to one — security, intelligence, pharma, fintech. Obsessed with craft,
+    the right-sized solution, and the feel of the things I build.
+  location: Portland, Oregon, United States
   avatar: /assets/images/steve-regester-headshot.png
   website: https://egeste.net
   
@@ -39,17 +40,16 @@ author:
   github: egeste
   
   # Professional details
-  job_title: Fractional CTO & Systems Architect
-  company: Independent Consultant
+  job_title: Founding Engineer & Technical Leader
+  company: Open to new roles
   skills:
-    - Startup Consulting
-    - Full-Stack Engineering
-    - Business Automation
-    - Security Testing
-    - CTO Consulting
-    - Technical Leadership
-    - React & Node.js
-    - AWS & Cloud Architecture
+    - 0→1 Product Engineering
+    - Full-Stack Development (React, Node.js, Python)
+    - Software Architecture
+    - Engineering Leadership
+    - Cloud Infrastructure (AWS, GCP, Terraform, Kubernetes)
+    - Security-First Engineering
+    - AI-Augmented Development
 
 # ===== SOCIAL PROFILES FOR STRUCTURED DATA =====
 social:
@@ -109,58 +109,60 @@ twitter:
   
 # ===== PROFESSIONAL DATA =====
 professional:
-  # Current Position
-  current_company: "Delphos Labs"
-  current_role: "Founding/Staff Software Engineer"
+  # Most recent position (Delphos ended Mar 2026 — NOT current)
+  current_company: ""
+  current_role: ""
+  most_recent_company: "Delphos Labs"
+  most_recent_role: "Founding / Staff Software Engineer"
 
   # Career Context
-  status: "Systems Architect | 0→1 Product Builder | AI/LLM Systems"
-  experience_years: "15+ years"
-  location: "Southwest Washington • Portland Metro Area"
+  status: "Open to founding- and early-engineer roles"
+  experience_years: "15 years"
+  location: "Portland, Oregon"
 
   # Job Preferences
-  seeking_roles: ["Fractional CTO", "Systems Architect", "0→1 Product Builder", "AI/LLM Specialist"]
-  work_locations: ["Southwest Washington", "Portland Metro Area", "Remote"]
-  company_types: ["Early-stage startups", "Growth-stage companies", "Enterprise companies"]
-  
+  seeking_roles: ["Founding Engineer", "Staff Engineer", "Principal Engineer", "Director of Engineering"]
+  work_locations: ["Portland, Oregon", "Remote"]
+  company_types: ["Early-stage startups", "Growth-stage companies"]
+
   # Core Skills
-  expert_technologies: ["React", "Node.js", "TypeScript", "Python", "AWS", "Docker"]
-  key_skills: ["Technical Leadership", "Team Mentorship", "SaaS Architecture", "Full-Stack Development", "Engineering Excellence", "SOC 2 Compliance"]
-  
-  # Key Achievements
+  expert_technologies: ["React", "Remix / React Router v7", "Node.js", "TypeScript", "Python", "AWS", "Terraform", "Kubernetes", "Docker"]
+  key_skills: ["0→1 Product Engineering", "Technical Leadership", "Team Mentorship", "SaaS Architecture", "Full-Stack Development", "Security-First Engineering"]
+
+  # Key Achievements (only Steve's own, defensible claims)
   achievements:
-    - "60%+ User Engagement Growth through UI/UX transformations"
-    - "SOC 2 Certification Achievement leading enterprise security"
-    - "Doubled Security Research Productivity through tool development"
-    - "50%+ Programming Error Reduction through training programs"
-    - "20% Project Timeline Reduction through team leadership"
-    
-  # Work History
+    - "Employee #1 at Delphos Labs — built an AI binary-analysis product and company from 0 to 1"
+    - ">60% increase in user engagement through UI/UX rebuilds at Synack"
+    - "100% (2x) security-research productivity gain through internal tooling at Lookout"
+    - ">50% reduction in coding errors via training/process at Studylog"
+    - "Led the cloud-native rewrite of a flagship product and the team behind it"
+
+  # Work History (real titles + dates)
   work_history:
     - company: "Delphos Labs"
-      role: "Founding/Staff Software Engineer"
-      period: "current"
+      role: "Founding / Staff Software Engineer"
+      period: "2024–2026"
     - company: "Studylog Systems"
       role: "Director of Engineering"
-      period: "2021-2024"
+      period: "2021–2024"
     - company: "Synack"
       role: "Senior Software Engineer II"
-      period: "2016-2021"
+      period: "2016–2021"
+    - company: "Ultimatum, Inc."
+      role: "Founder & CTO"
+      period: "2015–2019"
     - company: "Lookout"
-      role: "Senior Software Engineer & Team Lead"
-      period: "2014-2016"
-    - company: "Ultimatum"
-      role: "Co-founder & CTO"
-      period: "2015-2019"
+      role: "Senior Software Engineer, Team Lead"
+      period: "2013–2016"
 
 # ===== SITE CONFIGURATION =====
 site_config:
   primary_color: "#8b5cf6"
   contact_email: "info@egeste.net"
-  geographic_region: "US-WA"
-  city: "Southwest Washington"
-  state: "Washington"
-  coordinates: "46.1382, -122.9382"
+  geographic_region: "US-OR"
+  city: "Portland"
+  state: "Oregon"
+  coordinates: "45.5152, -122.6784"
 
 # ===== UI TEXT & LABELS =====
 text:
@@ -171,10 +173,9 @@ text:
 navigation:
   home: "Home"
   about: "About"
-  projects: "Projects"
-  blog: "Blog"
-  faq: "FAQ"
-  resume: "Resume"
+  projects: "Work"
+  blog: "Writing"
+  resume: "Résumé"
   contact: "Contact"
 
 # ===== ACCESSIBILITY =====
@@ -247,7 +248,7 @@ content_settings:
   categories: ["Engineering Leadership", "Technical Architecture", "Team Management", "Software Development"]
   target_audience: "technical-recruiters,engineering-leaders,startup-founders"
   content_type: "professional-portfolio"
-  last_update: "2024-07"
+  last_update: "2026-06"
 
 # ===== EXIF PROCESSING CONFIGURATION =====
 # Automated image metadata processing during build
@@ -259,16 +260,16 @@ exif_processing:
     # Professional branding metadata added to all images
     creator: "Steve Regester"
     artist: "Steve Regester"
-    copyright: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
-    copyright_notice: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
-    rights: "© 2025 Steve Regester - Technology Consulting & Engineering Leadership"
+    copyright: "© 2026 Steve Regester"
+    copyright_notice: "© 2026 Steve Regester"
+    rights: "© 2026 Steve Regester"
     source: "https://egeste.net"
-    credit: "egeste.net - Steve Regester Technology Consulting"
+    credit: "egeste.net — Steve Regester"
     contact: "info@egeste.net"
-    keywords: "technology consulting, engineering leadership, Steve Regester, Southwest Washington, startup consulting, full-stack development"
-    subject: "Professional technology consulting and engineering leadership services"
-    title: "Steve Regester - Technology Consulting Asset"
-    description: "Professional asset from Steve Regester's technology consulting and engineering leadership portfolio"
+    keywords: "Steve Regester, founding engineer, software engineer, Portland Oregon, full-stack, 0 to 1"
+    subject: "Steve Regester — founding engineer and technical leader"
+    title: "Steve Regester — Portfolio Asset"
+    description: "Asset from Steve Regester's professional portfolio"
 
 # ===== TECHNICAL CONFIGURATION =====
 # Feed settings
