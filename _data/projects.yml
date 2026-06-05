@@ -34,10 +34,10 @@
   image: /assets/images/synack-srt.png
   link: https://www.synack.com/red-team/
   description: Crowdsourced security platform connecting vetted ethical hackers with enterprise clients. Architected scalable React/Redux interfaces supporting a global security-researcher community.
-- name: Ultimatum (Founder & CTO)
+- name: Ultimatum (Co-Founder & CTO)
   image: /assets/images/ultimatum.jpg
   link: https://www.crunchbase.com/organization/ultimatum
-  description: Founded and single-handedly built a crowd-fundraising platform facilitating automated donations to nonprofits based on real-world events. Architected the complete tech stack using React, Redux, Material-UI with real-time ETL processing on GCP.
+  description: Co-founded a crowd-fundraising platform and single-handedly built the whole stack, facilitating automated donations to nonprofits based on real-world events. Architected the complete tech stack using React, Redux, Material-UI with real-time event processing (Apache NiFi) on GCP.
 - name: Lookout Security Research Tools
   image: /assets/images/lookout.png
   link: https://www.lookout.com/

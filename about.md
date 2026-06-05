@@ -2,7 +2,7 @@
 layout: service
 title: About Steve Regester — Founding Engineer & Technical Leader
 description: Steve Regester is a founding/staff software engineer and technical leader. Fifteen years building high-quality software from 0 to 1 across security, intelligence, pharma, and fintech.
-keywords: Steve Regester, founding engineer, technical leader, software architect, Portland Oregon, React, Node.js, Python
+keywords: Steve Regester, founding engineer, technical leader, software architect, Southwest Washington, Portland metro, React, Node.js, Python
 sitemap:
   priority: 0.9
   changefreq: weekly
@@ -13,7 +13,7 @@ hero:
   title: "Steve Regester"
   subtitle: "Founding engineer & technical leader"
   description: "Fifteen years building high-quality software from zero to one<br>Security, intelligence, pharma, fintech — usually from nothing"
-  location: "Portland, Oregon • Open to founding- and early-engineer roles, remote or local"
+  location: "Southwest Washington • Portland Metro Area • Open to founding- and early-engineer roles, remote or local"
 
 value_prop:
   title: "The short version"
@@ -43,7 +43,7 @@ cta:
   secondary_button: "Read my résumé"
   secondary_link: "/resume"
   info:
-    highlight: "Open to founding/early-engineer roles • Remote or Portland, OR"
+    highlight: "Open to founding/early-engineer roles • Remote or Portland metro"
     tagline: ""
 ---
 

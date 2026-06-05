@@ -30,7 +30,7 @@ author:
     Founding/staff software engineer and technical leader. Fifteen years building high-quality
     software from zero to one — security, intelligence, pharma, fintech. Obsessed with craft,
     the right-sized solution, and the feel of the things I build.
-  location: Portland, Oregon, United States
+  location: Southwest Washington, United States
   avatar: /assets/images/steve-regester-headshot.png
   website: https://egeste.net
   
@@ -118,11 +118,11 @@ professional:
   # Career Context
   status: "Open to founding- and early-engineer roles"
   experience_years: "15 years"
-  location: "Portland, Oregon"
+  location: "Southwest Washington, Portland Metro Area"
 
   # Job Preferences
   seeking_roles: ["Founding Engineer", "Staff Engineer", "Principal Engineer", "Director of Engineering"]
-  work_locations: ["Portland, Oregon", "Remote"]
+  work_locations: ["Southwest Washington", "Portland Metro Area", "Remote"]
   company_types: ["Early-stage startups", "Growth-stage companies"]
 
   # Core Skills
@@ -149,7 +149,7 @@ professional:
       role: "Senior Software Engineer II"
       period: "2016–2021"
     - company: "Ultimatum, Inc."
-      role: "Founder & CTO"
+      role: "Co-Founder & CTO"
       period: "2015–2019"
     - company: "Lookout"
       role: "Senior Software Engineer, Team Lead"
@@ -159,10 +159,10 @@ professional:
 site_config:
   primary_color: "#8b5cf6"
   contact_email: "info@egeste.net"
-  geographic_region: "US-OR"
-  city: "Portland"
-  state: "Oregon"
-  coordinates: "45.5152, -122.6784"
+  geographic_region: "US-WA"
+  city: "Southwest Washington"
+  state: "Washington"
+  coordinates: "46.1382, -122.9382"
 
 # ===== UI TEXT & LABELS =====
 text:
@@ -266,7 +266,7 @@ exif_processing:
     source: "https://egeste.net"
     credit: "egeste.net — Steve Regester"
     contact: "info@egeste.net"
-    keywords: "Steve Regester, founding engineer, software engineer, Portland Oregon, full-stack, 0 to 1"
+    keywords: "Steve Regester, founding engineer, software engineer, Southwest Washington, Portland metro, full-stack, 0 to 1"
     subject: "Steve Regester — founding engineer and technical leader"
     title: "Steve Regester — Portfolio Asset"
     description: "Asset from Steve Regester's professional portfolio"

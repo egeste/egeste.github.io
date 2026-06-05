@@ -28,7 +28,7 @@ value_prop:
 
       <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-3 block">Delphos Labs — AI binary analysis</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">Employee #1 at a VC-backed startup automating binary reverse engineering with AI. Designed the platform; built AWS infra from scratch with Terraform; distributed pipeline with Celery + RabbitMQ; React/Remix product with real-time dashboards. (2024–2026)</span>
+        <span class="text-slate-600 leading-relaxed block flex-1">Employee #1 at a VC- and In-Q-Tel-backed startup automating binary reverse engineering with AI. Designed the platform; built AWS infra from scratch with Terraform; distributed pipeline with Celery + RabbitMQ; React/Remix product with real-time dashboards. (2024–2026)</span>
       </article>
 
       <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
@@ -47,8 +47,8 @@ value_prop:
       </article>
 
       <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
-        <strong class="text-slate-900 font-bold mb-3 block">Ultimatum — founder &amp; CTO</strong>
-        <span class="text-slate-600 leading-relaxed block flex-1">Founded and single-handedly built a crowd-fundraising platform: real-time ETL ingesting world events to trigger automated donations to 501(c)(3) nonprofits. React, Docker, Kubernetes on GCP. (2015–2019)</span>
+        <strong class="text-slate-900 font-bold mb-3 block">Ultimatum — co-founder &amp; CTO</strong>
+        <span class="text-slate-600 leading-relaxed block flex-1">Co-founded a crowd-fundraising platform and single-handedly built the whole stack: real-time event processing (Apache NiFi) triggering automated donations to 501(c)(3) nonprofits. React, Docker, Kubernetes on GCP. (2015–2019)</span>
       </article>
 
       <article class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">

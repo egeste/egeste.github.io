@@ -56,7 +56,7 @@ sitemap:
       <div>
         <h1 class="text-3xl sm:text-4xl font-bold text-slate-900">Steve Regester</h1>
         <p class="text-lg text-violet-700 font-semibold mt-1">Founding Engineer &amp; Technical Leader</p>
-        <p class="text-slate-600 mt-1">Portland, Oregon | Remote-friendly</p>
+        <p class="text-slate-600 mt-1">Southwest Washington | Portland Metro Area | Remote-friendly</p>
       </div>
       <div class="text-sm text-slate-600 sm:text-right space-y-1">
         <p><a href="mailto:info@egeste.net" class="text-violet-700 hover:text-violet-800">info@egeste.net</a></p>
@@ -77,7 +77,7 @@ sitemap:
         <h3 class="text-lg font-semibold text-slate-900">Founding / Staff Software Engineer - Delphos Labs</h3>
         <span class="text-sm text-slate-500">Jul 2024 - Mar 2026</span>
       </div>
-      <p class="text-slate-600 text-sm italic mb-2">Employee #1 at a VC-backed cybersecurity startup using AI to automate binary reverse engineering. Built the core product and company from 0 to 1.</p>
+      <p class="text-slate-600 text-sm italic mb-2">Employee #1 at a VC- and In-Q-Tel-backed cybersecurity startup using AI to automate binary reverse engineering. Built the core product and company from 0 to 1.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
         <li>Designed the high-level platform architecture - SaaS product, automation pipelines, database, and API layer.</li>
         <li>Built cloud infrastructure from scratch with Terraform on AWS.</li>
@@ -117,13 +117,13 @@ sitemap:
 
     <div class="mb-6">
       <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-        <h3 class="text-lg font-semibold text-slate-900">Founder &amp; CTO - Ultimatum, Inc.</h3>
+        <h3 class="text-lg font-semibold text-slate-900">Co-Founder &amp; CTO - Ultimatum, Inc.</h3>
         <span class="text-sm text-slate-500">Sep 2015 - Jul 2019</span>
       </div>
-      <p class="text-slate-600 text-sm italic mb-2">Founder and chief engineer. Single-handedly built all interfaces, services, and dataflow for the platform.</p>
+      <p class="text-slate-600 text-sm italic mb-2">Co-founder and chief engineer. Single-handedly architected all interfaces, services, and data flow for the platform.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
         <li>Built a crowd-fundraising web/mobile platform for automated donations to 501(c)(3) nonprofits triggered by real-world events.</li>
-        <li>Implemented real-time ETL systems consuming arbitrary third-party events.</li>
+        <li>Built real-time event processing with Apache NiFi to consume arbitrary third-party events and trigger donations.</li>
         <li>Ran the full SDLC with CI, Docker, and Kubernetes on GCP.</li>
       </ul>
     </div>

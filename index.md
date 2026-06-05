@@ -2,7 +2,7 @@
 layout: default
 title: Steve Regester — Founding Engineer & Technical Leader
 description: Founding/staff software engineer and technical leader. 15 years building high-quality software from 0 to 1 in security, intelligence, and regulated domains. Open to founding- and early-engineer roles.
-keywords: founding engineer, staff software engineer, technical leader, 0 to 1, React, Node.js, Python, full-stack, Portland Oregon
+keywords: founding engineer, staff software engineer, technical leader, 0 to 1, React, Node.js, Python, full-stack, Southwest Washington, Portland metro
 sitemap:
   priority: 1.0
   changefreq: weekly
@@ -68,8 +68,8 @@ type: profile
         <span class="text-slate-600 leading-relaxed block">Lead frontend engineer for the team hunting Android malware. Custom tooling doubled research productivity. Authored the open-source OraculumJS and FactoryJS frameworks.</span>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
-        <strong class="text-slate-900 font-bold mb-3 block">Ultimatum — founder &amp; CTO</strong>
-        <span class="text-slate-600 leading-relaxed block">Built an entire crowd-fundraising platform solo: real-time ETL ingesting world events to trigger automated donations to nonprofits. React, Docker, Kubernetes on GCP.</span>
+        <strong class="text-slate-900 font-bold mb-3 block">Ultimatum — co-founder &amp; CTO</strong>
+        <span class="text-slate-600 leading-relaxed block">Co-founded a crowd-fundraising platform and single-handedly built the whole stack: real-time event processing (Apache NiFi) triggering automated donations to nonprofits. React, Docker, Kubernetes on GCP.</span>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md flex flex-col" role="listitem">
         <strong class="text-slate-900 font-bold mb-3 block">…and side projects</strong>
