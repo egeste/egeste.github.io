@@ -5,6 +5,7 @@ subtitle: "I am no longer willing to let my silence be the foundation on which o
 date: 2025-11-20 00:00:00 -0000
 tags: [personal, family]
 author: Steve
+hidden: true
 ---
 
 I don't usually share personal family history publicly, but I've reached a point where silence is no longer serving me. As the saying goes, *sunlight is the best disinfectant*, and for most of my life, I kept these truths buried - largely to protect people who never protected me in the ways that mattered.
