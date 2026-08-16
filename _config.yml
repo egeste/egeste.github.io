@@ -6,13 +6,13 @@ plugins:
   - jekyll-redirect-from
 
 # ===== SITE CONFIGURATION =====
-title: Steve Regester — Founding Engineer & Technical Leader
-tagline: 0→1 builder · technical craftsman · fifteen years of high-quality software in hard domains
+title: Steve Regester — Staff Software Engineer, Security Platforms
+tagline: technical craftsman · fifteen years shipping security products
 description: >-
-  Steve Regester is a founding/staff software engineer and technical leader with 15 years building
-  high-quality software from the ground up — most recently as employee #1 at Delphos Labs (AI binary
-  analysis). Deep full-stack craft, 0→1 product work, and a security-first mindset from a career at
-  security and intelligence companies. Currently looking for the next thing to build.
+  Steve Regester is a staff software engineer with 15 years shipping security products — malware
+  research tooling at Lookout, the crowdsourced pentesting platform at Synack, AI-driven binary
+  analysis at Delphos Labs. Deep full-stack craft, hands-on infrastructure, and a security-first
+  mindset from a career at security and intelligence companies.
 
 url: https://egeste.net
 baseurl: ""
@@ -27,9 +27,9 @@ author:
   username: egeste
   email: info@egeste.net
   bio: >-
-    Founding/staff software engineer and technical leader. Fifteen years building high-quality
-    software from zero to one — security, intelligence, pharma, fintech. Obsessed with craft,
-    the right-sized solution, and the feel of the things I build.
+    Staff software engineer. Fifteen years shipping security products — mobile security,
+    intelligence, pharma, fintech. Obsessed with craft, the right-sized solution, and the
+    feel of the things I build.
   location: Southwest Washington, United States
   avatar: /assets/images/steve-regester-headshot.png
   website: https://egeste.net
@@ -40,16 +40,15 @@ author:
   github: egeste
   
   # Professional details
-  job_title: Founding Engineer & Technical Leader
-  company: Open to new roles
+  job_title: Staff Software Engineer — Security Platforms
+  company: DesignForge AI
   skills:
-    - 0→1 Product Engineering
     - Full-Stack Development (React, Node.js, Python)
     - Software Architecture
-    - Engineering Leadership
     - Cloud Infrastructure (AWS, GCP, Terraform, Kubernetes)
     - Security-First Engineering
-    - AI-Augmented Development
+    - LLM Agents & Tool Use (Anthropic API, Claude Agent SDK)
+    - Mentorship & Code Review
 
 # ===== SOCIAL PROFILES FOR STRUCTURED DATA =====
 social:
@@ -109,42 +108,48 @@ twitter:
   
 # ===== PROFESSIONAL DATA =====
 professional:
-  # Most recent position (Delphos ended Mar 2026 — NOT current)
-  current_company: ""
-  current_role: ""
-  most_recent_company: "Delphos Labs"
-  most_recent_role: "Founding / Staff Software Engineer"
+  # Current position
+  current_company: "DesignForge AI"
+  current_role: "Founding Engineer"
+  most_recent_company: "DesignForge AI"
+  most_recent_role: "Founding Engineer"
 
   # Career Context
-  status: "Open to founding- and early-engineer roles"
+  status: "Open to senior and staff engineering roles"
   experience_years: "15 years"
   location: "Southwest Washington, Portland Metro Area"
 
   # Job Preferences
-  seeking_roles: ["Founding Engineer", "Staff Engineer", "Principal Engineer", "Director of Engineering"]
+  seeking_roles: ["Staff Engineer", "Senior Software Engineer", "Principal Engineer", "Tech Lead"]
   work_locations: ["Southwest Washington", "Portland Metro Area", "Remote"]
-  company_types: ["Early-stage startups", "Growth-stage companies"]
+  company_types: ["Security product companies", "Growth-stage companies"]
 
   # Core Skills
   expert_technologies: ["React", "Remix / React Router v7", "Node.js", "TypeScript", "Python", "AWS", "Terraform", "Kubernetes", "Docker"]
-  key_skills: ["0→1 Product Engineering", "Technical Leadership", "Team Mentorship", "SaaS Architecture", "Full-Stack Development", "Security-First Engineering"]
+  key_skills: ["Full-Stack Development", "Security-First Engineering", "SaaS Architecture", "Cloud Infrastructure", "LLM Agents & Tool Use", "Mentorship & Code Review"]
 
   # Key Achievements (only Steve's own, defensible claims)
   achievements:
-    - "Employee #1 at Delphos Labs — built an AI binary-analysis product and company from 0 to 1"
+    - "Built the platform, distributed pipeline, and product for AI-automated binary reverse engineering at Delphos Labs"
     - ">60% increase in user engagement through UI/UX rebuilds at Synack"
     - "100% (2x) security-research productivity gain through internal tooling at Lookout"
     - ">50% reduction in coding errors via training/process at Studylog"
-    - "Led the cloud-native rewrite of a flagship product and the team behind it"
+    - "Led a flagship product's cloud-native rewrite through a third-party security audit and the company's first SOC 2"
 
   # Work History (real titles + dates)
   work_history:
+    - company: "DesignForge AI"
+      role: "Founding Engineer"
+      period: "2026–present"
     - company: "Delphos Labs"
       role: "Founding / Staff Software Engineer"
       period: "2024–2026"
+    - company: "Descript"
+      role: "Software Engineer"
+      period: "2024"
     - company: "Studylog Systems"
       role: "Director of Engineering"
-      period: "2021–2024"
+      period: "2021–2023"
     - company: "Synack"
       role: "Senior Software Engineer II"
       period: "2016–2021"
@@ -266,8 +271,8 @@ exif_processing:
     source: "https://egeste.net"
     credit: "egeste.net — Steve Regester"
     contact: "info@egeste.net"
-    keywords: "Steve Regester, founding engineer, software engineer, Southwest Washington, Portland metro, full-stack, 0 to 1"
-    subject: "Steve Regester — founding engineer and technical leader"
+    keywords: "Steve Regester, staff software engineer, security engineer, software engineer, Southwest Washington, Portland metro, full-stack"
+    subject: "Steve Regester — staff software engineer, security platforms"
     title: "Steve Regester — Portfolio Asset"
     description: "Asset from Steve Regester's professional portfolio"
 

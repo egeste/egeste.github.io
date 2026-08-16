@@ -1,8 +1,8 @@
 ---
 layout: service
-title: About Steve Regester — Founding Engineer & Technical Leader
-description: Steve Regester is a founding/staff software engineer and technical leader. Fifteen years building high-quality software from 0 to 1 across security, intelligence, pharma, and fintech.
-keywords: Steve Regester, founding engineer, technical leader, software architect, Southwest Washington, Portland metro, React, Node.js, Python
+title: About Steve Regester — Staff Software Engineer, Security Platforms
+description: Steve Regester is a staff software engineer. Fifteen years shipping security products across mobile security, intelligence, pharma, and fintech.
+keywords: Steve Regester, staff software engineer, security engineer, software architect, Southwest Washington, Portland metro, React, Node.js, Python
 sitemap:
   priority: 0.9
   changefreq: weekly
@@ -11,39 +11,39 @@ type: profile
 
 hero:
   title: "Steve Regester"
-  subtitle: "Founding engineer & technical leader"
-  description: "Fifteen years building high-quality software from zero to one<br>Security, intelligence, pharma, fintech — usually from nothing"
-  location: "Southwest Washington • Portland Metro Area • Open to founding- and early-engineer roles, remote or local"
+  subtitle: "Staff software engineer — security platforms"
+  description: "Fifteen years shipping security products<br>Mobile security, intelligence, pharma, fintech"
+  location: "Southwest Washington • Portland Metro Area • Open to senior and staff engineering roles, remote or local"
 
 value_prop:
   title: "The short version"
-  subtitle: "I'm a builder first. I take products from zero to one and care about the parts most people skip — the feel of the thing, the right-sized solution, the failure modes nobody wants to think about.<br><br>Most of my career has been at security and intelligence companies — <strong>Lookout, Synack, Delphos</strong> — so I build with a threat model in mind by default. Most recently I was <strong>employee #1 at Delphos Labs</strong>, taking an AI binary-analysis product and company from nothing to a working SaaS.<br><br>I've also led: Director of Engineering, CTO, team lead. I like building the team as much as the product."
+  subtitle: "I'm a builder first. I work end to end — product, API, and the infrastructure underneath — and I care about the parts most people skip: the feel of the thing, the right-sized solution, the failure modes nobody wants to think about.<br><br>Most of my career has been at security and intelligence companies — <strong>Lookout, Synack, Delphos</strong> — so I build with a threat model in mind by default. Most recently I built the platform, pipeline, and product at <strong>Delphos Labs</strong>, where AI automates binary reverse engineering.<br><br>I've also led: Director of Engineering, CTO, team lead. I hire, mentor, and take code review seriously — and these days I do my best work as a senior individual contributor on a strong team."
 
 services:
   title: "What I'm good at"
   items:
-    - title: "🚀 0→1 product engineering"
-      description: "Taking things from nothing to working product. Architecture, infra, and the first version of everything — under real uncertainty, with judgment about what to build and what to skip."
+    - title: "🚀 End-to-end product engineering"
+      description: "Product, API, data model, and the infrastructure underneath. Judgment about what to build, what to skip, and how much complexity a problem actually deserves."
     - title: "🛠️ Full-stack craft"
       description: "React (incl. Remix / React Router v7), Node.js, Python, PostgreSQL. End-to-end ownership with taste — right-sized solutions and software that feels good to use."
     - title: "☁️ Cloud & infrastructure"
       description: "AWS and GCP from scratch with Terraform, Kubernetes, Helm, Docker. Distributed processing (Celery, RabbitMQ), CI/CD, feature flags, observability."
     - title: "🔒 Security-first engineering"
       description: "A career at security/intelligence companies means secure-by-default is a habit, not an afterthought. Led the work behind a company's first SOC 2."
-    - title: "👥 Engineering leadership"
-      description: "Director of Engineering and CTO experience. Hiring, mentoring, code review, and the kind of culture where people feel safe enough to do their best work."
-    - title: "🤖 AI-augmented development"
-      description: "Building with and around modern AI — most recently automating binary reverse engineering. I think in specifications, not just syntax."
+    - title: "👥 Mentorship & code review"
+      description: "Director of Engineering and CTO experience, applied as a senior IC. Hiring, mentoring, code review, and the kind of culture where people feel safe enough to do their best work."
+    - title: "🤖 LLM agents on expert workflows"
+      description: "Getting agents to reliably operate specialist tools that were never designed for them — binary reverse engineering at Delphos, electromagnetic simulation now. Anthropic API, Claude Agent SDK."
 
 cta:
   title: "Let's build something"
-  description: "I'm looking for founding- and early-engineer roles where I can own real surface area and take something from zero to one. If that's you, let's talk."
+  description: "I'm looking for senior and staff engineering roles at security product companies — places with a real team, real users, and problems worth the care. If that's you, let's talk."
   subject: "Let's talk"
   primary_button: "Email me"
   secondary_button: "Read my résumé"
   secondary_link: "/resume"
   info:
-    highlight: "Open to founding/early-engineer roles • Remote or Portland metro"
+    highlight: "Open to senior & staff engineering roles • Remote or Portland metro"
     tagline: ""
 ---
 

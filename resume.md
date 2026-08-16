@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Résumé - Steve Regester
-description: Résumé of Steve Regester - founding/staff software engineer and technical leader. 15 years building high-quality software from 0 to 1.
-keywords: Steve Regester resume, founding engineer, staff software engineer, director of engineering
+description: Résumé of Steve Regester - staff software engineer building security platforms. 15 years shipping security products, from malware research tooling to AI-driven binary analysis.
+keywords: Steve Regester resume, staff software engineer, security engineer, full-stack engineer, AI agents
 type: profile
 sitemap:
   priority: 0.7
@@ -55,7 +55,7 @@ sitemap:
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 border-b border-slate-200 pb-6 mb-6">
       <div>
         <h1 class="text-3xl sm:text-4xl font-bold text-slate-900">Steve Regester</h1>
-        <p class="text-lg text-violet-700 font-semibold mt-1">Founding Engineer &amp; Technical Leader</p>
+        <p class="text-lg text-violet-700 font-semibold mt-1">Staff Software Engineer - Security Platforms</p>
         <p class="text-slate-600 mt-1">Southwest Washington | Portland Metro Area | Remote-friendly</p>
       </div>
       <div class="text-sm text-slate-600 sm:text-right space-y-1">
@@ -67,38 +67,57 @@ sitemap:
     </div>
 
     <!-- Summary -->
-    <p class="text-slate-700 leading-relaxed mb-8">Founding/staff software engineer and technical leader with 15 years building high-quality software from zero to one - across mobile security, intelligence, pharma, and fintech. Deep full-stack craft (React, Node.js, Python), hands-on cloud and infrastructure, and a security-first mindset from a career at security and intelligence companies. Comfortable as both the engineer who builds the first version of everything and the leader who hires and mentors the team. Looking for the next thing to build from the ground up.</p>
+    <p class="text-slate-700 leading-relaxed mb-8">Staff-level full-stack engineer with 15 years shipping security products - malware research tooling at Lookout, the crowdsourced pentesting platform at Synack, and AI-driven binary analysis at Delphos Labs. Deep craft in React, Node.js, and Python, with hands-on ownership of the infrastructure underneath: AWS, Terraform, Kubernetes, and distributed pipelines. Recent work applies LLM agents to specialist expert workflows. Former Director of Engineering - I hire, mentor, and raise the bar in code review, and I do my best work as a senior IC on a strong team.</p>
 
     <!-- Experience -->
     <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-5">Experience</h2>
 
     <div class="mb-6">
       <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+        <h3 class="text-lg font-semibold text-slate-900">Founding Engineer - DesignForge AI</h3>
+        <span class="text-sm text-slate-500">May 2026 - Present</span>
+      </div>
+      <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
+        <li>Building an Electron desktop application that drives Ansys HFSS electromagnetic simulation through an LLM agent interface, on the Anthropic API and Claude Agent SDK.</li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
         <h3 class="text-lg font-semibold text-slate-900">Founding / Staff Software Engineer - Delphos Labs</h3>
         <span class="text-sm text-slate-500">Jul 2024 - Mar 2026</span>
       </div>
-      <p class="text-slate-600 text-sm italic mb-2">Employee #1 at a VC- and In-Q-Tel-backed cybersecurity startup using AI to automate binary reverse engineering. Built the core product and company from 0 to 1.</p>
+      <p class="text-slate-600 text-sm italic mb-2">First engineer at a VC- and In-Q-Tel-backed cybersecurity company using AI to automate binary reverse engineering.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Designed the high-level platform architecture - SaaS product, automation pipelines, database, and API layer.</li>
-        <li>Built cloud infrastructure from scratch with Terraform on AWS.</li>
-        <li>Engineered distributed task processing with Celery and RabbitMQ for reliable workload distribution.</li>
-        <li>Developed the user-facing product in React Router v7 / Remix with isomorphic rendering and real-time dashboards.</li>
-        <li>Provided engineering and managerial leadership - hiring, mentoring, code review, and process design.</li>
-        <li>Established CI/CD, feature flags, analytics (Sentry, Hotjar), and security-first development practices.</li>
+        <li>Designed the platform architecture - SaaS product, database, and API layer - and built the distributed pipeline (Celery, RabbitMQ) that runs reverse-engineering workloads reliably at scale.</li>
+        <li>Developed the analyst-facing product in React Router v7 / Remix, including real-time dashboards for reviewing automated analysis results.</li>
+        <li>Partnered with security researchers to turn manual reverse-engineering workflows into reviewable, automated artifacts.</li>
+        <li>Built and operated AWS infrastructure from scratch with Terraform, plus CI/CD, feature flags, and observability (Sentry, Hotjar).</li>
+        <li>Hired and mentored engineers, ran code review, and established security-first development practices.</li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+        <h3 class="text-lg font-semibold text-slate-900">Software Engineer - Descript</h3>
+        <span class="text-sm text-slate-500">Mar 2024 - Jul 2024</span>
+      </div>
+      <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
+        <li>Monetization engineering for a widely used audio and video editing product - implemented in-app paywalls and subscription upgrade flows.</li>
       </ul>
     </div>
 
     <div class="mb-6">
       <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
         <h3 class="text-lg font-semibold text-slate-900">Director of Engineering - Studylog Systems</h3>
-        <span class="text-sm text-slate-500">Aug 2021 - Jul 2024</span>
+        <span class="text-sm text-slate-500">Aug 2021 - Oct 2023</span>
       </div>
-      <p class="text-slate-600 text-sm italic mb-2">Director of all web and cloud activity - recruiting, mentoring, and leading a full-stack team while contributing daily to code, review, and deployment.</p>
+      <p class="text-slate-600 text-sm italic mb-2">Led all web and cloud engineering - recruiting, mentoring, and leading a full-stack team while contributing daily to code, review, and deployment.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Led the cloud-native rewrite of a flagship Windows product into a performant, accessible web platform (Node.js, React) for pharmaceutical-research customers.</li>
-        <li>Drove a &gt;50% reduction in coding errors in one year through technical training, QA processes, and routine code review.</li>
-        <li>Built and maintained cloud infrastructure with Terraform, Helm, and Kubernetes on AWS.</li>
-        <li>Led adoption of agile practices, reducing project delays and improving team morale; recruited and mentored the team.</li>
+        <li>Led the cloud-native rewrite of a flagship Windows product into a performant, accessible web platform (Node.js, React) for pharmaceutical-research customers, on AWS infrastructure built with Terraform, Helm, and Kubernetes.</li>
+        <li>Took the platform through a rigorous third-party security audit and the company's first SOC 2.</li>
+        <li>Drove a &gt;50% reduction in coding errors in one year through technical training, QA process, and routine code review.</li>
+        <li>Recruited and mentored the team; led adoption of agile practices, reducing project delays and improving morale.</li>
       </ul>
     </div>
 
@@ -109,9 +128,9 @@ sitemap:
       </div>
       <p class="text-slate-600 text-sm italic mb-2">Lead engineer rebuilding key product verticals of a crowdsourced security-testing platform, with a focus on quality, maintainability, and reduced technical debt.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Revamped the UI for top product verticals, increasing user engagement &gt;60% in under a year.</li>
-        <li>Led development of new, user-focused workflows and interfaces.</li>
-        <li>Established internal coding standards and style guides that lifted team productivity and code quality.</li>
+        <li>Rebuilt the interfaces for top product verticals, increasing user engagement &gt;60% in under a year.</li>
+        <li>Led development of new workflows and interfaces used by enterprise customers and vetted security researchers.</li>
+        <li>Established internal coding standards and style guides adopted across the engineering team.</li>
       </ul>
     </div>
 
@@ -120,11 +139,8 @@ sitemap:
         <h3 class="text-lg font-semibold text-slate-900">Co-Founder &amp; CTO - Ultimatum, Inc.</h3>
         <span class="text-sm text-slate-500">Sep 2015 - Jul 2019</span>
       </div>
-      <p class="text-slate-600 text-sm italic mb-2">Co-founder and chief engineer. Single-handedly architected all interfaces, services, and data flow for the platform.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Built a crowd-fundraising web/mobile platform for automated donations to 501(c)(3) nonprofits triggered by real-world events.</li>
-        <li>Built real-time event processing with Apache NiFi to consume arbitrary third-party events and trigger donations.</li>
-        <li>Ran the full SDLC with CI, Docker, and Kubernetes on GCP.</li>
+        <li>Co-founded and built a crowd-fundraising platform triggering automated donations to 501(c)(3) nonprofits from real-world events - real-time event processing with Apache NiFi, deployed with Docker and Kubernetes on GCP.</li>
       </ul>
     </div>
 
@@ -135,9 +151,9 @@ sitemap:
       </div>
       <p class="text-slate-600 text-sm italic mb-2">Lead frontend engineer building workflows and tools for the team discovering and analyzing Android malware.</p>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Designed and built custom research tooling that doubled (100%+) the security-research team's productivity in under a year.</li>
+        <li>Designed and built custom research tooling that doubled the security-research team's productivity in under a year.</li>
+        <li>Partnered daily with malware researchers to turn analysis workflows into software they actually used.</li>
         <li>Authored the open-source OraculumJS (enterprise JS MVC) and FactoryJS (DI container) frameworks.</li>
-        <li>Partnered with researchers and engineers to design systems and select appropriate solutions.</li>
       </ul>
     </div>
 
@@ -147,27 +163,18 @@ sitemap:
         <span class="text-sm text-slate-500">Oct 2011 - Mar 2013</span>
       </div>
       <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-        <li>Generalist building features and interfaces for cloud document and file management; performance work and cross-browser/device test routines.</li>
+        <li>Generalist building features and interfaces for cloud document management; performance and cross-browser test work.</li>
       </ul>
       <p class="text-slate-500 text-sm mt-2"><strong>Earlier:</strong> Backbone.js consultant at Plug.dj (2012-2013); Software Engineer at Arrowhead Electronic Healthcare (2010-2011); Sr. Software Developer at Infrahealth (2009-2010); founding member of ATX Hackerspace (2009-2011).</p>
     </div>
 
-    <!-- Skills -->
-    <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">Skills</h2>
+    <!-- Tools -->
+    <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">Tools I've worked with</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-700 mb-8">
-      <p><strong>Languages:</strong> JavaScript/TypeScript, Python</p>
-      <p><strong>Frontend:</strong> React, Remix / React Router v7, Redux</p>
-      <p><strong>Backend:</strong> Node.js, REST/GraphQL APIs, PostgreSQL, Celery, RabbitMQ</p>
-      <p><strong>Infrastructure:</strong> AWS, GCP, Terraform, Kubernetes, Helm, Docker</p>
-      <p><strong>Practices:</strong> CI/CD, feature flags, observability (Sentry), security-first</p>
-      <p><strong>Leadership:</strong> hiring, mentoring, code review, 0-to-1 product strategy</p>
+      <p><strong>Languages &amp; frameworks:</strong> JavaScript/TypeScript, Python, React, Remix / React Router v7, Redux, Node.js, Electron</p>
+      <p><strong>Data &amp; infrastructure:</strong> PostgreSQL, Celery, RabbitMQ, AWS, GCP, Terraform, Kubernetes, Helm, Docker</p>
+      <p><strong>AI:</strong> Anthropic API, Claude Agent SDK, LLM tool use and agent orchestration</p>
+      <p><strong>Practices:</strong> CI/CD, feature flags, observability (Sentry), security-first development, hiring, mentoring, code review</p>
     </div>
-
-    <!-- Selected open source -->
-    <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">Selected open source</h2>
-    <ul class="list-disc list-outside ml-5 text-slate-700 space-y-1 text-sm">
-      <li><strong>OraculumJS</strong> - enterprise JavaScript MVC framework (application framework + behavior library).</li>
-      <li><strong>FactoryJS</strong> - dependency-injection container with object-level AOP hooks and memory debugging.</li>
-    </ul>
   </div>
 </div>

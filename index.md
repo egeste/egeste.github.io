@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Steve Regester — Founding Engineer & Technical Leader
-description: Founding/staff software engineer and technical leader. 15 years building high-quality software from 0 to 1 in security, intelligence, and regulated domains. Open to founding- and early-engineer roles.
-keywords: founding engineer, staff software engineer, technical leader, 0 to 1, React, Node.js, Python, full-stack, Southwest Washington, Portland metro
+title: Steve Regester — Staff Software Engineer, Security Platforms
+description: Staff software engineer. 15 years shipping security products — malware-research tooling, crowdsourced pentesting, AI-driven binary analysis. React, Node.js, Python, AWS.
+keywords: staff software engineer, security engineer, full-stack engineer, React, Node.js, Python, AWS, Terraform, Southwest Washington, Portland metro
 sitemap:
   priority: 1.0
   changefreq: weekly
@@ -19,11 +19,11 @@ type: profile
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left">
         <div class="flex-1 order-2 md:order-1">
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">Steve Regester</h1>
-          <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-100 mb-8 opacity-90">Founding engineer &amp; technical leader</h2>
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-100 mb-8 opacity-90">Staff software engineer — security platforms</h2>
           <p class="text-lg sm:text-xl text-slate-200 max-w-3xl leading-relaxed opacity-90">
-            For fifteen years I've built software in hard domains — mobile security, intelligence, pharma, fintech — usually from nothing. Most recently I was employee #1 at <strong>Delphos Labs</strong>, taking an AI binary-analysis product from zero to one.
+            For fifteen years I've shipped security products — malware-research tooling at <strong>Lookout</strong>, the crowdsourced pentesting platform at <strong>Synack</strong>, AI-driven binary analysis at <strong>Delphos Labs</strong>. Usually deep in the stack, always with a threat model in mind.
             <span class="block mt-4">I care less about titles than about building things that work, that last, and that respect the people who use them.</span>
-            <span class="text-slate-200 font-medium italic opacity-80 mt-4 inline-block">I'm looking for the next thing to build from the ground up.</span>
+            <span class="text-slate-200 font-medium italic opacity-80 mt-4 inline-block">I'm looking for my next team.</span>
           </p>
         </div>
         <div class="flex-shrink-0 order-1 md:order-2">
@@ -39,9 +39,10 @@ type: profile
   <div class="w-full px-4 md:max-w-4xl md:mx-auto md:px-6">
     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8 text-center relative after:content-[''] after:block after:w-24 after:h-1 after:bg-gradient-to-r after:from-blue-600 after:via-indigo-500 after:to-violet-500 after:mx-auto after:mt-6 after:rounded">What I actually do</h2>
     <div class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed space-y-5">
-      <p>I build products from zero to one, and I obsess over the parts most people skip: the feel of the thing, the right-sized solution, the defaults that make sense, the failure modes nobody wants to think about.</p>
+      <p>I build software end to end — product, API, and the infrastructure underneath — and I obsess over the parts most people skip: the feel of the thing, the right-sized solution, the defaults that make sense, the failure modes nobody wants to think about.</p>
       <p>I've spent most of my career at security and intelligence companies — Lookout, Synack, Delphos — so I build with a threat model in mind by default. But the through-line isn't security. It's craft. I'm the engineer teammates have described as <em>"the high-water mark for engineering talent"</em> and someone who <em>"keeps refining after most people would call it done."</em> I'd rather ship one thing that feels inevitable than ten that feel like work.</p>
-      <p>And I lead. I've been a Director of Engineering, a CTO, and a team lead. I like building the team as much as the product — the kind of place where people feel safe enough to do their best work.</p>
+      <p>Lately I've been working the same hard problem in two different domains: getting LLM agents to reliably operate specialist tools that were never designed to be operated by one. At Delphos that was binary reverse engineering. Now it's electromagnetic simulation.</p>
+      <p>I've also led — Director of Engineering, CTO, team lead — so I hire, mentor, and take code review seriously. These days I do my best work as a senior individual contributor, on a team with people I can learn from.</p>
     </div>
   </div>
 </section>
@@ -52,8 +53,8 @@ type: profile
     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-8 text-center">What I've built</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12" role="list">
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
-        <strong class="text-slate-900 font-bold mb-3 block">Delphos Labs — AI binary analysis (0→1)</strong>
-        <span class="text-slate-600 leading-relaxed block">Employee #1. Designed the platform, built the AWS infra from scratch with Terraform, the distributed pipeline (Celery + RabbitMQ), and the React/Remix product with real-time dashboards.</span>
+        <strong class="text-slate-900 font-bold mb-3 block">Delphos Labs — AI binary analysis</strong>
+        <span class="text-slate-600 leading-relaxed block">First engineer. Designed the platform, built the AWS infra from scratch with Terraform, the distributed pipeline (Celery + RabbitMQ), and the React/Remix product with real-time dashboards.</span>
       </div>
       <div class="bg-gradient-to-br from-white/25 via-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 sm:p-8 shadow-md" role="listitem">
         <strong class="text-slate-900 font-bold mb-3 block">Studylog — cloud-native rewrite</strong>
@@ -109,7 +110,7 @@ type: profile
 <section class="w-full py-16 md:py-20">
   <div class="w-full px-4 md:max-w-4xl md:mx-auto md:px-6 text-center">
     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-50 mb-6">Let's build something</h2>
-    <p class="text-lg text-slate-200 mb-10 max-w-2xl mx-auto">I'm looking for founding- and early-engineer roles — places where I can own real surface area and take something from zero to one. If that's you, I'd love to talk.</p>
+    <p class="text-lg text-slate-200 mb-10 max-w-2xl mx-auto">I'm looking for senior and staff engineering roles at security product companies — places with a real team, real users, and problems worth the care. If that's you, I'd love to talk.</p>
     <div class="flex justify-center gap-4 flex-wrap flex-col sm:flex-row items-center">
       <a href="mailto:{{ site.social.email }}?subject=Let's%20talk" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 bg-gradient-to-r from-blue-600 via-indigo-500 to-violet-500 text-white rounded-xl font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 shadow-md hover:from-blue-700 hover:via-indigo-600 hover:to-violet-600 hover:shadow-xl hover:-translate-y-0.5 min-h-[44px] w-full sm:w-auto max-w-[300px] sm:max-w-none">Email me</a>
       <a href="{{ '/resume' | relative_url }}" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 bg-white/90 backdrop-blur text-slate-900 border border-slate-300 rounded-xl font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 shadow-sm hover:bg-slate-900 hover:text-white hover:border-slate-900 hover:shadow-md hover:-translate-y-0.5 min-h-[44px] w-full sm:w-auto max-w-[300px] sm:max-w-none">Read my résumé</a>
